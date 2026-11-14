@@ -1,6 +1,6 @@
 // Minimal service worker: makes the page installable and lets the shell load
 // offline. Speech recognition itself still needs a connection.
-const CACHE = 'spike-a-v1';
+const CACHE = 'spike-a-v2';
 const SHELL = ['./', 'index.html', 'scoring.js', 'items.js', 'app.js',
   'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 

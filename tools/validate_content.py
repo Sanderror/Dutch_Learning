@@ -12,7 +12,7 @@ Checks
   load        at most MAX_NEW_WORDS new lexicon entries per lesson, and each new
               entry is used in at least MIN_USES_IN_LESSON sentences of that lesson
   length      sentence length cap per section
-  articles    de/het before a noun agrees with the lexicon
+  articles    de/het before a noun agrees with the lexicon; noun glosses carry el/la
   spanish     opening ¿ ¡ present, no vosotros forms
   duplicates  the same Dutch sentence taught twice as "new"
   recurrence  how often each word comes back after it is introduced (report)
@@ -31,6 +31,7 @@ LENGTH_CAP = {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 12}   # words per sentence, by
 DIALOGUE_LINE_CAP = 12
 MIN_RECURRENCE = 3          # warning threshold: sentences containing the word, whole course so far
 VOSOTROS = re.compile(r"\b(vosotr[oa]s|vuestr[oa]s?|os|sois|estáis|habéis|\w+[áé]is)\b", re.IGNORECASE)
+SPANISH_ARTICLE = re.compile(r"^(el|la|los|las|lo)\s", re.IGNORECASE)
 WORD = re.compile(r"[^\W\d_]+(?:'[^\W\d_]+)?", re.UNICODE)
 
 
@@ -134,6 +135,21 @@ def validate(lexicon, units):
         if m:
             rep.error(where, "spanish", f"vosotros form '{m.group(0)}'")
 
+    # Word cards: Spanish glosses and accepted answers.
+    # Review of units 1-2: a noun shown with de/het needs its Spanish article too.
+    for e in lexicon["entries"]:
+        where = "lexicon:" + e.get("id", "?")
+        for g in e.get("es", []) + e.get("accept_es", []):
+            check_spanish(where, g)
+        if e.get("pos") == "noun":
+            bare = [g for g in e.get("es", []) if not SPANISH_ARTICLE.match(g)]
+            if bare:
+                rep.error(where, "articles", f"Spanish gloss without article: {', '.join(bare)}")
+        for field, main in (("accept_es", e.get("es", [])), ("accept_nl", [e.get("nl", "")] + list(e.get("forms", {})))):
+            dup = [a for a in e.get(field, []) if fold(a) in {fold(m) for m in main}]
+            if dup:
+                rep.error(where, "structure", f"{field} repeats a main form: {', '.join(dup)}")
+
     def check_articles(where, tokens):
         for i, tok in enumerate(tokens[:-1]):
             if tok in ("de", "het") and tokens[i + 1] in noun_article:
@@ -207,9 +223,8 @@ def validate(lexicon, units):
                 for alt in s.get("alt_nl", []):
                     if fold(alt) == fold(s.get("nl", "")):
                         rep.error(sid, "structure", f"alt_nl repeats the main sentence: {alt}")
-                    unknown_alt = [t for t in nl_tokens(alt) if t not in known and t not in names]
-                    if unknown_alt:
-                        rep.warn(sid, "gate", f"alt_nl uses untaught words: {', '.join(sorted(set(unknown_alt)))}")
+                    # No gate on accepted answers: accepting a correct word she was
+                    # not taught (hoi for hallo) is not teaching it.
                 key = fold(s.get("nl", ""))
                 if key in seen_sentences:
                     rep.error(sid, "duplicates", f"same Dutch sentence as {seen_sentences[key]}  [{s['nl']}]")

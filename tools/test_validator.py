@@ -120,6 +120,21 @@ def _(lex, units):
     next(e for e in lex["entries"] if e["id"] == "naam").pop("article")
 
 
+@case("noun gloss without Spanish article", "articles", "lexicon:meneer")
+def _(lex, units):
+    next(e for e in lex["entries"] if e["id"] == "meneer")["es"] = ["señor"]
+
+
+@case("vosotros form in a word's accepted answers", "spanish", "lexicon:doei")
+def _(lex, units):
+    next(e for e in lex["entries"] if e["id"] == "doei")["accept_es"].append("os veo")
+
+
+@case("accepted Dutch answer that repeats a taught form", "structure", "lexicon:dit")
+def _(lex, units):
+    next(e for e in lex["entries"] if e["id"] == "dit")["accept_nl"] = ["deze"]
+
+
 @case("lexicon form pointing to a lesson that does not exist", "structure", "lexicon:hallo")
 def _(lex, units):
     next(e for e in lex["entries"] if e["id"] == "hallo")["forms"]["hallo"] = "u09l9"

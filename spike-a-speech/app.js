@@ -17,6 +17,7 @@
     run: null,
     index: 0,
     listening: false,
+    micReady: false,           // true once the recogniser reports audiostart
     rec: null,
     runs: loadRuns(),
     storageOk: true,
@@ -61,7 +62,15 @@
       'precisión media por palabra ' + pct(s.meanWordAccuracy) + ', ' +
       'sin resultado: ' + s.firstAttemptNoResult + ', ' +
       'errores: ' + (Object.keys(s.errors).length ? JSON.stringify(s.errors) : 'ninguno') +
+      ', micrófono listo tras ' + medianMicDelay(run) +
       (run.env.installed ? ', app instalada' : ', en el navegador');
+  }
+  function medianMicDelay(run) {
+    const d = [];
+    run.items.forEach(function (it) { it.attempts.forEach(function (a) { if (a.micDelayMs != null) d.push(a.micDelayMs); }); });
+    if (!d.length) return 'n/d';
+    d.sort(function (x, y) { return x - y; });
+    return d[Math.floor(d.length / 2)] + ' ms (mediana)';
   }
   function exportText() {
     const lines = state.runs.map(summaryLine);
@@ -72,7 +81,8 @@
   function listen() {
     if (!SR || state.listening) return;
     const item = state.run.items[state.index];
-    const attempt = { startedAt: Date.now(), latencyMs: null, alternatives: [], error: null, events: [] };
+    const attempt = { startedAt: Date.now(), latencyMs: null, micDelayMs: null, alternatives: [], error: null,
+      events: [], eventTimes: {} };
     let finished = false;
     let rec;
 
@@ -82,12 +92,13 @@
       clearTimeout(timer);
       item.attempts.push(attempt);
       state.listening = false;
+      state.micReady = false;
       state.rec = null;
       persistRun();
       render();
     }
     const timer = setTimeout(function () {
-      attempt.events.push('timeout');
+      mark('timeout');
       if (!attempt.error && !attempt.alternatives.length) attempt.error = 'timeout';
       try { rec && rec.abort(); } catch (e) { /* ignore */ }
       finish();
@@ -102,12 +113,26 @@
     rec.maxAlternatives = 5;
 
     // The order of these events is the diagnostic for the "microphone keeps
-    // switching on and off" problem reported on Android.
-    ['start', 'audiostart', 'soundstart', 'speechstart', 'speechend', 'soundend', 'audioend', 'nomatch']
-      .forEach(function (name) { rec['on' + name] = function () { attempt.events.push(name); }; });
+    // switching on and off" problem reported on Android; eventTimes (ms after
+    // start()) measures how long the microphone takes to open.
+    function mark(name) {
+      attempt.events.push(name);
+      if (!(name in attempt.eventTimes)) attempt.eventTimes[name] = Date.now() - attempt.startedAt;
+    }
+    ['start', 'soundstart', 'speechstart', 'speechend', 'soundend', 'audioend', 'nomatch']
+      .forEach(function (name) { rec['on' + name] = function () { mark(name); }; });
+    // Only now is audio being captured. Words spoken before this are lost,
+    // so the button says "Un momento…" until here, then "Habla ahora".
+    rec.onaudiostart = function () {
+      mark('audiostart');
+      attempt.micDelayMs = attempt.eventTimes.audiostart;
+      state.micReady = true;
+      try { navigator.vibrate && navigator.vibrate(60); } catch (e) { /* not supported */ }
+      render();
+    };
 
     rec.onresult = function (e) {
-      attempt.events.push('result');
+      mark('result');
       const res = e.results[e.results.length - 1];
       attempt.alternatives = [];
       for (let i = 0; i < res.length; i++) {
@@ -116,16 +141,17 @@
       attempt.latencyMs = Date.now() - attempt.startedAt;
     };
     rec.onerror = function (e) {
-      attempt.events.push('error:' + e.error);
+      mark('error:' + e.error);
       attempt.error = e.error;
     };
     rec.onend = function () {
-      attempt.events.push('end');
+      mark('end');
       if (!attempt.alternatives.length && !attempt.error) attempt.error = 'sin-resultado';
       finish();
     };
 
     state.listening = true;
+    state.micReady = false;
     state.rec = rec;
     render();
     try { rec.start(); }
@@ -217,7 +243,9 @@
       '<div class="progress"><div style="width:' + (100 * state.index / items.length) + '%"></div></div>' +
       '<p class="target" lang="nl">' + esc(item.target) + '</p>' +
       (state.listening
-        ? '<button id="stop" class="mic listening">Escuchando… tocar para parar</button>'
+        ? (state.micReady
+          ? '<button id="stop" class="mic listening">Habla ahora · tocar para parar</button>'
+          : '<button id="stop" class="mic waiting">Un momento…</button>')
         : '<button id="mic" class="mic">' + (last ? 'Repetir' : 'Hablar') + '</button>') +
       feedback +
       '<div class="row">' +

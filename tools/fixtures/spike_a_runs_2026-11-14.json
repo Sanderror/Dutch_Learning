@@ -1,0 +1,1952 @@
+[
+ {
+  "id": "run-1794663907011",
+  "tester": "Sander",
+  "role": "nativo",
+  "set": "frases",
+  "startedAt": "2026-11-14T13:45:07.011Z",
+  "env": {
+   "api": "SpeechRecognition",
+   "installed": false,
+   "online": true,
+   "secureContext": true,
+   "browserLanguage": "nl",
+   "onDevice": "unavailable"
+  },
+  "items": [
+   {
+    "target": "Hallo, hoe gaat het?",
+    "attempts": [
+     {
+      "startedAt": 1794663918531,
+      "latencyMs": 5572,
+      "alternatives": [
+       {
+        "transcript": "Hallo hoe gaat het",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heet Tom.",
+    "attempts": [
+     {
+      "startedAt": 1794663928120,
+      "latencyMs": 2726,
+      "alternatives": [
+       {
+        "transcript": "Hey Tom",
+        "confidence": 0.8138241171836853
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794663934438,
+      "latencyMs": 3559,
+      "alternatives": [
+       {
+        "transcript": "ik heet Tom",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Goedemorgen, mevrouw.",
+    "attempts": [
+     {
+      "startedAt": 1794663943128,
+      "latencyMs": 3711,
+      "alternatives": [
+       {
+        "transcript": "Goedemorgen mevrouw",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Waar kom je vandaan?",
+    "attempts": [
+     {
+      "startedAt": 1794663950148,
+      "latencyMs": 3339,
+      "alternatives": [
+       {
+        "transcript": "Waar kom je vandaan",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794663955570,
+      "latencyMs": 4236,
+      "alternatives": [
+       {
+        "transcript": "Waar kom je vandaan",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik kom uit Venezuela.",
+    "attempts": [
+     {
+      "startedAt": 1794663964679,
+      "latencyMs": 5373,
+      "alternatives": [
+       {
+        "transcript": "kom uit binnen swell",
+        "confidence": 0.8768885135650635
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794663974177,
+      "latencyMs": 4102,
+      "alternatives": [
+       {
+        "transcript": "Ik kom uit Venezuela",
+        "confidence": 0.9207266569137573
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik woon in Amsterdam.",
+    "attempts": [
+     {
+      "startedAt": 1794663985063,
+      "latencyMs": 3714,
+      "alternatives": [
+       {
+        "transcript": "gewoon in Amsterdam",
+        "confidence": 0.8501380085945129
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794663990571,
+      "latencyMs": 3764,
+      "alternatives": [
+       {
+        "transcript": "woon in Amsterdam",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794663998636,
+      "latencyMs": 4527,
+      "alternatives": [
+       {
+        "transcript": "Ik woon in Amsterdam",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik spreek een beetje Nederlands.",
+    "attempts": [
+     {
+      "startedAt": 1794664006811,
+      "latencyMs": 4766,
+      "alternatives": [
+       {
+        "transcript": "spreek een beetje Nederlands",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Dank je wel.",
+    "attempts": [
+     {
+      "startedAt": 1794664014766,
+      "latencyMs": 2429,
+      "alternatives": [
+       {
+        "transcript": "Jawel",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664019111,
+      "latencyMs": 3005,
+      "alternatives": [
+       {
+        "transcript": "dankjewel",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Tot morgen!",
+    "attempts": [
+     {
+      "startedAt": 1794664026183,
+      "latencyMs": 2459,
+      "alternatives": [
+       {
+        "transcript": "morgen",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664030350,
+      "latencyMs": 3117,
+      "alternatives": [
+       {
+        "transcript": "tot morgen",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Dit is mijn vriendin.",
+    "attempts": [
+     {
+      "startedAt": 1794664038227,
+      "latencyMs": 3663,
+      "alternatives": [
+       {
+        "transcript": "is mijn vriendin",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heb twee broers.",
+    "attempts": [
+     {
+      "startedAt": 1794664046545,
+      "latencyMs": 4025,
+      "alternatives": [
+       {
+        "transcript": "Ik heb twee broers",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Hoe laat is het?",
+    "attempts": [
+     {
+      "startedAt": 1794664053412,
+      "latencyMs": null,
+      "alternatives": [],
+      "error": "sin-resultado",
+      "events": [
+       "start",
+       "audiostart",
+       "audioend",
+       "nomatch",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664061525,
+      "latencyMs": 3239,
+      "alternatives": [
+       {
+        "transcript": "Hoe laat is het",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het is half drie.",
+    "attempts": [
+     {
+      "startedAt": 1794664068278,
+      "latencyMs": 2853,
+      "alternatives": [
+       {
+        "transcript": "het is 2:30",
+        "confidence": 0.9001172184944153
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664153557,
+      "latencyMs": 4838,
+      "alternatives": [
+       {
+        "transcript": "het is 2:30",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik drink graag koffie.",
+    "attempts": [
+     {
+      "startedAt": 1794664230711,
+      "latencyMs": 3629,
+      "alternatives": [
+       {
+        "transcript": "Ik drink graag koffie",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Wij eten vanavond thuis.",
+    "attempts": [
+     {
+      "startedAt": 1794664237293,
+      "latencyMs": 4437,
+      "alternatives": [
+       {
+        "transcript": "Wij eten thuis vanavond",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664244074,
+      "latencyMs": 3566,
+      "alternatives": [
+       {
+        "transcript": "eten vanavond thuis",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664248857,
+      "latencyMs": 5117,
+      "alternatives": [
+       {
+        "transcript": "Wij eten vanavond thuis",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "De trein is te laat.",
+    "attempts": [
+     {
+      "startedAt": 1794664256416,
+      "latencyMs": 3466,
+      "alternatives": [
+       {
+        "transcript": "de trein is te laat",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Mag ik een kopje thee?",
+    "attempts": [
+     {
+      "startedAt": 1794664262006,
+      "latencyMs": 6573,
+      "alternatives": [
+       {
+        "transcript": "Mag ik een kopje thee",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik ga morgen naar school.",
+    "attempts": [
+     {
+      "startedAt": 1794664273034,
+      "latencyMs": null,
+      "alternatives": [],
+      "error": "sin-resultado",
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "nomatch",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664278246,
+      "latencyMs": 6942,
+      "alternatives": [
+       {
+        "transcript": "Ik ga morgen naar school",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het huis is groot.",
+    "attempts": [
+     {
+      "startedAt": 1794664288829,
+      "latencyMs": 4122,
+      "alternatives": [
+       {
+        "transcript": "La Casa es Grande",
+        "confidence": 0.8883916139602661
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664295598,
+      "latencyMs": 3738,
+      "alternatives": [
+       {
+        "transcript": "het huis is groot",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "De deur is dicht.",
+    "attempts": [
+     {
+      "startedAt": 1794664302846,
+      "latencyMs": 3419,
+      "alternatives": [
+       {
+        "transcript": "de deur is dicht",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Mijn zus woont in Utrecht.",
+    "attempts": [
+     {
+      "startedAt": 1794664309301,
+      "latencyMs": 4370,
+      "alternatives": [
+       {
+        "transcript": "zus woont in Utrecht",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     },
+     {
+      "startedAt": 1794664315654,
+      "latencyMs": 5434,
+      "alternatives": [
+       {
+        "transcript": "mijn zus woont in Utrecht",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Wat kost dit brood?",
+    "attempts": [
+     {
+      "startedAt": 1794664324138,
+      "latencyMs": 3538,
+      "alternatives": [
+       {
+        "transcript": "Wat kost dit brood",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heb geen fiets.",
+    "attempts": [
+     {
+      "startedAt": 1794664330670,
+      "latencyMs": 4554,
+      "alternatives": [
+       {
+        "transcript": "Ik heb geen fiets",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Kun je dat herhalen?",
+    "attempts": [
+     {
+      "startedAt": 1794664337820,
+      "latencyMs": 4155,
+      "alternatives": [
+       {
+        "transcript": "kun je dat herhalen",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik begrijp het niet.",
+    "attempts": [
+     {
+      "startedAt": 1794664345101,
+      "latencyMs": 3755,
+      "alternatives": [
+       {
+        "transcript": "Ik begrijp het niet",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het regent vandaag.",
+    "attempts": [
+     {
+      "startedAt": 1794664351961,
+      "latencyMs": 4022,
+      "alternatives": [
+       {
+        "transcript": "Het regent vandaag",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Zij werkt in een ziekenhuis.",
+    "attempts": [
+     {
+      "startedAt": 1794664358158,
+      "latencyMs": 4492,
+      "alternatives": [
+       {
+        "transcript": "Zij werkt in een ziekenhuis",
+        "confidence": 0.9352930188179016
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik ben vijfentwintig jaar.",
+    "attempts": [
+     {
+      "startedAt": 1794664365344,
+      "latencyMs": 4231,
+      "alternatives": [
+       {
+        "transcript": "Ik ben 25 jaar",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Waar is het station?",
+    "attempts": [
+     {
+      "startedAt": 1794664371836,
+      "latencyMs": 3861,
+      "alternatives": [
+       {
+        "transcript": "Waar is het station",
+        "confidence": 0.8310235142707825
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Fijn weekend!",
+    "attempts": [
+     {
+      "startedAt": 1794664378062,
+      "latencyMs": 3474,
+      "alternatives": [
+       {
+        "transcript": "fijn weekend",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   }
+  ],
+  "finishedAt": "2026-11-14T13:53:03.412Z"
+ },
+ {
+  "id": "run-1794664429462",
+  "tester": "Sander",
+  "role": "nativo",
+  "set": "frases",
+  "startedAt": "2026-11-14T13:53:49.463Z",
+  "env": {
+   "api": "SpeechRecognition",
+   "installed": false,
+   "online": true,
+   "secureContext": true,
+   "browserLanguage": "nl",
+   "onDevice": "unavailable"
+  },
+  "items": [
+   {
+    "target": "Hallo, hoe gaat het?",
+    "attempts": [
+     {
+      "startedAt": 1794664431500,
+      "latencyMs": 4216,
+      "alternatives": [
+       {
+        "transcript": "Hallo hoe gaat het",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heet Tom.",
+    "attempts": [
+     {
+      "startedAt": 1794664439263,
+      "latencyMs": 3365,
+      "alternatives": [
+       {
+        "transcript": "ik heet Tom",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Goedemorgen, mevrouw.",
+    "attempts": [
+     {
+      "startedAt": 1794664447263,
+      "latencyMs": 3793,
+      "alternatives": [
+       {
+        "transcript": "Goedemorgen mevrouw",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Waar kom je vandaan?",
+    "attempts": [
+     {
+      "startedAt": 1794664458148,
+      "latencyMs": 3592,
+      "alternatives": [
+       {
+        "transcript": "Waar kom je vandaan",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik kom uit Venezuela.",
+    "attempts": [
+     {
+      "startedAt": 1794664464719,
+      "latencyMs": 4271,
+      "alternatives": [
+       {
+        "transcript": "Ik kom uit Venezuela",
+        "confidence": 0.9201399087905884
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik woon in Amsterdam.",
+    "attempts": [
+     {
+      "startedAt": 1794664482228,
+      "latencyMs": 4182,
+      "alternatives": [
+       {
+        "transcript": "Ik woon in Amsterdam",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik spreek een beetje Nederlands.",
+    "attempts": [
+     {
+      "startedAt": 1794664506970,
+      "latencyMs": 3562,
+      "alternatives": [
+       {
+        "transcript": "spreek een beetje Nederlands",
+        "confidence": 0.8734018206596375
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Dank je wel.",
+    "attempts": [
+     {
+      "startedAt": 1794664526932,
+      "latencyMs": 3666,
+      "alternatives": [
+       {
+        "transcript": "dankjewel",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Tot morgen!",
+    "attempts": [
+     {
+      "startedAt": 1794664533139,
+      "latencyMs": 4212,
+      "alternatives": [
+       {
+        "transcript": "tot morgen",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Dit is mijn vriendin.",
+    "attempts": [
+     {
+      "startedAt": 1794664539281,
+      "latencyMs": 4457,
+      "alternatives": [
+       {
+        "transcript": "Dit is mijn vriendin",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heb twee broers.",
+    "attempts": [
+     {
+      "startedAt": 1794664546256,
+      "latencyMs": 4283,
+      "alternatives": [
+       {
+        "transcript": "Ik heb twee broers",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Hoe laat is het?",
+    "attempts": [
+     {
+      "startedAt": 1794664552812,
+      "latencyMs": 3839,
+      "alternatives": [
+       {
+        "transcript": "Hoe laat is het",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het is half drie.",
+    "attempts": [
+     {
+      "startedAt": 1794664558835,
+      "latencyMs": 3670,
+      "alternatives": [
+       {
+        "transcript": "het is 2:30",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik drink graag koffie.",
+    "attempts": [
+     {
+      "startedAt": 1794664565236,
+      "latencyMs": 3907,
+      "alternatives": [
+       {
+        "transcript": "Ik drink graag koffie",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Wij eten vanavond thuis.",
+    "attempts": [
+     {
+      "startedAt": 1794664571775,
+      "latencyMs": 4264,
+      "alternatives": [
+       {
+        "transcript": "Wij eten vanavond thuis",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "De trein is te laat.",
+    "attempts": [
+     {
+      "startedAt": 1794664578348,
+      "latencyMs": 3945,
+      "alternatives": [
+       {
+        "transcript": "de trein is te laat",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Mag ik een kopje thee?",
+    "attempts": [
+     {
+      "startedAt": 1794664584654,
+      "latencyMs": 4086,
+      "alternatives": [
+       {
+        "transcript": "Mag ik een kopje thee",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik ga morgen naar school.",
+    "attempts": [
+     {
+      "startedAt": 1794664591599,
+      "latencyMs": 3777,
+      "alternatives": [
+       {
+        "transcript": "Ik ga morgen naar school",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het huis is groot.",
+    "attempts": [
+     {
+      "startedAt": 1794664597524,
+      "latencyMs": 3763,
+      "alternatives": [
+       {
+        "transcript": "het huis is groot",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "De deur is dicht.",
+    "attempts": [
+     {
+      "startedAt": 1794664604276,
+      "latencyMs": 3391,
+      "alternatives": [
+       {
+        "transcript": "de deur is dicht",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Mijn zus woont in Utrecht.",
+    "attempts": [
+     {
+      "startedAt": 1794664617762,
+      "latencyMs": 4547,
+      "alternatives": [
+       {
+        "transcript": "mijn zus woont in Utrecht",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Wat kost dit brood?",
+    "attempts": [
+     {
+      "startedAt": 1794664629189,
+      "latencyMs": 4269,
+      "alternatives": [
+       {
+        "transcript": "Wat kost het brood",
+        "confidence": 0.8892548084259033
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik heb geen fiets.",
+    "attempts": [
+     {
+      "startedAt": 1794664644165,
+      "latencyMs": 3743,
+      "alternatives": [
+       {
+        "transcript": "Ik heb geen fiets",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Kun je dat herhalen?",
+    "attempts": [
+     {
+      "startedAt": 1794664653265,
+      "latencyMs": 3468,
+      "alternatives": [
+       {
+        "transcript": "kun je dat herhalen",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik begrijp het niet.",
+    "attempts": [
+     {
+      "startedAt": 1794664663639,
+      "latencyMs": 3877,
+      "alternatives": [
+       {
+        "transcript": "Ik begrijp het niet",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Het regent vandaag.",
+    "attempts": [
+     {
+      "startedAt": 1794664673072,
+      "latencyMs": 3576,
+      "alternatives": [
+       {
+        "transcript": "Het regent vandaag",
+        "confidence": 0.9353691935539246
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Zij werkt in een ziekenhuis.",
+    "attempts": [
+     {
+      "startedAt": 1794664679939,
+      "latencyMs": 5438,
+      "alternatives": [
+       {
+        "transcript": "Zij werkt in een ziekenhuis",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Ik ben vijfentwintig jaar.",
+    "attempts": [
+     {
+      "startedAt": 1794664687896,
+      "latencyMs": 4291,
+      "alternatives": [
+       {
+        "transcript": "Ik ben 25 jaar",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Waar is het station?",
+    "attempts": [
+     {
+      "startedAt": 1794664696062,
+      "latencyMs": 4167,
+      "alternatives": [
+       {
+        "transcript": "Waar is het station",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   },
+   {
+    "target": "Fijn weekend!",
+    "attempts": [
+     {
+      "startedAt": 1794664703235,
+      "latencyMs": 3918,
+      "alternatives": [
+       {
+        "transcript": "fijn weekend",
+        "confidence": 0.9353691339492798
+       }
+      ],
+      "error": null,
+      "events": [
+       "start",
+       "audiostart",
+       "soundstart",
+       "speechstart",
+       "speechend",
+       "soundend",
+       "audioend",
+       "result",
+       "end"
+      ]
+     }
+    ]
+   }
+  ],
+  "finishedAt": "2026-11-14T13:58:28.622Z"
+ }
+]

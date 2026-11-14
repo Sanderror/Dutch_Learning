@@ -543,6 +543,22 @@
           "alt_es": [
             "Ella es Emma y él es Daan."
           ]
+        },
+        {
+          "id": "u02l4s14",
+          "nl": "Deze meneer heet Daan.",
+          "es": "Este señor se llama Daan.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u02l4s15",
+          "nl": "Die mevrouw woont in Utrecht.",
+          "es": "Esa señora vive en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aquella señora vive en Utrecht."
+          ]
         }
       ]
     },

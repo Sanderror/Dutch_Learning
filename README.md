@@ -2,6 +2,9 @@
 
 Three tests that settle the open questions in the build plan before the app itself is built.
 
+**Results (14 November 2026):** speech recognition passes for sentences (28 of 30); voices nl-NL-Wavenet-F and -G chosen;
+units 1 and 2 reviewed, with corrections applied (see `review/review_log_u01_u02.md`).
+
 | Folder | What it is |
 |---|---|
 | `spike-a-speech/` | Installable test page: does Chrome's speech recognition understand Dutch on the Pixel? |
@@ -48,7 +51,8 @@ The voices are labelled A to D in a random order; `bakeoff/key.json` says which 
 python3 tools/validate_content.py content      # checks; exit code 1 if there are errors
 python3 tools/test_validator.py                # injects 18 known mistakes, expects each to be caught
 python3 tools/export_review.py content review/review_u01_u02.csv
-node tools/test_scoring.mjs                    # scoring logic of the speech page
+node tools/test_scoring.mjs                    # scoring logic, incl. rescoring the real Pixel runs
+python3 tools/test_tts_bakeoff.py              # voice script against a mock API
 ```
 
 No packages to install; Python 3.9+ and Node 18+.

@@ -19,12 +19,40 @@
     return UNITS[unit] + 'en' + TENS[tens];
   }
 
-  // Lowercase, strip accents and punctuation, write digits as words.
+  // A clock time the way it is said in Dutch. Recognisers write "half drie"
+  // as "2:30" (or "14:30"), so the heard text is turned back into words.
+  // Only whole five-minute steps; anything else returns null.
+  function timeToDutch(h, m) {
+    if (h > 24 || m > 59 || m % 5 !== 0) return null;
+    const hour = function (x) { const v = x % 12; return numberToDutch(v === 0 ? 12 : v); };
+    const next = hour(h + 1);
+    switch (m) {
+      case 0: return hour(h) + ' uur';
+      case 5: return 'vijf over ' + hour(h);
+      case 10: return 'tien over ' + hour(h);
+      case 15: return 'kwart over ' + hour(h);
+      case 20: return 'tien voor half ' + next;
+      case 25: return 'vijf voor half ' + next;
+      case 30: return 'half ' + next;
+      case 35: return 'vijf over half ' + next;
+      case 40: return 'tien over half ' + next;
+      case 45: return 'kwart voor ' + next;
+      case 50: return 'tien voor ' + next;
+      case 55: return 'vijf voor ' + next;
+    }
+    return null;
+  }
+
+  // Lowercase, strip accents and punctuation, write times and digits as words.
   // Recognisers return "25" where the learner said "vijfentwintig".
   function normalize(text) {
     return String(text)
       .toLowerCase()
       .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/\b(\d{1,2})[:.](\d{2})\b/g, function (all, h, m) {
+        const t = timeToDutch(parseInt(h, 10), parseInt(m, 10));
+        return t ? ' ' + t + ' ' : all;
+      })
       .replace(/\d+/g, function (m) {
         const n = parseInt(m, 10);
         return n <= 100 ? ' ' + numberToDutch(n) + ' ' : ' ' + m + ' ';
@@ -108,7 +136,7 @@
     };
   }
 
-  const api = { numberToDutch: numberToDutch, normalize: normalize, tokens: tokens,
+  const api = { numberToDutch: numberToDutch, timeToDutch: timeToDutch, normalize: normalize, tokens: tokens,
     editDistance: editDistance, compare: compare, scoreAttempt: scoreAttempt, summarize: summarize };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Scoring = api;
