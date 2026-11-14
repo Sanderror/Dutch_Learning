@@ -1,0 +1,45 @@
+name: Voice comparison
+
+# Run by hand: Actions tab, "Voice comparison", "Run workflow".
+# Generates bakeoff/audio with the GOOGLE_TTS_API_KEY secret, commits it to main
+# and asks GitHub Pages to rebuild, so the listening page goes live.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit the audio
+  pages: write      # request a Pages build (pushes made by this workflow do not trigger one)
+
+concurrency:
+  group: tts-bakeoff
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Synthesise the test strings
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: python3 tools/tts_bakeoff.py bakeoff
+
+      - name: Commit the audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bakeoff/audio bakeoff/manifest.json bakeoff/key.json
+          git commit -m "Voice comparison audio (run ${{ github.run_number }})"
+          git push
+
+      - name: Ask GitHub Pages to rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent; then
+            echo "Pages build requested; the page is live in a minute or two."
+          else
+            echo "::warning::Could not request a Pages build. Any later push to main publishes the page."
+          fi
