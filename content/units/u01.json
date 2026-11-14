@@ -8,7 +8,7 @@
     "Preguntar cómo está alguien",
     "Distinguir jij (tú) y u (usted)"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- **g** suena como la j de «jamón», pero más fuerte: **g**oed, **g**oedemorgen, da**g**.\n- **oe** suena como la u española: g**oe**d, h**oe**, d**oe**i.\n- **ij** suena parecido a «ei»: j**ij**, m**ij**n, f**ij**ne.\n- **h** siempre se pronuncia, como una j muy suave: **h**allo, **h**oe, **h**eet.\n- **aa** y **ee** son vocales largas: n**aa**m, g**aa**t, h**ee**t, n**ee**.\n\n## El pronombre no se puede omitir\n\nEn español dices «Soy Anna». En neerlandés siempre hace falta el pronombre: **Ik ben Anna**.\n\n## jij, je y u\n\n- **jij**: tú, con énfasis.\n- **je**: tú, sin énfasis. Es lo más común al hablar.\n- **u**: usted.\n\n## El verbo zijn (ser, estar)\n\n- ik **ben**\n- jij **bent**, u **bent**\n- Mijn naam **is** Tom.\n\n## Preguntas\n\nEl verbo va primero y no hay signo de apertura: **Ben jij Tom?**\n\nCuando jij o je va después del verbo, el verbo pierde la -t: jij ben**t**, pero **ben** jij?\n\n## Hoe gaat het?\n\nLiteralmente «¿cómo va?». Se responde **Goed, dank je** y se devuelve la pregunta con **En met jou?** (con usted: **En met u?**).",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **g** suena como la j de «jamón», pero más fuerte: **g**oed, **g**oedemorgen, da**g**.\n- **oe** suena como la u española: g**oe**d, h**oe**, d**oe**i.\n- **ij** suena parecido a «ei»: j**ij**, m**ij**n, f**ij**ne.\n- **h** siempre se pronuncia, como una j muy suave: **h**allo, **h**oe, **h**eet.\n- **aa** y **ee** son vocales largas: n**aa**m, g**aa**t, h**ee**t, n**ee**.\n\n## El pronombre no se puede omitir\n\nEn español dices «Soy Anna». En neerlandés siempre hace falta el pronombre: **Ik ben Anna**.\n\n## jij, je y u\n\n- **jij**: tú, con énfasis.\n- **je**: tú, sin énfasis. Es lo más común al hablar.\n- **u**: usted.\n\n## El verbo zijn (ser, estar)\n\n- ik **ben**\n- jij **bent**, u **bent**\n- Mijn naam **is** Tom.\n\n## Preguntas\n\nHay dos tipos. En preguntas de sí o no, el verbo va primero: **Ben jij Tom?** Con una palabra interrogativa (wie, hoe), el verbo va justo después de ella: **Wie ben jij?**, **Hoe heet je?** En ningún caso se escribe el signo de apertura (¿).\n\nCuando jij o je va después del verbo, el verbo pierde la -t: jij ben**t**, pero **ben** jij? y hoe **heet** je?\n\n## Hoe gaat het?\n\nLiteralmente «¿cómo va?». Se responde **Goed, dank je** y se devuelve la pregunta con **En met jou?** (con usted: **En met u?**).",
   "lessons": [
     {
       "id": "u01l1",
@@ -370,7 +370,9 @@
           "id": "u01l4s04",
           "nl": "En met jou?",
           "es": "¿Y tú?",
-          "alt_nl": [],
+          "alt_nl": [
+            "En jij?"
+          ],
           "alt_es": [
             "¿Y a ti?"
           ]
@@ -598,14 +600,18 @@
           "id": "u01l6s01",
           "nl": "Goedemiddag!",
           "es": "¡Buenas tardes!",
-          "alt_nl": [],
+          "alt_nl": [
+            "Goedenavond!"
+          ],
           "alt_es": []
         },
         {
           "id": "u01l6s02",
           "nl": "Goedemiddag, mevrouw.",
           "es": "Buenas tardes, señora.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Goedenavond, mevrouw."
+          ],
           "alt_es": []
         },
         {
@@ -671,7 +677,9 @@
           "id": "u01l6s10",
           "nl": "En met u?",
           "es": "¿Y usted?",
-          "alt_nl": [],
+          "alt_nl": [
+            "En u?"
+          ],
           "alt_es": [
             "¿Y a usted?"
           ]

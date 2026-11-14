@@ -49,3 +49,39 @@ Nothing in the 148 sentences was wrong. All 26 changes are in word cards, accept
 - New: noun glosses must carry a Spanish article; accepted answers on word cards get the same Spanish checks as sentences and may not repeat a main form.
 - Removed: the warning for accepted Dutch answers containing untaught words. Accepting a correct word she wasn't taught (hoi) is not teaching it.
 - Mutation test: 21 of 21 injected mistakes caught (was 18; 3 new cases for the new rules).
+
+---
+
+# Checker round, 14 November 2026 (evening)
+
+After Sander's review was applied, an independent checker agent (fresh context,
+`tools/review_rubric.md`) reviewed both units. All 8 flags were real:
+`review/checker_flags_u01_u02.json`.
+
+## Applied
+
+- **u01 grammar note:** the questions rule said "el verbo va primero" in
+  general, which is false for the wh-questions taught in the same unit
+  (Wie ben jij?, Hoe heet je?). Now split: yes/no questions verb first; with a
+  question word the verb comes right after it.
+- **u02l5s11:** dropped "ik" in the second clause right after the course
+  taught the pronoun is never omitted. The full-pronoun form is now primary —
+  and because that form broke the 8-word length cap (the validator caught the
+  fix), the sentence became "Ik kom uit Venezuela, maar ik woon hier."
+- **Accepted answers:** "En jij?" (u01l4s04), "En u?" (u01l6s10),
+  "Goedenavond!" where ¡Buenas tardes! is prompted (u01l6s01, s02 — the course
+  itself glosses goedenavond with buenas tardes, so the reverse must be
+  accepted).
+- **wonen:** "leven" removed from accepted answers (decision 5 reversed,
+  further than before): accepting it trains "Ik leef in Amsterdam". The
+  vivir = wonen/leven split now sits in the word card's note. **Overrides
+  Sander's addition; confirm.**
+
+## Held for Sander (and her)
+
+- **"ten un buen día"** (Sander's correction): the checker calls it an English
+  calque and prefers "¡Que tengas un buen día!" / "¡Feliz día!". Kept as
+  Sander set it. Her judgment settles it.
+- **"hoi" as farewell for doei** (Sander's addition): the checker says hoi is
+  a greeting; "hoi hoi"/"doeg"/"dag" stay accepted either way. Kept; Sander
+  decides.
