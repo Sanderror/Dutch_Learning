@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "about": "Every Dutch form the course teaches, with the lesson where it first appears. The validator only allows a sentence to use forms taught up to that lesson. Multi-word entries (tot ziens) teach each of their words.",
+  "names": ["Anna", "Tom", "Emma", "Daan", "María", "Luis", "Jansen", "Bakker", "Amsterdam", "Utrecht", "Caracas"],
+  "entries": [
+    {"id": "hallo", "nl": "hallo", "pos": "interj", "es": ["hola"], "forms": {"hallo": "u01l1"}},
+    {"id": "ik", "nl": "ik", "pos": "pron", "es": ["yo"], "forms": {"ik": "u01l1"}},
+    {"id": "zijn", "nl": "zijn", "pos": "verb", "es": ["ser", "estar"], "forms": {"ben": "u01l1", "bent": "u01l2", "is": "u01l3"}},
+    {"id": "ja", "nl": "ja", "pos": "interj", "es": ["sí"], "forms": {"ja": "u01l1"}},
+    {"id": "nee", "nl": "nee", "pos": "interj", "es": ["no"], "forms": {"nee": "u01l1"}},
+    {"id": "en", "nl": "en", "pos": "conj", "es": ["y"], "forms": {"en": "u01l1"}},
+
+    {"id": "jij", "nl": "jij", "pos": "pron", "es": ["tú"], "forms": {"jij": "u01l2"}},
+    {"id": "wie", "nl": "wie", "pos": "pron", "es": ["quién"], "forms": {"wie": "u01l2"}},
+    {"id": "goedemorgen", "nl": "goedemorgen", "pos": "interj", "es": ["buenos días"], "forms": {"goedemorgen": "u01l2"}},
+    {"id": "goedenavond", "nl": "goedenavond", "pos": "interj", "es": ["buenas noches", "buenas tardes"], "note_es": "Saludo al llegar, desde las 6 de la tarde aproximadamente.", "forms": {"goedenavond": "u01l2"}},
+    {"id": "ook", "nl": "ook", "pos": "adv", "es": ["también"], "forms": {"ook": "u01l2"}},
+
+    {"id": "hoe", "nl": "hoe", "pos": "adv", "es": ["cómo"], "forms": {"hoe": "u01l3"}},
+    {"id": "heten", "nl": "heten", "pos": "verb", "es": ["llamarse"], "forms": {"heet": "u01l3"}},
+    {"id": "je", "nl": "je", "pos": "pron", "es": ["tú"], "note_es": "Forma sin énfasis de jij; es la más usada al hablar.", "forms": {"je": "u01l3"}},
+    {"id": "mijn", "nl": "mijn", "pos": "det", "es": ["mi"], "forms": {"mijn": "u01l3"}},
+    {"id": "naam", "nl": "naam", "pos": "noun", "article": "de", "es": ["nombre"], "forms": {"naam": "u01l3"}},
+
+    {"id": "gaan", "nl": "gaan", "pos": "verb", "es": ["ir"], "note_es": "Hoe gaat het? = ¿Cómo estás? (literalmente: ¿cómo va?)", "forms": {"gaat": "u01l4"}},
+    {"id": "het", "nl": "het", "pos": "pron", "es": ["eso", "ello"], "note_es": "Aquí es un sujeto impersonal, como en Het gaat goed.", "forms": {"het": "u01l4"}},
+    {"id": "goed", "nl": "goed", "pos": "adj", "es": ["bien", "bueno"], "forms": {"goed": "u01l4"}},
+    {"id": "met", "nl": "met", "pos": "prep", "es": ["con"], "forms": {"met": "u01l4"}},
+    {"id": "jou", "nl": "jou", "pos": "pron", "es": ["ti"], "note_es": "Forma de jij después de una preposición: met jou.", "forms": {"jou": "u01l4"}},
+    {"id": "dank-je", "nl": "dank je", "pos": "interj", "es": ["gracias"], "note_es": "Con usted: dank u.", "forms": {"dank je": "u01l4"}},
+
+    {"id": "doei", "nl": "doei", "pos": "interj", "es": ["chao"], "note_es": "Despedida informal.", "forms": {"doei": "u01l5"}},
+    {"id": "dag", "nl": "dag", "pos": "interj", "es": ["adiós", "hola"], "note_es": "Sirve para saludar y para despedirse.", "forms": {"dag": "u01l5"}},
+    {"id": "tot-ziens", "nl": "tot ziens", "pos": "interj", "es": ["nos vemos", "hasta luego"], "forms": {"tot ziens": "u01l5"}},
+    {"id": "tot-morgen", "nl": "tot morgen", "pos": "interj", "es": ["hasta mañana"], "forms": {"tot morgen": "u01l5"}},
+    {"id": "tot-later", "nl": "tot later", "pos": "interj", "es": ["hasta luego"], "forms": {"tot later": "u01l5"}},
+    {"id": "fijne-dag", "nl": "fijne dag", "pos": "interj", "es": ["que tengas un buen día", "feliz día"], "forms": {"fijne dag": "u01l5"}},
+
+    {"id": "u", "nl": "u", "pos": "pron", "es": ["usted"], "forms": {"u": "u01l6"}},
+    {"id": "meneer", "nl": "meneer", "pos": "noun", "article": "de", "es": ["señor"], "forms": {"meneer": "u01l6"}},
+    {"id": "mevrouw", "nl": "mevrouw", "pos": "noun", "article": "de", "es": ["señora"], "forms": {"mevrouw": "u01l6"}},
+    {"id": "goedemiddag", "nl": "goedemiddag", "pos": "interj", "es": ["buenas tardes"], "forms": {"goedemiddag": "u01l6"}},
+    {"id": "welkom", "nl": "welkom", "pos": "interj", "es": ["bienvenido", "bienvenida"], "forms": {"welkom": "u01l6"}},
+
+    {"id": "komen", "nl": "komen", "pos": "verb", "es": ["venir"], "note_es": "komen uit = ser de (un país o ciudad).", "forms": {"kom": "u02l1", "komt": "u02l1"}},
+    {"id": "uit", "nl": "uit", "pos": "prep", "es": ["de"], "note_es": "Indica procedencia.", "forms": {"uit": "u02l1"}},
+    {"id": "waar", "nl": "waar", "pos": "adv", "es": ["dónde"], "forms": {"waar": "u02l1"}},
+    {"id": "vandaan", "nl": "vandaan", "pos": "adv", "es": ["de (dónde)"], "note_es": "Va al final: Waar kom je vandaan? = ¿De dónde eres?", "forms": {"vandaan": "u02l1"}},
+    {"id": "nederland", "nl": "Nederland", "pos": "propn", "es": ["los Países Bajos", "Holanda"], "forms": {"nederland": "u02l1"}},
+    {"id": "venezuela", "nl": "Venezuela", "pos": "propn", "es": ["Venezuela"], "forms": {"venezuela": "u02l1"}},
+
+    {"id": "wonen", "nl": "wonen", "pos": "verb", "es": ["vivir"], "forms": {"woon": "u02l2", "woont": "u02l2"}},
+    {"id": "in", "nl": "in", "pos": "prep", "es": ["en"], "forms": {"in": "u02l2"}},
+    {"id": "nu", "nl": "nu", "pos": "adv", "es": ["ahora"], "forms": {"nu": "u02l2"}},
+    {"id": "hier", "nl": "hier", "pos": "adv", "es": ["aquí", "acá"], "forms": {"hier": "u02l2"}},
+    {"id": "daar", "nl": "daar", "pos": "adv", "es": ["allá", "allí", "ahí"], "forms": {"daar": "u02l2"}},
+
+    {"id": "spreken", "nl": "spreken", "pos": "verb", "es": ["hablar"], "forms": {"spreek": "u02l3", "spreekt": "u02l3"}},
+    {"id": "spaans", "nl": "Spaans", "pos": "noun", "article": "het", "es": ["español"], "forms": {"spaans": "u02l3"}},
+    {"id": "nederlands", "nl": "Nederlands", "pos": "noun", "article": "het", "es": ["neerlandés", "holandés"], "forms": {"nederlands": "u02l3"}},
+    {"id": "engels", "nl": "Engels", "pos": "noun", "article": "het", "es": ["inglés"], "forms": {"engels": "u02l3"}},
+    {"id": "een-beetje", "nl": "een beetje", "pos": "adv", "es": ["un poco"], "forms": {"een beetje": "u02l3"}},
+
+    {"id": "hij", "nl": "hij", "pos": "pron", "es": ["él"], "forms": {"hij": "u02l4"}},
+    {"id": "zij", "nl": "zij", "pos": "pron", "es": ["ella"], "forms": {"zij": "u02l4"}},
+    {"id": "dit", "nl": "dit", "pos": "pron", "es": ["este", "esta", "esto"], "forms": {"dit": "u02l4"}},
+    {"id": "dat", "nl": "dat", "pos": "pron", "es": ["ese", "esa", "eso"], "forms": {"dat": "u02l4"}},
+
+    {"id": "niet", "nl": "niet", "pos": "adv", "es": ["no"], "note_es": "Niega verbos, adjetivos y lugares.", "forms": {"niet": "u02l5"}},
+    {"id": "geen", "nl": "geen", "pos": "det", "es": ["no", "ningún"], "note_es": "Niega un sustantivo sin artículo: geen Nederlands.", "forms": {"geen": "u02l5"}},
+    {"id": "maar", "nl": "maar", "pos": "conj", "es": ["pero"], "forms": {"maar": "u02l5"}},
+    {"id": "of", "nl": "of", "pos": "conj", "es": ["o"], "forms": {"of": "u02l5"}},
+    {"id": "spanje", "nl": "Spanje", "pos": "propn", "es": ["España"], "forms": {"spanje": "u02l5"}},
+
+    {"id": "vriend", "nl": "vriend", "pos": "noun", "article": "de", "es": ["novio", "amigo"], "note_es": "mijn vriend suele entenderse como «mi novio».", "forms": {"vriend": "u02l6"}},
+    {"id": "vriendin", "nl": "vriendin", "pos": "noun", "article": "de", "es": ["novia", "amiga"], "note_es": "mijn vriendin suele entenderse como «mi novia».", "forms": {"vriendin": "u02l6"}},
+    {"id": "aangenaam", "nl": "aangenaam", "pos": "interj", "es": ["mucho gusto", "encantado", "encantada"], "forms": {"aangenaam": "u02l6"}},
+    {"id": "leuk", "nl": "leuk", "pos": "adj", "es": ["chévere", "agradable", "divertido"], "forms": {"leuk": "u02l6"}},
+    {"id": "heel", "nl": "heel", "pos": "adv", "es": ["muy"], "forms": {"heel": "u02l6"}}
+  ]
+}

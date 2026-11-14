@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prueba de voz · Nederlands</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<meta name="theme-color" content="#1f4e79">
+<style>
+  :root { --ink:#16202b; --muted:#5d6b7a; --line:#d9e0e7; --bg:#f6f8fa; --card:#fff;
+          --brand:#1f4e79; --ok:#1d7a46; --warn:#a15c00; --bad:#b3261e; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:var(--bg); color:var(--ink);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px 16px 48px; }
+  h1 { font-size: 1.35rem; margin: 8px 0 4px; }
+  h2 { font-size: 1.05rem; margin: 24px 0 8px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin:12px 0; }
+  label { display:block; font-weight:600; margin: 12px 0 4px; }
+  input[type=text], select { width:100%; padding:12px; font-size:1rem; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+  button { font: inherit; font-weight:600; border:0; border-radius:10px; padding:14px 18px; background:var(--brand); color:#fff; min-height:48px; }
+  button.secondary { background:#fff; color:var(--brand); border:1px solid var(--brand); }
+  button:disabled { opacity:.45; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+  .row > button { flex:1 1 140px; }
+  .target { font-size: 1.8rem; font-weight: 700; line-height:1.25; margin: 18px 0; overflow-wrap:anywhere; }
+  .mic { width:100%; font-size:1.15rem; padding:20px; }
+  .mic.listening { background: var(--bad); }
+  .heard { font-size:1.15rem; margin:10px 0 4px; overflow-wrap:anywhere; }
+  .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:.85rem; font-weight:700; color:#fff; }
+  .ok { background:var(--ok); } .warn { background:var(--warn); } .bad { background:var(--bad); }
+  .progress { height:6px; background:var(--line); border-radius:3px; overflow:hidden; }
+  .progress > div { height:100%; background:var(--brand); }
+  .scroll { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; font-size:.88rem; }
+  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; white-space:nowrap; }
+  dl { display:grid; grid-template-columns:auto 1fr; gap:4px 12px; margin:0; font-size:.9rem; }
+  dt { color:var(--muted); } dd { margin:0; overflow-wrap:anywhere; }
+  .big { font-size:1.6rem; font-weight:700; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="scoring.js"></script>
+<script src="items.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

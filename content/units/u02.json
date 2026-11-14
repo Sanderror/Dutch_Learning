@@ -1,0 +1,916 @@
+{
+  "id": "u02",
+  "section": 1,
+  "title_es": "¿De dónde eres?",
+  "goals_es": [
+    "Decir de dónde eres y dónde vives",
+    "Decir qué idiomas hablas",
+    "Hablar de otra persona con hij y zij",
+    "Negar con niet y geen",
+    "Presentar a alguien"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ui** no existe en español. Empieza con una a y termina redondeando los labios: **ui**t.\n- **sp** al principio se dice sin una e delante: **sp**reek, **Sp**aans, **Sp**anje (no «espreek»).\n- **w** se pronuncia con el labio inferior contra los dientes, más suave que la v: **w**oon, **w**aar.\n- **v** suena casi como una f suave: **v**andaan, **v**riend.\n- **ie** suena como una i larga: n**ie**t, vr**ie**nd, h**ie**r.\n\n## El presente\n\nSe usa la raíz del verbo con **ik**, y la raíz + **t** con jij, u, hij y zij.\n\n- ik **kom**, ik **woon**, ik **spreek**\n- jij **komt**, u **woont**, hij **spreekt**, zij **komt**\n\nEn una pregunta con jij o je detrás del verbo, la -t desaparece: jij kom**t**, pero **kom** jij? Con u, hij y zij la -t se queda: **komt** u?, **woont** hij?\n\n## Waar … vandaan?\n\nPara preguntar el origen, la pregunta se parte en dos: **Waar** kom je **vandaan**? La respuesta usa **uit**: Ik kom **uit** Venezuela.\n\nPara preguntar dónde vive alguien basta **waar**: Waar woon je?\n\n## niet y geen\n\n- **geen** niega un sustantivo que no lleva artículo: Ik spreek **geen** Nederlands.\n- **niet** niega todo lo demás y va después del verbo: Ik woon **niet** in Amsterdam. Hij woont hier **niet**.\n\n## vriend y vriendin\n\n**Mijn vriend** y **mijn vriendin** se entienden normalmente como «mi novio» y «mi novia». Para decir «un amigo» se usa otra construcción que verás más adelante.",
+  "lessons": [
+    {
+      "id": "u02l1",
+      "title_es": "Soy de Venezuela",
+      "sentences": [
+        {
+          "id": "u02l1s01",
+          "nl": "Ik kom uit Venezuela.",
+          "es": "Soy de Venezuela.",
+          "alt_nl": [],
+          "alt_es": [
+            "Vengo de Venezuela.",
+            "Yo soy de Venezuela."
+          ]
+        },
+        {
+          "id": "u02l1s02",
+          "nl": "Waar kom jij vandaan?",
+          "es": "¿De dónde eres?",
+          "alt_nl": [
+            "Waar kom je vandaan?"
+          ],
+          "alt_es": [
+            "¿De dónde eres tú?",
+            "¿De dónde vienes?",
+            "¿Tú de dónde eres?"
+          ]
+        },
+        {
+          "id": "u02l1s03",
+          "nl": "Waar kom je vandaan?",
+          "es": "¿De dónde eres?",
+          "alt_nl": [
+            "Waar kom jij vandaan?"
+          ],
+          "alt_es": [
+            "¿De dónde vienes?"
+          ]
+        },
+        {
+          "id": "u02l1s04",
+          "nl": "Ik kom uit Nederland.",
+          "es": "Soy de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Soy de Holanda.",
+            "Vengo de los Países Bajos.",
+            "Vengo de Holanda.",
+            "Soy de Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l1s05",
+          "nl": "Kom jij uit Venezuela?",
+          "es": "¿Eres de Venezuela?",
+          "alt_nl": [
+            "Kom je uit Venezuela?"
+          ],
+          "alt_es": [
+            "¿Tú eres de Venezuela?",
+            "¿Vienes de Venezuela?"
+          ]
+        },
+        {
+          "id": "u02l1s06",
+          "nl": "Ja, ik kom uit Venezuela.",
+          "es": "Sí, soy de Venezuela.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, vengo de Venezuela."
+          ]
+        },
+        {
+          "id": "u02l1s07",
+          "nl": "Nee, ik kom uit Nederland.",
+          "es": "No, soy de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, soy de Holanda.",
+            "No, vengo de los Países Bajos.",
+            "No, vengo de Holanda."
+          ]
+        },
+        {
+          "id": "u02l1s08",
+          "nl": "Waar komt u vandaan?",
+          "es": "¿De dónde es usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿De dónde es?",
+            "¿De dónde viene usted?",
+            "¿Usted de dónde es?"
+          ]
+        },
+        {
+          "id": "u02l1s09",
+          "nl": "Jij komt uit Nederland.",
+          "es": "Tú eres de los Países Bajos.",
+          "alt_nl": [
+            "Je komt uit Nederland."
+          ],
+          "alt_es": [
+            "Eres de los Países Bajos.",
+            "Tú eres de Holanda.",
+            "Eres de Holanda."
+          ]
+        },
+        {
+          "id": "u02l1s10",
+          "nl": "Tom komt uit Nederland.",
+          "es": "Tom es de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tom es de Holanda.",
+            "Tom viene de los Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l1s11",
+          "nl": "Komt María uit Venezuela?",
+          "es": "¿María es de Venezuela?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es María de Venezuela?",
+            "¿María viene de Venezuela?"
+          ]
+        },
+        {
+          "id": "u02l1s12",
+          "nl": "Waar komt Luis vandaan?",
+          "es": "¿De dónde es Luis?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿De dónde viene Luis?",
+            "¿Luis de dónde es?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02l2",
+      "title_es": "¿Dónde vives?",
+      "sentences": [
+        {
+          "id": "u02l2s01",
+          "nl": "Ik woon in Caracas.",
+          "es": "Vivo en Caracas.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo vivo en Caracas."
+          ]
+        },
+        {
+          "id": "u02l2s02",
+          "nl": "Waar woon jij?",
+          "es": "¿Dónde vives?",
+          "alt_nl": [
+            "Waar woon je?"
+          ],
+          "alt_es": [
+            "¿Dónde vives tú?",
+            "¿Tú dónde vives?"
+          ]
+        },
+        {
+          "id": "u02l2s03",
+          "nl": "Woon jij in Amsterdam?",
+          "es": "¿Vives en Ámsterdam?",
+          "alt_nl": [
+            "Woon je in Amsterdam?"
+          ],
+          "alt_es": [
+            "¿Tú vives en Ámsterdam?"
+          ]
+        },
+        {
+          "id": "u02l2s04",
+          "nl": "Ik woon nu in Nederland.",
+          "es": "Ahora vivo en los Países Bajos.",
+          "alt_nl": [
+            "Nu woon ik in Nederland."
+          ],
+          "alt_es": [
+            "Vivo ahora en los Países Bajos.",
+            "Ahora vivo en Holanda.",
+            "Vivo ahora en Holanda."
+          ]
+        },
+        {
+          "id": "u02l2s05",
+          "nl": "Tom woont in Utrecht.",
+          "es": "Tom vive en Utrecht.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u02l2s06",
+          "nl": "Waar woont u?",
+          "es": "¿Dónde vive usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde vive?",
+            "¿Usted dónde vive?"
+          ]
+        },
+        {
+          "id": "u02l2s07",
+          "nl": "Ik woon hier.",
+          "es": "Vivo aquí.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo vivo aquí.",
+            "Vivo acá.",
+            "Yo vivo acá."
+          ]
+        },
+        {
+          "id": "u02l2s08",
+          "nl": "Woon je hier?",
+          "es": "¿Vives aquí?",
+          "alt_nl": [
+            "Woon jij hier?"
+          ],
+          "alt_es": [
+            "¿Vives acá?",
+            "¿Tú vives aquí?"
+          ]
+        },
+        {
+          "id": "u02l2s09",
+          "nl": "Emma woont daar.",
+          "es": "Emma vive allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Emma vive allí.",
+            "Emma vive ahí."
+          ]
+        },
+        {
+          "id": "u02l2s10",
+          "nl": "Ik woon ook in Amsterdam.",
+          "es": "Yo también vivo en Ámsterdam.",
+          "alt_nl": [],
+          "alt_es": [
+            "También vivo en Ámsterdam.",
+            "Vivo también en Ámsterdam."
+          ]
+        },
+        {
+          "id": "u02l2s11",
+          "nl": "Jij woont nu in Caracas.",
+          "es": "Ahora vives en Caracas.",
+          "alt_nl": [
+            "Je woont nu in Caracas."
+          ],
+          "alt_es": [
+            "Tú vives ahora en Caracas.",
+            "Vives ahora en Caracas.",
+            "Tú ahora vives en Caracas."
+          ]
+        },
+        {
+          "id": "u02l2s12",
+          "nl": "Waar woont Daan nu?",
+          "es": "¿Dónde vive Daan ahora?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde vive ahora Daan?",
+            "¿Ahora dónde vive Daan?"
+          ]
+        },
+        {
+          "id": "u02l2s13",
+          "nl": "Woont Tom daar?",
+          "es": "¿Tom vive allá?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Tom vive allí?",
+            "¿Tom vive ahí?",
+            "¿Vive Tom allá?",
+            "¿Vive Tom allí?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02l3",
+      "title_es": "Hablo un poco de neerlandés",
+      "sentences": [
+        {
+          "id": "u02l3s01",
+          "nl": "Ik spreek Spaans.",
+          "es": "Hablo español.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo hablo español."
+          ]
+        },
+        {
+          "id": "u02l3s02",
+          "nl": "Spreek jij Nederlands?",
+          "es": "¿Hablas neerlandés?",
+          "alt_nl": [
+            "Spreek je Nederlands?"
+          ],
+          "alt_es": [
+            "¿Hablas holandés?",
+            "¿Tú hablas neerlandés?",
+            "¿Tú hablas holandés?"
+          ]
+        },
+        {
+          "id": "u02l3s03",
+          "nl": "Ik spreek een beetje Nederlands.",
+          "es": "Hablo un poco de neerlandés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hablo un poco de holandés.",
+            "Yo hablo un poco de neerlandés.",
+            "Hablo un poquito de neerlandés.",
+            "Hablo un poquito de holandés."
+          ]
+        },
+        {
+          "id": "u02l3s04",
+          "nl": "Spreekt u Engels?",
+          "es": "¿Habla usted inglés?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Habla inglés?",
+            "¿Usted habla inglés?"
+          ]
+        },
+        {
+          "id": "u02l3s05",
+          "nl": "Ja, ik spreek Engels.",
+          "es": "Sí, hablo inglés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, yo hablo inglés."
+          ]
+        },
+        {
+          "id": "u02l3s06",
+          "nl": "Tom spreekt Nederlands en Engels.",
+          "es": "Tom habla neerlandés e inglés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tom habla holandés e inglés."
+          ]
+        },
+        {
+          "id": "u02l3s07",
+          "nl": "Jij spreekt goed Nederlands!",
+          "es": "¡Hablas bien neerlandés!",
+          "alt_nl": [
+            "Je spreekt goed Nederlands!"
+          ],
+          "alt_es": [
+            "¡Hablas bien holandés!",
+            "¡Tú hablas bien neerlandés!",
+            "¡Hablas neerlandés bien!"
+          ]
+        },
+        {
+          "id": "u02l3s08",
+          "nl": "Spreek je Spaans?",
+          "es": "¿Hablas español?",
+          "alt_nl": [
+            "Spreek jij Spaans?"
+          ],
+          "alt_es": [
+            "¿Tú hablas español?"
+          ]
+        },
+        {
+          "id": "u02l3s09",
+          "nl": "Een beetje.",
+          "es": "Un poco.",
+          "alt_nl": [],
+          "alt_es": [
+            "Un poquito."
+          ]
+        },
+        {
+          "id": "u02l3s10",
+          "nl": "María spreekt Spaans.",
+          "es": "María habla español.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u02l3s11",
+          "nl": "Ik spreek ook een beetje Engels.",
+          "es": "También hablo un poco de inglés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo también hablo un poco de inglés.",
+            "Hablo también un poco de inglés."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02l4",
+      "title_es": "Él y ella",
+      "sentences": [
+        {
+          "id": "u02l4s01",
+          "nl": "Dit is Tom.",
+          "es": "Este es Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él es Tom."
+          ]
+        },
+        {
+          "id": "u02l4s02",
+          "nl": "Wie is dat?",
+          "es": "¿Quién es ese?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Quién es esa?",
+            "¿Quién es?",
+            "¿Quién es él?",
+            "¿Quién es ella?"
+          ]
+        },
+        {
+          "id": "u02l4s03",
+          "nl": "Dat is Emma.",
+          "es": "Esa es Emma.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ella es Emma."
+          ]
+        },
+        {
+          "id": "u02l4s04",
+          "nl": "Hij komt uit Nederland.",
+          "es": "Él es de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él es de Holanda.",
+            "Es de los Países Bajos.",
+            "Es de Holanda.",
+            "Él viene de los Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l4s05",
+          "nl": "Zij woont in Caracas.",
+          "es": "Ella vive en Caracas.",
+          "alt_nl": [],
+          "alt_es": [
+            "Vive en Caracas."
+          ]
+        },
+        {
+          "id": "u02l4s06",
+          "nl": "Hij heet Daan.",
+          "es": "Él se llama Daan.",
+          "alt_nl": [],
+          "alt_es": [
+            "Se llama Daan."
+          ]
+        },
+        {
+          "id": "u02l4s07",
+          "nl": "Zij spreekt Spaans en Engels.",
+          "es": "Ella habla español e inglés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Habla español e inglés."
+          ]
+        },
+        {
+          "id": "u02l4s08",
+          "nl": "Is hij Luis?",
+          "es": "¿Él es Luis?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es Luis?",
+            "¿Es él Luis?"
+          ]
+        },
+        {
+          "id": "u02l4s09",
+          "nl": "Waar woont zij?",
+          "es": "¿Dónde vive ella?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde vive?",
+            "¿Ella dónde vive?"
+          ]
+        },
+        {
+          "id": "u02l4s10",
+          "nl": "Hoe heet hij?",
+          "es": "¿Cómo se llama él?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo se llama?",
+            "¿Él cómo se llama?"
+          ]
+        },
+        {
+          "id": "u02l4s11",
+          "nl": "Zij is María.",
+          "es": "Ella es María.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es María."
+          ]
+        },
+        {
+          "id": "u02l4s12",
+          "nl": "Hij woont ook in Utrecht.",
+          "es": "Él también vive en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "También vive en Utrecht.",
+            "Él vive también en Utrecht."
+          ]
+        },
+        {
+          "id": "u02l4s13",
+          "nl": "Dit is Emma en dat is Daan.",
+          "es": "Esta es Emma y ese es Daan.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ella es Emma y él es Daan."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02l5",
+      "title_es": "No hablo neerlandés",
+      "sentences": [
+        {
+          "id": "u02l5s01",
+          "nl": "Ik spreek geen Nederlands.",
+          "es": "No hablo neerlandés.",
+          "alt_nl": [],
+          "alt_es": [
+            "No hablo holandés.",
+            "Yo no hablo neerlandés.",
+            "Yo no hablo holandés."
+          ]
+        },
+        {
+          "id": "u02l5s02",
+          "nl": "Ik kom niet uit Nederland.",
+          "es": "No soy de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "No soy de Holanda.",
+            "Yo no soy de los Países Bajos.",
+            "No vengo de los Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l5s03",
+          "nl": "Ik woon niet in Amsterdam.",
+          "es": "No vivo en Ámsterdam.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo no vivo en Ámsterdam."
+          ]
+        },
+        {
+          "id": "u02l5s04",
+          "nl": "Dat is niet Tom.",
+          "es": "Ese no es Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él no es Tom.",
+            "No es Tom."
+          ]
+        },
+        {
+          "id": "u02l5s05",
+          "nl": "Ik spreek Spaans, maar geen Nederlands.",
+          "es": "Hablo español, pero no neerlandés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hablo español, pero no holandés.",
+            "Yo hablo español, pero no neerlandés."
+          ]
+        },
+        {
+          "id": "u02l5s06",
+          "nl": "Kom jij uit Spanje of uit Venezuela?",
+          "es": "¿Eres de España o de Venezuela?",
+          "alt_nl": [
+            "Kom je uit Spanje of uit Venezuela?"
+          ],
+          "alt_es": [
+            "¿Tú eres de España o de Venezuela?",
+            "¿Vienes de España o de Venezuela?"
+          ]
+        },
+        {
+          "id": "u02l5s07",
+          "nl": "Zij komt niet uit Spanje.",
+          "es": "Ella no es de España.",
+          "alt_nl": [],
+          "alt_es": [
+            "No es de España.",
+            "Ella no viene de España."
+          ]
+        },
+        {
+          "id": "u02l5s08",
+          "nl": "Spreek jij geen Engels?",
+          "es": "¿No hablas inglés?",
+          "alt_nl": [
+            "Spreek je geen Engels?"
+          ],
+          "alt_es": [
+            "¿Tú no hablas inglés?"
+          ]
+        },
+        {
+          "id": "u02l5s09",
+          "nl": "Hij woont hier niet.",
+          "es": "Él no vive aquí.",
+          "alt_nl": [],
+          "alt_es": [
+            "No vive aquí.",
+            "Él no vive acá.",
+            "No vive acá."
+          ]
+        },
+        {
+          "id": "u02l5s10",
+          "nl": "Nee, zij woont daar niet.",
+          "es": "No, ella no vive allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, ella no vive allí.",
+            "No, no vive allá.",
+            "No, ella no vive ahí."
+          ]
+        },
+        {
+          "id": "u02l5s11",
+          "nl": "Ik kom uit Venezuela, maar woon in Nederland.",
+          "es": "Soy de Venezuela, pero vivo en los Países Bajos.",
+          "alt_nl": [
+            "Ik kom uit Venezuela, maar ik woon in Nederland."
+          ],
+          "alt_es": [
+            "Soy de Venezuela, pero vivo en Holanda.",
+            "Vengo de Venezuela, pero vivo en los Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l5s12",
+          "nl": "Woont u in Amsterdam of in Utrecht?",
+          "es": "¿Vive usted en Ámsterdam o en Utrecht?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Vive en Ámsterdam o en Utrecht?",
+            "¿Usted vive en Ámsterdam o en Utrecht?"
+          ]
+        },
+        {
+          "id": "u02l5s13",
+          "nl": "Het gaat niet goed.",
+          "es": "No estoy bien.",
+          "alt_nl": [],
+          "alt_es": [
+            "No me va bien.",
+            "No va bien."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02l6",
+      "title_es": "Te presento a…",
+      "sentences": [
+        {
+          "id": "u02l6s01",
+          "nl": "Dit is mijn vriend.",
+          "es": "Este es mi novio.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él es mi novio.",
+            "Este es mi amigo.",
+            "Él es mi amigo."
+          ]
+        },
+        {
+          "id": "u02l6s02",
+          "nl": "Dit is mijn vriendin, María.",
+          "es": "Esta es mi novia, María.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ella es mi novia, María.",
+            "Esta es mi amiga, María.",
+            "Ella es mi amiga, María."
+          ]
+        },
+        {
+          "id": "u02l6s03",
+          "nl": "Aangenaam!",
+          "es": "¡Mucho gusto!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Encantado!",
+            "¡Encantada!",
+            "¡Un placer!"
+          ]
+        },
+        {
+          "id": "u02l6s04",
+          "nl": "Leuk!",
+          "es": "¡Qué bien!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué chévere!",
+            "¡Chévere!",
+            "¡Qué bueno!",
+            "¡Genial!"
+          ]
+        },
+        {
+          "id": "u02l6s05",
+          "nl": "Heel goed!",
+          "es": "¡Muy bien!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u02l6s06",
+          "nl": "Mijn vriend komt uit Nederland.",
+          "es": "Mi novio es de los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi novio es de Holanda.",
+            "Mi amigo es de los Países Bajos.",
+            "Mi amigo es de Holanda.",
+            "Mi novio viene de los Países Bajos."
+          ]
+        },
+        {
+          "id": "u02l6s07",
+          "nl": "Mijn vriendin spreekt Spaans.",
+          "es": "Mi novia habla español.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi amiga habla español."
+          ]
+        },
+        {
+          "id": "u02l6s08",
+          "nl": "Hij is mijn vriend.",
+          "es": "Él es mi novio.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es mi novio.",
+            "Él es mi amigo.",
+            "Es mi amigo."
+          ]
+        },
+        {
+          "id": "u02l6s09",
+          "nl": "Het gaat heel goed, dank je.",
+          "es": "Estoy muy bien, gracias.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me va muy bien, gracias.",
+            "Todo va muy bien, gracias.",
+            "Muy bien, gracias."
+          ]
+        },
+        {
+          "id": "u02l6s10",
+          "nl": "Jij spreekt heel goed Nederlands!",
+          "es": "¡Hablas muy bien neerlandés!",
+          "alt_nl": [
+            "Je spreekt heel goed Nederlands!"
+          ],
+          "alt_es": [
+            "¡Hablas muy bien holandés!",
+            "¡Tú hablas muy bien neerlandés!",
+            "¡Hablas neerlandés muy bien!"
+          ]
+        },
+        {
+          "id": "u02l6s11",
+          "nl": "Aangenaam, ik ben Daan.",
+          "es": "Mucho gusto, soy Daan.",
+          "alt_nl": [],
+          "alt_es": [
+            "Encantado, soy Daan.",
+            "Mucho gusto, yo soy Daan."
+          ]
+        },
+        {
+          "id": "u02l6s12",
+          "nl": "Dat is leuk!",
+          "es": "¡Qué bien!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué chévere!",
+            "¡Eso es genial!",
+            "¡Qué bueno!",
+            "¡Eso es chévere!"
+          ]
+        },
+        {
+          "id": "u02l6s13",
+          "nl": "Mijn vriendin woont nu in Nederland.",
+          "es": "Mi novia ahora vive en los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi novia vive ahora en los Países Bajos.",
+            "Mi novia ahora vive en Holanda.",
+            "Mi novia vive ahora en Holanda.",
+            "Mi amiga ahora vive en los Países Bajos."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "En una fiesta en Utrecht",
+    "lines": [
+      {
+        "speaker": "Daan",
+        "nl": "Goedenavond! Ik ben Daan. Wie ben jij?",
+        "es": "¡Buenas noches! Soy Daan. ¿Quién eres tú?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Hallo, Daan. Mijn naam is María.",
+        "es": "Hola, Daan. Mi nombre es María."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Aangenaam! Waar kom je vandaan?",
+        "es": "¡Mucho gusto! ¿De dónde eres?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Ik kom uit Venezuela, maar ik woon nu hier.",
+        "es": "Soy de Venezuela, pero ahora vivo aquí."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Leuk! Jij spreekt goed Nederlands.",
+        "es": "¡Qué bien! Hablas bien neerlandés."
+      },
+      {
+        "speaker": "María",
+        "nl": "Dank je. Ik spreek een beetje Nederlands.",
+        "es": "Gracias. Hablo un poco de neerlandés."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Dit is mijn vriendin, Emma. Zij spreekt ook Spaans.",
+        "es": "Esta es mi novia, Emma. Ella también habla español."
+      },
+      {
+        "speaker": "María",
+        "nl": "Heel leuk! Hallo, Emma.",
+        "es": "¡Qué chévere! Hola, Emma."
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿De dónde es María?",
+        "options_es": [
+          "De España",
+          "De Venezuela",
+          "De los Países Bajos"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Quién es Emma?",
+        "options_es": [
+          "La novia de Daan",
+          "La amiga de María",
+          "La profesora"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Qué idioma habla Emma, además de neerlandés?",
+        "options_es": [
+          "Inglés",
+          "No lo dicen",
+          "Español"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}
