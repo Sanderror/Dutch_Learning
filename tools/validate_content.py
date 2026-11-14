@@ -282,6 +282,32 @@ def validate(lexicon, units):
     return rep, stats
 
 
+def validate_course(course, units, rep):
+    """The course index must list exactly the unit files, in order, and give
+    every dialogue speaker a voice. The app and the audio build trust it."""
+    listed = course.get("units", [])
+    present = [u["id"] for u in units]
+    if listed != present:
+        rep.error("course", "structure", f"course.json lists {listed} but the unit files are {present}")
+    sections = {s.get("id") for s in course.get("sections", [])}
+    voices = course.get("voices", {})
+    speakers = course.get("speakers", {})
+    for name, v in speakers.items():
+        if v not in voices:
+            rep.error("course", "structure", f"speaker {name} uses unknown voice '{v}'")
+    for u in units:
+        if u.get("section") not in sections:
+            rep.error(u["id"], "structure", f"section {u.get('section')} is not in course.json")
+        for i, line in enumerate(u.get("dialogue", {}).get("lines", []), 1):
+            if line.get("speaker") not in speakers:
+                rep.error(f"{u['id']}:dialogue:{i}", "structure",
+                          f"speaker '{line.get('speaker')}' has no voice in course.json")
+
+
+def load_course(content_dir):
+    return json.loads((pathlib.Path(content_dir) / "course.json").read_text(encoding="utf-8"))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("content_dir", nargs="?", default="content")
@@ -290,6 +316,7 @@ def main():
 
     lexicon, units = load(pathlib.Path(args.content_dir))
     rep, stats = validate(lexicon, units)
+    validate_course(load_course(args.content_dir), units, rep)
 
     for label, rows in (("ERROR", rep.errors), ("warn ", rep.warnings)):
         for where, check, msg in rows:

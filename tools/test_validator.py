@@ -155,6 +155,35 @@ def _(lex, units):
     lesson(units, "u01l1")["sentences"][1]["id"] = "u01l1s01"
 
 
+def course_cases():
+    """course.json mistakes: each must produce a 'structure' error."""
+    course = vc.load_course(ROOT)
+    def run_course(mutate, units=None):
+        c, u = copy.deepcopy(course), copy.deepcopy(units or UNITS)
+        mutate(c, u)
+        rep = vc.Report()
+        vc.validate_course(c, u, rep)
+        return rep
+    clean = run_course(lambda c, u: None)
+    assert not clean.errors, clean.errors
+    cases = [
+        ("unit file missing from course.json", lambda c, u: c["units"].pop()),
+        ("units listed in the wrong order", lambda c, u: c["units"].reverse()),
+        ("dialogue speaker without a voice", lambda c, u: c["speakers"].pop("Emma")),
+        ("speaker with a voice that does not exist", lambda c, u: c["speakers"].update(Tom="X")),
+        ("unit in a section that does not exist", lambda c, u: u[0].update(section=9)),
+    ]
+    failed = 0
+    for name, fn in cases:
+        rep = run_course(fn)
+        if any(e[1] == "structure" for e in rep.errors):
+            print(f"ok    {name}  ->  {rep.errors[0][2][:70]}")
+        else:
+            failed += 1
+            print(f"FAIL  {name}")
+    return len(cases), failed
+
+
 def main():
     base, _ = vc.validate(copy.deepcopy(LEXICON), copy.deepcopy(UNITS))
     assert not base.errors, f"unmodified content should be clean, got {base.errors[:3]}"
@@ -168,7 +197,10 @@ def main():
         else:
             failed += 1
             print(f"FAIL  {name}: expected a '{check}' error at {where_part}; got {rep.errors[:3]}")
-    print(f"\n{len(CASES) - failed}/{len(CASES)} injected mistakes caught")
+    n_course, f_course = course_cases()
+    failed += f_course
+    total = len(CASES) + n_course
+    print(f"\n{total - failed}/{total} injected mistakes caught")
     return 1 if failed else 0
 
 

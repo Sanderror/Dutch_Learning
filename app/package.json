@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "No build step and no dependencies. This file only tells Node that app/js/*.js are ES modules, so the tests can import them."
+}

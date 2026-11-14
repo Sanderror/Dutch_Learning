@@ -1,0 +1,63 @@
+name: Build audio
+
+# Generates recordings for new or changed Dutch text. Runs when course content
+# changes on main, or by hand (Actions tab, "Build audio", "Run workflow").
+# Uses the GOOGLE_TTS_API_KEY secret; texts that already have a recording cost nothing.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'tools/build_audio.py'
+      - '.github/workflows/build-audio.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit the audio files
+  pages: write      # request a Pages build (a push by this workflow does not trigger one)
+
+concurrency:
+  group: build-audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check the content first
+        run: python3 tools/validate_content.py content
+
+      - name: Synthesise what is missing
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: python3 tools/build_audio.py content audio
+
+      - name: Commit new audio
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio
+          if git diff --cached --quiet; then
+            echo "No new audio."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Audio for new content (run ${{ github.run_number }})"
+            git pull --rebase
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ask GitHub Pages to rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent; then
+            echo "Pages build requested; the audio is live in a minute or two."
+          else
+            echo "::warning::Could not request a Pages build. Any later push to main publishes the audio."
+          fi
