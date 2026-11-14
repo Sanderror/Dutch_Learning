@@ -77,11 +77,8 @@ After Sander's review was applied, an independent checker agent (fresh context,
   vivir = wonen/leven split now sits in the word card's note. **Overrides
   Sander's addition; confirm.**
 
-## Held for Sander (and her)
+## Settled by Sander, 14 November
 
-- **"ten un buen día"** (Sander's correction): the checker calls it an English
-  calque and prefers "¡Que tengas un buen día!" / "¡Feliz día!". Kept as
-  Sander set it. Her judgment settles it.
-- **"hoi" as farewell for doei** (Sander's addition): the checker says hoi is
-  a greeting; "hoi hoi"/"doeg"/"dag" stay accepted either way. Kept; Sander
-  decides.
+- **"ten un buen día"** stays: it is what she says. The alternatives remain accepted.
+- **"hoi" as a farewell** stays accepted.
+- **"leven" out of wonen's accepted answers** stands.

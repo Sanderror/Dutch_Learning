@@ -106,15 +106,16 @@ The 12-sentence sample doubles as the unit's quality measurement:
   expected to fire. The thresholds are there to make that visible, not to
   assume it away.
 
-## Open disagreements for Sander (and her)
+## Disagreements between checker and reviewer: how they ended
 
-1. **"ten un buen día"** — Sander's correction; the checker calls it an
-   English calque no Venezuelan would produce and prefers "¡Que tengas un buen
-   día!" / "¡Feliz día!". Kept as Sander set it; her judgment settles it.
-2. **"hoi" accepted as a farewell for doei** — Sander's addition; the checker
-   says hoi is a greeting ("hoi hoi" as farewell is kept either way). Kept as
-   Sander set it; he decides.
-3. **"leven" removed from wonen's accepted answers** — this one was applied
-   against Sander's addition, because accepting it trains "Ik leef in
-   Amsterdam"; the vivir = wonen/leven split now sits in the word card's note
-   instead. Revert if he disagrees.
+The checker challenged three of Sander's own corrections. Settled 14 November:
+
+1. **"ten un buen día"** stays the main translation: it is what she says.
+   "¡Que tengas un buen día!" and "¡Feliz día!" stay accepted. The checker's
+   "no Venezuelan would say this" was wrong, which is the reason it proposes
+   and never decides.
+2. **"hoi" as a farewell** stays accepted: Sander confirms it is used that way.
+3. **"leven" removed from wonen's accepted answers** stands: no objection, and
+   it matches his own later teaching ("wonen = vivir, lugar").
+
+Score for the checker on contested points: 1 of 3. On uncontested ones: 5 of 5.

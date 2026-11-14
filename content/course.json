@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "about": "Course index: which units exist, in order, and which voice each dialogue speaker uses. The app and the audio build read this file first.",
+  "sections": [
+    {"id": 1, "level": "A0", "title_es": "Sonidos y supervivencia"},
+    {"id": 2, "level": "A1.1", "title_es": "Yo y mi mundo"},
+    {"id": 3, "level": "A1.2", "title_es": "Día a día"},
+    {"id": 4, "level": "A1-A2", "title_es": "Fuera de casa"},
+    {"id": 5, "level": "A2.1", "title_es": "Pasado y planes"},
+    {"id": 6, "level": "A2.2", "title_es": "Vivir en Holanda"}
+  ],
+  "units": ["u01", "u02"],
+  "voices": {"F": "nl-NL-Wavenet-F", "G": "nl-NL-Wavenet-G"},
+  "speakers": {"Anna": "F", "Emma": "F", "María": "F", "Tom": "G", "Daan": "G", "Luis": "G"}
+}
