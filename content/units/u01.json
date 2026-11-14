@@ -1,0 +1,776 @@
+{
+  "id": "u01",
+  "section": 1,
+  "title_es": "Hola, ¿cómo te llamas?",
+  "goals_es": [
+    "Saludar y despedirte",
+    "Decir cómo te llamas y preguntar el nombre",
+    "Preguntar cómo está alguien",
+    "Distinguir jij (tú) y u (usted)"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **g** suena como la j de «jamón», pero más fuerte: **g**oed, **g**oedemorgen, da**g**.\n- **oe** suena como la u española: g**oe**d, h**oe**, d**oe**i.\n- **ij** suena parecido a «ei»: j**ij**, m**ij**n, f**ij**ne.\n- **h** siempre se pronuncia, como una j muy suave: **h**allo, **h**oe, **h**eet.\n- **aa** y **ee** son vocales largas: n**aa**m, g**aa**t, h**ee**t, n**ee**.\n\n## El pronombre no se puede omitir\n\nEn español dices «Soy Anna». En neerlandés siempre hace falta el pronombre: **Ik ben Anna**.\n\n## jij, je y u\n\n- **jij**: tú, con énfasis.\n- **je**: tú, sin énfasis. Es lo más común al hablar.\n- **u**: usted.\n\n## El verbo zijn (ser, estar)\n\n- ik **ben**\n- jij **bent**, u **bent**\n- Mijn naam **is** Tom.\n\n## Preguntas\n\nEl verbo va primero y no hay signo de apertura: **Ben jij Tom?**\n\nCuando jij o je va después del verbo, el verbo pierde la -t: jij ben**t**, pero **ben** jij?\n\n## Hoe gaat het?\n\nLiteralmente «¿cómo va?». Se responde **Goed, dank je** y se devuelve la pregunta con **En met jou?** (con usted: **En met u?**).",
+  "lessons": [
+    {
+      "id": "u01l1",
+      "title_es": "Hola, soy…",
+      "sentences": [
+        {
+          "id": "u01l1s01",
+          "nl": "Hallo!",
+          "es": "¡Hola!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l1s02",
+          "nl": "Ik ben Anna.",
+          "es": "Soy Anna.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo soy Anna."
+          ]
+        },
+        {
+          "id": "u01l1s03",
+          "nl": "Hallo, ik ben Tom.",
+          "es": "Hola, soy Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hola, yo soy Tom."
+          ]
+        },
+        {
+          "id": "u01l1s04",
+          "nl": "Ja.",
+          "es": "Sí.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l1s05",
+          "nl": "Nee.",
+          "es": "No.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l1s06",
+          "nl": "Ik ben Emma.",
+          "es": "Soy Emma.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo soy Emma."
+          ]
+        },
+        {
+          "id": "u01l1s07",
+          "nl": "Ja, ik ben Anna.",
+          "es": "Sí, soy Anna.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, yo soy Anna."
+          ]
+        },
+        {
+          "id": "u01l1s08",
+          "nl": "Nee, ik ben Tom.",
+          "es": "No, soy Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, yo soy Tom."
+          ]
+        },
+        {
+          "id": "u01l1s09",
+          "nl": "Anna en Tom.",
+          "es": "Anna y Tom.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l1s10",
+          "nl": "Hallo, Anna!",
+          "es": "¡Hola, Anna!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l1s11",
+          "nl": "Ja en nee.",
+          "es": "Sí y no.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u01l2",
+      "title_es": "¿Quién eres?",
+      "sentences": [
+        {
+          "id": "u01l2s01",
+          "nl": "Jij bent Tom.",
+          "es": "Tú eres Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Eres Tom."
+          ]
+        },
+        {
+          "id": "u01l2s02",
+          "nl": "Ben jij Anna?",
+          "es": "¿Eres Anna?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Tú eres Anna?",
+            "¿Eres tú Anna?"
+          ]
+        },
+        {
+          "id": "u01l2s03",
+          "nl": "Wie ben jij?",
+          "es": "¿Quién eres?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Quién eres tú?",
+            "¿Tú quién eres?"
+          ]
+        },
+        {
+          "id": "u01l2s04",
+          "nl": "Goedemorgen!",
+          "es": "¡Buenos días!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Buen día!"
+          ]
+        },
+        {
+          "id": "u01l2s05",
+          "nl": "Goedenavond!",
+          "es": "¡Buenas noches!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Buenas tardes!"
+          ]
+        },
+        {
+          "id": "u01l2s06",
+          "nl": "Goedemorgen, ik ben Emma.",
+          "es": "Buenos días, soy Emma.",
+          "alt_nl": [],
+          "alt_es": [
+            "Buenos días, yo soy Emma."
+          ]
+        },
+        {
+          "id": "u01l2s07",
+          "nl": "Ja, ik ben Daan.",
+          "es": "Sí, soy Daan.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, yo soy Daan."
+          ]
+        },
+        {
+          "id": "u01l2s08",
+          "nl": "Ik ook.",
+          "es": "Yo también.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l2s09",
+          "nl": "Jij ook?",
+          "es": "¿Tú también?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l2s10",
+          "nl": "Nee, ik ben Luis.",
+          "es": "No, soy Luis.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, yo soy Luis."
+          ]
+        },
+        {
+          "id": "u01l2s11",
+          "nl": "Goedenavond, Tom!",
+          "es": "¡Buenas noches, Tom!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Buenas tardes, Tom!"
+          ]
+        },
+        {
+          "id": "u01l2s12",
+          "nl": "En wie ben jij?",
+          "es": "¿Y tú quién eres?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Y quién eres tú?",
+            "¿Y quién eres?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u01l3",
+      "title_es": "¿Cómo te llamas?",
+      "sentences": [
+        {
+          "id": "u01l3s01",
+          "nl": "Hoe heet jij?",
+          "es": "¿Cómo te llamas?",
+          "alt_nl": [
+            "Hoe heet je?"
+          ],
+          "alt_es": [
+            "¿Cómo te llamas tú?",
+            "¿Tú cómo te llamas?"
+          ]
+        },
+        {
+          "id": "u01l3s02",
+          "nl": "Hoe heet je?",
+          "es": "¿Cómo te llamas?",
+          "alt_nl": [
+            "Hoe heet jij?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u01l3s03",
+          "nl": "Ik heet Anna.",
+          "es": "Me llamo Anna.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo me llamo Anna."
+          ]
+        },
+        {
+          "id": "u01l3s04",
+          "nl": "Mijn naam is Tom.",
+          "es": "Mi nombre es Tom.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l3s05",
+          "nl": "Heet jij Daan?",
+          "es": "¿Te llamas Daan?",
+          "alt_nl": [
+            "Heet je Daan?"
+          ],
+          "alt_es": [
+            "¿Tú te llamas Daan?"
+          ]
+        },
+        {
+          "id": "u01l3s06",
+          "nl": "Nee, ik heet Luis.",
+          "es": "No, me llamo Luis.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, yo me llamo Luis."
+          ]
+        },
+        {
+          "id": "u01l3s07",
+          "nl": "Jij heet Emma.",
+          "es": "Te llamas Emma.",
+          "alt_nl": [
+            "Je heet Emma."
+          ],
+          "alt_es": [
+            "Tú te llamas Emma."
+          ]
+        },
+        {
+          "id": "u01l3s08",
+          "nl": "Hallo, hoe heet je?",
+          "es": "Hola, ¿cómo te llamas?",
+          "alt_nl": [
+            "Hallo, hoe heet jij?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u01l3s09",
+          "nl": "Mijn naam is María.",
+          "es": "Mi nombre es María.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l3s10",
+          "nl": "Ben je Tom?",
+          "es": "¿Eres Tom?",
+          "alt_nl": [
+            "Ben jij Tom?"
+          ],
+          "alt_es": [
+            "¿Tú eres Tom?"
+          ]
+        },
+        {
+          "id": "u01l3s11",
+          "nl": "Ja, mijn naam is Tom.",
+          "es": "Sí, mi nombre es Tom.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u01l4",
+      "title_es": "¿Cómo estás?",
+      "sentences": [
+        {
+          "id": "u01l4s01",
+          "nl": "Hoe gaat het?",
+          "es": "¿Cómo estás?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué tal?",
+            "¿Cómo te va?",
+            "¿Cómo va todo?"
+          ]
+        },
+        {
+          "id": "u01l4s02",
+          "nl": "Goed, dank je.",
+          "es": "Bien, gracias.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l4s03",
+          "nl": "Het gaat goed.",
+          "es": "Estoy bien.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me va bien.",
+            "Todo va bien.",
+            "Todo bien."
+          ]
+        },
+        {
+          "id": "u01l4s04",
+          "nl": "En met jou?",
+          "es": "¿Y tú?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Y a ti?"
+          ]
+        },
+        {
+          "id": "u01l4s05",
+          "nl": "Hoe gaat het met jou?",
+          "es": "¿Cómo estás tú?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo estás?",
+            "¿Cómo te va?",
+            "¿Cómo te va a ti?"
+          ]
+        },
+        {
+          "id": "u01l4s06",
+          "nl": "Ook goed, dank je.",
+          "es": "También bien, gracias.",
+          "alt_nl": [],
+          "alt_es": [
+            "Bien también, gracias."
+          ]
+        },
+        {
+          "id": "u01l4s07",
+          "nl": "Hallo Tom, hoe gaat het?",
+          "es": "Hola, Tom, ¿cómo estás?",
+          "alt_nl": [],
+          "alt_es": [
+            "Hola, Tom, ¿qué tal?",
+            "Hola, Tom, ¿cómo te va?"
+          ]
+        },
+        {
+          "id": "u01l4s08",
+          "nl": "Dank je!",
+          "es": "¡Gracias!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l4s09",
+          "nl": "Goed!",
+          "es": "¡Bien!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Bueno!"
+          ]
+        },
+        {
+          "id": "u01l4s10",
+          "nl": "Hoe gaat het met Anna?",
+          "es": "¿Cómo está Anna?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo le va a Anna?"
+          ]
+        },
+        {
+          "id": "u01l4s11",
+          "nl": "Het gaat goed met Anna.",
+          "es": "Anna está bien.",
+          "alt_nl": [
+            "Met Anna gaat het goed."
+          ],
+          "alt_es": [
+            "A Anna le va bien."
+          ]
+        },
+        {
+          "id": "u01l4s12",
+          "nl": "Nee, dank je.",
+          "es": "No, gracias.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u01l5",
+      "title_es": "Hasta mañana",
+      "sentences": [
+        {
+          "id": "u01l5s01",
+          "nl": "Doei!",
+          "es": "¡Chao!",
+          "alt_nl": [
+            "Dag!"
+          ],
+          "alt_es": [
+            "¡Adiós!"
+          ]
+        },
+        {
+          "id": "u01l5s02",
+          "nl": "Dag!",
+          "es": "¡Adiós!",
+          "alt_nl": [
+            "Doei!"
+          ],
+          "alt_es": [
+            "¡Hola!",
+            "¡Chao!"
+          ]
+        },
+        {
+          "id": "u01l5s03",
+          "nl": "Tot ziens!",
+          "es": "¡Nos vemos!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Hasta luego!",
+            "¡Adiós!",
+            "¡Hasta la vista!"
+          ]
+        },
+        {
+          "id": "u01l5s04",
+          "nl": "Tot morgen!",
+          "es": "¡Hasta mañana!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l5s05",
+          "nl": "Tot later!",
+          "es": "¡Hasta luego!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Hasta más tarde!",
+            "¡Nos vemos luego!"
+          ]
+        },
+        {
+          "id": "u01l5s06",
+          "nl": "Fijne dag!",
+          "es": "¡Que tengas un buen día!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Feliz día!",
+            "¡Buen día!",
+            "¡Que tengas buen día!"
+          ]
+        },
+        {
+          "id": "u01l5s07",
+          "nl": "Doei, tot morgen!",
+          "es": "¡Chao, hasta mañana!",
+          "alt_nl": [
+            "Dag, tot morgen!"
+          ],
+          "alt_es": [
+            "¡Adiós, hasta mañana!"
+          ]
+        },
+        {
+          "id": "u01l5s08",
+          "nl": "Dag Anna, tot ziens!",
+          "es": "Adiós, Anna, ¡nos vemos!",
+          "alt_nl": [],
+          "alt_es": [
+            "Adiós, Anna, ¡hasta luego!",
+            "Chao, Anna, ¡nos vemos!"
+          ]
+        },
+        {
+          "id": "u01l5s09",
+          "nl": "Dank je, fijne dag!",
+          "es": "Gracias, ¡que tengas un buen día!",
+          "alt_nl": [],
+          "alt_es": [
+            "Gracias, ¡feliz día!",
+            "Gracias, ¡buen día!"
+          ]
+        },
+        {
+          "id": "u01l5s10",
+          "nl": "Tot morgen, Tom!",
+          "es": "¡Hasta mañana, Tom!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l5s11",
+          "nl": "Dag Emma, hoe gaat het?",
+          "es": "Hola, Emma, ¿cómo estás?",
+          "alt_nl": [
+            "Hallo Emma, hoe gaat het?"
+          ],
+          "alt_es": [
+            "Hola, Emma, ¿qué tal?",
+            "Hola, Emma, ¿cómo te va?"
+          ]
+        },
+        {
+          "id": "u01l5s12",
+          "nl": "Doei, Luis!",
+          "es": "¡Chao, Luis!",
+          "alt_nl": [
+            "Dag, Luis!"
+          ],
+          "alt_es": [
+            "¡Adiós, Luis!"
+          ]
+        },
+        {
+          "id": "u01l5s13",
+          "nl": "Tot later, Emma!",
+          "es": "¡Hasta luego, Emma!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Nos vemos luego, Emma!",
+            "¡Hasta más tarde, Emma!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u01l6",
+      "title_es": "De usted",
+      "sentences": [
+        {
+          "id": "u01l6s01",
+          "nl": "Goedemiddag!",
+          "es": "¡Buenas tardes!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s02",
+          "nl": "Goedemiddag, mevrouw.",
+          "es": "Buenas tardes, señora.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s03",
+          "nl": "Goedemorgen, meneer.",
+          "es": "Buenos días, señor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s04",
+          "nl": "Hoe heet u?",
+          "es": "¿Cómo se llama usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo se llama?",
+            "¿Usted cómo se llama?"
+          ]
+        },
+        {
+          "id": "u01l6s05",
+          "nl": "Hoe gaat het met u?",
+          "es": "¿Cómo está usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo está?",
+            "¿Cómo le va?"
+          ]
+        },
+        {
+          "id": "u01l6s06",
+          "nl": "Bent u mevrouw Jansen?",
+          "es": "¿Es usted la señora Jansen?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Usted es la señora Jansen?"
+          ]
+        },
+        {
+          "id": "u01l6s07",
+          "nl": "Ja, ik ben mevrouw Jansen.",
+          "es": "Sí, soy la señora Jansen.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, yo soy la señora Jansen."
+          ]
+        },
+        {
+          "id": "u01l6s08",
+          "nl": "Dank u, meneer.",
+          "es": "Gracias, señor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s09",
+          "nl": "Goed, dank u.",
+          "es": "Bien, gracias.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s10",
+          "nl": "En met u?",
+          "es": "¿Y usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Y a usted?"
+          ]
+        },
+        {
+          "id": "u01l6s11",
+          "nl": "Welkom, mevrouw Bakker!",
+          "es": "¡Bienvenida, señora Bakker!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s12",
+          "nl": "U bent meneer Bakker.",
+          "es": "Usted es el señor Bakker.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u01l6s13",
+          "nl": "Tot ziens, meneer Jansen.",
+          "es": "Hasta luego, señor Jansen.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nos vemos, señor Jansen.",
+            "Adiós, señor Jansen."
+          ]
+        },
+        {
+          "id": "u01l6s14",
+          "nl": "Welkom!",
+          "es": "¡Bienvenido!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Bienvenida!",
+            "¡Bienvenidos!",
+            "¡Bienvenidas!"
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "En la clase de neerlandés",
+    "lines": [
+      {
+        "speaker": "Emma",
+        "nl": "Hallo! Ik ben Emma. Hoe heet jij?",
+        "es": "¡Hola! Soy Emma. ¿Cómo te llamas?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Hallo, Emma. Ik heet Luis.",
+        "es": "Hola, Emma. Me llamo Luis."
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Hoe gaat het, Luis?",
+        "es": "¿Cómo estás, Luis?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Goed, dank je. En met jou?",
+        "es": "Bien, gracias. ¿Y tú?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Ook goed, dank je.",
+        "es": "También bien, gracias."
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Tot morgen, Emma!",
+        "es": "¡Hasta mañana, Emma!"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Doei, fijne dag!",
+        "es": "¡Chao, que tengas un buen día!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cómo se llama el chico?",
+        "options_es": [
+          "Luis",
+          "Tom",
+          "Daan"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Cómo está Luis?",
+        "options_es": [
+          "Mal",
+          "Bien",
+          "No lo dice"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Cuándo se vuelven a ver?",
+        "options_es": [
+          "Hoy en la noche",
+          "No lo dicen",
+          "Mañana"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}
