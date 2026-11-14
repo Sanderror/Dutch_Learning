@@ -22,7 +22,9 @@ function eachLesson(fn) {
 }
 
 test('course loads: lessons in order, new words known per lesson', () => {
-  assert.equal(course.lessonOrder.length, 12);
+  assert.equal(course.lessonOrder.length, courseJson.units.length * 6);
+  assert.ok(course.lessonOrder.length >= 36, 'units 1 to 6 are there');
+  assert.deepEqual([...course.lessonOrder].sort(), course.lessonOrder, 'lesson ids sort in course order');
   assert.deepEqual(course.newEntries('u01l1').map((e) => e.id), ['hallo', 'ik', 'zijn', 'ja', 'nee', 'en']);
   assert.ok(course.formsUpTo('u01l1').has('ben'));
   assert.ok(!course.formsUpTo('u01l1').has('bent'), 'bent arrives in lesson 2');

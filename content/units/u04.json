@@ -1,0 +1,988 @@
+{
+  "id": "u04",
+  "section": 1,
+  "title_es": "Las cosas: de, het, een",
+  "goals_es": [
+    "Nombrar cosas de la casa y de todos los días",
+    "Usar los artículos de, het y een",
+    "Describir algo con groot, klein, mooi y nieuw",
+    "Decir lo que tienes con hebben",
+    "Decir de quién es algo con van"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **eu** no existe en español: di «e» con los labios redondeados como para una «o»: d**eu**r, sl**eu**tel.\n- **ei** suena igual que **ij**: kl**ei**n rima con m**ij**n. También t**ij**d.\n- La **d** al final de una palabra suena como t: hon**d** («hont»), be**d** («bet»), gel**d**, tij**d**.\n- **ieuw** suena como «iu»: n**ieuw**.\n- **oo** es una o larga: gr**oo**t. Recuerda que **oe** es la u española (b**oe**k, st**oe**l) y que **ui** es el sonido de h**ui**s.\n\n## de, het y een\n\nEl neerlandés tiene dos artículos para «el, la»: **de** y **het**. No siguen el género del español.\n\n- **de** hond (el perro), **de** tafel (la mesa), **de** auto (el carro)\n- **het** huis (la casa), **het** boek (el libro), **het** bed (la cama)\n\nNo hay una regla segura: aprende cada palabra con su artículo. La mayoría de las palabras llevan **de**.\n\n**een** = un, una, y sirve para todas las palabras: **een** hond, **een** huis.\n\nPara negar una palabra con een se usa **geen**: Dat is **geen** kat. Ik heb **geen** auto.\n\n## deze, die, dit y dat\n\n- Con palabras de **de**: **deze** (este, esta) y **die** (ese, esa). **Deze** fiets, **die** hond.\n- Con palabras de **het**: **dit** (este, esta) y **dat** (ese, esa). **Dit** boek, **dat** huis.\n- Para presentar o señalar algo se usa siempre dit o dat: **Dit** is mijn fiets. **Dat** is een hond.\n\n## El adjetivo después de is\n\nDespués de **is** el adjetivo no cambia nunca: De hond is **groot**. Het huis is **groot**.\n\n- **heel** = muy: heel groot.\n- **te** = demasiado: te groot.\n- **Wat mooi!** = ¡Qué bonito!\n\n## El verbo hebben (tener)\n\n- ik **heb**\n- jij **hebt** (en pregunta: **heb** jij?)\n- u **heeft**\n- hij **heeft**, zij **heeft**\n\nIk heb een fiets. Heb jij een auto? Zij heeft geen telefoon.\n\n## ¿De quién es? van\n\n- **van** + nombre: de jas **van** Tom, het huis **van** Anna.\n- **van mij** = mío, mía. **van jou** = tuyo, tuya.\n- **Van wie is…?** = ¿De quién es…?\n\nDe tas is **van mij**. Is dit boek **van jou**?\n",
+  "lessons": [
+    {
+      "id": "u04l1",
+      "title_es": "Un perro y un gato",
+      "sentences": [
+        {
+          "id": "u04l1s01",
+          "nl": "Dat is een hond.",
+          "es": "Ese es un perro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Eso es un perro.",
+            "Es un perro."
+          ]
+        },
+        {
+          "id": "u04l1s02",
+          "nl": "Dit is een kat.",
+          "es": "Este es un gato.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esto es un gato.",
+            "Esta es una gata.",
+            "Es un gato."
+          ]
+        },
+        {
+          "id": "u04l1s03",
+          "nl": "De hond heet Max.",
+          "es": "El perro se llama Max.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l1s04",
+          "nl": "Kijk, een hond!",
+          "es": "¡Mira, un perro!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l1s05",
+          "nl": "Is dat een kat?",
+          "es": "¿Ese es un gato?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Eso es un gato?",
+            "¿Es un gato?",
+            "¿Es eso un gato?",
+            "¿Es ese un gato?"
+          ]
+        },
+        {
+          "id": "u04l1s06",
+          "nl": "Nee, dat is geen kat.",
+          "es": "No, ese no es un gato.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, eso no es un gato.",
+            "No, no es un gato."
+          ]
+        },
+        {
+          "id": "u04l1s07",
+          "nl": "De kat is hier.",
+          "es": "El gato está aquí.",
+          "alt_nl": [],
+          "alt_es": [
+            "El gato está acá.",
+            "La gata está aquí.",
+            "La gata está acá."
+          ]
+        },
+        {
+          "id": "u04l1s08",
+          "nl": "Waar is de hond?",
+          "es": "¿Dónde está el perro?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l1s09",
+          "nl": "Kijk, daar is de kat!",
+          "es": "¡Mira, allá está el gato!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Mira, allí está el gato!",
+            "¡Mira, ahí está el gato!",
+            "¡Mira, el gato está allá!",
+            "¡Mira, el gato está allí!",
+            "¡Mira, el gato está ahí!"
+          ]
+        },
+        {
+          "id": "u04l1s10",
+          "nl": "Een hond en een kat.",
+          "es": "Un perro y un gato.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l1s11",
+          "nl": "De hond is niet hier.",
+          "es": "El perro no está aquí.",
+          "alt_nl": [
+            "De hond is hier niet."
+          ],
+          "alt_es": [
+            "El perro no está acá."
+          ]
+        },
+        {
+          "id": "u04l1s12",
+          "nl": "Hoe heet de kat?",
+          "es": "¿Cómo se llama el gato?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo se llama la gata?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04l2",
+      "title_es": "La casa y el libro",
+      "sentences": [
+        {
+          "id": "u04l2s01",
+          "nl": "Dit is het huis.",
+          "es": "Esta es la casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es la casa."
+          ]
+        },
+        {
+          "id": "u04l2s02",
+          "nl": "Dat is een boek.",
+          "es": "Ese es un libro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Eso es un libro.",
+            "Es un libro."
+          ]
+        },
+        {
+          "id": "u04l2s03",
+          "nl": "Het boek is hier.",
+          "es": "El libro está aquí.",
+          "alt_nl": [],
+          "alt_es": [
+            "El libro está acá."
+          ]
+        },
+        {
+          "id": "u04l2s04",
+          "nl": "De auto is daar.",
+          "es": "El carro está allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "El carro está allí.",
+            "El carro está ahí.",
+            "El auto está allá.",
+            "El auto está allí.",
+            "El auto está ahí.",
+            "El coche está allá.",
+            "El coche está allí.",
+            "El coche está ahí."
+          ]
+        },
+        {
+          "id": "u04l2s05",
+          "nl": "Is dat jouw auto?",
+          "es": "¿Ese es tu carro?",
+          "alt_nl": [
+            "Is dat je auto?"
+          ],
+          "alt_es": [
+            "¿Ese es tu auto?",
+            "¿Ese es tu coche?",
+            "¿Es ese tu carro?",
+            "¿Es ese tu auto?",
+            "¿Es ese tu coche?",
+            "¿Es tu carro?",
+            "¿Es tu auto?",
+            "¿Es tu coche?"
+          ]
+        },
+        {
+          "id": "u04l2s06",
+          "nl": "Nee, dat is niet mijn auto.",
+          "es": "No, ese no es mi carro.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, ese no es mi auto.",
+            "No, ese no es mi coche.",
+            "No, no es mi carro.",
+            "No, no es mi auto.",
+            "No, no es mi coche."
+          ]
+        },
+        {
+          "id": "u04l2s07",
+          "nl": "Waar is het boek?",
+          "es": "¿Dónde está el libro?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l2s08",
+          "nl": "Dit is mijn huis.",
+          "es": "Esta es mi casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es mi casa."
+          ]
+        },
+        {
+          "id": "u04l2s09",
+          "nl": "Het huis is in Utrecht.",
+          "es": "La casa está en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "La casa queda en Utrecht."
+          ]
+        },
+        {
+          "id": "u04l2s10",
+          "nl": "Dat is een huis.",
+          "es": "Esa es una casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Eso es una casa.",
+            "Es una casa."
+          ]
+        },
+        {
+          "id": "u04l2s11",
+          "nl": "De auto is niet hier.",
+          "es": "El carro no está aquí.",
+          "alt_nl": [
+            "De auto is hier niet."
+          ],
+          "alt_es": [
+            "El carro no está acá.",
+            "El auto no está aquí.",
+            "El auto no está acá.",
+            "El coche no está aquí.",
+            "El coche no está acá."
+          ]
+        },
+        {
+          "id": "u04l2s12",
+          "nl": "Wat is dat? Een boek?",
+          "es": "¿Qué es eso? ¿Un libro?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l2s13",
+          "nl": "Is dit het boek?",
+          "es": "¿Este es el libro?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es este el libro?",
+            "¿Es el libro?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04l3",
+      "title_es": "Grande y pequeño",
+      "sentences": [
+        {
+          "id": "u04l3s01",
+          "nl": "De hond is groot.",
+          "es": "El perro es grande.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l3s02",
+          "nl": "De kat is klein.",
+          "es": "El gato es pequeño.",
+          "alt_nl": [],
+          "alt_es": [
+            "El gato es chiquito.",
+            "El gato es chico.",
+            "La gata es pequeña.",
+            "La gata es chiquita."
+          ]
+        },
+        {
+          "id": "u04l3s03",
+          "nl": "Het huis is mooi.",
+          "es": "La casa es bonita.",
+          "alt_nl": [],
+          "alt_es": [
+            "La casa es linda.",
+            "La casa es hermosa.",
+            "La casa es bella.",
+            "La casa está bonita.",
+            "La casa está linda."
+          ]
+        },
+        {
+          "id": "u04l3s04",
+          "nl": "Wat mooi!",
+          "es": "¡Qué bonito!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué lindo!",
+            "¡Qué bonita!",
+            "¡Qué linda!",
+            "¡Qué bello!",
+            "¡Qué hermoso!"
+          ]
+        },
+        {
+          "id": "u04l3s05",
+          "nl": "Mijn auto is nieuw.",
+          "es": "Mi carro es nuevo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi auto es nuevo.",
+            "Mi coche es nuevo."
+          ]
+        },
+        {
+          "id": "u04l3s06",
+          "nl": "Is het boek nieuw?",
+          "es": "¿El libro es nuevo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es nuevo el libro?"
+          ]
+        },
+        {
+          "id": "u04l3s07",
+          "nl": "Nee, het boek is oud.",
+          "es": "No, el libro es viejo.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, el libro está viejo."
+          ]
+        },
+        {
+          "id": "u04l3s08",
+          "nl": "Het huis is te klein.",
+          "es": "La casa es demasiado pequeña.",
+          "alt_nl": [],
+          "alt_es": [
+            "La casa es demasiado chiquita."
+          ]
+        },
+        {
+          "id": "u04l3s09",
+          "nl": "De auto is te groot.",
+          "es": "El carro es demasiado grande.",
+          "alt_nl": [],
+          "alt_es": [
+            "El auto es demasiado grande.",
+            "El coche es demasiado grande."
+          ]
+        },
+        {
+          "id": "u04l3s10",
+          "nl": "Dat huis is heel groot.",
+          "es": "Esa casa es muy grande.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aquella casa es muy grande."
+          ]
+        },
+        {
+          "id": "u04l3s11",
+          "nl": "Die hond is niet klein.",
+          "es": "Ese perro no es pequeño.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ese perro no es chiquito.",
+            "Aquel perro no es pequeño.",
+            "Aquel perro no es chiquito."
+          ]
+        },
+        {
+          "id": "u04l3s12",
+          "nl": "Jouw huis is heel mooi.",
+          "es": "Tu casa es muy bonita.",
+          "alt_nl": [
+            "Je huis is heel mooi."
+          ],
+          "alt_es": [
+            "Tu casa es muy linda.",
+            "Tu casa es muy hermosa.",
+            "Tu casa es muy bella.",
+            "Tu casa está muy bonita.",
+            "Tu casa está muy linda."
+          ]
+        },
+        {
+          "id": "u04l3s13",
+          "nl": "Dit boek is nieuw en mooi.",
+          "es": "Este libro es nuevo y bonito.",
+          "alt_nl": [],
+          "alt_es": [
+            "Este libro es nuevo y lindo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04l4",
+      "title_es": "En casa",
+      "sentences": [
+        {
+          "id": "u04l4s01",
+          "nl": "Dit is mijn fiets.",
+          "es": "Esta es mi bicicleta.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esta es mi bici.",
+            "Es mi bicicleta.",
+            "Es mi bici."
+          ]
+        },
+        {
+          "id": "u04l4s02",
+          "nl": "De fiets is nieuw.",
+          "es": "La bicicleta es nueva.",
+          "alt_nl": [],
+          "alt_es": [
+            "La bici es nueva."
+          ]
+        },
+        {
+          "id": "u04l4s03",
+          "nl": "Dat is een tafel.",
+          "es": "Esa es una mesa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Eso es una mesa.",
+            "Es una mesa."
+          ]
+        },
+        {
+          "id": "u04l4s04",
+          "nl": "De tafel is groot.",
+          "es": "La mesa es grande.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l4s05",
+          "nl": "Deze stoel is klein.",
+          "es": "Esta silla es pequeña.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esta silla es chiquita."
+          ]
+        },
+        {
+          "id": "u04l4s06",
+          "nl": "Waar is de stoel?",
+          "es": "¿Dónde está la silla?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l4s07",
+          "nl": "Het bed is te klein.",
+          "es": "La cama es demasiado pequeña.",
+          "alt_nl": [],
+          "alt_es": [
+            "La cama es demasiado chiquita."
+          ]
+        },
+        {
+          "id": "u04l4s08",
+          "nl": "Dit bed is heel goed.",
+          "es": "Esta cama es muy buena.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esta cama está muy buena."
+          ]
+        },
+        {
+          "id": "u04l4s09",
+          "nl": "De deur is daar.",
+          "es": "La puerta está allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "La puerta está allí.",
+            "La puerta está ahí."
+          ]
+        },
+        {
+          "id": "u04l4s10",
+          "nl": "Die deur is oud.",
+          "es": "Esa puerta es vieja.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aquella puerta es vieja.",
+            "Esa puerta está vieja."
+          ]
+        },
+        {
+          "id": "u04l4s11",
+          "nl": "Een tafel en een stoel.",
+          "es": "Una mesa y una silla.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l4s12",
+          "nl": "Is dat jouw fiets?",
+          "es": "¿Esa es tu bicicleta?",
+          "alt_nl": [
+            "Is dat je fiets?"
+          ],
+          "alt_es": [
+            "¿Esa es tu bici?",
+            "¿Es esa tu bicicleta?",
+            "¿Es esa tu bici?",
+            "¿Es tu bicicleta?",
+            "¿Es tu bici?"
+          ]
+        },
+        {
+          "id": "u04l4s13",
+          "nl": "Mijn fiets is oud, maar goed.",
+          "es": "Mi bicicleta es vieja, pero buena.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi bici es vieja, pero buena.",
+            "Mi bicicleta está vieja, pero buena.",
+            "Mi bici está vieja, pero buena."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04l5",
+      "title_es": "Tengo una bicicleta",
+      "sentences": [
+        {
+          "id": "u04l5s01",
+          "nl": "Ik heb een fiets.",
+          "es": "Tengo una bicicleta.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tengo una bici.",
+            "Yo tengo una bicicleta.",
+            "Yo tengo una bici."
+          ]
+        },
+        {
+          "id": "u04l5s02",
+          "nl": "Heb jij een auto?",
+          "es": "¿Tienes carro?",
+          "alt_nl": [
+            "Heb je een auto?"
+          ],
+          "alt_es": [
+            "¿Tienes auto?",
+            "¿Tienes coche?",
+            "¿Tienes un carro?",
+            "¿Tienes un auto?",
+            "¿Tienes un coche?",
+            "¿Tú tienes carro?",
+            "¿Tú tienes auto?",
+            "¿Tú tienes coche?",
+            "¿Tú tienes un carro?",
+            "¿Tú tienes un auto?",
+            "¿Tú tienes un coche?"
+          ]
+        },
+        {
+          "id": "u04l5s03",
+          "nl": "Nee, ik heb geen auto.",
+          "es": "No, no tengo carro.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, no tengo auto.",
+            "No, no tengo coche.",
+            "No, no tengo un carro.",
+            "No, no tengo un auto.",
+            "No, no tengo un coche.",
+            "No, yo no tengo carro.",
+            "No, yo no tengo auto.",
+            "No, yo no tengo coche."
+          ]
+        },
+        {
+          "id": "u04l5s04",
+          "nl": "Jij hebt een hond en een kat.",
+          "es": "Tienes un perro y un gato.",
+          "alt_nl": [
+            "Je hebt een hond en een kat."
+          ],
+          "alt_es": [
+            "Tú tienes un perro y un gato."
+          ]
+        },
+        {
+          "id": "u04l5s05",
+          "nl": "Hij heeft een laptop.",
+          "es": "Él tiene una laptop.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tiene una laptop.",
+            "Él tiene un portátil.",
+            "Él tiene una computadora portátil.",
+            "Él tiene una computadora."
+          ]
+        },
+        {
+          "id": "u04l5s06",
+          "nl": "Zij heeft geen telefoon.",
+          "es": "Ella no tiene teléfono.",
+          "alt_nl": [
+            "Ze heeft geen telefoon."
+          ],
+          "alt_es": [
+            "Ella no tiene celular.",
+            "No tiene teléfono.",
+            "No tiene celular.",
+            "Ella no tiene un teléfono.",
+            "Ella no tiene un celular."
+          ]
+        },
+        {
+          "id": "u04l5s07",
+          "nl": "Heeft u een telefoon?",
+          "es": "¿Tiene usted teléfono?",
+          "alt_nl": [
+            "Hebt u een telefoon?"
+          ],
+          "alt_es": [
+            "¿Tiene usted celular?",
+            "¿Tiene teléfono?",
+            "¿Tiene celular?",
+            "¿Usted tiene teléfono?",
+            "¿Usted tiene celular?",
+            "¿Tiene usted un teléfono?",
+            "¿Tiene usted un celular?",
+            "¿Tiene un teléfono?",
+            "¿Tiene un celular?"
+          ]
+        },
+        {
+          "id": "u04l5s08",
+          "nl": "Ik heb geen geld.",
+          "es": "No tengo dinero.",
+          "alt_nl": [],
+          "alt_es": [
+            "No tengo plata.",
+            "Yo no tengo dinero.",
+            "Yo no tengo plata."
+          ]
+        },
+        {
+          "id": "u04l5s09",
+          "nl": "Heb je tijd?",
+          "es": "¿Tienes tiempo?",
+          "alt_nl": [
+            "Heb jij tijd?"
+          ],
+          "alt_es": [
+            "¿Tú tienes tiempo?"
+          ]
+        },
+        {
+          "id": "u04l5s10",
+          "nl": "Nee, ik heb nu geen tijd.",
+          "es": "No, ahora no tengo tiempo.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, no tengo tiempo ahora.",
+            "No, ahorita no tengo tiempo."
+          ]
+        },
+        {
+          "id": "u04l5s11",
+          "nl": "Mijn vriend heeft een auto.",
+          "es": "Mi novio tiene carro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi novio tiene auto.",
+            "Mi novio tiene coche.",
+            "Mi amigo tiene carro.",
+            "Mi amigo tiene auto.",
+            "Mi amigo tiene coche.",
+            "Mi novio tiene un carro.",
+            "Mi novio tiene un auto.",
+            "Mi novio tiene un coche.",
+            "Mi amigo tiene un carro.",
+            "Mi amigo tiene un auto.",
+            "Mi amigo tiene un coche."
+          ]
+        },
+        {
+          "id": "u04l5s12",
+          "nl": "Waar is mijn telefoon?",
+          "es": "¿Dónde está mi teléfono?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está mi celular?"
+          ]
+        },
+        {
+          "id": "u04l5s13",
+          "nl": "Heeft Tom een laptop?",
+          "es": "¿Tom tiene laptop?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Tom tiene una laptop?",
+            "¿Tiene Tom una laptop?",
+            "¿Tiene Tom laptop?"
+          ]
+        },
+        {
+          "id": "u04l5s14",
+          "nl": "Ik heb ook een laptop.",
+          "es": "Yo también tengo una laptop.",
+          "alt_nl": [],
+          "alt_es": [
+            "También tengo una laptop.",
+            "Yo también tengo laptop."
+          ]
+        },
+        {
+          "id": "u04l5s15",
+          "nl": "Heeft hij geld?",
+          "es": "¿Él tiene dinero?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Él tiene plata?",
+            "¿Tiene dinero?",
+            "¿Tiene plata?",
+            "¿Tiene él dinero?",
+            "¿Tiene él plata?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u04l6",
+      "title_es": "¿De quién es?",
+      "sentences": [
+        {
+          "id": "u04l6s01",
+          "nl": "Van wie is deze tas?",
+          "es": "¿De quién es este bolso?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿De quién es esta cartera?",
+            "¿De quién es esta bolsa?",
+            "¿De quién es este morral?"
+          ]
+        },
+        {
+          "id": "u04l6s02",
+          "nl": "De tas is van mij.",
+          "es": "El bolso es mío.",
+          "alt_nl": [],
+          "alt_es": [
+            "La cartera es mía.",
+            "La bolsa es mía.",
+            "El morral es mío."
+          ]
+        },
+        {
+          "id": "u04l6s03",
+          "nl": "Is deze sleutel van jou?",
+          "es": "¿Esta llave es tuya?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es tuya esta llave?",
+            "¿Es esta llave tuya?"
+          ]
+        },
+        {
+          "id": "u04l6s04",
+          "nl": "Ja, de sleutel is van mij.",
+          "es": "Sí, la llave es mía.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l6s05",
+          "nl": "Dat is de jas van Tom.",
+          "es": "Esa es la chaqueta de Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ese es el abrigo de Tom.",
+            "Es la chaqueta de Tom.",
+            "Es el abrigo de Tom."
+          ]
+        },
+        {
+          "id": "u04l6s06",
+          "nl": "Waar is mijn jas?",
+          "es": "¿Dónde está mi chaqueta?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está mi abrigo?"
+          ]
+        },
+        {
+          "id": "u04l6s07",
+          "nl": "Het is van mij.",
+          "es": "Es mío.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es mía.",
+            "Eso es mío."
+          ]
+        },
+        {
+          "id": "u04l6s08",
+          "nl": "Dit is het huis van Anna.",
+          "es": "Esta es la casa de Anna.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es la casa de Anna."
+          ]
+        },
+        {
+          "id": "u04l6s09",
+          "nl": "Is dit boek van jou?",
+          "es": "¿Este libro es tuyo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es tuyo este libro?",
+            "¿Es este libro tuyo?"
+          ]
+        },
+        {
+          "id": "u04l6s10",
+          "nl": "Nee, dat boek is niet van mij.",
+          "es": "No, ese libro no es mío.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u04l6s11",
+          "nl": "De auto van Daan is nieuw.",
+          "es": "El carro de Daan es nuevo.",
+          "alt_nl": [],
+          "alt_es": [
+            "El auto de Daan es nuevo.",
+            "El coche de Daan es nuevo."
+          ]
+        },
+        {
+          "id": "u04l6s12",
+          "nl": "Ik heb de sleutel van het huis.",
+          "es": "Tengo la llave de la casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo la llave de la casa."
+          ]
+        },
+        {
+          "id": "u04l6s13",
+          "nl": "Van wie is die fiets?",
+          "es": "¿De quién es esa bicicleta?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿De quién es esa bici?"
+          ]
+        },
+        {
+          "id": "u04l6s14",
+          "nl": "Deze tas is mooi, maar te klein.",
+          "es": "Este bolso es bonito, pero demasiado pequeño.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esta cartera es bonita, pero demasiado pequeña.",
+            "Esta cartera es bonita, pero demasiado chiquita.",
+            "Esta cartera es linda, pero demasiado pequeña.",
+            "Esta cartera es linda, pero demasiado chiquita.",
+            "Esta bolsa es bonita, pero demasiado pequeña.",
+            "Esta bolsa es bonita, pero demasiado chiquita.",
+            "Esta bolsa es linda, pero demasiado pequeña.",
+            "Esta bolsa es linda, pero demasiado chiquita.",
+            "Este bolso es lindo, pero demasiado pequeño.",
+            "Este bolso es lindo, pero demasiado chiquito.",
+            "Este bolso es bonito, pero demasiado chiquito."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "¿Dónde está mi llave?",
+    "lines": [
+      {
+        "speaker": "Tom",
+        "nl": "Anna, waar is mijn sleutel?",
+        "es": "Anna, ¿dónde está mi llave?"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Kijk, daar is een sleutel. Is dat jouw sleutel?",
+        "es": "Mira, allá hay una llave. ¿Esa es tu llave?"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Nee, dat is de sleutel van de auto.",
+        "es": "No, esa es la llave del carro."
+      },
+      {
+        "speaker": "Anna",
+        "nl": "En deze tas? Van wie is deze tas?",
+        "es": "¿Y este bolso? ¿De quién es este bolso?"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Die tas is van mij. Dank je!",
+        "es": "Ese bolso es mío. ¡Gracias!"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Heb je jouw telefoon en jouw jas?",
+        "es": "¿Tienes tu teléfono y tu chaqueta?"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Ja, ik heb mijn telefoon. Maar waar is mijn jas?",
+        "es": "Sí, tengo mi teléfono. Pero ¿dónde está mi chaqueta?"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Jouw jas is hier. En de sleutel is in jouw jas!",
+        "es": "Tu chaqueta está aquí. ¡Y la llave está en tu chaqueta!"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Heel goed. Dank je, Anna!",
+        "es": "Muy bien. ¡Gracias, Anna!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué busca Tom primero?",
+        "options_es": [
+          "Su llave",
+          "Su teléfono",
+          "Su bolso"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿De quién es el bolso?",
+        "options_es": [
+          "De Anna",
+          "De Tom",
+          "No lo dicen"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Dónde estaba la llave de Tom?",
+        "options_es": [
+          "En el carro",
+          "En su chaqueta",
+          "En el bolso"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

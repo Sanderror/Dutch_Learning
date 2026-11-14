@@ -1,0 +1,1046 @@
+{
+  "id": "u05",
+  "section": 1,
+  "title_es": "En el café",
+  "goals_es": [
+    "Pedir algo de tomar y de comer",
+    "Usar alsjeblieft, alstublieft y dank je wel",
+    "Decir lo que quieres con willen y pedir algo con mogen",
+    "Preguntar el precio y pedir la cuenta",
+    "Decir que tienes hambre o sed"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **uu** no es la u española: di «i» con los labios redondeados. d**uu**r.\n- **eu** de **eu**ro es el mismo sonido de d**eu**r: una «e» con los labios redondeados.\n- **th** en **th**ee es una t normal.\n- En **alsjeblieft** y **alstublieft** la primera l casi no se oye y el acento va al final: alsje**blieft**, alstu**blieft**.\n- **-lijk** al final de una palabra suena «lek», con una e muy breve: smake**lijk**.\n- En koff**ie** el acento va en la primera sílaba: **ko**ffie.\n\n## alsjeblieft y alstublieft\n\nLas dos significan «por favor». **alsjeblieft** va con jij y **alstublieft** va con u.\n\nTambién se dicen al darle algo a alguien, como «aquí tienes» o «aquí tiene». Por eso el mesero dice **Alstublieft** cuando trae el café.\n\nPara dar las gracias: **dank je wel** (con usted: **dank u wel**). Se responde **graag gedaan**.\n\n## graag\n\n- Con un pedido lo hace más amable: Ik wil **graag** een thee = Quisiera un té. Ja, **graag**! = ¡Sí, por favor!\n- Con otro verbo dice que algo te gusta: Ik drink **graag** thee = Me gusta tomar té.\n\n## willen y mogen\n\n- ik **wil**, jij **wilt**, u **wilt**, hij **wil**, zij **wil**. Con hij y zij no lleva -t.\n- ik **mag**, jij **mag**, u **mag**, hij **mag**. Es igual para todos.\n\n**Mag ik…?** es la forma normal y amable de pedir algo: **Mag ik** een koffie? = ¿Me da un café? **Mag ik** de rekening? = ¿Me da la cuenta?\n\n## El segundo verbo va al final\n\nCon willen y mogen, el otro verbo va entero al final de la frase:\n\n- Wat wil je **drinken**?\n- Wil je iets **eten**?\n- Mag ik **betalen**?\n\n## honger y dorst\n\nIgual que en español, el hambre y la sed se «tienen»: Ik **heb** honger. Ik **heb** dorst. Para negar se usa geen: Ik heb **geen** honger.\n\n## Precios\n\n- **Hoeveel kost…?** = ¿Cuánto cuesta…?\n- **euro** no cambia después de un número: drie **euro**, twaalf **euro**.\n- **samen** = en total: Dat is samen zeven euro.\n- **nog een** = otro, otra: nog een koffie.\n",
+  "lessons": [
+    {
+      "id": "u05l1",
+      "title_es": "Por favor y gracias",
+      "sentences": [
+        {
+          "id": "u05l1s01",
+          "nl": "Alsjeblieft!",
+          "es": "¡Aquí tienes!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Por favor!",
+            "¡Toma!",
+            "¡Ten!"
+          ]
+        },
+        {
+          "id": "u05l1s02",
+          "nl": "Dank je wel!",
+          "es": "¡Muchas gracias!",
+          "alt_nl": [
+            "Dankjewel!",
+            "Dank u wel!"
+          ],
+          "alt_es": [
+            "¡Gracias!",
+            "¡Mil gracias!"
+          ]
+        },
+        {
+          "id": "u05l1s03",
+          "nl": "Graag gedaan!",
+          "es": "¡De nada!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Con gusto!",
+            "¡Con mucho gusto!",
+            "¡A la orden!",
+            "¡No hay de qué!",
+            "¡Por nada!"
+          ]
+        },
+        {
+          "id": "u05l1s04",
+          "nl": "Sorry!",
+          "es": "¡Perdón!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Disculpa!",
+            "¡Disculpe!",
+            "¡Lo siento!"
+          ]
+        },
+        {
+          "id": "u05l1s05",
+          "nl": "Geen probleem.",
+          "es": "No hay problema.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ningún problema.",
+            "No es problema.",
+            "Sin problema.",
+            "No hay ningún problema."
+          ]
+        },
+        {
+          "id": "u05l1s06",
+          "nl": "Alstublieft, meneer.",
+          "es": "Aquí tiene, señor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Por favor, señor.",
+            "Tome, señor."
+          ]
+        },
+        {
+          "id": "u05l1s07",
+          "nl": "Dank u wel, mevrouw.",
+          "es": "Muchas gracias, señora.",
+          "alt_nl": [],
+          "alt_es": [
+            "Gracias, señora."
+          ]
+        },
+        {
+          "id": "u05l1s08",
+          "nl": "Sorry, ik spreek geen Nederlands.",
+          "es": "Perdón, no hablo neerlandés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Perdón, no hablo holandés.",
+            "Disculpa, no hablo neerlandés.",
+            "Disculpa, no hablo holandés.",
+            "Disculpe, no hablo neerlandés.",
+            "Disculpe, no hablo holandés.",
+            "Lo siento, no hablo neerlandés.",
+            "Lo siento, no hablo holandés."
+          ]
+        },
+        {
+          "id": "u05l1s09",
+          "nl": "Hier, alsjeblieft.",
+          "es": "Toma, aquí tienes.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aquí tienes.",
+            "Ten, aquí tienes.",
+            "Aquí, por favor.",
+            "Toma."
+          ]
+        },
+        {
+          "id": "u05l1s10",
+          "nl": "Ja, alsjeblieft.",
+          "es": "Sí, por favor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l1s11",
+          "nl": "Nee, dank je wel.",
+          "es": "No, muchas gracias.",
+          "alt_nl": [
+            "Nee, dankjewel."
+          ],
+          "alt_es": [
+            "No, gracias."
+          ]
+        },
+        {
+          "id": "u05l1s12",
+          "nl": "Uw naam, alstublieft?",
+          "es": "¿Su nombre, por favor?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l1s13",
+          "nl": "Sorry, meneer. Spreekt u Engels?",
+          "es": "Disculpe, señor. ¿Habla usted inglés?",
+          "alt_nl": [],
+          "alt_es": [
+            "Perdón, señor. ¿Habla usted inglés?",
+            "Disculpa, señor. ¿Habla usted inglés?",
+            "Disculpe, señor. ¿Habla inglés?",
+            "Perdón, señor. ¿Habla inglés?",
+            "Disculpe, señor. ¿Usted habla inglés?",
+            "Perdón, señor. ¿Usted habla inglés?"
+          ]
+        },
+        {
+          "id": "u05l1s14",
+          "nl": "Geen probleem, graag gedaan!",
+          "es": "No hay problema, ¡de nada!",
+          "alt_nl": [],
+          "alt_es": [
+            "No hay problema, ¡con gusto!",
+            "No hay problema, ¡a la orden!"
+          ]
+        },
+        {
+          "id": "u05l1s15",
+          "nl": "Sorry, dat klopt niet.",
+          "es": "Perdón, eso no es correcto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Disculpa, eso no es correcto.",
+            "Disculpe, eso no es correcto.",
+            "Lo siento, eso no es correcto.",
+            "Perdón, no es correcto.",
+            "Disculpa, no es correcto.",
+            "Disculpe, no es correcto.",
+            "Lo siento, no es correcto.",
+            "Perdón, eso no es así.",
+            "Disculpa, eso no es así.",
+            "Disculpe, eso no es así.",
+            "Lo siento, eso no es así."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05l2",
+      "title_es": "Café, té, agua",
+      "sentences": [
+        {
+          "id": "u05l2s01",
+          "nl": "Een koffie, alsjeblieft.",
+          "es": "Un café, por favor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s02",
+          "nl": "Een thee, alstublieft.",
+          "es": "Un té, por favor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s03",
+          "nl": "Koffie of thee?",
+          "es": "¿Café o té?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s04",
+          "nl": "Koffie met melk.",
+          "es": "Café con leche.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s05",
+          "nl": "Thee zonder suiker.",
+          "es": "Té sin azúcar.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s06",
+          "nl": "Water, alsjeblieft.",
+          "es": "Agua, por favor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s07",
+          "nl": "Met melk en suiker?",
+          "es": "¿Con leche y azúcar?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s08",
+          "nl": "Nee, zonder melk.",
+          "es": "No, sin leche.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s09",
+          "nl": "De koffie is heel goed.",
+          "es": "El café está muy bueno.",
+          "alt_nl": [],
+          "alt_es": [
+            "El café es muy bueno.",
+            "El café está muy bien."
+          ]
+        },
+        {
+          "id": "u05l2s10",
+          "nl": "Hier is het water.",
+          "es": "Aquí está el agua.",
+          "alt_nl": [],
+          "alt_es": [
+            "Acá está el agua."
+          ]
+        },
+        {
+          "id": "u05l2s11",
+          "nl": "Ik heb geen suiker.",
+          "es": "No tengo azúcar.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo no tengo azúcar."
+          ]
+        },
+        {
+          "id": "u05l2s12",
+          "nl": "Is dat thee of koffie?",
+          "es": "¿Eso es té o café?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es té o café?",
+            "¿Es eso té o café?"
+          ]
+        },
+        {
+          "id": "u05l2s13",
+          "nl": "Koffie met suiker, zonder melk.",
+          "es": "Café con azúcar, sin leche.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l2s14",
+          "nl": "Heb je melk?",
+          "es": "¿Tienes leche?",
+          "alt_nl": [
+            "Heb jij melk?"
+          ],
+          "alt_es": [
+            "¿Tú tienes leche?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05l3",
+      "title_es": "¿Qué quieres tomar?",
+      "sentences": [
+        {
+          "id": "u05l3s01",
+          "nl": "Wat wil je drinken?",
+          "es": "¿Qué quieres tomar?",
+          "alt_nl": [
+            "Wat wil jij drinken?"
+          ],
+          "alt_es": [
+            "¿Qué quieres beber?",
+            "¿Qué quieres tú tomar?",
+            "¿Qué quieres tú beber?"
+          ]
+        },
+        {
+          "id": "u05l3s02",
+          "nl": "Ik wil een koffie.",
+          "es": "Quiero un café.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo quiero un café."
+          ]
+        },
+        {
+          "id": "u05l3s03",
+          "nl": "Ik wil graag een thee.",
+          "es": "Quisiera un té.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me gustaría un té.",
+            "Yo quisiera un té.",
+            "Quiero un té, por favor.",
+            "Quiero un té."
+          ]
+        },
+        {
+          "id": "u05l3s04",
+          "nl": "Wilt u iets drinken?",
+          "es": "¿Quiere tomar algo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Quiere beber algo?",
+            "¿Quiere usted tomar algo?",
+            "¿Quiere usted beber algo?",
+            "¿Usted quiere tomar algo?",
+            "¿Usted quiere beber algo?",
+            "¿Desea tomar algo?",
+            "¿Desea beber algo?"
+          ]
+        },
+        {
+          "id": "u05l3s05",
+          "nl": "Ja, graag!",
+          "es": "¡Sí, por favor!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Sí, con gusto!",
+            "¡Sí, gracias!",
+            "¡Sí, claro!",
+            "¡Sí, con mucho gusto!"
+          ]
+        },
+        {
+          "id": "u05l3s06",
+          "nl": "Ik drink koffie.",
+          "es": "Tomo café.",
+          "alt_nl": [],
+          "alt_es": [
+            "Bebo café.",
+            "Yo tomo café.",
+            "Yo bebo café."
+          ]
+        },
+        {
+          "id": "u05l3s07",
+          "nl": "Drink jij thee?",
+          "es": "¿Tomas té?",
+          "alt_nl": [
+            "Drink je thee?"
+          ],
+          "alt_es": [
+            "¿Bebes té?",
+            "¿Tú tomas té?",
+            "¿Tú bebes té?"
+          ]
+        },
+        {
+          "id": "u05l3s08",
+          "nl": "Hij drinkt geen koffie.",
+          "es": "Él no toma café.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él no bebe café.",
+            "No toma café.",
+            "No bebe café."
+          ]
+        },
+        {
+          "id": "u05l3s09",
+          "nl": "Wil je nog een koffie?",
+          "es": "¿Quieres otro café?",
+          "alt_nl": [
+            "Wil jij nog een koffie?"
+          ],
+          "alt_es": [
+            "¿Quieres un café más?",
+            "¿Tú quieres otro café?"
+          ]
+        },
+        {
+          "id": "u05l3s10",
+          "nl": "Nee, dank je. Ik wil water.",
+          "es": "No, gracias. Quiero agua.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, gracias. Yo quiero agua."
+          ]
+        },
+        {
+          "id": "u05l3s11",
+          "nl": "Wil je iets drinken?",
+          "es": "¿Quieres tomar algo?",
+          "alt_nl": [
+            "Wil jij iets drinken?"
+          ],
+          "alt_es": [
+            "¿Quieres beber algo?",
+            "¿Tú quieres tomar algo?",
+            "¿Tú quieres beber algo?"
+          ]
+        },
+        {
+          "id": "u05l3s12",
+          "nl": "Nog een thee, alsjeblieft.",
+          "es": "Otro té, por favor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Un té más, por favor."
+          ]
+        },
+        {
+          "id": "u05l3s13",
+          "nl": "Zij wil thee zonder suiker.",
+          "es": "Ella quiere té sin azúcar.",
+          "alt_nl": [
+            "Ze wil thee zonder suiker."
+          ],
+          "alt_es": [
+            "Quiere té sin azúcar."
+          ]
+        },
+        {
+          "id": "u05l3s14",
+          "nl": "Ik drink graag thee.",
+          "es": "Me gusta tomar té.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me gusta beber té.",
+            "Me gusta el té.",
+            "A mí me gusta tomar té.",
+            "A mí me gusta beber té.",
+            "A mí me gusta el té."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05l4",
+      "title_es": "¿Me da un café?",
+      "sentences": [
+        {
+          "id": "u05l4s01",
+          "nl": "Mag ik een koffie?",
+          "es": "¿Me da un café?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Me das un café?",
+            "¿Me puede dar un café?",
+            "¿Me puedes dar un café?",
+            "¿Puedo pedir un café?",
+            "¿Puedo tomar un café?"
+          ]
+        },
+        {
+          "id": "u05l4s02",
+          "nl": "Een broodje kaas, alstublieft.",
+          "es": "Un sándwich de queso, por favor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Un pan de queso, por favor.",
+            "Un pan con queso, por favor.",
+            "Un pancito de queso, por favor.",
+            "Un pancito con queso, por favor.",
+            "Un bocadillo de queso, por favor.",
+            "Un bocadillo con queso, por favor."
+          ]
+        },
+        {
+          "id": "u05l4s03",
+          "nl": "Mag ik een broodje kaas?",
+          "es": "¿Me da un sándwich de queso?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Me das un sándwich de queso?",
+            "¿Me puede dar un sándwich de queso?",
+            "¿Me puedes dar un sándwich de queso?",
+            "¿Puedo pedir un sándwich de queso?",
+            "¿Me da un pan con queso?",
+            "¿Me da un pancito con queso?"
+          ]
+        },
+        {
+          "id": "u05l4s04",
+          "nl": "Wat wil je eten?",
+          "es": "¿Qué quieres comer?",
+          "alt_nl": [
+            "Wat wil jij eten?"
+          ],
+          "alt_es": [
+            "¿Qué quieres comer tú?"
+          ]
+        },
+        {
+          "id": "u05l4s05",
+          "nl": "Ik eet brood met kaas.",
+          "es": "Como pan con queso.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo como pan con queso."
+          ]
+        },
+        {
+          "id": "u05l4s06",
+          "nl": "Eet jij kaas?",
+          "es": "¿Comes queso?",
+          "alt_nl": [
+            "Eet je kaas?"
+          ],
+          "alt_es": [
+            "¿Tú comes queso?"
+          ]
+        },
+        {
+          "id": "u05l4s07",
+          "nl": "Zij eet geen brood.",
+          "es": "Ella no come pan.",
+          "alt_nl": [
+            "Ze eet geen brood."
+          ],
+          "alt_es": [
+            "No come pan."
+          ]
+        },
+        {
+          "id": "u05l4s08",
+          "nl": "Mag ik iets drinken?",
+          "es": "¿Puedo tomar algo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Puedo beber algo?",
+            "¿Me da algo de tomar?",
+            "¿Me da algo de beber?",
+            "¿Me das algo de tomar?",
+            "¿Me das algo de beber?"
+          ]
+        },
+        {
+          "id": "u05l4s09",
+          "nl": "Wil je iets eten?",
+          "es": "¿Quieres comer algo?",
+          "alt_nl": [
+            "Wil jij iets eten?"
+          ],
+          "alt_es": [
+            "¿Tú quieres comer algo?"
+          ]
+        },
+        {
+          "id": "u05l4s10",
+          "nl": "Het broodje is heel groot.",
+          "es": "El sándwich es muy grande.",
+          "alt_nl": [],
+          "alt_es": [
+            "El pan es muy grande.",
+            "El pancito es muy grande.",
+            "El sándwich está muy grande."
+          ]
+        },
+        {
+          "id": "u05l4s11",
+          "nl": "Mag ik nog een thee?",
+          "es": "¿Me da otro té?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Me das otro té?",
+            "¿Me puede dar otro té?",
+            "¿Me puedes dar otro té?",
+            "¿Puedo pedir otro té?",
+            "¿Puedo tomar otro té?"
+          ]
+        },
+        {
+          "id": "u05l4s12",
+          "nl": "Ja, dat mag.",
+          "es": "Sí, se puede.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, está permitido.",
+            "Sí, puedes.",
+            "Sí, puede.",
+            "Sí, eso se puede.",
+            "Sí, está bien."
+          ]
+        },
+        {
+          "id": "u05l4s13",
+          "nl": "Hij eet een broodje.",
+          "es": "Él come un sándwich.",
+          "alt_nl": [],
+          "alt_es": [
+            "Come un sándwich.",
+            "Él se come un sándwich.",
+            "Él come un pan.",
+            "Él come un pancito."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05l5",
+      "title_es": "La cuenta, por favor",
+      "sentences": [
+        {
+          "id": "u05l5s01",
+          "nl": "Hoeveel kost een koffie?",
+          "es": "¿Cuánto cuesta un café?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto vale un café?",
+            "¿Cuánto sale un café?"
+          ]
+        },
+        {
+          "id": "u05l5s02",
+          "nl": "Een koffie kost drie euro.",
+          "es": "Un café cuesta tres euros.",
+          "alt_nl": [],
+          "alt_es": [
+            "Un café vale tres euros.",
+            "Un café sale tres euros."
+          ]
+        },
+        {
+          "id": "u05l5s03",
+          "nl": "De rekening, alstublieft.",
+          "es": "La cuenta, por favor.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l5s04",
+          "nl": "Mag ik de rekening?",
+          "es": "¿Me da la cuenta?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Me das la cuenta?",
+            "¿Me trae la cuenta?",
+            "¿Me traes la cuenta?",
+            "¿Me puede dar la cuenta?",
+            "¿Me puede traer la cuenta?",
+            "¿Puedo pedir la cuenta?"
+          ]
+        },
+        {
+          "id": "u05l5s05",
+          "nl": "Dat is samen twaalf euro.",
+          "es": "Son doce euros en total.",
+          "alt_nl": [],
+          "alt_es": [
+            "En total son doce euros.",
+            "Eso es doce euros en total.",
+            "Son doce euros.",
+            "Serían doce euros en total.",
+            "Eso son doce euros en total."
+          ]
+        },
+        {
+          "id": "u05l5s06",
+          "nl": "Dat is duur!",
+          "es": "¡Eso es caro!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué caro!",
+            "¡Es caro!",
+            "¡Está caro!",
+            "¡Eso está caro!"
+          ]
+        },
+        {
+          "id": "u05l5s07",
+          "nl": "Het is niet duur.",
+          "es": "No es caro.",
+          "alt_nl": [],
+          "alt_es": [
+            "No está caro.",
+            "No es costoso."
+          ]
+        },
+        {
+          "id": "u05l5s08",
+          "nl": "Mag ik betalen?",
+          "es": "¿Puedo pagar?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Me cobra?",
+            "¿Me cobras?",
+            "¿Me puede cobrar?"
+          ]
+        },
+        {
+          "id": "u05l5s09",
+          "nl": "Ik wil graag betalen.",
+          "es": "Quisiera pagar.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me gustaría pagar.",
+            "Quiero pagar.",
+            "Quiero pagar, por favor."
+          ]
+        },
+        {
+          "id": "u05l5s10",
+          "nl": "Hoeveel kost het broodje?",
+          "es": "¿Cuánto cuesta el sándwich?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto vale el sándwich?",
+            "¿Cuánto sale el sándwich?",
+            "¿Cuánto cuesta el pan?",
+            "¿Cuánto cuesta el pancito?"
+          ]
+        },
+        {
+          "id": "u05l5s11",
+          "nl": "Het broodje kost vijf euro.",
+          "es": "El sándwich cuesta cinco euros.",
+          "alt_nl": [],
+          "alt_es": [
+            "El sándwich vale cinco euros.",
+            "El sándwich sale cinco euros.",
+            "El pan cuesta cinco euros.",
+            "El pancito cuesta cinco euros."
+          ]
+        },
+        {
+          "id": "u05l5s12",
+          "nl": "Ik betaal de koffie.",
+          "es": "Yo pago el café.",
+          "alt_nl": [],
+          "alt_es": [
+            "Pago el café."
+          ]
+        },
+        {
+          "id": "u05l5s13",
+          "nl": "Twee thee en een koffie, samen acht euro.",
+          "es": "Dos tés y un café, ocho euros en total.",
+          "alt_nl": [],
+          "alt_es": [
+            "Dos tés y un café, en total ocho euros.",
+            "Dos tés y un café, son ocho euros en total."
+          ]
+        },
+        {
+          "id": "u05l5s14",
+          "nl": "Ik heb geen geld, het is te duur.",
+          "es": "No tengo dinero, es demasiado caro.",
+          "alt_nl": [],
+          "alt_es": [
+            "No tengo plata, es demasiado caro.",
+            "No tengo dinero, está demasiado caro.",
+            "No tengo plata, está demasiado caro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05l6",
+      "title_es": "¡Buen provecho!",
+      "sentences": [
+        {
+          "id": "u05l6s01",
+          "nl": "Ik heb honger.",
+          "es": "Tengo hambre.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo hambre."
+          ]
+        },
+        {
+          "id": "u05l6s02",
+          "nl": "Heb je dorst?",
+          "es": "¿Tienes sed?",
+          "alt_nl": [
+            "Heb jij dorst?"
+          ],
+          "alt_es": [
+            "¿Tú tienes sed?"
+          ]
+        },
+        {
+          "id": "u05l6s03",
+          "nl": "Eet smakelijk!",
+          "es": "¡Buen provecho!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Provecho!",
+            "¡Buen apetito!",
+            "¡Que aproveche!"
+          ]
+        },
+        {
+          "id": "u05l6s04",
+          "nl": "Proost!",
+          "es": "¡Salud!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l6s05",
+          "nl": "De koffie is lekker.",
+          "es": "El café está rico.",
+          "alt_nl": [],
+          "alt_es": [
+            "El café está sabroso.",
+            "El café está bueno.",
+            "El café está delicioso.",
+            "El café es rico."
+          ]
+        },
+        {
+          "id": "u05l6s06",
+          "nl": "Lekker!",
+          "es": "¡Qué rico!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Rico!",
+            "¡Qué sabroso!",
+            "¡Sabroso!",
+            "¡Delicioso!",
+            "¡Qué delicioso!",
+            "¡Qué bueno!"
+          ]
+        },
+        {
+          "id": "u05l6s07",
+          "nl": "Ik heb geen honger.",
+          "es": "No tengo hambre.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo no tengo hambre."
+          ]
+        },
+        {
+          "id": "u05l6s08",
+          "nl": "Zij heeft dorst.",
+          "es": "Ella tiene sed.",
+          "alt_nl": [
+            "Ze heeft dorst."
+          ],
+          "alt_es": [
+            "Tiene sed."
+          ]
+        },
+        {
+          "id": "u05l6s09",
+          "nl": "Het broodje is heel lekker.",
+          "es": "El sándwich está muy rico.",
+          "alt_nl": [],
+          "alt_es": [
+            "El sándwich está muy sabroso.",
+            "El sándwich está muy bueno.",
+            "El sándwich está muy delicioso.",
+            "El pan está muy rico.",
+            "El pan está muy sabroso.",
+            "El pan está muy bueno.",
+            "El pan está muy delicioso.",
+            "El pancito está muy rico.",
+            "El pancito está muy sabroso.",
+            "El pancito está muy bueno.",
+            "El pancito está muy delicioso."
+          ]
+        },
+        {
+          "id": "u05l6s10",
+          "nl": "Heb je honger? Wil je iets eten?",
+          "es": "¿Tienes hambre? ¿Quieres comer algo?",
+          "alt_nl": [
+            "Heb jij honger? Wil je iets eten?",
+            "Heb jij honger? Wil jij iets eten?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u05l6s11",
+          "nl": "Ik heb dorst. Ik wil water.",
+          "es": "Tengo sed. Quiero agua.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l6s12",
+          "nl": "Dank je, eet smakelijk!",
+          "es": "Gracias, ¡buen provecho!",
+          "alt_nl": [],
+          "alt_es": [
+            "Gracias, ¡provecho!",
+            "Gracias, ¡buen apetito!"
+          ]
+        },
+        {
+          "id": "u05l6s13",
+          "nl": "Proost, Tom!",
+          "es": "¡Salud, Tom!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u05l6s14",
+          "nl": "Is het brood lekker?",
+          "es": "¿El pan está rico?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿El pan está sabroso?",
+            "¿El pan está bueno?",
+            "¿El pan está delicioso?",
+            "¿Está rico el pan?",
+            "¿Está sabroso el pan?",
+            "¿Está bueno el pan?",
+            "¿Está delicioso el pan?"
+          ]
+        },
+        {
+          "id": "u05l6s15",
+          "nl": "Ik heb honger, maar ik heb geen tijd.",
+          "es": "Tengo hambre, pero no tengo tiempo.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "En el café",
+    "lines": [
+      {
+        "speaker": "Daan",
+        "nl": "Goedemiddag! Wilt u iets drinken?",
+        "es": "¡Buenas tardes! ¿Quiere tomar algo?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Ja, graag. Een koffie met melk, alstublieft.",
+        "es": "Sí, por favor. Un café con leche, por favor."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Met suiker?",
+        "es": "¿Con azúcar?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Nee, zonder suiker. En mag ik een broodje kaas?",
+        "es": "No, sin azúcar. ¿Y me da un sándwich de queso?"
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Geen probleem. Alstublieft, eet smakelijk!",
+        "es": "No hay problema. Aquí tiene, ¡buen provecho!"
+      },
+      {
+        "speaker": "María",
+        "nl": "Dank u wel. Mag ik ook de rekening?",
+        "es": "Muchas gracias. ¿Me da también la cuenta?"
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Ja. Dat is samen zeven euro.",
+        "es": "Sí. Son siete euros en total."
+      },
+      {
+        "speaker": "María",
+        "nl": "Alstublieft. Tot ziens!",
+        "es": "Aquí tiene. ¡Nos vemos!"
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Dank u wel. Fijne dag!",
+        "es": "Muchas gracias. ¡Que tenga un buen día!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué pide María para tomar?",
+        "options_es": [
+          "Un té con leche",
+          "Un café con leche",
+          "Un café con azúcar"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Qué come María?",
+        "options_es": [
+          "Un sándwich de queso",
+          "Pan con mantequilla",
+          "Nada"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Cuánto paga María?",
+        "options_es": [
+          "Seis euros",
+          "Siete euros",
+          "Doce euros"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

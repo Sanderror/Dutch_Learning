@@ -9,7 +9,7 @@
     {"id": 5, "level": "A2.1", "title_es": "Pasado y planes"},
     {"id": 6, "level": "A2.2", "title_es": "Vivir en Holanda"}
   ],
-  "units": ["u01", "u02"],
+  "units": ["u01", "u02", "u03", "u04", "u05", "u06"],
   "voices": {"F": "nl-NL-Wavenet-F", "G": "nl-NL-Wavenet-G"},
   "speakers": {"Anna": "F", "Emma": "F", "María": "F", "Tom": "G", "Daan": "G", "Luis": "G"}
 }

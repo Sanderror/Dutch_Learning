@@ -1,0 +1,1122 @@
+{
+  "id": "u06",
+  "section": 1,
+  "title_es": "Mi familia",
+  "goals_es": [
+    "Hablar de tu familia",
+    "Usar wij, jullie y zij con el verbo en plural",
+    "Decir de quién es alguien con zijn, haar, ons y onze",
+    "Decir a quién quieres y qué te gusta con houden van",
+    "Decir a quién extrañas y cada cuánto llamas"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ou** suena como «au»: **ou**ders, h**ou**, vr**ou**w, j**ou**w.\n- **ch** en do**ch**ter es la j fuerte, igual que la g.\n- **sch** es una s seguida de esa j fuerte: **sch**at.\n- **ng** es un solo sonido por la nariz, como la n de «tango» pero sin la g: jo**ng**.\n- La **-en** final se dice muy suave y la n casi no se oye: won**en** suena «wone», kinder**en** «kindere».\n- La **-er** final lleva una e muy breve: moed**er**, vad**er**, docht**er**.\n\n## wij, jullie y zij: el verbo en plural\n\nCon **wij** (nosotros), **jullie** (ustedes) y **zij** (ellos, ellas) el verbo va entero, terminado en **-en**:\n\n- ik woon, jij woont, hij woont\n- wij **wonen**, jullie **wonen**, zij **wonen**\n\nLo mismo con los demás: wij **komen**, jullie **spreken**, zij **heten**. Y los dos irregulares: wij **zijn**, wij **hebben**.\n\nLa vocal doble se escribe con una sola letra cuando le sigue -en, pero suena igual de larga: w**oo**n → w**o**nen, spr**ee**k → spr**e**ken, h**ee**t → h**e**ten.\n\n## zij puede ser ella o ellos\n\nEl verbo dice cuál es: zij woon**t** = ella vive; zij won**en** = ellos viven.\n\nLas formas sin énfasis son **we** (wij) y **ze** (zij), igual que je es la forma sin énfasis de jij.\n\n**jullie** es el plural de jij: varias personas a las que tratas de tú.\n\n## Plurales\n\n- Con **-s**: broer → broer**s**.\n- Con **-en**: zus → zus**sen**.\n- Irregular: kind → kind**eren**.\n\nEn plural el artículo siempre es **de**: het kind, pero **de** kinderen.\n\n## mijn, jouw, zijn, haar, ons\n\n- **mijn** = mi, **jouw** = tu, **uw** = su (de usted)\n- **zijn** = su (de él): Tom en **zijn** moeder\n- **haar** = su (de ella): Anna en **haar** broer\n- **ons** / **onze** = nuestro, nuestra\n\nEn español «su» sirve para todo; en neerlandés hay que elegir entre uw, zijn y haar.\n\n**ons** va con palabras de het: **ons** huis. **onze** va con palabras de de y con todos los plurales: **onze** hond, **onze** kinderen.\n\nOjo: **zijn** también es el verbo ser (wij zijn). La frase deja claro cuál es.\n\n## houden van\n\nSignifica amar o querer a una persona, y también que algo te gusta. Siempre lleva **van**.\n\n- Ik **hou van** jou = Te amo, te quiero.\n- Hij **houdt van** koffie = A él le gusta el café.\n- ik **hou**, jij **houdt** (en pregunta: **hou** je?), hij **houdt**, wij **houden**\n\n## man y vrouw\n\n**man** es hombre y **vrouw** es mujer, pero **mijn man** es «mi esposo» y **mijn vrouw** es «mi esposa».\n",
+  "lessons": [
+    {
+      "id": "u06l1",
+      "title_es": "Mamá, papá y hermanos",
+      "sentences": [
+        {
+          "id": "u06l1s01",
+          "nl": "Dit is mijn moeder.",
+          "es": "Esta es mi mamá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esta es mi madre.",
+            "Ella es mi mamá.",
+            "Ella es mi madre."
+          ]
+        },
+        {
+          "id": "u06l1s02",
+          "nl": "Mijn vader heet Luis.",
+          "es": "Mi papá se llama Luis.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi padre se llama Luis."
+          ]
+        },
+        {
+          "id": "u06l1s03",
+          "nl": "Ik heb een broer.",
+          "es": "Tengo un hermano.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo un hermano."
+          ]
+        },
+        {
+          "id": "u06l1s04",
+          "nl": "Heb jij een zus?",
+          "es": "¿Tienes una hermana?",
+          "alt_nl": [
+            "Heb je een zus?"
+          ],
+          "alt_es": [
+            "¿Tú tienes una hermana?",
+            "¿Tienes hermana?"
+          ]
+        },
+        {
+          "id": "u06l1s05",
+          "nl": "Mijn zus woont in Caracas.",
+          "es": "Mi hermana vive en Caracas.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l1s06",
+          "nl": "Mijn familie woont in Venezuela.",
+          "es": "Mi familia vive en Venezuela.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l1s07",
+          "nl": "Mijn broer is bijna twintig.",
+          "es": "Mi hermano tiene casi veinte años.",
+          "alt_nl": [
+            "Mijn broer is bijna twintig jaar.",
+            "Mijn broer is bijna twintig jaar oud."
+          ],
+          "alt_es": [
+            "Mi hermano casi tiene veinte años."
+          ]
+        },
+        {
+          "id": "u06l1s08",
+          "nl": "Hoe heet jouw moeder?",
+          "es": "¿Cómo se llama tu mamá?",
+          "alt_nl": [
+            "Hoe heet je moeder?"
+          ],
+          "alt_es": [
+            "¿Cómo se llama tu madre?"
+          ]
+        },
+        {
+          "id": "u06l1s09",
+          "nl": "Waar woont jouw familie?",
+          "es": "¿Dónde vive tu familia?",
+          "alt_nl": [
+            "Waar woont je familie?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u06l1s10",
+          "nl": "Ik heb geen zus.",
+          "es": "No tengo hermana.",
+          "alt_nl": [],
+          "alt_es": [
+            "No tengo hermanas.",
+            "No tengo una hermana.",
+            "Yo no tengo hermana.",
+            "Yo no tengo hermanas."
+          ]
+        },
+        {
+          "id": "u06l1s11",
+          "nl": "Mijn vader en mijn moeder.",
+          "es": "Mi papá y mi mamá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi padre y mi madre."
+          ]
+        },
+        {
+          "id": "u06l1s12",
+          "nl": "De familie van Tom is groot.",
+          "es": "La familia de Tom es grande.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l1s13",
+          "nl": "Is dat jouw broer?",
+          "es": "¿Ese es tu hermano?",
+          "alt_nl": [
+            "Is dat je broer?"
+          ],
+          "alt_es": [
+            "¿Es ese tu hermano?",
+            "¿Él es tu hermano?",
+            "¿Es tu hermano?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06l2",
+      "title_es": "Hijos y abuelos",
+      "sentences": [
+        {
+          "id": "u06l2s01",
+          "nl": "Ik heb twee broers.",
+          "es": "Tengo dos hermanos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo dos hermanos."
+          ]
+        },
+        {
+          "id": "u06l2s02",
+          "nl": "Zij heeft drie kinderen.",
+          "es": "Ella tiene tres hijos.",
+          "alt_nl": [
+            "Ze heeft drie kinderen."
+          ],
+          "alt_es": [
+            "Ella tiene tres niños.",
+            "Tiene tres hijos.",
+            "Tiene tres niños."
+          ]
+        },
+        {
+          "id": "u06l2s03",
+          "nl": "Mijn oma woont in Caracas.",
+          "es": "Mi abuela vive en Caracas.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l2s04",
+          "nl": "Mijn opa is oud.",
+          "es": "Mi abuelo es viejo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi abuelo es mayor.",
+            "Mi abuelo está viejo.",
+            "Mi abuelo está mayor."
+          ]
+        },
+        {
+          "id": "u06l2s05",
+          "nl": "Dit is mijn zoon.",
+          "es": "Este es mi hijo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él es mi hijo."
+          ]
+        },
+        {
+          "id": "u06l2s06",
+          "nl": "Zij heeft een dochter.",
+          "es": "Ella tiene una hija.",
+          "alt_nl": [
+            "Ze heeft een dochter."
+          ],
+          "alt_es": [
+            "Tiene una hija."
+          ]
+        },
+        {
+          "id": "u06l2s07",
+          "nl": "Heeft u kinderen?",
+          "es": "¿Tiene usted hijos?",
+          "alt_nl": [
+            "Hebt u kinderen?"
+          ],
+          "alt_es": [
+            "¿Tiene hijos?",
+            "¿Usted tiene hijos?",
+            "¿Tiene usted niños?"
+          ]
+        },
+        {
+          "id": "u06l2s08",
+          "nl": "Ja, een zoon en een dochter.",
+          "es": "Sí, un hijo y una hija.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l2s09",
+          "nl": "Het kind is klein.",
+          "es": "El niño es pequeño.",
+          "alt_nl": [],
+          "alt_es": [
+            "El niño es chiquito.",
+            "El niño está pequeño.",
+            "El niño está chiquito.",
+            "La niña es pequeña.",
+            "La niña es chiquita."
+          ]
+        },
+        {
+          "id": "u06l2s10",
+          "nl": "Ik heb twee zussen en een broer.",
+          "es": "Tengo dos hermanas y un hermano.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo dos hermanas y un hermano."
+          ]
+        },
+        {
+          "id": "u06l2s11",
+          "nl": "Hoe heet jouw oma?",
+          "es": "¿Cómo se llama tu abuela?",
+          "alt_nl": [
+            "Hoe heet je oma?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u06l2s12",
+          "nl": "De dochter van Anna heet Emma.",
+          "es": "La hija de Anna se llama Emma.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l2s13",
+          "nl": "Heb jij broers of zussen?",
+          "es": "¿Tienes hermanos o hermanas?",
+          "alt_nl": [
+            "Heb je broers of zussen?"
+          ],
+          "alt_es": [
+            "¿Tú tienes hermanos o hermanas?",
+            "¿Tienes hermanos?"
+          ]
+        },
+        {
+          "id": "u06l2s14",
+          "nl": "Mijn zoon is vijf jaar.",
+          "es": "Mi hijo tiene cinco años.",
+          "alt_nl": [
+            "Mijn zoon is vijf.",
+            "Mijn zoon is vijf jaar oud."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u06l2s15",
+          "nl": "Mijn opa heet ook Luis.",
+          "es": "Mi abuelo también se llama Luis.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi abuelo se llama Luis también."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06l3",
+      "title_es": "Nosotros y ustedes",
+      "sentences": [
+        {
+          "id": "u06l3s01",
+          "nl": "Wij wonen in Utrecht.",
+          "es": "Vivimos en Utrecht.",
+          "alt_nl": [
+            "We wonen in Utrecht."
+          ],
+          "alt_es": [
+            "Nosotros vivimos en Utrecht.",
+            "Nosotras vivimos en Utrecht."
+          ]
+        },
+        {
+          "id": "u06l3s02",
+          "nl": "Wij zijn Anna en Tom.",
+          "es": "Somos Anna y Tom.",
+          "alt_nl": [
+            "We zijn Anna en Tom."
+          ],
+          "alt_es": [
+            "Nosotros somos Anna y Tom."
+          ]
+        },
+        {
+          "id": "u06l3s03",
+          "nl": "Waar wonen jullie?",
+          "es": "¿Dónde viven ustedes?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde viven?",
+            "¿Ustedes dónde viven?"
+          ]
+        },
+        {
+          "id": "u06l3s04",
+          "nl": "Hebben jullie kinderen?",
+          "es": "¿Ustedes tienen hijos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Tienen hijos?",
+            "¿Tienen ustedes hijos?",
+            "¿Ustedes tienen niños?"
+          ]
+        },
+        {
+          "id": "u06l3s05",
+          "nl": "Mijn ouders wonen in Venezuela.",
+          "es": "Mis padres viven en Venezuela.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mis papás viven en Venezuela."
+          ]
+        },
+        {
+          "id": "u06l3s06",
+          "nl": "Zij komen uit Spanje.",
+          "es": "Ellos son de España.",
+          "alt_nl": [
+            "Ze komen uit Spanje."
+          ],
+          "alt_es": [
+            "Ellas son de España.",
+            "Son de España.",
+            "Ellos vienen de España.",
+            "Ellas vienen de España."
+          ]
+        },
+        {
+          "id": "u06l3s07",
+          "nl": "Zij spreken geen Nederlands.",
+          "es": "Ellos no hablan neerlandés.",
+          "alt_nl": [
+            "Ze spreken geen Nederlands."
+          ],
+          "alt_es": [
+            "Ellos no hablan holandés.",
+            "Ellas no hablan neerlandés.",
+            "Ellas no hablan holandés.",
+            "No hablan neerlandés.",
+            "No hablan holandés."
+          ]
+        },
+        {
+          "id": "u06l3s08",
+          "nl": "Wij hebben een hond.",
+          "es": "Tenemos un perro.",
+          "alt_nl": [
+            "We hebben een hond."
+          ],
+          "alt_es": [
+            "Nosotros tenemos un perro.",
+            "Nosotras tenemos un perro."
+          ]
+        },
+        {
+          "id": "u06l3s09",
+          "nl": "Jullie spreken goed Nederlands!",
+          "es": "¡Ustedes hablan bien neerlandés!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Ustedes hablan bien holandés!",
+            "¡Hablan bien neerlandés!",
+            "¡Hablan bien holandés!",
+            "¡Ustedes hablan neerlandés bien!",
+            "¡Ustedes hablan holandés bien!"
+          ]
+        },
+        {
+          "id": "u06l3s10",
+          "nl": "Mijn ouders heten Luis en María.",
+          "es": "Mis padres se llaman Luis y María.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mis papás se llaman Luis y María."
+          ]
+        },
+        {
+          "id": "u06l3s11",
+          "nl": "Ze wonen daar.",
+          "es": "Ellos viven allá.",
+          "alt_nl": [
+            "Zij wonen daar."
+          ],
+          "alt_es": [
+            "Ellos viven allí.",
+            "Ellos viven ahí.",
+            "Ellas viven allá.",
+            "Ellas viven allí.",
+            "Ellas viven ahí.",
+            "Viven allá.",
+            "Viven allí.",
+            "Viven ahí."
+          ]
+        },
+        {
+          "id": "u06l3s12",
+          "nl": "We zijn hier.",
+          "es": "Estamos aquí.",
+          "alt_nl": [
+            "Wij zijn hier."
+          ],
+          "alt_es": [
+            "Estamos acá.",
+            "Nosotros estamos aquí.",
+            "Nosotros estamos acá.",
+            "Nosotras estamos aquí.",
+            "Nosotras estamos acá."
+          ]
+        },
+        {
+          "id": "u06l3s13",
+          "nl": "Komen jullie uit Venezuela?",
+          "es": "¿Ustedes son de Venezuela?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Son de Venezuela?",
+            "¿Son ustedes de Venezuela?",
+            "¿Ustedes vienen de Venezuela?",
+            "¿Vienen de Venezuela?"
+          ]
+        },
+        {
+          "id": "u06l3s14",
+          "nl": "Hoe heten jullie?",
+          "es": "¿Cómo se llaman ustedes?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo se llaman?",
+            "¿Ustedes cómo se llaman?"
+          ]
+        },
+        {
+          "id": "u06l3s15",
+          "nl": "Zijn jullie broer en zus?",
+          "es": "¿Ustedes son hermanos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Son hermanos?",
+            "¿Son ustedes hermanos?",
+            "¿Ustedes son hermano y hermana?",
+            "¿Son hermano y hermana?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06l4",
+      "title_es": "Su mamá, nuestra casa",
+      "sentences": [
+        {
+          "id": "u06l4s01",
+          "nl": "Dit is Tom en dit is zijn moeder.",
+          "es": "Este es Tom y esta es su mamá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Este es Tom y esta es su madre.",
+            "Él es Tom y ella es su mamá.",
+            "Él es Tom y ella es su madre."
+          ]
+        },
+        {
+          "id": "u06l4s02",
+          "nl": "Dit is Anna en dat is haar broer.",
+          "es": "Esta es Anna y ese es su hermano.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ella es Anna y él es su hermano."
+          ]
+        },
+        {
+          "id": "u06l4s03",
+          "nl": "Zijn vader heet Daan.",
+          "es": "El papá de él se llama Daan.",
+          "alt_nl": [],
+          "alt_es": [
+            "El padre de él se llama Daan.",
+            "Su papá se llama Daan.",
+            "Su padre se llama Daan."
+          ]
+        },
+        {
+          "id": "u06l4s04",
+          "nl": "Haar zus woont in Utrecht.",
+          "es": "La hermana de ella vive en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "Su hermana vive en Utrecht."
+          ]
+        },
+        {
+          "id": "u06l4s05",
+          "nl": "Dit is mijn man.",
+          "es": "Este es mi esposo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Este es mi marido.",
+            "Él es mi esposo.",
+            "Él es mi marido."
+          ]
+        },
+        {
+          "id": "u06l4s06",
+          "nl": "Luis en zijn vrouw wonen in Caracas.",
+          "es": "Luis y su esposa viven en Caracas.",
+          "alt_nl": [],
+          "alt_es": [
+            "Luis y su mujer viven en Caracas."
+          ]
+        },
+        {
+          "id": "u06l4s07",
+          "nl": "Zijn vrouw komt uit Spanje.",
+          "es": "La esposa de él es de España.",
+          "alt_nl": [],
+          "alt_es": [
+            "Su esposa es de España.",
+            "Su mujer es de España.",
+            "La esposa de él viene de España.",
+            "Su esposa viene de España."
+          ]
+        },
+        {
+          "id": "u06l4s08",
+          "nl": "Dit is ons huis.",
+          "es": "Esta es nuestra casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es nuestra casa."
+          ]
+        },
+        {
+          "id": "u06l4s09",
+          "nl": "Onze hond heet Max.",
+          "es": "Nuestro perro se llama Max.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u06l4s10",
+          "nl": "Onze kinderen spreken Nederlands en Spaans.",
+          "es": "Nuestros hijos hablan neerlandés y español.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nuestros hijos hablan holandés y español.",
+            "Nuestros niños hablan neerlandés y español.",
+            "Nuestros niños hablan holandés y español."
+          ]
+        },
+        {
+          "id": "u06l4s11",
+          "nl": "Emma en haar man hebben twee kinderen.",
+          "es": "Emma y su esposo tienen dos hijos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Emma y su esposo tienen dos niños.",
+            "Emma y su marido tienen dos hijos.",
+            "Emma y su marido tienen dos niños."
+          ]
+        },
+        {
+          "id": "u06l4s12",
+          "nl": "Is dat haar auto?",
+          "es": "¿Ese es el carro de ella?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Ese es el auto de ella?",
+            "¿Ese es el coche de ella?",
+            "¿Ese es su carro?",
+            "¿Ese es su auto?",
+            "¿Ese es su coche?",
+            "¿Es su carro?",
+            "¿Es su auto?",
+            "¿Es su coche?",
+            "¿Es el carro de ella?"
+          ]
+        },
+        {
+          "id": "u06l4s13",
+          "nl": "Die vrouw is mijn moeder.",
+          "es": "Esa mujer es mi mamá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Esa mujer es mi madre.",
+            "Esa señora es mi mamá.",
+            "Esa señora es mi madre."
+          ]
+        },
+        {
+          "id": "u06l4s14",
+          "nl": "Dat is onze opa.",
+          "es": "Ese es nuestro abuelo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él es nuestro abuelo.",
+            "Es nuestro abuelo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06l5",
+      "title_es": "Te quiero",
+      "sentences": [
+        {
+          "id": "u06l5s01",
+          "nl": "Ik hou van jou.",
+          "es": "Te amo.",
+          "alt_nl": [
+            "Ik hou van je.",
+            "Ik houd van jou.",
+            "Ik houd van je."
+          ],
+          "alt_es": [
+            "Te quiero.",
+            "Yo te amo.",
+            "Yo te quiero."
+          ]
+        },
+        {
+          "id": "u06l5s02",
+          "nl": "Ik hou van mijn familie.",
+          "es": "Amo a mi familia.",
+          "alt_nl": [
+            "Ik houd van mijn familie."
+          ],
+          "alt_es": [
+            "Quiero a mi familia.",
+            "Yo amo a mi familia.",
+            "Yo quiero a mi familia."
+          ]
+        },
+        {
+          "id": "u06l5s03",
+          "nl": "Hij houdt van koffie.",
+          "es": "A él le gusta el café.",
+          "alt_nl": [],
+          "alt_es": [
+            "Le gusta el café.",
+            "A él le encanta el café.",
+            "Le encanta el café."
+          ]
+        },
+        {
+          "id": "u06l5s04",
+          "nl": "Hou je van kaas?",
+          "es": "¿Te gusta el queso?",
+          "alt_nl": [
+            "Hou jij van kaas?",
+            "Houd je van kaas?",
+            "Houd jij van kaas?"
+          ],
+          "alt_es": [
+            "¿A ti te gusta el queso?"
+          ]
+        },
+        {
+          "id": "u06l5s05",
+          "nl": "Mijn oma is heel lief.",
+          "es": "Mi abuela es muy cariñosa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi abuela es muy dulce.",
+            "Mi abuela es muy tierna.",
+            "Mi abuela es muy amorosa.",
+            "Mi abuela es muy linda."
+          ]
+        },
+        {
+          "id": "u06l5s06",
+          "nl": "Wat lief!",
+          "es": "¡Qué tierno!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué dulce!",
+            "¡Qué lindo!",
+            "¡Qué amable!",
+            "¡Qué bello!",
+            "¡Qué cuchi!",
+            "¡Qué tierna!",
+            "¡Qué linda!"
+          ]
+        },
+        {
+          "id": "u06l5s07",
+          "nl": "Mijn zus is jong.",
+          "es": "Mi hermana es joven.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi hermana está joven."
+          ]
+        },
+        {
+          "id": "u06l5s08",
+          "nl": "Mijn ouders zijn niet jong.",
+          "es": "Mis padres no son jóvenes.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mis papás no son jóvenes.",
+            "Mis padres no están jóvenes.",
+            "Mis papás no están jóvenes."
+          ]
+        },
+        {
+          "id": "u06l5s09",
+          "nl": "Mijn broer is getrouwd.",
+          "es": "Mi hermano está casado.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi hermano es casado."
+          ]
+        },
+        {
+          "id": "u06l5s10",
+          "nl": "Ben jij getrouwd?",
+          "es": "¿Estás casada?",
+          "alt_nl": [
+            "Ben je getrouwd?"
+          ],
+          "alt_es": [
+            "¿Estás casado?",
+            "¿Tú estás casada?",
+            "¿Tú estás casado?",
+            "¿Eres casada?",
+            "¿Eres casado?"
+          ]
+        },
+        {
+          "id": "u06l5s11",
+          "nl": "Nee, ik ben niet getrouwd.",
+          "es": "No, no estoy casada.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, no estoy casado.",
+            "No, yo no estoy casada.",
+            "No, yo no estoy casado.",
+            "No, no soy casada.",
+            "No, no soy casado."
+          ]
+        },
+        {
+          "id": "u06l5s12",
+          "nl": "Hallo, schat!",
+          "es": "¡Hola, mi amor!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Hola, cariño!",
+            "¡Hola, amor!",
+            "¡Hola, cielo!",
+            "¡Hola, tesoro!",
+            "¡Hola, mi vida!"
+          ]
+        },
+        {
+          "id": "u06l5s13",
+          "nl": "Dank je, schat.",
+          "es": "Gracias, mi amor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Gracias, cariño.",
+            "Gracias, amor.",
+            "Gracias, cielo.",
+            "Gracias, tesoro.",
+            "Gracias, mi vida."
+          ]
+        },
+        {
+          "id": "u06l5s14",
+          "nl": "Wij houden van jullie.",
+          "es": "Los queremos.",
+          "alt_nl": [
+            "We houden van jullie."
+          ],
+          "alt_es": [
+            "Los amamos.",
+            "Las queremos.",
+            "Las amamos.",
+            "Nosotros los queremos.",
+            "Nosotros los amamos.",
+            "Nosotras los queremos.",
+            "Nosotras los amamos.",
+            "Los queremos a ustedes.",
+            "Los amamos a ustedes."
+          ]
+        },
+        {
+          "id": "u06l5s15",
+          "nl": "Zij houdt van haar kinderen.",
+          "es": "Ella ama a sus hijos.",
+          "alt_nl": [
+            "Ze houdt van haar kinderen."
+          ],
+          "alt_es": [
+            "Ella quiere a sus hijos.",
+            "Ama a sus hijos.",
+            "Quiere a sus hijos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06l6",
+      "title_es": "Los extraño",
+      "sentences": [
+        {
+          "id": "u06l6s01",
+          "nl": "Ik mis mijn familie.",
+          "es": "Extraño a mi familia.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo extraño a mi familia.",
+            "Echo de menos a mi familia."
+          ]
+        },
+        {
+          "id": "u06l6s02",
+          "nl": "Ik mis jou, schat.",
+          "es": "Te extraño, mi amor.",
+          "alt_nl": [
+            "Ik mis je, schat."
+          ],
+          "alt_es": [
+            "Te extraño, cariño.",
+            "Te extraño, amor.",
+            "Te extraño, cielo.",
+            "Te extraño, mi vida.",
+            "Te echo de menos, mi amor."
+          ]
+        },
+        {
+          "id": "u06l6s03",
+          "nl": "Zij mist haar moeder.",
+          "es": "Ella extraña a su mamá.",
+          "alt_nl": [
+            "Ze mist haar moeder."
+          ],
+          "alt_es": [
+            "Ella extraña a su madre.",
+            "Extraña a su mamá.",
+            "Extraña a su madre."
+          ]
+        },
+        {
+          "id": "u06l6s04",
+          "nl": "Ik bel mijn moeder elke dag.",
+          "es": "Llamo a mi mamá todos los días.",
+          "alt_nl": [
+            "Ik bel elke dag mijn moeder.",
+            "Elke dag bel ik mijn moeder."
+          ],
+          "alt_es": [
+            "Llamo a mi mamá cada día.",
+            "Llamo a mi madre todos los días.",
+            "Llamo a mi madre cada día.",
+            "Yo llamo a mi mamá todos los días.",
+            "Yo llamo a mi mamá cada día.",
+            "Todos los días llamo a mi mamá.",
+            "Todos los días llamo a mi madre.",
+            "Cada día llamo a mi mamá.",
+            "Cada día llamo a mi madre."
+          ]
+        },
+        {
+          "id": "u06l6s05",
+          "nl": "Hij belt vaak.",
+          "es": "Él llama a menudo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Él llama seguido.",
+            "Él llama mucho.",
+            "Él llama con frecuencia.",
+            "Llama a menudo.",
+            "Llama seguido.",
+            "Llama mucho.",
+            "Llama con frecuencia.",
+            "Él llama muchas veces."
+          ]
+        },
+        {
+          "id": "u06l6s06",
+          "nl": "Mijn zus belt mij vaak.",
+          "es": "Mi hermana me llama a menudo.",
+          "alt_nl": [
+            "Mijn zus belt me vaak."
+          ],
+          "alt_es": [
+            "Mi hermana me llama seguido.",
+            "Mi hermana me llama mucho.",
+            "Mi hermana me llama con frecuencia.",
+            "Mi hermana me llama muchas veces."
+          ]
+        },
+        {
+          "id": "u06l6s07",
+          "nl": "Dit is een foto van mijn familie.",
+          "es": "Esta es una foto de mi familia.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es una foto de mi familia."
+          ]
+        },
+        {
+          "id": "u06l6s08",
+          "nl": "Kijk, een foto van mijn ouders!",
+          "es": "¡Mira, una foto de mis padres!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Mira, una foto de mis papás!"
+          ]
+        },
+        {
+          "id": "u06l6s09",
+          "nl": "Wij bellen elke dag.",
+          "es": "Nos llamamos todos los días.",
+          "alt_nl": [
+            "We bellen elke dag."
+          ],
+          "alt_es": [
+            "Nos llamamos cada día.",
+            "Llamamos todos los días.",
+            "Llamamos cada día.",
+            "Hablamos por teléfono todos los días.",
+            "Hablamos por teléfono cada día.",
+            "Nosotros llamamos todos los días.",
+            "Nosotros llamamos cada día."
+          ]
+        },
+        {
+          "id": "u06l6s10",
+          "nl": "Venezuela is ver.",
+          "es": "Venezuela está lejos.",
+          "alt_nl": [],
+          "alt_es": [
+            "Venezuela queda lejos."
+          ]
+        },
+        {
+          "id": "u06l6s11",
+          "nl": "Is Utrecht ver?",
+          "es": "¿Utrecht está lejos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está lejos Utrecht?",
+            "¿Utrecht queda lejos?",
+            "¿Queda lejos Utrecht?"
+          ]
+        },
+        {
+          "id": "u06l6s12",
+          "nl": "Nee, Utrecht is niet ver.",
+          "es": "No, Utrecht no está lejos.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, Utrecht no queda lejos."
+          ]
+        },
+        {
+          "id": "u06l6s13",
+          "nl": "Ik mis Venezuela elke dag.",
+          "es": "Extraño Venezuela todos los días.",
+          "alt_nl": [],
+          "alt_es": [
+            "Extraño Venezuela cada día.",
+            "Extraño a Venezuela todos los días.",
+            "Extraño a Venezuela cada día.",
+            "Yo extraño Venezuela todos los días.",
+            "Yo extraño Venezuela cada día."
+          ]
+        },
+        {
+          "id": "u06l6s14",
+          "nl": "Heb je een foto van jouw broer?",
+          "es": "¿Tienes una foto de tu hermano?",
+          "alt_nl": [
+            "Heb jij een foto van jouw broer?",
+            "Heb je een foto van je broer?",
+            "Heb jij een foto van je broer?"
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u06l6s15",
+          "nl": "Mis je jouw familie?",
+          "es": "¿Extrañas a tu familia?",
+          "alt_nl": [
+            "Mis jij jouw familie?",
+            "Mis je je familie?",
+            "Mis jij je familie?"
+          ],
+          "alt_es": [
+            "¿Tú extrañas a tu familia?",
+            "¿Echas de menos a tu familia?"
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "Una foto de mi familia",
+    "lines": [
+      {
+        "speaker": "Daan",
+        "nl": "Wat is dat, María? Een foto?",
+        "es": "¿Qué es eso, María? ¿Una foto?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Ja, dit is een foto van mijn familie.",
+        "es": "Sí, esta es una foto de mi familia."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Wat mooi! Wie is die vrouw?",
+        "es": "¡Qué bonita! ¿Quién es esa mujer?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Dat is mijn moeder, en die man is mijn vader.",
+        "es": "Esa es mi mamá, y ese hombre es mi papá."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Jouw moeder is jong! Heb je ook broers of zussen?",
+        "es": "¡Tu mamá es joven! ¿También tienes hermanos o hermanas?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Ja, ik heb twee broers. Zij wonen in Caracas.",
+        "es": "Sí, tengo dos hermanos. Ellos viven en Caracas."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Dat is ver. Mis je jouw familie?",
+        "es": "Eso está lejos. ¿Extrañas a tu familia?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Ja, heel vaak. Maar ik bel mijn moeder elke dag.",
+        "es": "Sí, muy a menudo. Pero llamo a mi mamá todos los días."
+      },
+      {
+        "speaker": "Daan",
+        "nl": "Wat lief!",
+        "es": "¡Qué tierno!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué le muestra María a Daan?",
+        "options_es": [
+          "Una foto de su familia",
+          "Su casa",
+          "Su teléfono"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Cuántos hermanos tiene María?",
+        "options_es": [
+          "Uno",
+          "Dos",
+          "Tres"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Cada cuánto llama María a su mamá?",
+        "options_es": [
+          "Todos los días",
+          "Casi nunca",
+          "Una vez por semana"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+}
