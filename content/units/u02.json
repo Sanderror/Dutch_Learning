@@ -674,14 +674,15 @@
         },
         {
           "id": "u02l5s11",
-          "nl": "Ik kom uit Venezuela, maar woon in Nederland.",
-          "es": "Soy de Venezuela, pero vivo en los Países Bajos.",
+          "nl": "Ik kom uit Venezuela, maar ik woon hier.",
+          "es": "Soy de Venezuela, pero vivo aquí.",
           "alt_nl": [
-            "Ik kom uit Venezuela, maar ik woon in Nederland."
+            "Ik kom uit Venezuela, maar woon hier."
           ],
           "alt_es": [
-            "Soy de Venezuela, pero vivo en Holanda.",
-            "Vengo de Venezuela, pero vivo en los Países Bajos."
+            "Vengo de Venezuela, pero vivo aquí.",
+            "Soy de Venezuela, pero vivo acá.",
+            "Yo soy de Venezuela, pero vivo aquí."
           ]
         },
         {

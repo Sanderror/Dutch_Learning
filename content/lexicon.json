@@ -42,7 +42,7 @@
     {"id": "vandaan", "nl": "vandaan", "pos": "adv", "es": ["de (dónde)"], "note_es": "Va al final: Waar kom je vandaan? = ¿De dónde eres?", "forms": {"vandaan": "u02l1"}},
     {"id": "nederland", "nl": "Nederland", "pos": "propn", "es": ["los Países Bajos", "Holanda"], "forms": {"nederland": "u02l1"}},
     {"id": "venezuela", "nl": "Venezuela", "pos": "propn", "es": ["Venezuela"], "forms": {"venezuela": "u02l1"}},
-    {"id": "wonen", "nl": "wonen", "pos": "verb", "es": ["vivir"], "forms": {"woon": "u02l2", "woont": "u02l2"}, "accept_nl": ["leven"]},
+    {"id": "wonen", "nl": "wonen", "pos": "verb", "es": ["vivir"], "forms": {"woon": "u02l2", "woont": "u02l2"}, "note_es": "vivir en el sentido de residir. «Vivir» como estar vivo es otro verbo (leven); Ik leef in Amsterdam es un error."},
     {"id": "in", "nl": "in", "pos": "prep", "es": ["en"], "forms": {"in": "u02l2"}},
     {"id": "nu", "nl": "nu", "pos": "adv", "es": ["ahora"], "forms": {"nu": "u02l2"}},
     {"id": "hier", "nl": "hier", "pos": "adv", "es": ["aquí", "acá"], "forms": {"hier": "u02l2"}},

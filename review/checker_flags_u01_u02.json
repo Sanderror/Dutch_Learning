@@ -1,0 +1,53 @@
+{
+  "checker": "independent-agent-2026-11-14",
+  "flags": [
+    {
+      "id": "lexicon:wonen",
+      "severity": "a",
+      "reason": "accept_nl includes \"leven\". \"Leven\" does not mean to reside: accepting it validates \"Ik leef in Amsterdam\", which is exactly the grammatical-but-wrong Dutch the course must not teach. Every wonen exercise (u02l2, u02l4, u02l5, u02l6) would silently confirm this error.",
+      "suggestion": "Remove \"leven\" from accept_nl for wonen."
+    },
+    {
+      "id": "lexicon:doei",
+      "severity": "b",
+      "reason": "accept_nl includes bare \"hoi\". \"Hoi\" is a greeting, not a farewell; accepting it for \"¡Chao!\" teaches the learner to say hello when leaving. (\"Hoi hoi\" as a farewell is fine and is listed separately.)",
+      "suggestion": "Remove \"hoi\" from doei's accept_nl; keep \"hoi hoi\", \"doeg\", \"dag\"."
+    },
+    {
+      "id": "lexicon:fijne-dag",
+      "severity": "b",
+      "reason": "Primary gloss \"ten un buen día\" is an English calque (\"have a nice day\") that no Venezuelan would produce spontaneously; the natural renderings are \"¡Que tengas un buen día!\" or \"¡Feliz día!\", currently demoted to accept_es. This calque is also the primary es of u01l5s06, u01l5s09 and u01 dialogue line 7.",
+      "suggestion": "Make \"¡Que tengas un buen día!\" (or \"¡Feliz día!\") the primary gloss and sentence translation; keep \"ten un buen día\" as an accepted alternative at most."
+    },
+    {
+      "id": "u01:grammar",
+      "severity": "b",
+      "reason": "The questions section states as a general rule \"El verbo va primero\" with only \"Ben jij Tom?\" as illustration, but the same unit teaches wh-questions (\"Wie ben jij?\", \"Hoe heet je?\") where the question word comes first and the verb second. The rule as written is false for half the questions the learner sees in this unit.",
+      "suggestion": "Split the rule: in yes/no questions the verb goes first; with a question word (wie, hoe) the verb comes right after it."
+    },
+    {
+      "id": "u02l5s11",
+      "severity": "b",
+      "reason": "The primary form \"Ik kom uit Venezuela, maar woon in Nederland.\" drops the subject pronoun in the second clause, directly contradicting the u01 grammar rule just taught (\"En neerlandés siempre hace falta el pronombre\") before coordination ellipsis has been introduced. The learner cannot parse why \"ik\" is missing.",
+      "suggestion": "Make \"Ik kom uit Venezuela, maar ik woon in Nederland.\" the primary form and the ellipted version the alt_nl."
+    },
+    {
+      "id": "u01l4s04",
+      "severity": "c",
+      "reason": "Translating \"¿Y tú?\" into Dutch, \"En jij?\" is a natural, correct and very likely learner answer (both words are taught), but only \"En met jou?\" is accepted.",
+      "suggestion": "Add \"En jij?\" to alt_nl."
+    },
+    {
+      "id": "u01l6s10",
+      "severity": "c",
+      "reason": "Translating \"¿Y usted?\" into Dutch, \"En u?\" is a natural, correct and likely answer, but only \"En met u?\" is accepted.",
+      "suggestion": "Add \"En u?\" to alt_nl."
+    },
+    {
+      "id": "u01l6s01",
+      "severity": "c",
+      "reason": "For \"¡Buenas tardes!\" only \"Goedemiddag!\" is accepted, yet the course itself glosses goedenavond with \"buenas tardes\" (lexicon entry and u01l2s05 alt_es). A learner who answers \"Goedenavond!\" is applying what was taught and gets marked wrong.",
+      "suggestion": "Add \"Goedenavond!\" to alt_nl here, or narrow the goedenavond gloss so the mapping is one-way."
+    }
+  ]
+}
