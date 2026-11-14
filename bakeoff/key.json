@@ -1,0 +1,9 @@
+{
+  "note": "Which letter is which voice. Do not open before rating.",
+  "letters": {
+    "A": "nl-NL-Wavenet-G",
+    "B": "nl-NL-Wavenet-F",
+    "C": "nl-NL-Chirp3-HD-Charon",
+    "D": "nl-NL-Chirp3-HD-Aoede"
+  }
+}

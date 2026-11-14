@@ -1,0 +1,210 @@
+{
+  "letters": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "items": [
+    {
+      "id": "w01",
+      "text": "de",
+      "files": {
+        "A": "audio/w01-A.mp3",
+        "B": "audio/w01-B.mp3",
+        "C": "audio/w01-C.mp3",
+        "D": "audio/w01-D.mp3"
+      }
+    },
+    {
+      "id": "w02",
+      "text": "het",
+      "files": {
+        "A": "audio/w02-A.mp3",
+        "B": "audio/w02-B.mp3",
+        "C": "audio/w02-C.mp3",
+        "D": "audio/w02-D.mp3"
+      }
+    },
+    {
+      "id": "w03",
+      "text": "een",
+      "files": {
+        "A": "audio/w03-A.mp3",
+        "B": "audio/w03-B.mp3",
+        "C": "audio/w03-C.mp3",
+        "D": "audio/w03-D.mp3"
+      }
+    },
+    {
+      "id": "w04",
+      "text": "ui",
+      "files": {
+        "A": "audio/w04-A.mp3",
+        "B": "audio/w04-B.mp3",
+        "C": "audio/w04-C.mp3",
+        "D": "audio/w04-D.mp3"
+      }
+    },
+    {
+      "id": "w05",
+      "text": "zon",
+      "files": {
+        "A": "audio/w05-A.mp3",
+        "B": "audio/w05-B.mp3",
+        "C": "audio/w05-C.mp3",
+        "D": "audio/w05-D.mp3"
+      }
+    },
+    {
+      "id": "w06",
+      "text": "zoon",
+      "files": {
+        "A": "audio/w06-A.mp3",
+        "B": "audio/w06-B.mp3",
+        "C": "audio/w06-C.mp3",
+        "D": "audio/w06-D.mp3"
+      }
+    },
+    {
+      "id": "w07",
+      "text": "man",
+      "files": {
+        "A": "audio/w07-A.mp3",
+        "B": "audio/w07-B.mp3",
+        "C": "audio/w07-C.mp3",
+        "D": "audio/w07-D.mp3"
+      }
+    },
+    {
+      "id": "w08",
+      "text": "maan",
+      "files": {
+        "A": "audio/w08-A.mp3",
+        "B": "audio/w08-B.mp3",
+        "C": "audio/w08-C.mp3",
+        "D": "audio/w08-D.mp3"
+      }
+    },
+    {
+      "id": "s01",
+      "text": "Hallo, hoe gaat het?",
+      "files": {
+        "A": "audio/s01-A.mp3",
+        "B": "audio/s01-B.mp3",
+        "C": "audio/s01-C.mp3",
+        "D": "audio/s01-D.mp3"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Ik heet Anna.",
+      "files": {
+        "A": "audio/s02-A.mp3",
+        "B": "audio/s02-B.mp3",
+        "C": "audio/s02-C.mp3",
+        "D": "audio/s02-D.mp3"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Goedemorgen, mevrouw.",
+      "files": {
+        "A": "audio/s03-A.mp3",
+        "B": "audio/s03-B.mp3",
+        "C": "audio/s03-C.mp3",
+        "D": "audio/s03-D.mp3"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Waar kom je vandaan?",
+      "files": {
+        "A": "audio/s04-A.mp3",
+        "B": "audio/s04-B.mp3",
+        "C": "audio/s04-C.mp3",
+        "D": "audio/s04-D.mp3"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Ik kom uit Venezuela.",
+      "files": {
+        "A": "audio/s05-A.mp3",
+        "B": "audio/s05-B.mp3",
+        "C": "audio/s05-C.mp3",
+        "D": "audio/s05-D.mp3"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Ik spreek een beetje Nederlands.",
+      "files": {
+        "A": "audio/s06-A.mp3",
+        "B": "audio/s06-B.mp3",
+        "C": "audio/s06-C.mp3",
+        "D": "audio/s06-D.mp3"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Het is half drie.",
+      "files": {
+        "A": "audio/s07-A.mp3",
+        "B": "audio/s07-B.mp3",
+        "C": "audio/s07-C.mp3",
+        "D": "audio/s07-D.mp3"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Ik ben vijfentwintig jaar.",
+      "files": {
+        "A": "audio/s08-A.mp3",
+        "B": "audio/s08-B.mp3",
+        "C": "audio/s08-C.mp3",
+        "D": "audio/s08-D.mp3"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Dank je wel.",
+      "files": {
+        "A": "audio/s09-A.mp3",
+        "B": "audio/s09-B.mp3",
+        "C": "audio/s09-C.mp3",
+        "D": "audio/s09-D.mp3"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Mijn vriendin woont nu in Nederland.",
+      "files": {
+        "A": "audio/s10-A.mp3",
+        "B": "audio/s10-B.mp3",
+        "C": "audio/s10-C.mp3",
+        "D": "audio/s10-D.mp3"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Spreek jij geen Engels?",
+      "files": {
+        "A": "audio/s11-A.mp3",
+        "B": "audio/s11-B.mp3",
+        "C": "audio/s11-C.mp3",
+        "D": "audio/s11-D.mp3"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Tot ziens, meneer Jansen.",
+      "files": {
+        "A": "audio/s12-A.mp3",
+        "B": "audio/s12-B.mp3",
+        "C": "audio/s12-C.mp3",
+        "D": "audio/s12-D.mp3"
+      }
+    }
+  ]
+}
