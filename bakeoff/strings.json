@@ -1,0 +1,31 @@
+{
+  "about": "Spike B: blind voice comparison. Every item is synthesised in every voice. Single words test whether a voice handles isolated short words (de/het/een are often read wrongly in isolation); sentences test questions, numbers and names.",
+  "voices": [
+    "nl-NL-Chirp3-HD-Aoede",
+    "nl-NL-Chirp3-HD-Charon",
+    "nl-NL-Wavenet-F",
+    "nl-NL-Wavenet-G"
+  ],
+  "items": [
+    {"id": "w01", "text": "de"},
+    {"id": "w02", "text": "het"},
+    {"id": "w03", "text": "een"},
+    {"id": "w04", "text": "ui"},
+    {"id": "w05", "text": "zon"},
+    {"id": "w06", "text": "zoon"},
+    {"id": "w07", "text": "man"},
+    {"id": "w08", "text": "maan"},
+    {"id": "s01", "text": "Hallo, hoe gaat het?"},
+    {"id": "s02", "text": "Ik heet Anna."},
+    {"id": "s03", "text": "Goedemorgen, mevrouw."},
+    {"id": "s04", "text": "Waar kom je vandaan?"},
+    {"id": "s05", "text": "Ik kom uit Venezuela."},
+    {"id": "s06", "text": "Ik spreek een beetje Nederlands."},
+    {"id": "s07", "text": "Het is half drie."},
+    {"id": "s08", "text": "Ik ben vijfentwintig jaar."},
+    {"id": "s09", "text": "Dank je wel."},
+    {"id": "s10", "text": "Mijn vriendin woont nu in Nederland."},
+    {"id": "s11", "text": "Spreek jij geen Engels?"},
+    {"id": "s12", "text": "Tot ziens, meneer Jansen."}
+  ]
+}

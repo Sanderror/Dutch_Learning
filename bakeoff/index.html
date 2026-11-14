@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice comparison</title>
+<style>
+  :root { --ink:#16202b; --muted:#5d6b7a; --line:#d9e0e7; --bg:#f6f8fa; --card:#fff; --brand:#1f4e79; --ok:#1d7a46; --bad:#b3261e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:16px 16px 64px; }
+  h1 { font-size:1.35rem; margin:8px 0 4px; }
+  .muted { color:var(--muted); font-size:.9rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; margin:12px 0; }
+  .text { font-size:1.3rem; font-weight:700; margin:0 0 10px; }
+  .grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; }
+  .col { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  button { font:inherit; font-weight:600; border:0; border-radius:10px; min-height:48px; padding:10px 14px; background:var(--brand); color:#fff; }
+  button.play { width:100%; font-size:1.1rem; }
+  button.play.playing { background:var(--ok); }
+  button.secondary { background:#fff; color:var(--brand); border:1px solid var(--brand); }
+  label { font-size:.85rem; display:flex; align-items:center; gap:4px; }
+  input[type=radio], input[type=checkbox] { width:22px; height:22px; }
+  .bar { position:sticky; top:0; background:var(--bg); padding:8px 0; z-index:2; border-bottom:1px solid var(--line); display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); }
+  .row { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+  .row > button { flex:1 1 140px; }
+  .done { border-color:var(--ok); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Voice comparison</h1>
+  <p class="muted">Four voices, labelled A to D in a random order. For each item, play all four, pick the one you would want her to learn from, and tick any that pronounce it wrongly. Judge as a native speaker: is this how it is said?</p>
+  <div class="bar">
+    <label><input type="checkbox" id="slow"> Slow playback (0.75×)</label>
+    <span class="muted" id="progress"></span>
+  </div>
+  <div id="items"><p>Loading…</p></div>
+  <div class="card" id="summary"></div>
+  <div class="row">
+    <button id="copy">Copy results</button>
+    <button id="reset" class="secondary">Clear my ratings</button>
+  </div>
+  <p class="muted" id="notice"></p>
+</main>
+<script>
+(function () {
+  'use strict';
+  const KEY = 'bakeoff.ratings.v1';
+  let manifest = null;
+  let ratings = {};
+  try { ratings = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { ratings = {}; }
+  const audio = new Audio();
+  let playingBtn = null;
+
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(ratings)); } catch (e) { /* in-memory only */ } }
+  function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+  function r(id) { return ratings[id] || (ratings[id] = { best: null, wrong: [] }); }
+
+  function play(btn, src) {
+    if (playingBtn) playingBtn.classList.remove('playing');
+    audio.pause();
+    audio.src = src;
+    audio.playbackRate = document.getElementById('slow').checked ? 0.75 : 1;
+    audio.preservesPitch = true;
+    playingBtn = btn; btn.classList.add('playing');
+    audio.play().catch(() => btn.classList.remove('playing'));
+  }
+  audio.addEventListener('ended', () => { if (playingBtn) playingBtn.classList.remove('playing'); });
+
+  function summarize() {
+    const letters = manifest.letters;
+    const best = Object.fromEntries(letters.map(l => [l, 0]));
+    const wrong = Object.fromEntries(letters.map(l => [l, []]));
+    let rated = 0;
+    manifest.items.forEach(it => {
+      const x = ratings[it.id];
+      if (!x) return;
+      if (x.best) { best[x.best]++; rated++; }
+      x.wrong.forEach(l => wrong[l].push(it.text));
+    });
+    return { letters, best, wrong, rated, total: manifest.items.length };
+  }
+
+  function renderSummary() {
+    const s = summarize();
+    document.getElementById('progress').textContent = s.rated + ' of ' + s.total + ' rated';
+    document.getElementById('summary').innerHTML = '<strong>So far</strong><table><thead><tr><th>Voice</th><th>Best</th><th>Wrong</th></tr></thead><tbody>' +
+      s.letters.map(l => '<tr><td>' + l + '</td><td>' + s.best[l] + '</td><td>' + (s.wrong[l].length ? esc(s.wrong[l].join(', ')) : '–') + '</td></tr>').join('') +
+      '</tbody></table>';
+    manifest.items.forEach(it => {
+      const card = document.getElementById('card-' + it.id);
+      if (card) card.classList.toggle('done', !!(ratings[it.id] && ratings[it.id].best));
+    });
+  }
+
+  function render() {
+    document.getElementById('items').innerHTML = manifest.items.map((it, i) => {
+      const x = ratings[it.id] || { best: null, wrong: [] };
+      return '<div class="card" id="card-' + it.id + '"><p class="muted">' + (i + 1) + ' of ' + manifest.items.length + '</p>' +
+        '<p class="text" lang="nl">' + esc(it.text) + '</p><div class="grid">' +
+        manifest.letters.map(l =>
+          '<div class="col"><button class="play" data-src="' + esc(it.files[l]) + '">' + l + '</button>' +
+          '<label><input type="radio" name="best-' + it.id + '" data-id="' + it.id + '" data-letter="' + l + '"' + (x.best === l ? ' checked' : '') + '> best</label>' +
+          '<label><input type="checkbox" data-wrong="' + it.id + '" data-letter="' + l + '"' + (x.wrong.includes(l) ? ' checked' : '') + '> wrong</label></div>'
+        ).join('') + '</div></div>';
+    }).join('');
+    document.querySelectorAll('button.play').forEach(b => b.addEventListener('click', () => play(b, b.dataset.src)));
+    document.querySelectorAll('input[type=radio]').forEach(el => el.addEventListener('change', () => {
+      r(el.dataset.id).best = el.dataset.letter; save(); renderSummary();
+    }));
+    document.querySelectorAll('input[data-wrong]').forEach(el => el.addEventListener('change', () => {
+      const x = r(el.dataset.wrong);
+      x.wrong = x.wrong.filter(l => l !== el.dataset.letter);
+      if (el.checked) x.wrong.push(el.dataset.letter);
+      save(); renderSummary();
+    }));
+    renderSummary();
+  }
+
+  document.getElementById('copy').addEventListener('click', () => {
+    const s = summarize();
+    const lines = ['VOICE COMPARISON', s.rated + ' of ' + s.total + ' rated', ''];
+    s.letters.forEach(l => lines.push(l + ': best ' + s.best[l] + ', wrong ' + s.wrong[l].length + (s.wrong[l].length ? ' (' + s.wrong[l].join(' | ') + ')' : '')));
+    lines.push('', 'PER ITEM');
+    manifest.items.forEach(it => {
+      const x = ratings[it.id] || { best: null, wrong: [] };
+      lines.push(it.id + ' ' + it.text + ' -> best ' + (x.best || '-') + (x.wrong.length ? ', wrong ' + x.wrong.join('') : ''));
+    });
+    const text = lines.join('\n');
+    const note = document.getElementById('notice');
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
+      .then(() => { note.textContent = 'Copied. Paste it into the chat.'; },
+            () => { note.textContent = 'Could not copy automatically; select and copy the text below.'; note.insertAdjacentHTML('afterend', '<pre style="white-space:pre-wrap">' + esc(text) + '</pre>'); });
+  });
+  document.getElementById('reset').addEventListener('click', () => {
+    if (!confirmReset) { confirmReset = true; document.getElementById('reset').textContent = 'Tap again to clear'; return; }
+    ratings = {}; save(); confirmReset = false; document.getElementById('reset').textContent = 'Clear my ratings'; render();
+  });
+  let confirmReset = false;
+
+  fetch('manifest.json', { cache: 'no-store' })
+    .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(m => { manifest = m; render(); })
+    .catch(() => {
+      document.getElementById('items').innerHTML = '<div class="card"><p>No audio yet. Run the "Voice comparison" workflow in the repository\'s Actions tab, wait for it to finish, then reload this page.</p></div>';
+      document.getElementById('summary').style.display = 'none';
+    });
+})();
+</script>
+</body>
+</html>

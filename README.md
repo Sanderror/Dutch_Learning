@@ -30,6 +30,18 @@ Read each sentence once, at a normal pace. "Repetir" records a second attempt, w
 
 What the page records per attempt: the transcript and alternatives with confidence, the time to a result, any error code, and the order of recogniser events (the diagnostic for the microphone switching on and off).
 
+## Spike B: voice comparison
+
+`bakeoff/strings.json` lists 20 test items (8 single words, 12 sentences) and 4 voices.
+The workflow `.github/workflows/tts-bakeoff.yml` synthesises every item in every voice with
+the `GOOGLE_TTS_API_KEY` repository secret, commits the audio and asks Pages to rebuild.
+
+1. Actions tab, "Voice comparison", "Run workflow". Takes about a minute.
+2. Open `https://sanderror.github.io/Dutch_Learning/bakeoff/` on the phone.
+3. Rate, then "Copy results" and paste into the chat.
+
+The voices are labelled A to D in a random order; `bakeoff/key.json` says which is which. Don't open it before rating.
+
 ## Spike C: content pilot
 
 ```
