@@ -1,11 +1,11 @@
 ﻿Lesson,Dutch,Spanish,OK?,Corrected Dutch,Corrected Spanish,Comment,Also accepted (Spanish),Also accepted (Dutch),Type,ID
-u01l1,hallo,hola,,,,,,,word,hallo
+u01l1,hallo,hola,,,,,buenas,hoi,word,hallo
 u01l1,ik,yo,,,,,,,word,ik
 u01l1,"zijn  (ben, bent, is)","ser, estar",,,,,,,word,zijn
 u01l1,ja,sí,,,,,,,word,ja
 u01l1,nee,no,,,,,,,word,nee
 u01l1,en,y,,,,,,,word,en
-u01l1,Hallo!,¡Hola!,,,,,,,sentence,u01l1s01
+u01l1,Hallo!,¡Hola!,,,,,¡Buenas!,Hoi!,sentence,u01l1s01
 u01l1,Ik ben Anna.,Soy Anna.,,,,,Yo soy Anna.,,sentence,u01l1s02
 u01l1,"Hallo, ik ben Tom.","Hola, soy Tom.",,,,,"Hola, yo soy Tom.",,sentence,u01l1s03
 u01l1,Ja.,Sí.,,,,,,,sentence,u01l1s04
@@ -16,7 +16,7 @@ u01l1,"Nee, ik ben Tom.","No, soy Tom.",,,,,"No, yo soy Tom.",,sentence,u01l1s08
 u01l1,Anna en Tom.,Anna y Tom.,,,,,,,sentence,u01l1s09
 u01l1,"Hallo, Anna!","¡Hola, Anna!",,,,,,,sentence,u01l1s10
 u01l1,Ja en nee.,Sí y no.,,,,,,,sentence,u01l1s11
-u01l2,jij,tú,,,,,,,word,jij
+u01l2,jij,tú,,,,,,je,word,jij
 u01l2,wie,quién,,,,,,,word,wie
 u01l2,goedemorgen,buenos días,,,,,,,word,goedemorgen
 u01l2,goedenavond,"buenas noches, buenas tardes  [Saludo al llegar, desde las 6 de la tarde aproximadamente.]",,,,,,,word,goedenavond
@@ -35,11 +35,11 @@ u01l2,"Goedenavond, Tom!","¡Buenas noches, Tom!",,,,,"¡Buenas tardes, Tom!",,s
 u01l2,En wie ben jij?,¿Y tú quién eres?,,,,,¿Y quién eres tú? | ¿Y quién eres?,,sentence,u01l2s12
 u01l3,hoe,cómo,,,,,,,word,hoe
 u01l3,heten  (heet),llamarse,,,,,,,word,heten
-u01l3,je,tú  [Forma sin énfasis de jij; es la más usada al hablar.],,,,,,,word,je
+u01l3,je,tú  [Forma sin énfasis de jij; es la más usada al hablar.],,,,,,jij,word,je
 u01l3,mijn,mi,,,,,,,word,mijn
-u01l3,de naam,nombre,,,,,,,word,naam
-u01l3,Hoe heet jij?,¿Cómo te llamas?,,,,,¿Cómo te llamas tú? | ¿Tú cómo te llamas?,Hoe heet je?,sentence,u01l3s01
-u01l3,Hoe heet je?,¿Cómo te llamas?,,,,,,Hoe heet jij?,sentence,u01l3s02
+u01l3,de naam,el nombre,,,,,,,word,naam
+u01l3,Hoe heet jij?,¿Cómo te llamas?,,,,,¿Cómo te llamas tú? | ¿Tú cómo te llamas? | ¿Cómo tú te llamas?,Hoe heet je?,sentence,u01l3s01
+u01l3,Hoe heet je?,¿Cómo te llamas?,,,,,¿Cómo te llamas tú? | ¿Tú cómo te llamas? | ¿Cómo tú te llamas?,Hoe heet jij?,sentence,u01l3s02
 u01l3,Ik heet Anna.,Me llamo Anna.,,,,,Yo me llamo Anna.,,sentence,u01l3s03
 u01l3,Mijn naam is Tom.,Mi nombre es Tom.,,,,,,,sentence,u01l3s04
 u01l3,Heet jij Daan?,¿Te llamas Daan?,,,,,¿Tú te llamas Daan?,Heet je Daan?,sentence,u01l3s05
@@ -49,7 +49,7 @@ u01l3,"Hallo, hoe heet je?","Hola, ¿cómo te llamas?",,,,,,"Hallo, hoe heet jij
 u01l3,Mijn naam is María.,Mi nombre es María.,,,,,,,sentence,u01l3s09
 u01l3,Ben je Tom?,¿Eres Tom?,,,,,¿Tú eres Tom?,Ben jij Tom?,sentence,u01l3s10
 u01l3,"Ja, mijn naam is Tom.","Sí, mi nombre es Tom.",,,,,,,sentence,u01l3s11
-u01l4,gaan  (gaat),ir  [Hoe gaat het? = ¿Cómo estás? (literalmente: ¿cómo va?)],,,,,,,word,gaan
+u01l4,"gaan  (ga, gaat)",ir  [Hoe gaat het? = ¿Cómo estás? (literalmente: ¿cómo va?)],,,,,,,word,gaan
 u01l4,het,"eso, ello  [Aquí es un sujeto impersonal, como en Het gaat goed.]",,,,,,,word,het
 u01l4,goed,"bien, bueno",,,,,,,word,goed
 u01l4,met,con,,,,,,,word,met
@@ -67,28 +67,28 @@ u01l4,Goed!,¡Bien!,,,,,¡Bueno!,,sentence,u01l4s09
 u01l4,Hoe gaat het met Anna?,¿Cómo está Anna?,,,,,¿Cómo le va a Anna?,,sentence,u01l4s10
 u01l4,Het gaat goed met Anna.,Anna está bien.,,,,,A Anna le va bien.,Met Anna gaat het goed.,sentence,u01l4s11
 u01l4,"Nee, dank je.","No, gracias.",,,,,,,sentence,u01l4s12
-u01l5,doei,chao  [Despedida informal.],,,,,,,word,doei
+u01l5,doei,chao  [Despedida informal.],,,,,adiós | bye | bye bye | chao chao,hoi | hoi hoi | doeg | doei doei | later | dag,word,doei
 u01l5,dag,"adiós, hola  [Sirve para saludar y para despedirse.]",,,,,,,word,dag
-u01l5,tot ziens,"nos vemos, hasta luego",,,,,,,word,tot-ziens
+u01l5,tot ziens,"nos vemos, hasta luego",,,,,,tot later | tot kijk,word,tot-ziens
 u01l5,tot morgen,hasta mañana,,,,,,,word,tot-morgen
-u01l5,tot later,hasta luego,,,,,,,word,tot-later
-u01l5,fijne dag,"que tengas un buen día, feliz día",,,,,,,word,fijne-dag
+u01l5,tot later,hasta luego,,,,,nos vemos,tot ziens | tot kijk,word,tot-later
+u01l5,fijne dag,ten un buen día,,,,,que tengas un buen día | feliz día,,word,fijne-dag
 u01l5,Doei!,¡Chao!,,,,,¡Adiós!,Dag!,sentence,u01l5s01
 u01l5,Dag!,¡Adiós!,,,,,¡Hola! | ¡Chao!,Doei!,sentence,u01l5s02
 u01l5,Tot ziens!,¡Nos vemos!,,,,,¡Hasta luego! | ¡Adiós! | ¡Hasta la vista!,,sentence,u01l5s03
 u01l5,Tot morgen!,¡Hasta mañana!,,,,,,,sentence,u01l5s04
 u01l5,Tot later!,¡Hasta luego!,,,,,¡Hasta más tarde! | ¡Nos vemos luego!,,sentence,u01l5s05
-u01l5,Fijne dag!,¡Que tengas un buen día!,,,,,¡Feliz día! | ¡Buen día! | ¡Que tengas buen día!,,sentence,u01l5s06
+u01l5,Fijne dag!,¡Ten un buen día!,,,,,¡Feliz día! | ¡Buen día! | ¡Que tengas un buen día!,,sentence,u01l5s06
 u01l5,"Doei, tot morgen!","¡Chao, hasta mañana!",,,,,"¡Adiós, hasta mañana!","Dag, tot morgen!",sentence,u01l5s07
 u01l5,"Dag Anna, tot ziens!","Adiós, Anna, ¡nos vemos!",,,,,"Adiós, Anna, ¡hasta luego! | Chao, Anna, ¡nos vemos!",,sentence,u01l5s08
-u01l5,"Dank je, fijne dag!","Gracias, ¡que tengas un buen día!",,,,,"Gracias, ¡feliz día! | Gracias, ¡buen día!",,sentence,u01l5s09
+u01l5,"Dank je, fijne dag!","Gracias, ¡ten un buen día!",,,,,"Gracias, ¡feliz día! | Gracias, ¡buen día! | Gracias, ¡que tengas un buen día!",,sentence,u01l5s09
 u01l5,"Tot morgen, Tom!","¡Hasta mañana, Tom!",,,,,,,sentence,u01l5s10
 u01l5,"Dag Emma, hoe gaat het?","Hola, Emma, ¿cómo estás?",,,,,"Hola, Emma, ¿qué tal? | Hola, Emma, ¿cómo te va?","Hallo Emma, hoe gaat het?",sentence,u01l5s11
 u01l5,"Doei, Luis!","¡Chao, Luis!",,,,,"¡Adiós, Luis!","Dag, Luis!",sentence,u01l5s12
 u01l5,"Tot later, Emma!","¡Hasta luego, Emma!",,,,,"¡Nos vemos luego, Emma! | ¡Hasta más tarde, Emma!",,sentence,u01l5s13
 u01l6,u,usted,,,,,,,word,u
-u01l6,de meneer,señor,,,,,,,word,meneer
-u01l6,de mevrouw,señora,,,,,,,word,mevrouw
+u01l6,de meneer,el señor,,,,,,,word,meneer
+u01l6,de mevrouw,la señora,,,,,,,word,mevrouw
 u01l6,goedemiddag,buenas tardes,,,,,,,word,goedemiddag
 u01l6,welkom,"bienvenido, bienvenida",,,,,,,word,welkom
 u01l6,Goedemiddag!,¡Buenas tardes!,,,,,,,sentence,u01l6s01
@@ -111,7 +111,7 @@ u01 dialogue,"Emma: Hoe gaat het, Luis?","¿Cómo estás, Luis?",,,,,,,dialogue,
 u01 dialogue,"Luis: Goed, dank je. En met jou?","Bien, gracias. ¿Y tú?",,,,,,,dialogue,u01d04
 u01 dialogue,"Emma: Ook goed, dank je.","También bien, gracias.",,,,,,,dialogue,u01d05
 u01 dialogue,"Luis: Tot morgen, Emma!","¡Hasta mañana, Emma!",,,,,,,dialogue,u01d06
-u01 dialogue,"Emma: Doei, fijne dag!","¡Chao, que tengas un buen día!",,,,,,,dialogue,u01d07
+u01 dialogue,"Emma: Doei, fijne dag!","¡Chao, ten un buen día!",,,,,,,dialogue,u01d07
 u01 dialogue,,¿Cómo se llama el chico?,,,,,✔ Luis / Tom / Daan,,question,u01q01
 u01 dialogue,,¿Cómo está Luis?,,,,,Mal / ✔ Bien / No lo dice,,question,u01q02
 u01 dialogue,,¿Cuándo se vuelven a ver?,,,,,Hoy en la noche / No lo dicen / ✔ Mañana,,question,u01q03
@@ -133,7 +133,7 @@ u02l1,Jij komt uit Nederland.,Tú eres de los Países Bajos.,,,,,Eres de los Pa�
 u02l1,Tom komt uit Nederland.,Tom es de los Países Bajos.,,,,,Tom es de Holanda. | Tom viene de los Países Bajos.,,sentence,u02l1s10
 u02l1,Komt María uit Venezuela?,¿María es de Venezuela?,,,,,¿Es María de Venezuela? | ¿María viene de Venezuela?,,sentence,u02l1s11
 u02l1,Waar komt Luis vandaan?,¿De dónde es Luis?,,,,,¿De dónde viene Luis? | ¿Luis de dónde es?,,sentence,u02l1s12
-u02l2,"wonen  (woon, woont)",vivir,,,,,,,word,wonen
+u02l2,"wonen  (woon, woont)",vivir,,,,,,leven,word,wonen
 u02l2,in,en,,,,,,,word,in
 u02l2,nu,ahora,,,,,,,word,nu
 u02l2,hier,"aquí, acá",,,,,,,word,hier
@@ -151,11 +151,11 @@ u02l2,Ik woon ook in Amsterdam.,Yo también vivo en Ámsterdam.,,,,,También viv
 u02l2,Jij woont nu in Caracas.,Ahora vives en Caracas.,,,,,Tú vives ahora en Caracas. | Vives ahora en Caracas. | Tú ahora vives en Caracas.,Je woont nu in Caracas.,sentence,u02l2s11
 u02l2,Waar woont Daan nu?,¿Dónde vive Daan ahora?,,,,,¿Dónde vive ahora Daan? | ¿Ahora dónde vive Daan?,,sentence,u02l2s12
 u02l2,Woont Tom daar?,¿Tom vive allá?,,,,,¿Tom vive allí? | ¿Tom vive ahí? | ¿Vive Tom allá? | ¿Vive Tom allí?,,sentence,u02l2s13
-u02l3,"spreken  (spreek, spreekt)",hablar,,,,,,,word,spreken
-u02l3,het Spaans,español,,,,,,,word,spaans
-u02l3,het Nederlands,"neerlandés, holandés",,,,,,,word,nederlands
-u02l3,het Engels,inglés,,,,,,,word,engels
-u02l3,een beetje,un poco,,,,,,,word,een-beetje
+u02l3,"spreken  (spreek, spreekt)",hablar,,,,,,praten,word,spreken
+u02l3,het Spaans,el español,,,,,,,word,spaans
+u02l3,het Nederlands,"el neerlandés, el holandés",,,,,,,word,nederlands
+u02l3,het Engels,el inglés,,,,,,,word,engels
+u02l3,een beetje,un poco,,,,,un poquito | un poquitito,een klein beetje,word,een-beetje
 u02l3,Ik spreek Spaans.,Hablo español.,,,,,Yo hablo español.,,sentence,u02l3s01
 u02l3,Spreek jij Nederlands?,¿Hablas neerlandés?,,,,,¿Hablas holandés? | ¿Tú hablas neerlandés? | ¿Tú hablas holandés?,Spreek je Nederlands?,sentence,u02l3s02
 u02l3,Ik spreek een beetje Nederlands.,Hablo un poco de neerlandés.,,,,,Hablo un poco de holandés. | Yo hablo un poco de neerlandés. | Hablo un poquito de neerlandés. | Hablo un poquito de holandés.,,sentence,u02l3s03
@@ -169,8 +169,8 @@ u02l3,María spreekt Spaans.,María habla español.,,,,,,,sentence,u02l3s10
 u02l3,Ik spreek ook een beetje Engels.,También hablo un poco de inglés.,,,,,Yo también hablo un poco de inglés. | Hablo también un poco de inglés.,,sentence,u02l3s11
 u02l4,hij,él,,,,,,,word,hij
 u02l4,zij,ella,,,,,,,word,zij
-u02l4,dit,"este, esta, esto",,,,,,,word,dit
-u02l4,dat,"ese, esa, eso",,,,,,,word,dat
+u02l4,"dit  (dit, deze)","este, esta, esto  [dit con palabras de het y para presentar algo (Dit is Tom); deze con palabras de de (deze meneer).]",,,,,,,word,dit
+u02l4,"dat  (dat, die)","ese, esa, eso, aquel, aquella, aquello  [dat con palabras de het y para señalar algo (Dat is Emma); die con palabras de de (die mevrouw).]",,,,,,,word,dat
 u02l4,Dit is Tom.,Este es Tom.,,,,,Él es Tom.,,sentence,u02l4s01
 u02l4,Wie is dat?,¿Quién es ese?,,,,,¿Quién es esa? | ¿Quién es? | ¿Quién es él? | ¿Quién es ella?,,sentence,u02l4s02
 u02l4,Dat is Emma.,Esa es Emma.,,,,,Ella es Emma.,,sentence,u02l4s03
@@ -184,6 +184,8 @@ u02l4,Hoe heet hij?,¿Cómo se llama él?,,,,,¿Cómo se llama? | ¿Él cómo se
 u02l4,Zij is María.,Ella es María.,,,,,Es María.,,sentence,u02l4s11
 u02l4,Hij woont ook in Utrecht.,Él también vive en Utrecht.,,,,,También vive en Utrecht. | Él vive también en Utrecht.,,sentence,u02l4s12
 u02l4,Dit is Emma en dat is Daan.,Esta es Emma y ese es Daan.,,,,,Ella es Emma y él es Daan.,,sentence,u02l4s13
+u02l4,Deze meneer heet Daan.,Este señor se llama Daan.,,,,,,,sentence,u02l4s14
+u02l4,Die mevrouw woont in Utrecht.,Esa señora vive en Utrecht.,,,,,Aquella señora vive en Utrecht.,,sentence,u02l4s15
 u02l5,niet,"no  [Niega verbos, adjetivos y lugares.]",,,,,,,word,niet
 u02l5,geen,"no, ningún  [Niega un sustantivo sin artículo: geen Nederlands.]",,,,,,,word,geen
 u02l5,maar,pero,,,,,,,word,maar
@@ -202,10 +204,10 @@ u02l5,"Nee, zij woont daar niet.","No, ella no vive allá.",,,,,"No, ella no viv
 u02l5,"Ik kom uit Venezuela, maar woon in Nederland.","Soy de Venezuela, pero vivo en los Países Bajos.",,,,,"Soy de Venezuela, pero vivo en Holanda. | Vengo de Venezuela, pero vivo en los Países Bajos.","Ik kom uit Venezuela, maar ik woon in Nederland.",sentence,u02l5s11
 u02l5,Woont u in Amsterdam of in Utrecht?,¿Vive usted en Ámsterdam o en Utrecht?,,,,,¿Vive en Ámsterdam o en Utrecht? | ¿Usted vive en Ámsterdam o en Utrecht?,,sentence,u02l5s12
 u02l5,Het gaat niet goed.,No estoy bien.,,,,,No me va bien. | No va bien.,,sentence,u02l5s13
-u02l6,de vriend,"novio, amigo  [mijn vriend suele entenderse como «mi novio».]",,,,,,,word,vriend
-u02l6,de vriendin,"novia, amiga  [mijn vriendin suele entenderse como «mi novia».]",,,,,,,word,vriendin
+u02l6,de vriend,"el novio, el amigo  [mijn vriend suele entenderse como «mi novio».]",,,,,,,word,vriend
+u02l6,de vriendin,"la novia, la amiga  [mijn vriendin suele entenderse como «mi novia».]",,,,,,,word,vriendin
 u02l6,aangenaam,"mucho gusto, encantado, encantada",,,,,,,word,aangenaam
-u02l6,leuk,"chévere, agradable, divertido",,,,,,,word,leuk
+u02l6,leuk,"chévere, agradable, divertido",,,,,qué bien,,word,leuk
 u02l6,heel,muy,,,,,,,word,heel
 u02l6,Dit is mijn vriend.,Este es mi novio.,,,,,Él es mi novio. | Este es mi amigo. | Él es mi amigo.,,sentence,u02l6s01
 u02l6,"Dit is mijn vriendin, María.","Esta es mi novia, María.",,,,,"Ella es mi novia, María. | Esta es mi amiga, María. | Ella es mi amiga, María.",,sentence,u02l6s02

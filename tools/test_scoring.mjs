@@ -1,6 +1,7 @@
 // Unit tests for spike-a-speech/scoring.js. Run: node tools/test_scoring.mjs
 import { createRequire } from 'node:module';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 const require = createRequire(import.meta.url);
 const S = require('../spike-a-speech/scoring.js');
 const Items = require('../spike-a-speech/items.js');
@@ -88,6 +89,35 @@ t('test material: 30 sentences, 10 words, every target matches itself', () => {
     for (const it of Items.sets[key].items) assert.ok(S.compare(it, it).exact, it);
   }
   assert.equal(new Set(Items.sets.frases.items).size, 30);
+});
+
+
+t('clock times from the recogniser match how they are said', () => {
+  assert.ok(S.compare('Het is half drie.', 'het is 2:30').exact);
+  assert.ok(S.compare('Het is half drie.', 'het is 14:30').exact);
+  assert.ok(S.compare('Het is half drie.', 'Het is 14.30').exact);
+  assert.ok(S.compare('Het is kwart over vier.', 'het is 4:15').exact);
+  assert.ok(S.compare('Het is kwart voor negen.', 'het is 8:45').exact);
+  assert.ok(S.compare('Het is tien voor half acht.', 'het is 7:20').exact);
+  assert.ok(S.compare('Het is vijf over half twaalf.', 'het is 11:35').exact);
+  assert.ok(S.compare('Het is drie uur.', 'het is 3:00').exact);
+  assert.ok(S.compare('Het is half een.', 'het is 12:30').exact);
+  assert.ok(S.compare('Het is twaalf uur.', 'het is 0:00').exact);
+  // a different time stays wrong
+  assert.equal(S.compare('Het is half drie.', 'het is 3:30').exact, false);
+  assert.equal(S.compare('Het is half drie.', 'het is 2:00').exact, false);
+  // odd minutes are left as digits, not guessed
+  assert.equal(S.timeToDutch(2, 31), null);
+});
+
+t('rescoring the real Pixel runs of 14 November', () => {
+  const runs = JSON.parse(fs.readFileSync(new URL('./fixtures/spike_a_runs_2026-11-14.json', import.meta.url)));
+  const [run1, run2] = runs.map(r => S.summarize(r.items));
+  // before this change: 17/30 and 27/30; "half drie" heard as "2:30" now counts
+  assert.equal(run1.firstExact, 18);
+  assert.equal(run2.firstExact, 28);
+  const wrong = runs[1].items.filter(it => !S.scoreAttempt(it.target, it.attempts[0].alternatives).exact).map(it => it.target);
+  assert.deepEqual(wrong, ['Ik spreek een beetje Nederlands.', 'Wat kost dit brood?']);
 });
 
 console.log(`\n${n} tests passed`);

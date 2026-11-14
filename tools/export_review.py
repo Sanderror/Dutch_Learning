@@ -37,7 +37,8 @@ def rows(content_dir):
                 if forms.lower() != e["nl"].lower():
                     dutch += f"  ({forms})"
                 spanish = ", ".join(e["es"]) + (f"  [{e['note_es']}]" if e.get("note_es") else "")
-                out.append(row(lesson["id"], "word", e["id"], dutch, spanish))
+                out.append(row(lesson["id"], "word", e["id"], dutch, spanish,
+                               " | ".join(e.get("accept_es", [])), " | ".join(e.get("accept_nl", []))))
             for s in lesson["sentences"]:
                 out.append(row(lesson["id"], "sentence", s["id"], s["nl"], s["es"],
                                " | ".join(s.get("alt_es", [])), " | ".join(s.get("alt_nl", []))))

@@ -18,8 +18,12 @@
           "id": "u01l1s01",
           "nl": "Hallo!",
           "es": "¡Hola!",
-          "alt_nl": [],
-          "alt_es": []
+          "alt_nl": [
+            "Hoi!"
+          ],
+          "alt_es": [
+            "¡Buenas!"
+          ]
         },
         {
           "id": "u01l1s02",
@@ -229,7 +233,8 @@
           ],
           "alt_es": [
             "¿Cómo te llamas tú?",
-            "¿Tú cómo te llamas?"
+            "¿Tú cómo te llamas?",
+            "¿Cómo tú te llamas?"
           ]
         },
         {
@@ -239,7 +244,11 @@
           "alt_nl": [
             "Hoe heet jij?"
           ],
-          "alt_es": []
+          "alt_es": [
+            "¿Cómo te llamas tú?",
+            "¿Tú cómo te llamas?",
+            "¿Cómo tú te llamas?"
+          ]
         },
         {
           "id": "u01l3s03",
@@ -499,12 +508,12 @@
         {
           "id": "u01l5s06",
           "nl": "Fijne dag!",
-          "es": "¡Que tengas un buen día!",
+          "es": "¡Ten un buen día!",
           "alt_nl": [],
           "alt_es": [
             "¡Feliz día!",
             "¡Buen día!",
-            "¡Que tengas buen día!"
+            "¡Que tengas un buen día!"
           ]
         },
         {
@@ -531,11 +540,12 @@
         {
           "id": "u01l5s09",
           "nl": "Dank je, fijne dag!",
-          "es": "Gracias, ¡que tengas un buen día!",
+          "es": "Gracias, ¡ten un buen día!",
           "alt_nl": [],
           "alt_es": [
             "Gracias, ¡feliz día!",
-            "Gracias, ¡buen día!"
+            "Gracias, ¡buen día!",
+            "Gracias, ¡que tengas un buen día!"
           ]
         },
         {
@@ -740,7 +750,7 @@
       {
         "speaker": "Emma",
         "nl": "Doei, fijne dag!",
-        "es": "¡Chao, que tengas un buen día!"
+        "es": "¡Chao, ten un buen día!"
       }
     ],
     "questions": [
