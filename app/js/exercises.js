@@ -123,6 +123,99 @@ function typeStep(s, mode) {
   };
 }
 
+// ---------- put the words in order ----------
+/** The sentence's own words, shuffled, no extra tiles: only the order is the question. */
+function orderStep(course, s, rnd) {
+  const words = tileWords(s.nl, course.proper);
+  let tiles = makeTiles(words, [], rnd);
+  for (let i = 0; i < 5 && tiles.map((t) => t.text).join(' ') === words.join(' '); i++) tiles = makeTiles(words, [], rnd);
+  return {
+    type: 'tiles', sid: s.id, mode: 'order', lang: 'nl', prompt: s.es, audio: null, tiles,
+    accepted: [s.nl, ...(s.alt_nl || [])], reveal: reveal(s),
+  };
+}
+
+// ---------- fill the gap ----------
+// One word is left out and she picks it from three. Only words where the
+// choice is grammar are left out: a verb form (ben / bent / is), an article
+// before its noun (de / het / een), deze / die / dit / dat before a noun, and
+// niet / geen. The Spanish sentence is shown, so a choice that changes the
+// meaning (een for het) is wrong for a visible reason; a choice that would
+// give another accepted answer is never offered.
+const ARTICLES = ['de', 'het', 'een'];
+const DEMONSTRATIVES = { deze: ['dit', 'dat'], die: ['dat', 'dit'], dit: ['deze', 'die'], dat: ['die', 'deze'] };
+const NEGATIONS = { niet: ['geen', 'nee'], geen: ['niet', 'nee'] };
+// pairs that are both correct with these subjects: never offered against each other
+const BOTH_RIGHT = [
+  { entry: 'willen', forms: ['wil', 'wilt'], subjects: ['jij', 'je', 'u'] },
+  { entry: 'hebben', forms: ['hebt', 'heeft'], subjects: ['u'] },
+  { entry: 'zijn', forms: ['bent', 'is'], subjects: ['u'] },
+];
+
+function splitPiece(piece) {
+  const m = piece.match(/^([¿¡"«(]*)(.*?)([?!.,;:"»)…]*)$/);
+  return { lead: m[1], core: m[2], trail: m[3] };
+}
+
+export function gapStep(course, s, lessonId, rnd) {
+  const pieces = s.nl.split(/\s+/).filter(Boolean);
+  const toks = pieces.map((p) => { const t = tokens(p); return t.length === 1 ? t[0] : null; });
+  const has = (w) => toks.includes(w);
+  const accepted = new Set([s.nl, ...(s.alt_nl || [])].map(fold));
+  const known = course.entriesUpTo(lessonId);
+  const single = (e) => e.formList.filter((f) => f.lesson <= lessonId && f.toks.length === 1).map((f) => f.toks[0]);
+  const isNoun = (tok) => tok && known.some((e) => e.article && single(e).includes(tok));
+  const withWord = (i, w) => fold(pieces.map((p, k) => (k === i ? w : p)).join(' '));
+
+  const candidates = [];
+  toks.forEach((tok, i) => {
+    if (!tok) return;
+    let options = null, weight = 1;
+    const verb = known.find((e) => e.pos === 'verb' && single(e).includes(tok));
+    if (verb) {
+      let siblings = single(verb).filter((f) => f !== tok);
+      for (const rule of BOTH_RIGHT) {
+        if (rule.entry === verb.id && rule.forms.includes(tok) && rule.subjects.some(has)) siblings = siblings.filter((f) => !rule.forms.includes(f));
+      }
+      options = siblings; weight = verb.id === "zijn" ? 1 : 3;     // "is" is in half the sentences: do not let it take over
+    } else if (ARTICLES.includes(tok) && isNoun(toks[i + 1])) {
+      options = ARTICLES.filter((a) => a !== tok); weight = 2;
+    } else if (DEMONSTRATIVES[tok] && isNoun(toks[i + 1])) {
+      options = DEMONSTRATIVES[tok]; weight = 2;
+    } else if (NEGATIONS[tok]) {
+      options = NEGATIONS[tok]; weight = 2;
+    }
+    if (!options) return;
+    options = shuffled(options.filter((o) => !accepted.has(withWord(i, o))), rnd).slice(0, 2);
+    if (options.length === 2) for (let k = 0; k < weight; k++) candidates.push({ i, tok, options });
+  });
+  if (!candidates.length) return null;
+  const pick = candidates[Math.floor(rnd() * candidates.length)];
+  const { lead, trail } = splitPiece(pieces[pick.i]);
+  const options = shuffled([pick.tok, ...pick.options], rnd);
+  return {
+    type: 'gap', sid: s.id, lang: 'nl', audio: null,
+    before: [...pieces.slice(0, pick.i), lead].join(' ').trim(),
+    after: [trail, ...pieces.slice(pick.i + 1)].join(' ').replace(/^ /, ''),
+    joinAfter: trail !== '',                // punctuation sticks to the gap
+    hintEs: s.es, options, answer: options.indexOf(pick.tok), reveal: reveal(s),
+  };
+}
+
+// ---------- say it aloud ----------
+const SPEAK_MIN_WORDS = 2;      // single words are recognised badly
+const SPEAK_MAX_WORDS = 8;
+
+export function canBeSpoken(course, s) {
+  const n = tileWords(s.nl, course.proper).length;
+  return n >= SPEAK_MIN_WORDS && n <= SPEAK_MAX_WORDS;
+}
+
+/** Practice, never a gate: the app marks it soft, so "Continuar" is always there. */
+export function speakStep(s) {
+  return { type: 'speak', sid: s.id, lang: 'nl', nl: s.nl, es: s.es, audio: s.nl, soft: true, reveal: reveal(s) };
+}
+
 function cardStep(e) {
   const extraForms = e.formList.map((f) => f.form).filter((f) => fold(f) !== fold(e.nl));
   return { type: 'card', entryId: e.id, nl: e.display, forms: extraForms, es: e.es, note: e.note_es || null, audio: e.display };
@@ -169,7 +262,7 @@ function matchStep(course, lessonId, rnd) {
 
 // ---------- which exercise for which sentence ----------
 // Recognition first, production later in the lesson.
-const PATTERN = ['mc', 'nl2es', 'es2nl', 'listen', 'mc', 'es2nl', 'type', 'listen', 'nl2es', 'type', 'es2nl', 'listen', 'type', 'es2nl'];
+const PATTERN = ['mc', 'nl2es', 'es2nl', 'listen', 'mc', 'gap', 'type', 'listen', 'nl2es', 'order', 'es2nl', 'listen', 'gap', 'type'];
 const LONG_FOR_TYPING = 5;      // in sections 1 and 2, longer sentences are built from tiles instead
 
 export function sentenceStep(course, s, wanted, ctx) {
@@ -182,6 +275,15 @@ export function sentenceStep(course, s, wanted, ctx) {
     const step = mcStep(course, s, mcPool, rnd);
     if (step) return step;
     kind = 'nl2es';
+  }
+  if (kind === 'gap') {
+    const step = gapStep(course, s, lessonId, rnd);
+    if (step) return step;
+    kind = 'es2nl';
+  }
+  if (kind === 'order') {
+    if (nNl >= 4) return orderStep(course, s, rnd);
+    kind = 'es2nl';
   }
   if (kind === 'nl2es' && nEs < 2) kind = 'es2nl';
   if (kind === 'es2nl' && nNl < 2) kind = 'type';
@@ -200,7 +302,7 @@ export function sentenceStep(course, s, wanted, ctx) {
  * word, one exercise per sentence, and one matching game once all the new
  * words have been met.
  */
-export function buildLesson(course, lessonId, { attempt = 0, canListen = true } = {}) {
+export function buildLesson(course, lessonId, { attempt = 0, canListen = true, canSpeak = false } = {}) {
   const { lesson, unit } = course.lessonInfo.get(lessonId);
   const rnd = seedRandom(lessonId + ':' + attempt);
   const fresh = course.newEntries(lessonId);
@@ -215,11 +317,23 @@ export function buildLesson(course, lessonId, { attempt = 0, canListen = true } 
   const offset = attempt === 0 ? 0 : 1 + Math.floor(rnd() * (PATTERN.length - 1));
   const steps = [];
   let matchAt = -1;
+  // two sentences are also said aloud, right after their exercise: one around
+  // the middle of the lesson and one at the end
+  const speakAt = new Set();
+  if (canSpeak) {
+    const eligible = lesson.sentences.map((s, i) => (canBeSpoken(course, s) ? i : -1)).filter((i) => i >= 0);
+    if (eligible.length) {
+      const mid = Math.floor(lesson.sentences.length / 2);
+      speakAt.add(eligible.reduce((best, i) => (Math.abs(i - mid) < Math.abs(best - mid) ? i : best)));
+      speakAt.add(eligible[eligible.length - 1]);
+    }
+  }
   lesson.sentences.forEach((s, i) => {
     for (const e of course.entriesIn(s.nl, lessonId)) {
       if (e.intro === lessonId && !shown.has(e.id)) { shown.add(e.id); steps.push(cardStep(e)); }
     }
     steps.push(sentenceStep(course, s, PATTERN[(i + offset) % PATTERN.length], ctx));
+    if (speakAt.has(i)) steps.push(speakStep(s));
     if (matchAt < 0 && shown.size === fresh.length) matchAt = steps.length;
   });
   const match = matchStep(course, lessonId, rnd);
@@ -267,4 +381,5 @@ export function buildUnitTest(course, unitId, { attempt = 0, canListen = true } 
   return { id: unitId + 't', kind: 'test', title: unit.title_es, steps, pass: UNIT_TEST_PASS };
 }
 
-export function isGraded(step) { return step.type !== 'card' && step.type !== 'dialogue'; }
+/** Steps that count for the score. Speaking is practice and does not. */
+export function isGraded(step) { return step.type !== 'card' && step.type !== 'dialogue' && step.type !== 'speak'; }

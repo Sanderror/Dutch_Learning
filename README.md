@@ -35,6 +35,14 @@ A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One l
 - A step marked `soft` (for speaking, later) offers "Intentar otra vez" and "Continuar" after a wrong answer and is never repeated, so it cannot block a lesson.
 - After five lessons without a backup, the home screen reminds her every 30 days (snooze: 14 days).
 
+## Exercise types
+
+Word cards, multiple choice, tiles (Dutch to Spanish, Spanish to Dutch, dictation), typing, matching pairs, and since 0.5.0:
+
+- **Fill the gap** (`gapStep` in `app/js/exercises.js`): one word is left out and she picks it from three, with the Spanish sentence shown. Only grammar choices are left out: a verb form (other forms of the same verb as wrong options), de/het/een before a noun, deze/die/dit/dat before a noun, niet/geen. An option that would give another accepted answer is never offered (u hebt / u heeft, jij wil / jij wilt).
+- **Word order**: the sentence's own words, shuffled, no extra tiles; sentences of four words or more.
+- **Speaking** (`app/js/speech.js`): two sentences per lesson and up to three per review are also said aloud, right after their exercise. Chrome's recogniser (nl-NL) writes what it heard; the app shows which words came through. It is practice: not scored, not rated for reviews, no buzzer, and "Intentar otra vez" / "Continuar" are always there. "No puedo hablar ahora" and a blocked microphone end speaking for the session; Ajustes has a switch. Needs a connection. The scoring is tested on the recogniser's real output from her speech test.
+
 ## Reviews (spaced repetition)
 
 - `app/js/fsrs.js`: the FSRS-6 scheduler (re-implemented from ts-fsrs, default parameters, long-term mode, whole days), aiming at 85% recall, intervals capped at a year.
@@ -57,14 +65,14 @@ python3 tools/test_review_batch.py             # review-batch selection
 python3 tools/test_build_audio.py              # audio build against a mock API
 python3 tools/test_tts_bakeoff.py              # voice script against a mock API
 node tools/test_scoring.mjs                    # speech-test scoring, incl. the real Pixel runs
-node --test app/tests/*.test.mjs               # app logic: checker, exercises, store, sounds, scheduler, reviews (49 tests)
+node --test app/tests/*.test.mjs               # app logic: checker, exercises, store, sounds, scheduler, reviews, speech (57 tests)
 ```
 
 End to end in a real Chrome at phone size (needs Chrome and `puppeteer-core`):
 
 ```
 python3 -m http.server 8765                    # in the repository root
-node app/tests/e2e.browser.mjs screenshots/    # upgrade from 0.2.0; every lesson, a dialogue, a test-out; reviews; install; sounds; practice steps; backup; update; offline
+node app/tests/e2e.browser.mjs screenshots/    # upgrade from 0.2.0; every lesson, a dialogue, a test-out; reviews; speaking (stand-in recogniser), gaps, word order; install; sounds; practice steps; backup; update; offline
 ```
 
 Python 3.9+ and Node 20+. Nothing to install for the first block.

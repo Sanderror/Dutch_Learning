@@ -20,7 +20,7 @@
 //   become due each day, so the first review day is not a wall of work.
 
 import { review, Rating } from './fsrs.js';
-import { seedRandom, shuffled, sentenceStep, wordsMatchStep, tileWords } from './exercises.js';
+import { seedRandom, shuffled, sentenceStep, wordsMatchStep, tileWords, speakStep, canBeSpoken } from './exercises.js';
 
 export const BACKLOG_PER_DAY = 8;
 export const REVIEW_SENTENCES = 4;
@@ -130,26 +130,31 @@ export function dueKeys(state, course, today) {
 /**
  * Which exercise a sentence gets, by how well she knows it:
  * new or weak (stability under 3 days): recognise the meaning;
- * medium (under 10 days): build the Dutch, or listen;
- * strong: type the Dutch, or write what she hears.
+ * medium (under 10 days): build the Dutch, fill the gap, listen, or order the words;
+ * strong: type the Dutch, write what she hears, or fill the gap.
  */
+const MEDIUM = ['es2nl', 'gap', 'listen', 'order'];
+const STRONG = ['type', 'listen', 'type', 'gap'];
 export function kindFor(card, i) {
   const s = card && typeof card.s === 'number' ? card.s : 0;
   if (s < 3) return i % 2 === 0 ? 'mc' : 'nl2es';
-  if (s < 10) return i % 2 === 0 ? 'es2nl' : 'listen';
-  return i % 2 === 0 ? 'type' : 'listen';
+  if (s < 10) return MEDIUM[i % MEDIUM.length];
+  return STRONG[i % STRONG.length];
 }
+
+export const SPEAK_PER_REVIEW = 3;
 
 /**
  * A review session: up to SESSION_SIZE due items. Each sentence becomes one
  * exercise; due words are played in matching games of up to five.
  * Every graded step carries the key(s) it rates.
  */
-export function buildReview(course, state, today, { canListen = true, round = 0 } = {}) {
+export function buildReview(course, state, today, { canListen = true, canSpeak = false, round = 0 } = {}) {
   const keys = dueKeys(state, course, today).slice(0, SESSION_SIZE);
   const rnd = seedRandom('review:' + today + ':' + round);
   const sentenceSteps = [];
   const words = [];
+  let nSentences = 0, spoken = 0;
   shuffled(keys, rnd).forEach((key) => {
     const item = itemOf(course, key);
     if (item.kind === 'word') { words.push(item.entry); return; }
@@ -161,8 +166,11 @@ export function buildReview(course, state, today, { canListen = true, round = 0 
       lessonSentences: [...sentences, ...earlier.slice(-30)],
       mcPool: [...sentences, ...earlier.slice(-60)],
     };
-    const step = sentenceStep(course, s, kindFor(state.cards[key], sentenceSteps.length), ctx);
+    const step = sentenceStep(course, s, kindFor(state.cards[key], nSentences), ctx);
     sentenceSteps.push({ ...step, key });
+    nSentences++;
+    // a few sentences are also said aloud, right after their exercise (practice: no key, not rated)
+    if (canSpeak && spoken < SPEAK_PER_REVIEW && canBeSpoken(course, s)) { sentenceSteps.push(speakStep(s)); spoken++; }
   });
 
   // words: matching games, topped up with other words she knows
@@ -183,7 +191,8 @@ export function buildReview(course, state, today, { canListen = true, round = 0 
   // spread the matching games through the session
   const steps = sentenceSteps.slice();
   wordSteps.forEach((w, i) => {
-    const at = Math.round(((i + 1) * steps.length) / (wordSteps.length + 1));
+    let at = Math.round(((i + 1) * steps.length) / (wordSteps.length + 1));
+    if (steps[at] && steps[at].type === 'speak') at++;      // not between a sentence and saying it
     steps.splice(at, 0, w);
   });
   const graded = new Set();
