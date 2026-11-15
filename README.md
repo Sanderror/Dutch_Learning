@@ -4,7 +4,7 @@ A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One l
 
 **App:** https://sanderror.github.io/Dutch_Learning/ (open in Chrome on Android and tap "Instalar la app"; Chrome's menu, "Add to Home screen", does the same)
 
-**Course so far:** units 1 to 6 (36 lessons, 476 sentences, 188 words, 6 dialogues), all in section 1 (A0).
+**Course so far:** units 1 to 10, all of section 1 (A0): 60 lessons, 805 sentences, 313 words, 10 dialogues.
 
 | Folder | What it is |
 |---|---|

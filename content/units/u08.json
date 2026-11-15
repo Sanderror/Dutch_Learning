@@ -1,0 +1,991 @@
+{
+  "id": "u08",
+  "section": 1,
+  "title_es": "Mi casa",
+  "goals_es": [
+    "Nombrar los cuartos y las cosas de la casa",
+    "Decir dónde está algo: in, op, onder, naast, achter, bij",
+    "Usar staan, liggen y zitten para la posición de las cosas",
+    "Hablar de buscar casa: alquiler, claro, oscuro"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ui** de t**ui**n y h**ui**s no existe en español. Empieza con una «a» corta con los labios redondeados y termina en una «i» dicha con los labios todavía redondeados. Si los labios se abren al final suena «ai», y eso se oye como ij.\n- **eu** de k**eu**ken es una «e» con los labios redondeados, como en d**eu**r.\n- **aa** larga: k**a**mer, sl**aa**pkamer, r**aa**m. En k**a**mer la a también es larga, porque la sílaba termina en vocal: **KA**-mer.\n- **sch** de **sch**oon: una s seguida de la j fuerte.\n- La **d** final suena t: bor**d**, igual que en hon**d**.\n\n## Las partes de la casa\n\nMuchas se forman con **kamer** (cuarto):\n\n- **slaap**kamer = cuarto para dormir (slapen = dormir)\n- **woon**kamer = cuarto para vivir: la sala (wonen = vivir)\n- **bad**kamer = el baño\n\nTodas llevan **de**, porque kamer lleva de: la última palabra decide el artículo.\n\n«Cuarto» puede ser **kamer** (cualquier cuarto) o **slaapkamer** (el cuarto para dormir).\n\nLa **badkamer** es el cuarto con la ducha. En las casas neerlandesas el inodoro suele estar aparte: **de wc**. Para pedir el baño en casa ajena se dice: Waar is de wc?\n\n## Dónde: preposiciones\n\n- **in** de keuken = en la cocina\n- **op** de tafel = en la mesa, encima\n- **onder** het bed = debajo de la cama\n- **naast** de deur = al lado de la puerta\n- **achter** het huis = detrás de la casa\n- **bij** mijn ouders = con mis papás, en casa de mis papás\n\n## staan, liggen y zitten\n\nPara decir dónde está un objeto (un libro, un vaso, un mueble, un carro), el neerlandés prefiere **staan**, **liggen** o **zitten** según la posición:\n\n- **staan** (estar de pie, vertical): De fiets **staat** in de tuin. Het glas **staat** op de tafel.\n- **liggen** (estar acostado, plano): Het boek **ligt** op de tafel. De kat **ligt** op de bank.\n- **zitten** (estar sentado, o estar dentro de algo): Tom **zit** op de bank. De sleutel **zit** in mijn tas.\n\nSi dudas: los vasos, las botellas, los muebles y los carros **staan**; un libro acostado sobre la mesa **ligt**, pero de pie en el estante **staat**; el teléfono sobre la mesa **ligt**. En un armario o en la nevera las cosas están sobre una repisa: **staan** o **liggen** según su forma (De melk **staat** in de koelkast, de kaas **ligt** in de koelkast). **zit** es para lo que está metido en algo cerrado: una tas, el bolsillo de la jas.\n\nPara decir en qué zona queda una casa o un lugar se usa **liggen**: Het appartement **ligt** in het centrum.\n\n**is** también es normal en la pregunta **Waar is…?**, con los cuartos y las partes de la casa (De badkamer **is** boven), con personas y animales (Anna **is** in de keuken) y con hier y daar.\n\n## Plurales nuevos\n\n- kamer → kamer**s**, slaapkamer → slaapkamer**s**\n- boek → boek**en**\n- bord → bord**en**\n- glas → glazen: palabra especial. La a corta se vuelve larga (**GLA**-zen) y la s se vuelve z. Apréndela de memoria.\n\n## boven y beneden\n\n- De slaapkamer is **boven** = El cuarto está arriba (en el piso de arriba).\n- De keuken is **beneden** = La cocina está abajo (en la planta baja).\n\n## in bed y op het bed\n\n- Ik lees **in bed** (sin artículo) = Leo en la cama, acostada en ella.\n- Mijn jas ligt **op het bed** = Mi chaqueta está encima de la cama.\n",
+  "lessons": [
+    {
+      "id": "u08l1",
+      "title_es": "Mi casa",
+      "sentences": [
+        {
+          "id": "u08l1s01",
+          "nl": "Dit is de keuken.",
+          "es": "Esta es la cocina.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aquí está la cocina.",
+            "Es la cocina."
+          ]
+        },
+        {
+          "id": "u08l1s02",
+          "nl": "De woonkamer is groot.",
+          "es": "La sala es grande.",
+          "alt_nl": [],
+          "alt_es": [
+            "El salón es grande."
+          ]
+        },
+        {
+          "id": "u08l1s03",
+          "nl": "Waar is de badkamer?",
+          "es": "¿Dónde está el baño?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l1s04",
+          "nl": "De badkamer is daar.",
+          "es": "El baño está allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "El baño está allí.",
+            "El baño está ahí."
+          ]
+        },
+        {
+          "id": "u08l1s05",
+          "nl": "Mijn huis heeft drie kamers.",
+          "es": "Mi casa tiene tres cuartos.",
+          "alt_nl": [
+            "Mijn huis heeft drie slaapkamers."
+          ],
+          "alt_es": [
+            "Mi casa tiene tres habitaciones."
+          ]
+        },
+        {
+          "id": "u08l1s06",
+          "nl": "De slaapkamer is klein.",
+          "es": "El cuarto es pequeño.",
+          "alt_nl": [
+            "De kamer is klein."
+          ],
+          "alt_es": [
+            "El cuarto es chiquito.",
+            "El dormitorio es pequeño.",
+            "La habitación es pequeña.",
+            "La habitación es chiquita."
+          ]
+        },
+        {
+          "id": "u08l1s07",
+          "nl": "Wij hebben geen tuin.",
+          "es": "No tenemos jardín.",
+          "alt_nl": [
+            "We hebben geen tuin."
+          ],
+          "alt_es": [
+            "Nosotros no tenemos jardín.",
+            "No tenemos patio.",
+            "No tenemos un jardín."
+          ]
+        },
+        {
+          "id": "u08l1s08",
+          "nl": "De tuin is heel mooi.",
+          "es": "El jardín es muy bonito.",
+          "alt_nl": [],
+          "alt_es": [
+            "El jardín es muy lindo.",
+            "El jardín está muy bonito.",
+            "El jardín está muy lindo."
+          ]
+        },
+        {
+          "id": "u08l1s09",
+          "nl": "Is de keuken groot?",
+          "es": "¿La cocina es grande?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es grande la cocina?"
+          ]
+        },
+        {
+          "id": "u08l1s10",
+          "nl": "Nee, de keuken is klein.",
+          "es": "No, la cocina es pequeña.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, la cocina es chiquita."
+          ]
+        },
+        {
+          "id": "u08l1s11",
+          "nl": "Het huis heeft twee slaapkamers.",
+          "es": "La casa tiene dos cuartos.",
+          "alt_nl": [
+            "Het huis heeft twee kamers."
+          ],
+          "alt_es": [
+            "La casa tiene dos dormitorios.",
+            "La casa tiene dos habitaciones."
+          ]
+        },
+        {
+          "id": "u08l1s12",
+          "nl": "Waar is je kamer?",
+          "es": "¿Dónde está tu cuarto?",
+          "alt_nl": [
+            "Waar is jouw kamer?",
+            "Waar is je slaapkamer?",
+            "Waar is jouw slaapkamer?"
+          ],
+          "alt_es": [
+            "¿Dónde está tu habitación?"
+          ]
+        },
+        {
+          "id": "u08l1s13",
+          "nl": "Is dit de woonkamer?",
+          "es": "¿Esta es la sala?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es esta la sala?",
+            "¿Es la sala?",
+            "¿Este es el salón?"
+          ]
+        },
+        {
+          "id": "u08l1s14",
+          "nl": "Mijn kamer is hier.",
+          "es": "Mi cuarto está aquí.",
+          "alt_nl": [
+            "Mijn slaapkamer is hier."
+          ],
+          "alt_es": [
+            "Mi cuarto está acá.",
+            "Mi habitación está aquí."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08l2",
+      "title_es": "¿Dónde está?",
+      "sentences": [
+        {
+          "id": "u08l2s01",
+          "nl": "Waar is de kat? Onder de tafel.",
+          "es": "¿Dónde está el gato? Debajo de la mesa.",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está el gato? Abajo de la mesa."
+          ]
+        },
+        {
+          "id": "u08l2s02",
+          "nl": "Waar is mijn telefoon? Op de tafel.",
+          "es": "¿Dónde está mi teléfono? En la mesa.",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está mi celular? En la mesa.",
+            "¿Dónde está mi teléfono? Sobre la mesa.",
+            "¿Dónde está mi celular? Sobre la mesa."
+          ]
+        },
+        {
+          "id": "u08l2s03",
+          "nl": "De tuin is achter het huis.",
+          "es": "El jardín está detrás de la casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "El jardín está atrás de la casa.",
+            "El patio está detrás de la casa."
+          ]
+        },
+        {
+          "id": "u08l2s04",
+          "nl": "Ik woon naast Anna.",
+          "es": "Vivo al lado de Anna.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo vivo al lado de Anna."
+          ]
+        },
+        {
+          "id": "u08l2s05",
+          "nl": "Mijn zus woont bij mijn ouders.",
+          "es": "Mi hermana vive con mis papás.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi hermana vive con mis padres.",
+            "Mi hermana vive en casa de mis papás.",
+            "Mi hermana vive en casa de mis padres."
+          ]
+        },
+        {
+          "id": "u08l2s06",
+          "nl": "Ik ben bij Tom.",
+          "es": "Estoy donde Tom.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy en casa de Tom.",
+            "Estoy con Tom.",
+            "Yo estoy con Tom."
+          ]
+        },
+        {
+          "id": "u08l2s07",
+          "nl": "De badkamer is naast de slaapkamer.",
+          "es": "El baño está al lado del cuarto.",
+          "alt_nl": [
+            "De badkamer is naast de kamer."
+          ],
+          "alt_es": [
+            "El baño está al lado del dormitorio.",
+            "El baño está junto al cuarto."
+          ]
+        },
+        {
+          "id": "u08l2s08",
+          "nl": "Onder het bed? Nee.",
+          "es": "¿Debajo de la cama? No.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l2s09",
+          "nl": "Naast de deur.",
+          "es": "Al lado de la puerta.",
+          "alt_nl": [],
+          "alt_es": [
+            "Junto a la puerta."
+          ]
+        },
+        {
+          "id": "u08l2s10",
+          "nl": "Is de hond in de tuin?",
+          "es": "¿El perro está en el jardín?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está el perro en el jardín?",
+            "¿El perro está en el patio?"
+          ]
+        },
+        {
+          "id": "u08l2s11",
+          "nl": "Nee, de hond is achter de deur.",
+          "es": "No, el perro está detrás de la puerta.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, el perro está atrás de la puerta."
+          ]
+        },
+        {
+          "id": "u08l2s12",
+          "nl": "Woon jij bij je ouders?",
+          "es": "¿Vives con tus papás?",
+          "alt_nl": [
+            "Woon je bij je ouders?",
+            "Woon je bij jouw ouders?",
+            "Woon jij bij jouw ouders?"
+          ],
+          "alt_es": [
+            "¿Vives con tus padres?",
+            "¿Tú vives con tus papás?",
+            "¿Tú vives con tus padres?"
+          ]
+        },
+        {
+          "id": "u08l2s13",
+          "nl": "Op de stoel of op de tafel?",
+          "es": "¿En la silla o en la mesa?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Sobre la silla o sobre la mesa?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08l3",
+      "title_es": "Está de pie, acostado o sentado",
+      "sentences": [
+        {
+          "id": "u08l3s01",
+          "nl": "Het boek ligt op de tafel.",
+          "es": "El libro está en la mesa.",
+          "alt_nl": [],
+          "alt_es": [
+            "El libro está sobre la mesa."
+          ]
+        },
+        {
+          "id": "u08l3s02",
+          "nl": "De fiets staat in de tuin.",
+          "es": "La bicicleta está en el jardín.",
+          "alt_nl": [],
+          "alt_es": [
+            "La bici está en el jardín.",
+            "La bicicleta está en el patio.",
+            "La bici está en el patio."
+          ]
+        },
+        {
+          "id": "u08l3s03",
+          "nl": "De kat zit op de stoel.",
+          "es": "El gato está sentado en la silla.",
+          "alt_nl": [],
+          "alt_es": [
+            "El gato está en la silla.",
+            "La gata está en la silla."
+          ]
+        },
+        {
+          "id": "u08l3s04",
+          "nl": "De sleutel zit in mijn tas.",
+          "es": "La llave está en mi bolso.",
+          "alt_nl": [],
+          "alt_es": [
+            "La llave está en mi cartera.",
+            "La llave está en mi bolsa.",
+            "La llave está dentro de mi bolso."
+          ]
+        },
+        {
+          "id": "u08l3s05",
+          "nl": "Waar ligt mijn telefoon?",
+          "es": "¿Dónde está mi teléfono?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está mi celular?"
+          ]
+        },
+        {
+          "id": "u08l3s06",
+          "nl": "Je telefoon ligt op de bank.",
+          "es": "Tu teléfono está en el sofá.",
+          "alt_nl": [
+            "Jouw telefoon ligt op de bank."
+          ],
+          "alt_es": [
+            "Tu celular está en el sofá.",
+            "Tu teléfono está en el mueble.",
+            "Tu celular está en el mueble."
+          ]
+        },
+        {
+          "id": "u08l3s07",
+          "nl": "Tom zit op de bank.",
+          "es": "Tom está sentado en el sofá.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tom está en el sofá.",
+            "Tom está sentado en el mueble."
+          ]
+        },
+        {
+          "id": "u08l3s08",
+          "nl": "De auto staat daar.",
+          "es": "El carro está allá.",
+          "alt_nl": [],
+          "alt_es": [
+            "El carro está allí.",
+            "El carro está ahí.",
+            "El auto está allá.",
+            "El auto está allí.",
+            "El auto está ahí.",
+            "El coche está allá.",
+            "El coche está allí.",
+            "El coche está ahí."
+          ]
+        },
+        {
+          "id": "u08l3s09",
+          "nl": "De boeken staan in de kast.",
+          "es": "Los libros están en el estante.",
+          "alt_nl": [
+            "De boeken liggen in de kast."
+          ],
+          "alt_es": [
+            "Los libros están en el armario.",
+            "Los libros están en la biblioteca."
+          ]
+        },
+        {
+          "id": "u08l3s10",
+          "nl": "De kast staat naast het raam.",
+          "es": "El armario está al lado de la ventana.",
+          "alt_nl": [],
+          "alt_es": [
+            "El clóset está al lado de la ventana.",
+            "El closet está al lado de la ventana.",
+            "El estante está al lado de la ventana."
+          ]
+        },
+        {
+          "id": "u08l3s11",
+          "nl": "De hond ligt onder het raam.",
+          "es": "El perro está acostado debajo de la ventana.",
+          "alt_nl": [],
+          "alt_es": [
+            "El perro está debajo de la ventana.",
+            "El perro está echado debajo de la ventana."
+          ]
+        },
+        {
+          "id": "u08l3s12",
+          "nl": "Waar staat de bank?",
+          "es": "¿Dónde está el sofá?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está el mueble?",
+            "¿Dónde está el banco?"
+          ]
+        },
+        {
+          "id": "u08l3s13",
+          "nl": "Mijn jas ligt op het bed.",
+          "es": "Mi chaqueta está en la cama.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi chaqueta está sobre la cama.",
+            "Mi abrigo está en la cama."
+          ]
+        },
+        {
+          "id": "u08l3s14",
+          "nl": "Het geld zit in mijn jas.",
+          "es": "El dinero está en mi chaqueta.",
+          "alt_nl": [],
+          "alt_es": [
+            "El plata está en mi chaqueta.",
+            "El dinero está en mi abrigo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08l4",
+      "title_es": "En la cocina",
+      "sentences": [
+        {
+          "id": "u08l4s01",
+          "nl": "De melk staat in de koelkast.",
+          "es": "La leche está en la nevera.",
+          "alt_nl": [],
+          "alt_es": [
+            "La leche está en el refrigerador."
+          ]
+        },
+        {
+          "id": "u08l4s02",
+          "nl": "Het glas staat op de tafel.",
+          "es": "El vaso está en la mesa.",
+          "alt_nl": [],
+          "alt_es": [
+            "El vaso está sobre la mesa."
+          ]
+        },
+        {
+          "id": "u08l4s03",
+          "nl": "Een kopje koffie, alsjeblieft.",
+          "es": "Una taza de café, por favor.",
+          "alt_nl": [
+            "Een kopje koffie, alstublieft."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s04",
+          "nl": "De borden staan in de kast.",
+          "es": "Los platos están en el armario.",
+          "alt_nl": [],
+          "alt_es": [
+            "Los platos están en el estante.",
+            "Los platos están en la alacena."
+          ]
+        },
+        {
+          "id": "u08l4s05",
+          "nl": "Is dit glas schoon?",
+          "es": "¿Este vaso está limpio?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está limpio este vaso?"
+          ]
+        },
+        {
+          "id": "u08l4s06",
+          "nl": "Nee, het glas is vies.",
+          "es": "No, el vaso está sucio.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s07",
+          "nl": "De keuken is niet schoon.",
+          "es": "La cocina no está limpia.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s08",
+          "nl": "Twee glazen water, alsjeblieft.",
+          "es": "Dos vasos de agua, por favor.",
+          "alt_nl": [
+            "Twee glazen water, alstublieft."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s09",
+          "nl": "Waar staat de koelkast?",
+          "es": "¿Dónde está la nevera?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Dónde está el refrigerador?"
+          ]
+        },
+        {
+          "id": "u08l4s10",
+          "nl": "Het bord is vies.",
+          "es": "El plato está sucio.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s11",
+          "nl": "Wil je een kopje thee?",
+          "es": "¿Quieres una taza de té?",
+          "alt_nl": [
+            "Wil jij een kopje thee?"
+          ],
+          "alt_es": [
+            "¿Tú quieres una taza de té?"
+          ]
+        },
+        {
+          "id": "u08l4s12",
+          "nl": "De borden zijn schoon.",
+          "es": "Los platos están limpios.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l4s13",
+          "nl": "De kaas ligt in de koelkast.",
+          "es": "El queso está en la nevera.",
+          "alt_nl": [],
+          "alt_es": [
+            "El queso está en el refrigerador."
+          ]
+        },
+        {
+          "id": "u08l4s14",
+          "nl": "Dit kopje is vies.",
+          "es": "Esta taza está sucia.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u08l5",
+      "title_es": "Arriba y abajo",
+      "sentences": [
+        {
+          "id": "u08l5s01",
+          "nl": "Ik kook in de keuken.",
+          "es": "Cocino en la cocina.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo cocino en la cocina."
+          ]
+        },
+        {
+          "id": "u08l5s02",
+          "nl": "Wie kookt vandaag?",
+          "es": "¿Quién cocina hoy?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Hoy quién cocina?"
+          ]
+        },
+        {
+          "id": "u08l5s03",
+          "nl": "Hij kookt heel lekker.",
+          "es": "Él cocina muy rico.",
+          "alt_nl": [],
+          "alt_es": [
+            "Cocina muy rico.",
+            "Él cocina muy sabroso.",
+            "Él cocina muy bien."
+          ]
+        },
+        {
+          "id": "u08l5s04",
+          "nl": "De slaapkamer is boven.",
+          "es": "El cuarto está arriba.",
+          "alt_nl": [
+            "De kamer is boven."
+          ],
+          "alt_es": [
+            "El dormitorio está arriba.",
+            "La habitación está arriba."
+          ]
+        },
+        {
+          "id": "u08l5s05",
+          "nl": "De keuken is beneden.",
+          "es": "La cocina está abajo.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l5s06",
+          "nl": "Het kind slaapt al.",
+          "es": "El niño ya está dormido.",
+          "alt_nl": [],
+          "alt_es": [
+            "El niño ya duerme.",
+            "La niña ya está dormida.",
+            "El niño ya se durmió."
+          ]
+        },
+        {
+          "id": "u08l5s07",
+          "nl": "Ik slaap boven.",
+          "es": "Duermo arriba.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo duermo arriba."
+          ]
+        },
+        {
+          "id": "u08l5s08",
+          "nl": "Slaap je goed?",
+          "es": "¿Duermes bien?",
+          "alt_nl": [
+            "Slaap jij goed?"
+          ],
+          "alt_es": [
+            "¿Tú duermes bien?"
+          ]
+        },
+        {
+          "id": "u08l5s09",
+          "nl": "Ik lees een boek in bed.",
+          "es": "Leo un libro en la cama.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo leo un libro en la cama."
+          ]
+        },
+        {
+          "id": "u08l5s10",
+          "nl": "Zij leest in de woonkamer.",
+          "es": "Ella lee en la sala.",
+          "alt_nl": [
+            "Ze leest in de woonkamer."
+          ],
+          "alt_es": [
+            "Lee en la sala."
+          ]
+        },
+        {
+          "id": "u08l5s11",
+          "nl": "Waar is Tom? Beneden?",
+          "es": "¿Dónde está Tom? ¿Abajo?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u08l5s12",
+          "nl": "Nee, hij is boven.",
+          "es": "No, está arriba.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, él está arriba."
+          ]
+        },
+        {
+          "id": "u08l5s13",
+          "nl": "Wij koken samen.",
+          "es": "Cocinamos juntos.",
+          "alt_nl": [
+            "We koken samen."
+          ],
+          "alt_es": [
+            "Cocinamos juntas.",
+            "Nosotros cocinamos juntos."
+          ]
+        },
+        {
+          "id": "u08l5s14",
+          "nl": "Lees jij vaak?",
+          "es": "¿Lees a menudo?",
+          "alt_nl": [
+            "Lees je vaak?"
+          ],
+          "alt_es": [
+            "¿Lees seguido?",
+            "¿Lees mucho?",
+            "¿Tú lees a menudo?",
+            "¿Tú lees seguido?",
+            "¿Tú lees mucho?",
+            "¿Lees con frecuencia?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08l6",
+      "title_es": "Buscamos casa",
+      "sentences": [
+        {
+          "id": "u08l6s01",
+          "nl": "Wij zoeken een huis.",
+          "es": "Buscamos una casa.",
+          "alt_nl": [
+            "We zoeken een huis."
+          ],
+          "alt_es": [
+            "Estamos buscando una casa.",
+            "Nosotros buscamos una casa."
+          ]
+        },
+        {
+          "id": "u08l6s02",
+          "nl": "Ik zoek een appartement.",
+          "es": "Busco un apartamento.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy buscando un apartamento.",
+            "Busco un departamento.",
+            "Busco un piso.",
+            "Yo busco un apartamento."
+          ]
+        },
+        {
+          "id": "u08l6s03",
+          "nl": "Het appartement ligt in het centrum.",
+          "es": "El apartamento está en el centro.",
+          "alt_nl": [
+            "Het appartement is in het centrum."
+          ],
+          "alt_es": [
+            "El apartamento queda en el centro."
+          ]
+        },
+        {
+          "id": "u08l6s04",
+          "nl": "Hoeveel is de huur?",
+          "es": "¿Cuánto es el alquiler?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto cuesta el alquiler?",
+            "¿De cuánto es el alquiler?"
+          ]
+        },
+        {
+          "id": "u08l6s05",
+          "nl": "Ik betaal de huur.",
+          "es": "Yo pago el alquiler.",
+          "alt_nl": [],
+          "alt_es": [
+            "Pago el alquiler.",
+            "Yo pago la renta."
+          ]
+        },
+        {
+          "id": "u08l6s06",
+          "nl": "Het appartement is te duur.",
+          "es": "El apartamento es demasiado caro.",
+          "alt_nl": [],
+          "alt_es": [
+            "El apartamento es muy caro.",
+            "El apartamento está muy caro."
+          ]
+        },
+        {
+          "id": "u08l6s07",
+          "nl": "Het appartement is licht.",
+          "es": "El apartamento es claro.",
+          "alt_nl": [],
+          "alt_es": [
+            "El apartamento es luminoso.",
+            "El apartamento tiene mucha luz."
+          ]
+        },
+        {
+          "id": "u08l6s08",
+          "nl": "De kamer is te donker.",
+          "es": "El cuarto es demasiado oscuro.",
+          "alt_nl": [
+            "De slaapkamer is te donker."
+          ],
+          "alt_es": [
+            "El cuarto es muy oscuro.",
+            "La habitación es muy oscura.",
+            "El cuarto está muy oscuro."
+          ]
+        },
+        {
+          "id": "u08l6s09",
+          "nl": "Wat zoek je?",
+          "es": "¿Qué buscas?",
+          "alt_nl": [
+            "Wat zoek jij?"
+          ],
+          "alt_es": [
+            "¿Qué estás buscando?",
+            "¿Tú qué buscas?"
+          ]
+        },
+        {
+          "id": "u08l6s10",
+          "nl": "Ik zoek mijn sleutel.",
+          "es": "Busco mi llave.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy buscando mi llave.",
+            "Yo busco mi llave."
+          ]
+        },
+        {
+          "id": "u08l6s11",
+          "nl": "Zij zoekt een kamer in Utrecht.",
+          "es": "Ella busca un cuarto en Utrecht.",
+          "alt_nl": [
+            "Ze zoekt een kamer in Utrecht."
+          ],
+          "alt_es": [
+            "Busca un cuarto en Utrecht.",
+            "Ella busca una habitación en Utrecht."
+          ]
+        },
+        {
+          "id": "u08l6s12",
+          "nl": "Is het centrum ver?",
+          "es": "¿El centro está lejos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está lejos el centro?",
+            "¿El centro queda lejos?"
+          ]
+        },
+        {
+          "id": "u08l6s13",
+          "nl": "Het huis is licht en groot.",
+          "es": "La casa es clara y grande.",
+          "alt_nl": [],
+          "alt_es": [
+            "La casa es luminosa y grande."
+          ]
+        },
+        {
+          "id": "u08l6s14",
+          "nl": "Mijn kamer is een beetje donker.",
+          "es": "Mi cuarto es un poco oscuro.",
+          "alt_nl": [
+            "Mijn slaapkamer is een beetje donker."
+          ],
+          "alt_es": [
+            "Mi cuarto está un poco oscuro.",
+            "Mi habitación es un poco oscura."
+          ]
+        },
+        {
+          "id": "u08l6s15",
+          "nl": "Het huis heeft drie slaapkamers en een tuin.",
+          "es": "La casa tiene tres cuartos y un jardín.",
+          "alt_nl": [
+            "Het huis heeft drie kamers en een tuin."
+          ],
+          "alt_es": [
+            "La casa tiene tres habitaciones y un jardín.",
+            "La casa tiene tres dormitorios y un jardín."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "El apartamento de Emma",
+    "lines": [
+      {
+        "speaker": "Emma",
+        "nl": "Welkom! Dit is mijn appartement.",
+        "es": "¡Bienvenido! Este es mi apartamento."
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Wat mooi! En heel licht.",
+        "es": "¡Qué bonito! Y muy claro."
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Dit is de woonkamer, en daar is de keuken.",
+        "es": "Esta es la sala, y allá está la cocina."
+      },
+      {
+        "speaker": "Luis",
+        "nl": "De keuken is klein, maar mooi. Waar is de badkamer?",
+        "es": "La cocina es pequeña, pero bonita. ¿Dónde está el baño?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Boven, naast de slaapkamer.",
+        "es": "Arriba, al lado del cuarto."
+      },
+      {
+        "speaker": "Luis",
+        "nl": "En waar is je kat?",
+        "es": "¿Y dónde está tu gato?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Ze ligt op de bank, kijk!",
+        "es": "Está acostada en el sofá, ¡mira!"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Is het appartement duur?",
+        "es": "¿El apartamento es caro?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Een beetje. Maar het centrum is niet ver.",
+        "es": "Un poco. Pero el centro no está lejos."
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Dónde está el baño?",
+        "options_es": [
+          "Abajo, al lado de la cocina",
+          "Arriba, al lado del cuarto",
+          "En el jardín"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Dónde está la gata de Emma?",
+        "options_es": [
+          "En el sofá",
+          "En la cama",
+          "En la cocina"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Qué tiene de bueno el apartamento, según Emma?",
+        "options_es": [
+          "Es muy barato",
+          "Tiene jardín",
+          "El centro no está lejos"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}

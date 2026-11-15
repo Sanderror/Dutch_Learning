@@ -1,0 +1,1083 @@
+{
+  "id": "u10",
+  "section": 1,
+  "title_es": "Mi día",
+  "goals_es": [
+    "Usar la regla del presente con cualquier verbo",
+    "Decir adónde vas y cómo: naar, met de trein",
+    "Hablar de las comidas y del tiempo libre",
+    "Decir cada cuánto: altijd, vaak, soms, nooit",
+    "Preguntar qué hace alguien con doen"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **oe** de d**oe**n, m**oe**, v**oe**tbal es la u española.\n- **ui** de l**ui**steren, como en h**ui**s.\n- **ie** de muz**ie**k es la i española.\n- **oo** larga de n**oo**it y sch**oo**l. En **sch**ool, sch es una s seguida de la j fuerte, no «sh».\n- **ei** de tr**ei**n suena igual que ij.\n\n## El presente: una sola regla\n\nCasi todos los verbos siguen el mismo modelo. Se parte del verbo entero (werken) y se quita **-en**: queda la raíz, **werk**.\n\n- ik **werk**, ik **leer**, ik **praat**\n- jij **werkt**, u **werkt**, hij **werkt**, zij **werkt**\n- wij **werken**, jullie **werken**, zij **werken**\n\n- **ik**: la raíz sola.\n- **jij, u, hij, zij**: la raíz + **t**. Si la raíz ya termina en t, no se añade otra: hij **praat**, hij **ontbijt**.\n- **wij, jullie, zij** (plural): el verbo entero.\n- En pregunta con jij, la t se va: **Werk jij** morgen? **Speel je** voetbal?\n\n## La ortografía de la raíz\n\nLa raíz debe sonar igual que en el verbo entero:\n\n- Vocal larga: se escribe doble. **le**ren → **leer**, **spe**len → **speel**, **sla**pen → **slaap**.\n- Consonante doble: se escribe una. be**ll**en → **bel**, zi**tt**en → **zit**.\n- La v y la z al final se vuelven f y s. le**z**en → **lees**.\n\nYa conoces muchos verbos así: woon, spreek, kook, zoek, bel.\n\nExcepción: komen → ik **kom** (la o es corta).\n\n## Muy irregulares\n\nYa los viste: **zijn** (ben, bent, is, zijn), **hebben** (heb, hebt/heeft, hebben), **gaan** (ga, gaat, gaan), **doen** (doe, doet, doen), **willen** y **mogen**.\n\n## Voy a…: gaan + verbo\n\n**gaan** + otro verbo entero al final = ir a hacer algo:\n\n- Ik **ga** slapen = Voy a dormir.\n- Wij **gaan** eten = Vamos a comer.\n\n**naar** + lugar = ir a un sitio: Ik ga **naar** huis. Hij gaat **naar** school.\n\n## Cada cuánto\n\n**altijd** (siempre), **vaak** (a menudo), **soms** (a veces), **nooit** (nunca). Van después del verbo: Ik ben **altijd** moe. Hij kookt **nooit**. Con het, después de het: Ik heb het **altijd** druk.\n",
+  "lessons": [
+    {
+      "id": "u10l1",
+      "title_es": "Aprendo neerlandés",
+      "sentences": [
+        {
+          "id": "u10l1s01",
+          "nl": "Ik leer Nederlands.",
+          "es": "Aprendo neerlandés.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy aprendiendo neerlandés.",
+            "Yo aprendo neerlandés.",
+            "Aprendo holandés.",
+            "Estoy aprendiendo holandés."
+          ]
+        },
+        {
+          "id": "u10l1s02",
+          "nl": "Zij leert Spaans.",
+          "es": "Ella aprende español.",
+          "alt_nl": [
+            "Ze leert Spaans."
+          ],
+          "alt_es": [
+            "Aprende español.",
+            "Ella está aprendiendo español."
+          ]
+        },
+        {
+          "id": "u10l1s03",
+          "nl": "Wij leren samen Nederlands.",
+          "es": "Aprendemos neerlandés juntos.",
+          "alt_nl": [
+            "We leren samen Nederlands."
+          ],
+          "alt_es": [
+            "Aprendemos neerlandés juntas.",
+            "Aprendemos holandés juntos.",
+            "Estamos aprendiendo neerlandés juntos.",
+            "Nosotros aprendemos neerlandés juntos."
+          ]
+        },
+        {
+          "id": "u10l1s04",
+          "nl": "Ik luister naar muziek.",
+          "es": "Escucho música.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy escuchando música.",
+            "Yo escucho música."
+          ]
+        },
+        {
+          "id": "u10l1s05",
+          "nl": "Luister je vaak naar muziek?",
+          "es": "¿Escuchas música a menudo?",
+          "alt_nl": [
+            "Luister jij vaak naar muziek?"
+          ],
+          "alt_es": [
+            "¿Escuchas música seguido?",
+            "¿Escuchas música mucho?",
+            "¿Tú escuchas música a menudo?",
+            "¿Tú escuchas música seguido?",
+            "¿Tú escuchas música mucho?"
+          ]
+        },
+        {
+          "id": "u10l1s06",
+          "nl": "Hij luistert niet.",
+          "es": "Él no escucha.",
+          "alt_nl": [],
+          "alt_es": [
+            "No escucha.",
+            "Él no está escuchando.",
+            "No está escuchando."
+          ]
+        },
+        {
+          "id": "u10l1s07",
+          "nl": "Wij praten Nederlands.",
+          "es": "Hablamos en neerlandés.",
+          "alt_nl": [
+            "We praten Nederlands.",
+            "Wij spreken Nederlands.",
+            "We spreken Nederlands."
+          ],
+          "alt_es": [
+            "Hablamos neerlandés.",
+            "Conversamos en neerlandés.",
+            "Hablamos en holandés.",
+            "Nosotros hablamos en neerlandés."
+          ]
+        },
+        {
+          "id": "u10l1s08",
+          "nl": "Tom praat veel.",
+          "es": "Tom habla mucho.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tom conversa mucho.",
+            "Tom habla bastante."
+          ]
+        },
+        {
+          "id": "u10l1s09",
+          "nl": "Leer jij Engels?",
+          "es": "¿Aprendes inglés?",
+          "alt_nl": [
+            "Leer je Engels?"
+          ],
+          "alt_es": [
+            "¿Tú aprendes inglés?",
+            "¿Estás aprendiendo inglés?"
+          ]
+        },
+        {
+          "id": "u10l1s10",
+          "nl": "Ik leer elke dag een beetje.",
+          "es": "Aprendo un poco todos los días.",
+          "alt_nl": [],
+          "alt_es": [
+            "Aprendo un poco cada día.",
+            "Todos los días aprendo un poco."
+          ]
+        },
+        {
+          "id": "u10l1s11",
+          "nl": "Luister!",
+          "es": "¡Escucha!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Oye!"
+          ]
+        },
+        {
+          "id": "u10l1s12",
+          "nl": "Muziek is leuk.",
+          "es": "La música es chévere.",
+          "alt_nl": [],
+          "alt_es": [
+            "La música es divertida.",
+            "La música es bonita."
+          ]
+        },
+        {
+          "id": "u10l1s13",
+          "nl": "Zij praten met de kinderen.",
+          "es": "Ellos hablan con los niños.",
+          "alt_nl": [
+            "Ze praten met de kinderen."
+          ],
+          "alt_es": [
+            "Hablan con los niños.",
+            "Ellas hablan con los niños.",
+            "Ellos conversan con los niños.",
+            "Ellos hablan con los hijos."
+          ]
+        },
+        {
+          "id": "u10l1s14",
+          "nl": "Ik praat graag met jou.",
+          "es": "Me gusta hablar contigo.",
+          "alt_nl": [
+            "Ik praat graag met je."
+          ],
+          "alt_es": [
+            "Me gusta conversar contigo.",
+            "A mí me gusta hablar contigo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10l2",
+      "title_es": "Voy al trabajo",
+      "sentences": [
+        {
+          "id": "u10l2s01",
+          "nl": "Ik ga naar mijn werk.",
+          "es": "Voy a mi trabajo.",
+          "alt_nl": [
+            "Ik ga naar het werk."
+          ],
+          "alt_es": [
+            "Voy al trabajo.",
+            "Yo voy a mi trabajo.",
+            "Me voy al trabajo.",
+            "Me voy a mi trabajo."
+          ]
+        },
+        {
+          "id": "u10l2s02",
+          "nl": "Hij gaat met de trein.",
+          "es": "Él va en tren.",
+          "alt_nl": [],
+          "alt_es": [
+            "Va en tren.",
+            "Él se va en tren."
+          ]
+        },
+        {
+          "id": "u10l2s03",
+          "nl": "Ga je met de bus?",
+          "es": "¿Vas en autobús?",
+          "alt_nl": [
+            "Ga jij met de bus?"
+          ],
+          "alt_es": [
+            "¿Vas en bus?",
+            "¿Vas en camioneta?",
+            "¿Tú vas en autobús?"
+          ]
+        },
+        {
+          "id": "u10l2s04",
+          "nl": "Wij gaan naar de supermarkt.",
+          "es": "Vamos al supermercado.",
+          "alt_nl": [
+            "We gaan naar de supermarkt."
+          ],
+          "alt_es": [
+            "Nosotros vamos al supermercado.",
+            "Vamos al súper."
+          ]
+        },
+        {
+          "id": "u10l2s05",
+          "nl": "Zij gaat naar school.",
+          "es": "Ella va a la escuela.",
+          "alt_nl": [
+            "Ze gaat naar school."
+          ],
+          "alt_es": [
+            "Va a la escuela.",
+            "Ella va al colegio.",
+            "Va al colegio."
+          ]
+        },
+        {
+          "id": "u10l2s06",
+          "nl": "Ik ga met de fiets naar het werk.",
+          "es": "Voy al trabajo en bicicleta.",
+          "alt_nl": [
+            "Ik ga met de fiets naar mijn werk.",
+            "Ik ga naar het werk met de fiets."
+          ],
+          "alt_es": [
+            "Voy en bicicleta al trabajo.",
+            "Voy al trabajo en bici.",
+            "Voy en bici al trabajo."
+          ]
+        },
+        {
+          "id": "u10l2s07",
+          "nl": "Ik ga naar huis.",
+          "es": "Me voy a casa.",
+          "alt_nl": [],
+          "alt_es": [
+            "Voy a casa.",
+            "Yo voy a casa."
+          ]
+        },
+        {
+          "id": "u10l2s08",
+          "nl": "Waar gaan jullie naar school?",
+          "es": "¿Dónde van ustedes a la escuela?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿A qué escuela van ustedes?",
+            "¿Dónde estudian ustedes?"
+          ]
+        },
+        {
+          "id": "u10l2s09",
+          "nl": "De trein is te laat.",
+          "es": "El tren viene con retraso.",
+          "alt_nl": [],
+          "alt_es": [
+            "El tren llega tarde.",
+            "El tren está retrasado.",
+            "El tren viene tarde.",
+            "El tren está atrasado."
+          ]
+        },
+        {
+          "id": "u10l2s10",
+          "nl": "Is de supermarkt ver?",
+          "es": "¿El supermercado está lejos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está lejos el supermercado?",
+            "¿El supermercado queda lejos?"
+          ]
+        },
+        {
+          "id": "u10l2s11",
+          "nl": "Mijn werk is in Utrecht.",
+          "es": "Mi trabajo es en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi trabajo está en Utrecht.",
+            "Mi trabajo queda en Utrecht."
+          ]
+        },
+        {
+          "id": "u10l2s12",
+          "nl": "De kinderen gaan naar school.",
+          "es": "Los niños van a la escuela.",
+          "alt_nl": [],
+          "alt_es": [
+            "Los niños van al colegio.",
+            "Los hijos van a la escuela."
+          ]
+        },
+        {
+          "id": "u10l2s13",
+          "nl": "Ik ga met de trein naar Amsterdam.",
+          "es": "Voy a Amsterdam en tren.",
+          "alt_nl": [],
+          "alt_es": [
+            "Voy en tren a Amsterdam.",
+            "Yo voy a Amsterdam en tren."
+          ]
+        },
+        {
+          "id": "u10l2s14",
+          "nl": "Met de bus of met de trein?",
+          "es": "¿En autobús o en tren?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿En bus o en tren?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10l3",
+      "title_es": "Desayuno, almuerzo, cena",
+      "sentences": [
+        {
+          "id": "u10l3s01",
+          "nl": "Ik ontbijt om zeven uur.",
+          "es": "Desayuno a las siete.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo desayuno a las siete."
+          ]
+        },
+        {
+          "id": "u10l3s02",
+          "nl": "Wij ontbijten met brood en kaas.",
+          "es": "Desayunamos pan con queso.",
+          "alt_nl": [
+            "We ontbijten met brood en kaas."
+          ],
+          "alt_es": [
+            "Desayunamos pan y queso.",
+            "Nosotros desayunamos pan con queso."
+          ]
+        },
+        {
+          "id": "u10l3s03",
+          "nl": "Hij luncht om twaalf uur.",
+          "es": "Él almuerza a las doce.",
+          "alt_nl": [],
+          "alt_es": [
+            "Almuerza a las doce."
+          ]
+        },
+        {
+          "id": "u10l3s04",
+          "nl": "Lunch je op je werk?",
+          "es": "¿Almuerzas en el trabajo?",
+          "alt_nl": [
+            "Lunch jij op je werk?",
+            "Lunch je op het werk?"
+          ],
+          "alt_es": [
+            "¿Tú almuerzas en el trabajo?"
+          ]
+        },
+        {
+          "id": "u10l3s05",
+          "nl": "Het avondeten is om zes uur.",
+          "es": "La cena es a las seis.",
+          "alt_nl": [],
+          "alt_es": [
+            "Cenamos a las seis."
+          ]
+        },
+        {
+          "id": "u10l3s06",
+          "nl": "Wat eten we vanavond?",
+          "es": "¿Qué comemos esta noche?",
+          "alt_nl": [
+            "Wat eten wij vanavond?"
+          ],
+          "alt_es": [
+            "¿Qué vamos a comer esta noche?",
+            "¿Qué comemos hoy en la noche?",
+            "¿Qué cenamos esta noche?"
+          ]
+        },
+        {
+          "id": "u10l3s07",
+          "nl": "Ik kook vanavond.",
+          "es": "Esta noche cocino yo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo cocino esta noche.",
+            "Cocino esta noche.",
+            "Hoy en la noche cocino yo."
+          ]
+        },
+        {
+          "id": "u10l3s08",
+          "nl": "Vanmiddag of vanavond?",
+          "es": "¿Esta tarde o esta noche?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Hoy en la tarde o hoy en la noche?"
+          ]
+        },
+        {
+          "id": "u10l3s09",
+          "nl": "Ik heb vanmiddag les.",
+          "es": "Tengo clase esta tarde.",
+          "alt_nl": [
+            "Ik heb vanmiddag een les."
+          ],
+          "alt_es": [
+            "Esta tarde tengo clase.",
+            "Tengo una clase esta tarde.",
+            "Hoy en la tarde tengo clase."
+          ]
+        },
+        {
+          "id": "u10l3s10",
+          "nl": "Ontbijt je vroeg?",
+          "es": "¿Desayunas temprano?",
+          "alt_nl": [
+            "Ontbijt jij vroeg?"
+          ],
+          "alt_es": [
+            "¿Tú desayunas temprano?"
+          ]
+        },
+        {
+          "id": "u10l3s11",
+          "nl": "Het avondeten is lekker!",
+          "es": "¡La cena está rica!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡La cena está sabrosa!",
+            "¡La cena está deliciosa!",
+            "¡Qué rica la cena!"
+          ]
+        },
+        {
+          "id": "u10l3s12",
+          "nl": "Wij lunchen samen.",
+          "es": "Almorzamos juntos.",
+          "alt_nl": [
+            "We lunchen samen."
+          ],
+          "alt_es": [
+            "Almorzamos juntas.",
+            "Nosotros almorzamos juntos."
+          ]
+        },
+        {
+          "id": "u10l3s13",
+          "nl": "Ik bel je vanavond.",
+          "es": "Te llamo esta noche.",
+          "alt_nl": [
+            "Ik bel jou vanavond."
+          ],
+          "alt_es": [
+            "Te llamo hoy en la noche.",
+            "Yo te llamo esta noche."
+          ]
+        },
+        {
+          "id": "u10l3s14",
+          "nl": "Ik werk vanmiddag niet.",
+          "es": "Esta tarde no trabajo.",
+          "alt_nl": [],
+          "alt_es": [
+            "No trabajo esta tarde.",
+            "Hoy en la tarde no trabajo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10l4",
+      "title_es": "En mi tiempo libre",
+      "sentences": [
+        {
+          "id": "u10l4s01",
+          "nl": "Ik kijk tv.",
+          "es": "Veo televisión.",
+          "alt_nl": [],
+          "alt_es": [
+            "Veo tele.",
+            "Estoy viendo televisión.",
+            "Yo veo televisión.",
+            "Veo la tele."
+          ]
+        },
+        {
+          "id": "u10l4s02",
+          "nl": "Kijk jij vaak tv?",
+          "es": "¿Ves tele a menudo?",
+          "alt_nl": [
+            "Kijk je vaak tv?"
+          ],
+          "alt_es": [
+            "¿Ves tele seguido?",
+            "¿Ves tele mucho?",
+            "¿Ves televisión a menudo?",
+            "¿Ves televisión seguido?",
+            "¿Ves televisión mucho?",
+            "¿Tú ves tele a menudo?",
+            "¿Tú ves tele seguido?",
+            "¿Tú ves tele mucho?",
+            "¿Tú ves televisión a menudo?",
+            "¿Tú ves televisión seguido?",
+            "¿Tú ves televisión mucho?"
+          ]
+        },
+        {
+          "id": "u10l4s03",
+          "nl": "Hij kijkt voetbal op tv.",
+          "es": "Él ve fútbol en la tele.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ve fútbol en la tele.",
+            "Él ve fútbol en la televisión.",
+            "Él ve el fútbol en la tele."
+          ]
+        },
+        {
+          "id": "u10l4s04",
+          "nl": "Ik sport elke dag.",
+          "es": "Hago deporte todos los días.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hago ejercicio todos los días.",
+            "Hago deporte cada día.",
+            "Entreno todos los días."
+          ]
+        },
+        {
+          "id": "u10l4s05",
+          "nl": "Sport jij?",
+          "es": "¿Haces deporte?",
+          "alt_nl": [
+            "Sport je?"
+          ],
+          "alt_es": [
+            "¿Haces ejercicio?",
+            "¿Tú haces deporte?"
+          ]
+        },
+        {
+          "id": "u10l4s06",
+          "nl": "Wij wandelen in het weekend.",
+          "es": "Caminamos el fin de semana.",
+          "alt_nl": [
+            "We wandelen in het weekend."
+          ],
+          "alt_es": [
+            "Paseamos el fin de semana.",
+            "Salimos a caminar el fin de semana.",
+            "Nosotros caminamos el fin de semana.",
+            "Caminamos los fines de semana."
+          ]
+        },
+        {
+          "id": "u10l4s07",
+          "nl": "Ik wandel graag met de hond.",
+          "es": "Me gusta pasear al perro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me gusta caminar con el perro.",
+            "Me gusta sacar a pasear al perro."
+          ]
+        },
+        {
+          "id": "u10l4s08",
+          "nl": "De kinderen spelen in de tuin.",
+          "es": "Los niños juegan en el jardín.",
+          "alt_nl": [],
+          "alt_es": [
+            "Los niños están jugando en el jardín.",
+            "Los niños juegan en el patio."
+          ]
+        },
+        {
+          "id": "u10l4s09",
+          "nl": "Speel je voetbal?",
+          "es": "¿Juegas fútbol?",
+          "alt_nl": [
+            "Speel jij voetbal?"
+          ],
+          "alt_es": [
+            "¿Juegas al fútbol?",
+            "¿Tú juegas fútbol?"
+          ]
+        },
+        {
+          "id": "u10l4s10",
+          "nl": "Ja, ik speel op zaterdag.",
+          "es": "Sí, juego los sábados.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, juego el sábado.",
+            "Sí, yo juego los sábados."
+          ]
+        },
+        {
+          "id": "u10l4s11",
+          "nl": "Zij kijken samen tv.",
+          "es": "Ellos ven televisión juntos.",
+          "alt_nl": [
+            "Ze kijken samen tv."
+          ],
+          "alt_es": [
+            "Ven tele juntos.",
+            "Ellas ven televisión juntas.",
+            "Ellos ven la tele juntos.",
+            "Ven televisión juntos."
+          ]
+        },
+        {
+          "id": "u10l4s12",
+          "nl": "Hij wandelt vaak in de regen.",
+          "es": "Él camina a menudo bajo la lluvia.",
+          "alt_nl": [],
+          "alt_es": [
+            "Camina mucho bajo la lluvia.",
+            "Él camina seguido bajo la lluvia.",
+            "A menudo camina bajo la lluvia."
+          ]
+        },
+        {
+          "id": "u10l4s13",
+          "nl": "Voetbal op tv? Leuk!",
+          "es": "¿Fútbol en la tele? ¡Chévere!",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Fútbol en la televisión? ¡Chévere!"
+          ]
+        },
+        {
+          "id": "u10l4s14",
+          "nl": "Zij sporten samen.",
+          "es": "Ellos hacen deporte juntos.",
+          "alt_nl": [
+            "Ze sporten samen."
+          ],
+          "alt_es": [
+            "Hacen deporte juntos.",
+            "Ellas hacen ejercicio juntas.",
+            "Ellos hacen ejercicio juntos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10l5",
+      "title_es": "Estoy cansada",
+      "sentences": [
+        {
+          "id": "u10l5s01",
+          "nl": "Ik ben moe.",
+          "es": "Estoy cansada.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy cansado.",
+            "Yo estoy cansada.",
+            "Yo estoy cansado."
+          ]
+        },
+        {
+          "id": "u10l5s02",
+          "nl": "Ben je moe?",
+          "es": "¿Estás cansado?",
+          "alt_nl": [
+            "Ben jij moe?"
+          ],
+          "alt_es": [
+            "¿Estás cansada?",
+            "¿Tú estás cansado?",
+            "¿Tú estás cansada?"
+          ]
+        },
+        {
+          "id": "u10l5s03",
+          "nl": "Ik ga slapen.",
+          "es": "Voy a dormir.",
+          "alt_nl": [],
+          "alt_es": [
+            "Me voy a dormir.",
+            "Yo voy a dormir.",
+            "Me voy a acostar."
+          ]
+        },
+        {
+          "id": "u10l5s04",
+          "nl": "Welterusten!",
+          "es": "¡Que descanses!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Buenas noches!",
+            "¡Que duermas bien!",
+            "¡Que descanse!"
+          ]
+        },
+        {
+          "id": "u10l5s05",
+          "nl": "Welterusten, schat.",
+          "es": "Que descanses, mi amor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Buenas noches, mi amor.",
+            "Que duermas bien, mi amor.",
+            "Que descanses, cariño.",
+            "Que descanses, amor.",
+            "Que descanses, mi vida."
+          ]
+        },
+        {
+          "id": "u10l5s06",
+          "nl": "Ben jij nog wakker?",
+          "es": "¿Todavía estás despierto?",
+          "alt_nl": [
+            "Ben je nog wakker?"
+          ],
+          "alt_es": [
+            "¿Todavía estás despierta?",
+            "¿Sigues despierto?",
+            "¿Sigues despierta?",
+            "¿Aún estás despierto?"
+          ]
+        },
+        {
+          "id": "u10l5s07",
+          "nl": "Ja, ik ben nog wakker.",
+          "es": "Sí, todavía estoy despierta.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, todavía estoy despierto.",
+            "Sí, sigo despierta.",
+            "Sí, sigo despierto.",
+            "Sí, aún estoy despierta."
+          ]
+        },
+        {
+          "id": "u10l5s08",
+          "nl": "Ik ben altijd moe.",
+          "es": "Siempre estoy cansada.",
+          "alt_nl": [],
+          "alt_es": [
+            "Siempre estoy cansado.",
+            "Estoy siempre cansada.",
+            "Estoy siempre cansado."
+          ]
+        },
+        {
+          "id": "u10l5s09",
+          "nl": "Hij is nooit moe.",
+          "es": "Él nunca está cansado.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nunca está cansado.",
+            "Él no está nunca cansado."
+          ]
+        },
+        {
+          "id": "u10l5s10",
+          "nl": "Het kind is al wakker.",
+          "es": "El niño ya está despierto.",
+          "alt_nl": [],
+          "alt_es": [
+            "La niña ya está despierta.",
+            "El niño ya se despertó."
+          ]
+        },
+        {
+          "id": "u10l5s11",
+          "nl": "Zij is altijd vroeg wakker.",
+          "es": "Ella siempre se despierta temprano.",
+          "alt_nl": [
+            "Ze is altijd vroeg wakker."
+          ],
+          "alt_es": [
+            "Siempre se despierta temprano.",
+            "Ella siempre está despierta temprano."
+          ]
+        },
+        {
+          "id": "u10l5s12",
+          "nl": "Ik kook nooit.",
+          "es": "Yo nunca cocino.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nunca cocino.",
+            "No cocino nunca."
+          ]
+        },
+        {
+          "id": "u10l5s13",
+          "nl": "Wij gaan altijd laat slapen.",
+          "es": "Siempre nos acostamos tarde.",
+          "alt_nl": [
+            "We gaan altijd laat slapen."
+          ],
+          "alt_es": [
+            "Siempre nos vamos a dormir tarde.",
+            "Siempre dormimos tarde.",
+            "Nosotros siempre nos acostamos tarde."
+          ]
+        },
+        {
+          "id": "u10l5s14",
+          "nl": "Ik heb het altijd druk.",
+          "es": "Siempre estoy ocupada.",
+          "alt_nl": [],
+          "alt_es": [
+            "Siempre estoy ocupado.",
+            "Siempre tengo mucho que hacer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10l6",
+      "title_es": "¿Qué haces?",
+      "sentences": [
+        {
+          "id": "u10l6s01",
+          "nl": "Wat doe je?",
+          "es": "¿Qué haces?",
+          "alt_nl": [
+            "Wat doe jij?"
+          ],
+          "alt_es": [
+            "¿Qué estás haciendo?",
+            "¿Tú qué haces?",
+            "¿A qué te dedicas?"
+          ]
+        },
+        {
+          "id": "u10l6s02",
+          "nl": "Ik ben student.",
+          "es": "Soy estudiante.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo soy estudiante."
+          ]
+        },
+        {
+          "id": "u10l6s03",
+          "nl": "Wat doe je morgen?",
+          "es": "¿Qué haces mañana?",
+          "alt_nl": [
+            "Wat doe jij morgen?"
+          ],
+          "alt_es": [
+            "¿Qué vas a hacer mañana?",
+            "¿Tú qué haces mañana?"
+          ]
+        },
+        {
+          "id": "u10l6s04",
+          "nl": "Niets! Ik ben vrij.",
+          "es": "¡Nada! Estoy libre.",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Nada! Tengo el día libre."
+          ]
+        },
+        {
+          "id": "u10l6s05",
+          "nl": "Wat doen jullie in het weekend?",
+          "es": "¿Qué hacen ustedes el fin de semana?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué hacen el fin de semana?",
+            "¿Qué hacen los fines de semana?"
+          ]
+        },
+        {
+          "id": "u10l6s06",
+          "nl": "Wij doen niets.",
+          "es": "No hacemos nada.",
+          "alt_nl": [
+            "We doen niets."
+          ],
+          "alt_es": [
+            "Nosotros no hacemos nada."
+          ]
+        },
+        {
+          "id": "u10l6s07",
+          "nl": "Ik werk soms op zaterdag.",
+          "es": "A veces trabajo los sábados.",
+          "alt_nl": [],
+          "alt_es": [
+            "A veces trabajo el sábado.",
+            "Trabajo a veces los sábados.",
+            "Yo a veces trabajo los sábados."
+          ]
+        },
+        {
+          "id": "u10l6s08",
+          "nl": "Hij is student in Utrecht.",
+          "es": "Él es estudiante en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es estudiante en Utrecht.",
+            "Él estudia en Utrecht."
+          ]
+        },
+        {
+          "id": "u10l6s09",
+          "nl": "Wat doet zij?",
+          "es": "¿Qué hace ella?",
+          "alt_nl": [
+            "Wat doet ze?"
+          ],
+          "alt_es": [
+            "¿A qué se dedica ella?",
+            "¿Ella qué hace?"
+          ]
+        },
+        {
+          "id": "u10l6s10",
+          "nl": "Soms? Nee, altijd!",
+          "es": "¿A veces? ¡No, siempre!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u10l6s11",
+          "nl": "Ik doe het straks.",
+          "es": "Lo hago más tarde.",
+          "alt_nl": [],
+          "alt_es": [
+            "Lo hago ahorita.",
+            "Lo hago luego.",
+            "Lo hago en un rato.",
+            "Yo lo hago más tarde."
+          ]
+        },
+        {
+          "id": "u10l6s12",
+          "nl": "Doe je dat elke week?",
+          "es": "¿Haces eso todas las semanas?",
+          "alt_nl": [
+            "Doe jij dat elke week?"
+          ],
+          "alt_es": [
+            "¿Haces eso cada semana?",
+            "¿Lo haces todas las semanas?",
+            "¿Lo haces cada semana?"
+          ]
+        },
+        {
+          "id": "u10l6s13",
+          "nl": "Ik doe niets in het weekend.",
+          "es": "No hago nada el fin de semana.",
+          "alt_nl": [],
+          "alt_es": [
+            "El fin de semana no hago nada.",
+            "Yo no hago nada el fin de semana."
+          ]
+        },
+        {
+          "id": "u10l6s14",
+          "nl": "Zij is ook student.",
+          "es": "Ella también es estudiante.",
+          "alt_nl": [
+            "Ze is ook student."
+          ],
+          "alt_es": [
+            "También es estudiante."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "Un día de Luis",
+    "lines": [
+      {
+        "speaker": "Emma",
+        "nl": "Hallo Luis! Wat doe je hier?",
+        "es": "¡Hola Luis! ¿Qué haces aquí?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Ik ga naar de supermarkt. En jij?",
+        "es": "Voy al supermercado. ¿Y tú?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Ik ga naar huis. Ik ben moe.",
+        "es": "Voy a casa. Estoy cansada."
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Werk je elke dag?",
+        "es": "¿Trabajas todos los días?"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Ja, en ik leer ook Spaans. Ik heb het altijd druk!",
+        "es": "Sí, y además aprendo español. ¡Siempre estoy ocupada!"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Ik leer Nederlands. Praten we samen? Jij Spaans, ik Nederlands!",
+        "es": "Yo aprendo neerlandés. ¿Hablamos juntos? ¡Tú español, yo neerlandés!"
+      },
+      {
+        "speaker": "Emma",
+        "nl": "Leuk! Morgen om half vijf?",
+        "es": "¡Chévere! ¿Mañana a las cuatro y media?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Goed. Tot morgen!",
+        "es": "Bien. ¡Hasta mañana!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Adónde va Luis?",
+        "options_es": [
+          "A casa",
+          "Al supermercado",
+          "Al trabajo"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Por qué está ocupada Emma?",
+        "options_es": [
+          "Trabaja todos los días y aprende español",
+          "Tiene hijos",
+          "Hace deporte"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿A qué hora se ven mañana?",
+        "options_es": [
+          "A las cinco y media",
+          "A las cuatro y media",
+          "A las cuatro"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

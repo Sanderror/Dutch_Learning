@@ -1,0 +1,113 @@
+{
+  "checker": "independent-agent-2026-11-15-u09",
+  "coverage": {
+    "sentences_read": 80,
+    "word_cards_read": 35,
+    "dialogue_lines_read": 8,
+    "grammar_note_read": true
+  },
+  "flags": [
+    {
+      "id": "u09:grammar",
+      "severity": "a",
+      "reason": "Pronunciation claim for w is wrong for Netherlands Dutch and contradicts unit 2. «los labios casi se tocan» describes a bilabial sound (the Belgian/southern realisation). Standard Netherlands w is labiodental: the lower lip approaches the upper teeth, which is exactly what the u02 note says («con el labio inferior contra los dientes, más suave que la v»). «como una v suave» is also ambiguous: u02 taught that Dutch v sounds almost like a soft f, while a Spanish reader hears Spanish v = b. The learner now has two conflicting rules for the same letter.",
+      "suggestion": "«**w** no es la «u» del inglés: el labio de abajo se acerca a los dientes de arriba, sin apretar (como viste en la unidad 2). **w**eer, **w**ind, **w**inter, **w**arm.»"
+    },
+    {
+      "id": "u09:grammar",
+      "severity": "b",
+      "reason": "welk/welke rule leaves out plurals. «Con palabras de het se dice welk» gives no answer for het-words in the plural (welke seizoenen, not *welk seizoenen). The welke word card gets it right («Welke con palabras de de y con plurales»), and the u06 note stated the plural explicitly for the parallel ons/onze rule, so the grammar note is the odd one out.",
+      "suggestion": "«Con palabras de het en singular se dice welk; con palabras de de y con todos los plurales, welke (welke dag, welke seizoenen).»"
+    },
+    {
+      "id": "u09l6s01",
+      "severity": "a",
+      "reason": "The main Spanish «Por suerte no llueve.» translates literally to «Het regent gelukkig niet.» / «Gelukkig regent het niet.». Those are correct Dutch with the same meaning, the learner knows every word, and they are the most likely ES→NL answers. alt_nl has only the droog variant, so the learner's correct answer is marked wrong.",
+      "suggestion": "Add to alt_nl: «Het regent gelukkig niet.», «Gelukkig regent het niet.»"
+    },
+    {
+      "id": "u09l6s08",
+      "severity": "a",
+      "reason": "Same problem, worse. The main Spanish is the negative question «¿Afuera no llueve?», whose literal Dutch is «Regent het niet buiten?» / «Regent het buiten niet?». That is correct and almost certainly what the learner types, and it is rejected (alt_nl is empty). The negative question also carries a presupposition the neutral Dutch «Is het droog buiten?» lacks.",
+      "suggestion": "Add to alt_nl: «Regent het buiten niet?», «Regent het niet buiten?». Optionally make the main Spanish «¿Está seco afuera?» (already in alt_es) or «¿Ya no llueve afuera?»."
+    },
+    {
+      "id": "u09l3s04",
+      "severity": "a",
+      "reason": "Collision with an earlier sentence. u09l1s10 taught «hace mucho calor» = «het is heel warm». Here «Hoy hace mucho calor.» must be answered with heet only. «Het is heel warm vandaag.» is correct Dutch for the Spanish and is exactly what the learner was taught two lessons earlier, yet it is rejected.",
+      "suggestion": "Add to alt_nl: «Het is heel warm vandaag.», «Het is vandaag heel warm.». Or set heet apart in Spanish with «Hoy hace un calor tremendo.» / «¡Hoy hace muchísimo calor!» and keep «mucho calor» as an alt_es."
+    },
+    {
+      "id": "u09l3s11",
+      "severity": "a",
+      "reason": "Same heet/heel warm collision. «En Caracas hace mucho calor a menudo.» → «Het is vaak heel warm in Caracas.» is correct and likely, and it is rejected.",
+      "suggestion": "Add to alt_nl: «Het is vaak heel warm in Caracas.», «In Caracas is het vaak heel warm.» (moot if the sentence is rewritten as in the next flag)."
+    },
+    {
+      "id": "u09l3s11",
+      "severity": "b",
+      "reason": "Content and Spanish. Caracas is known for its mild valley climate (highs around 26-28 °C). For a Dutch speaker «heet» means roughly 30 °C and up, so a Caracas native will read «Het is vaak heet in Caracas» as wrong; «warm» is the right word. The main Spanish «hace mucho calor a menudo» is also clumsy, with the frequency adverb tacked on at the end; «suele hacer…» (already in alt_es) is how one says it. The dialogue's «Het is nu heet in Caracas» has the same exaggeration but works there as a contrast with 5 graden.",
+      "suggestion": "nl «Het is vaak warm in Caracas.», es «En Caracas suele hacer calor.», alt_es «En Caracas hace calor a menudo.», «En Caracas muchas veces hace calor.», alt_nl «In Caracas is het vaak warm.»"
+    },
+    {
+      "id": "u09l4s11",
+      "severity": "b",
+      "reason": "Unnatural in both languages. «Welk seizoen is mooi?» / «¿Qué estación es bonita?» presupposes that exactly one season is pretty. A Dutch speaker would ask «Welk seizoen vind je mooi?» or «…het mooist?», neither of which can be built from taught words. As it stands it reads as a translation-drill sentence, not something anyone says.",
+      "suggestion": "Replace with «In welk seizoen is het warm?» = «¿En qué estación hace calor?» (all words taught; a wh-question, so inversion is already known). alt_es «¿En qué estación hace calor?» / «¿Cuál estación es calurosa?»."
+    },
+    {
+      "id": "lexicon:worden",
+      "severity": "b",
+      "reason": "The note_es «Het wordt warm = Va a hacer calor, se pone caliente» uses «ponerse caliente». In Latin American Spanish, without a weather subject, that reads as a person getting aroused, or angry or worked up. Nobody says it of the weather, and the learner will see it on the card. u09l6s02 accepts the same phrase in alt_es («Se está poniendo caliente.»).",
+      "suggestion": "note_es: «Het wordt warm = Va a hacer calor, empieza a hacer calor. Het wordt laat = Se hace tarde.» Remove «Se está poniendo caliente.» from u09l6s02 alt_es, or replace it with «Se está poniendo caluroso.»."
+    },
+    {
+      "id": "lexicon:heet",
+      "severity": "b",
+      "reason": "Homograph with a form the learner has used since unit 1: heet from heten (Hoe heet je? = ¿Cómo te llamas?). The heet card says nothing, so «Het is heet» next to «Hij heet Tom» is a real trap for parsing and dictation. The weer card does mention tijd, so the cards already have the habit of warning.",
+      "suggestion": "Add to note_es: «Ojo: heet también es «se llama» (Hoe heet je?). La frase deja claro cuál es.»"
+    },
+    {
+      "id": "lexicon:muts",
+      "severity": "b",
+      "reason": "Misleading gloss. accept_es includes «la gorra», and u09l5s08, u09l5s09 and u09l5s14 accept «gorra» in alt_es. In Venezuela (and Latin America generally) a gorra is a peaked baseball cap, which in Dutch is a pet. A muts is a knitted or woollen hat, a «gorro». Accepting «gorra» teaches muts = cap, and «pet» will clash later.",
+      "suggestion": "Add note_es «Gorro de lana para el frío; una gorra con visera es una pet.» Keep accepting gorra if the teacher wants leniency, but do not list it as an equivalent."
+    },
+    {
+      "id": "u09l1s04",
+      "severity": "c",
+      "reason": "«Het is mooi weer» is the idiomatic Dutch form (taught in u09l6s07) and uses exactly the same four tiles as «Het weer is mooi». A tile-built or typed «Het is mooi weer.» for «El tiempo está bonito / Hace buen tiempo» is correct and is rejected.",
+      "suggestion": "Add to alt_nl: «Het is mooi weer.»"
+    },
+    {
+      "id": "u09l1s02",
+      "severity": "c",
+      "reason": "«Está haciendo frío» is the everyday Venezuelan way to describe the weather right now, and the unit already accepts the parallel «Está haciendo viento / sol». Typed for «Het is koud.» it is rejected.",
+      "suggestion": "Add to alt_es: «Está haciendo frío.», «Está frío.». Same for u09l1s08 («No está haciendo frío.») and u09l1s03 («Hoy está haciendo calor.»)."
+    },
+    {
+      "id": "u09l3s03",
+      "severity": "c",
+      "reason": "alt_nl accepts «Het is min vijf graden» but alt_es has no form with «grados». «Hace cinco grados bajo cero.» and «Hace menos cinco grados.» are the most likely full answers.",
+      "suggestion": "Add to alt_es: «Hace cinco grados bajo cero.», «Hace menos cinco grados.», «Estamos a cinco bajo cero.»"
+    },
+    {
+      "id": "u09l4s07",
+      "severity": "c",
+      "reason": "The Dutch has «nu» and the main Spanish drops it. The word-for-word answer «¿En qué estación estamos ahora?» is likely, and so is the Venezuelan «¿Cuál estación es ahora?» (u09l4s11 already accepts «cuál» + noun). Both are rejected.",
+      "suggestion": "Add to alt_es: «¿En qué estación estamos ahora?», «¿Cuál estación es ahora?», «¿Qué estación es?»"
+    },
+    {
+      "id": "u09l5s07",
+      "severity": "c",
+      "reason": "The op word card glosses «sobre» first. «Tu bufanda está sobre la silla.» is a correct, likely answer and is rejected.",
+      "suggestion": "Add to alt_es: «Tu bufanda está sobre la silla.»"
+    },
+    {
+      "id": "u09l6s07",
+      "severity": "c",
+      "reason": "u09l6s10 accepts both «Het is binnen warm» and the inverted «Binnen is het warm», but this sentence accepts neither variant. «Buiten is het mooi weer.» is in fact the most natural Dutch, and «Het is buiten mooi weer.» can be built from the same tiles.",
+      "suggestion": "Add to alt_nl: «Buiten is het mooi weer.», «Het is buiten mooi weer.». Likewise u09l6s09: «Nee, buiten regent het.»"
+    }
+  ]
+}

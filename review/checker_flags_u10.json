@@ -1,0 +1,72 @@
+{
+  "checker": "independent-agent-2026-11-15-u10",
+  "coverage": {
+    "sentences_read": 84,
+    "word_cards_read": 31,
+    "dialogue_lines_read": 8,
+    "grammar_note_read": true,
+    "dialogue_questions_read": 3
+  },
+  "flags": [
+    {
+      "id": "u10:grammar",
+      "severity": "a",
+      "reason": "Wrong example for the stem-spelling rule. The note says the stem must sound like the infinitive and a long vowel is written double, then lists «kom» among verbs that follow it. komen has a long o (ko-men) but the stem is kom with a short o: it is the textbook exception, not an example. Applying the rule as stated gives *koom, so the example contradicts the rule it illustrates.",
+      "suggestion": "Remove kom from «Ya conoces muchos verbos así: …» (e.g. «woon, spreek, kook, zoek, bel») and, if wanted, add: «Excepción: komen → ik kom (o corta).»"
+    },
+    {
+      "id": "u10:grammar",
+      "severity": "b",
+      "reason": "Sound line for ie: the bold is misplaced, «m**uzie**k» highlights 'uzie' instead of 'ie'. Also 'larga' is inaccurate for this word: Dutch ie is short except before r (muziek, niet, drie are short; hier, vier are long). It is the Spanish i, which is enough.",
+      "suggestion": "«- **ie** de muz**ie**k es la i española.» (drop «larga»)."
+    },
+    {
+      "id": "u10:grammar",
+      "severity": "b",
+      "reason": "«Van después del verbo» for altijd/vaak/soms/nooit is too loose for the unit's own material: «Ik heb het altijd druk» (u10l5s14, dialogue line 5) puts altijd after het, not after the verb, and the same happens with object pronouns (Ik bel je vaak). A learner building u10l5s14 from tiles with the stated rule is likely to produce *Ik heb altijd het druk.",
+      "suggestion": "«Van después del verbo; si hay un pronombre como het, je o me, va después de él: Ik ben **altijd** moe. Ik heb het **altijd** druk. Ik bel je **vaak**.»"
+    },
+    {
+      "id": "lexicon:luisteren",
+      "severity": "b",
+      "reason": "Note «Siempre con naar» is contradicted in the same lesson by u10l1s06 «Hij luistert niet» and u10l1s11 «Luister!», both correct Dutch without naar. naar is required only when there is something you listen to.",
+      "suggestion": "«Con lo que se escucha, siempre naar: luisteren naar muziek. Sin eso, solo: Luister!»"
+    },
+    {
+      "id": "lexicon:kijken",
+      "severity": "b",
+      "reason": "Gloss is only «mirar», but u10l4 uses kijken in tv kijken / voetbal kijken, where Venezuelan Spanish says «ver» (ver televisión, ver fútbol). The gloss is misleading in these very sentences, and a learner following it («Miro televisión») is not accepted in u10l4s01/s02/s03/s11.",
+      "suggestion": "es: [\"mirar\", \"ver\"]; note_es: «Kijk! = ¡Mira! Con tv o fútbol: tv kijken = ver televisión.»"
+    },
+    {
+      "id": "u10l1s07",
+      "severity": "b",
+      "reason": "«Wij praten Nederlands» is acceptable colloquial Dutch, but the praten card says «praten = conversar; spreken = hablar un idioma», so the course itself teaches spreken with languages. Translating «Hablamos en neerlandés», the learner who follows that note writes «Wij spreken Nederlands», which is correct and not in alt_nl, so it is marked wrong. The dialogue (line 6) also uses praten with Spaans/Nederlands.",
+      "suggestion": "Add alt_nl «Wij spreken Nederlands.» and «We spreken Nederlands.», and soften the praten note: «praten = conversar (también en un idioma: we praten Nederlands); para decir qué idiomas sabes, spreken: Ik spreek Spaans.»"
+    },
+    {
+      "id": "u10:dialogue:8",
+      "severity": "b",
+      "reason": "«Tot morgen, en welterusten!» on parting in the street, with Luis on his way to the supermarket and nothing saying it is late: welterusten is said only when someone is going to bed (as the card says). The Spanish «que descanses» is used much more broadly in Venezuela as a goodbye to someone tired, so this line teaches an overextension of welterusten.",
+      "suggestion": "«Goed. Tot morgen! Doei!» (es: «Bien. ¡Hasta mañana! ¡Chao!»), or set the scene in the late evening if welterusten is to stay."
+    },
+    {
+      "id": "u10l2s09",
+      "severity": "c",
+      "reason": "The everyday Latin American/Venezuelan word for a late train or bus is «atrasado»; «El tren está atrasado» is a likely correct answer and is not accepted (only 'retrasado', 'con retraso', 'llega/viene tarde').",
+      "suggestion": "Add alt_es «El tren está atrasado.» and «El tren viene atrasado.»"
+    },
+    {
+      "id": "u10l3s06",
+      "severity": "c",
+      "reason": "«Wat eten we vanavond?» is naturally rendered «¿Qué cenamos (hoy)?» in Spanish; that is a likely answer and is not accepted.",
+      "suggestion": "Add alt_es «¿Qué cenamos esta noche?», «¿Qué cenamos hoy?», «¿Qué vamos a cenar?»"
+    },
+    {
+      "id": "u10l2s01",
+      "severity": "c",
+      "reason": "«Me voy al trabajo» is a very common rendering of «Ik ga naar mijn werk», and the unit accepts the same pattern elsewhere («Me voy a casa» is the main for u10l2s07, «Él se va en tren» for s02). Not accepted here.",
+      "suggestion": "Add alt_es «Me voy al trabajo.» and «Me voy a mi trabajo.»"
+    }
+  ]
+}

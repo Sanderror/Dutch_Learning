@@ -1,0 +1,254 @@
+Why,Lesson,Dutch,Spanish,OK?,Corrected Dutch,Corrected Spanish,Comment,Also accepted (Spanish),Also accepted (Dutch),Type,ID
+word card,u07l1,de maandag,"el lunes  [Los días se escriben con minúscula, como en español.]",,,,,,,word,maandag
+word card,u07l1,de dinsdag,el martes,,,,,,,word,dinsdag
+word card,u07l1,de woensdag,el miércoles,,,,,,,word,woensdag
+word card,u07l1,de donderdag,el jueves,,,,,,,word,donderdag
+word card,u07l1,de vrijdag,el viernes,,,,,,,word,vrijdag
+word card,u07l1,vandaag,hoy,,,,,,,word,vandaag
+word card,u07l2,de zaterdag,el sábado,,,,,,,word,zaterdag
+word card,u07l2,de zondag,el domingo,,,,,,,word,zondag
+word card,u07l2,het weekend,el fin de semana,,,,,,,word,weekend
+word card,u07l2,"de dag  (dag, dagen)",el día  [Se escribe igual que dag = adiós. Plural: dagen.],,,,,,,word,dag-n
+word card,u07l2,de week,la semana,,,,,,,word,week
+word card,u07l2,"welke  (welke, welk)","qué, cuál  [Welke con palabras de de y con todos los plurales (welke dag); welk con palabras de het en singular (welk seizoen).]",,,,,cuáles,,word,welke
+word card,u07l3,laat,tarde  [Hoe laat is het? = ¿Qué hora es?],,,,,,,word,laat
+word card,u07l3,het uur,la hora  [Drie uur = las tres. Después de un número no cambia.],,,,,,,word,uur
+word card,u07l3,al,ya,,,,,,,word,al
+word card,u07l3,precies,"exactamente, en punto",,,,,justo | exacto,,word,precies
+word card,u07l4,half,media  [¡Cuidado! half drie = las dos y media (media hora antes de las tres).],,,,,medio | y media,,word,half
+word card,u07l4,het kwart,el cuarto,,,,,,,word,kwart
+word card,u07l4,over,y (en la hora)  [kwart over vier = las cuatro y cuarto.],,,,,pasadas,,word,over
+word card,u07l4,voor,para (en la hora)  [kwart voor vijf = un cuarto para las cinco.],,,,,menos,,word,voor
+word card,u07l5,om,a (la hora)  [om drie uur = a las tres.],,,,,,,word,om
+word card,u07l5,de les,la clase,,,,,la lección,,word,les
+word card,u07l5,straks,"más tarde, dentro de un rato  [Tot straks! = ¡Hasta ahorita!]",,,,,luego | ahorita | en un rato,,word,straks
+word card,u07l5,vroeg,temprano,,,,,,,word,vroeg
+word card,u07l6,"werken  (werk, werkt, werken)",trabajar,,,,,,,word,werken
+word card,u07l6,vrij,"libre  [Ik ben vrij = No trabajo, tengo el día libre.]",,,,,libres,,word,vrij
+word card,u07l6,fijn weekend,buen fin de semana,,,,,feliz fin de semana | que tengas un buen fin de semana,,word,fijn-weekend
+word card,u07l6,druk,"ocupado  [Ik heb het druk = Estoy ocupado, tengo mucho que hacer.]",,,,,ocupada,,word,druk
+"grammar note; fixed after the checker: Pronunciation section, aa line: 'v**a**nd**aa**g' bolds the first a of vandaag as an example of the long aa / only the second is long / The note equates only 'Om hoe laat?' with '¿A qué hora?', but the unit itself uses bare 'Hoe laat …?' for '¿A qué hora?' (u07l5s04 'Hoe laat is de les?' = '¿A qué hora es / dialogue line 4 'Hoe laat?' = '¿A qué hora?') / Spain-leaning time format as the main model / The rule «Los minutos cerca de la media hora se cuentan desde half» does not say which minutes, so the learner cannot produce e.g / The druk line explains the construction by analogy with 'Ik heb het koud', but koud is first taught in u09l1, so the learner has never seen the comparison and it explains",u07,"Read it in the app: unit 7, «Notas»",Los días y la hora,,,,,,,grammar,u07:grammar
+sample,u07l1,Het is vandaag maandag.,Hoy es lunes.,,,,,,Vandaag is het maandag. | Het is maandag vandaag.,sentence,u07l1s03
+sample,u07l1,Is Anna vandaag hier?,¿Anna está aquí hoy?,,,,,¿Está Anna aquí hoy? | ¿Anna está acá hoy? | ¿Está Anna hoy aquí?,,sentence,u07l1s13
+sample,u07l2,Een week heeft zeven dagen.,Una semana tiene siete días.,,,,,La semana tiene siete días.,,sentence,u07l2s04
+sample,u07l2,Welke dag kom je?,¿Qué día vienes?,,,,,¿Tú qué día vienes? | ¿Qué día vienes tú?,Welke dag kom jij?,sentence,u07l2s09
+"sentence; fixed after the checker: alt_nl 'Is het zondag morgen?' reads to a Dutch speaker as 'Is it Sunday morning?' (zondagmorgen, often written as two words)",u07l2,Is het morgen zondag?,¿Mañana es domingo?,,,,,¿Es domingo mañana?,,sentence,u07l2s11
+sample,u07l3,Het is drie uur.,Son las tres.,,,,,Son las tres en punto.,,sentence,u07l3s02
+sample,u07l3,Het is laat!,¡Es tarde!,,,,,¡Ya es tarde! | ¡Qué tarde!,,sentence,u07l3s11
+sample,u07l4,Het is kwart over vier.,Son las cuatro y cuarto.,,,,,Son las cuatro y quince.,,sentence,u07l4s02
+sample,u07l4,Het is kwart voor vijf.,Es un cuarto para las cinco.,,,,,Son un cuarto para las cinco. | Son las cinco menos cuarto. | Son las cuatro y cuarenta y cinco.,,sentence,u07l4s03
+sample,u07l4,Het is tien over zes.,Son las seis y diez.,,,,,,,sentence,u07l4s04
+sample,u07l4,Het is vijf voor twaalf.,Son cinco para las doce.,,,,,Faltan cinco para las doce. | Son las doce menos cinco. | Son las once y cincuenta y cinco.,,sentence,u07l4s06
+sample,u07l4,"Half drie? Nee, half vier!","¿Las dos y media? ¡No, las tres y media!",,,,,,,sentence,u07l4s12
+sentence; fixed after the checker: For 'Son las cuatro y veinte' the learner can apply the over rule from this lesson and type 'Het is twintig over vier' (twintig taught u03l5),u07l4,Het is tien voor half vijf.,Son las cuatro y veinte.,,,,,,Het is twintig over vier.,sentence,u07l4s13
+"sentence; fixed after the checker: For '¿A qué hora?' the bare 'Hoe laat?' is correct and very common, and the unit's own dialogue (line 4) uses it for exactly this Spanish",u07l5,Om hoe laat?,¿A qué hora?,,,,,,Hoe laat?,sentence,u07l5s01
+"sentence; fixed after the checker: The grammar note teaches 'Om hoe laat? = ¿A qué hora?', so for '¿A qué hora es la clase?' the learner will likely type 'Om hoe laat is de les?' (correct Dutch)",u07l5,Hoe laat is de les?,¿A qué hora es la clase?,,,,,¿A qué hora es la lección?,Om hoe laat is de les?,sentence,u07l5s04
+"sentence; fixed after the checker: Same te/muy pairing as u07l5s10, but here 'muy temprano' is the natural Venezuelan way to say 'too early' in this context, so the main es is fine",u07l5,Is dat niet te vroeg?,¿No es muy temprano?,,,,,¿No es demasiado temprano? | ¿Eso no es muy temprano? | ¿Eso no es demasiado temprano?,Is dat niet heel vroeg?,sentence,u07l5s07
+sentence; fixed after the checker: Meaning mismatch: 'Het is te laat' = 'it is too late' / standalone 'Es muy tarde' most naturally means 'it is very late',u07l5,Het is te laat.,Es demasiado tarde.,,,,,Es muy tarde. | Ya es muy tarde. | Ya es demasiado tarde.,,sentence,u07l5s10
+sample,u07l5,"Tot morgen, om tien uur!","¡Hasta mañana, a las diez!",,,,,,,sentence,u07l5s11
+"sentence; fixed after the checker: Course rule not applied: Spanish 'Gracias' does not mark jij/u, so 'Dank u, fijn weekend, Anna!' is an equally correct answer in the es→nl direction and would be marked w",u07l6,"Dank je, fijn weekend, Anna!","Gracias, ¡buen fin de semana, Anna!",,,,,"Gracias, ¡feliz fin de semana, Anna!","Dank je wel, fijn weekend, Anna! | Dank u, fijn weekend, Anna! | Dank u wel, fijn weekend, Anna!",sentence,u07l6s14
+dialogue,u07 dialogue,Tom: Hallo Anna! Heb je zaterdag tijd?,¡Hola Anna! ¿Tienes tiempo el sábado?,,,,,,,dialogue,u07d01
+dialogue,u07 dialogue,"Anna: Nee, sorry. Ik werk zaterdag.","No, lo siento. El sábado trabajo.",,,,,,,dialogue,u07d02
+dialogue,u07 dialogue,Tom: En zondag?,¿Y el domingo?,,,,,,,dialogue,u07d03
+dialogue,u07 dialogue,"Anna: Ja, ik ben zondag vrij. Hoe laat?","Sí, el domingo estoy libre. ¿A qué hora?",,,,,,,dialogue,u07d04
+dialogue,u07 dialogue,Tom: Om half drie?,¿A las dos y media?,,,,,,,dialogue,u07d05
+dialogue,u07 dialogue,Anna: Half drie is goed.,Las dos y media está bien.,,,,,,,dialogue,u07d06
+dialogue,u07 dialogue,Tom: Leuk! Tot zondag!,¡Chévere! ¡Hasta el domingo!,,,,,,,dialogue,u07d07
+dialogue,u07 dialogue,Anna: Tot zondag! Fijn weekend!,¡Hasta el domingo! ¡Buen fin de semana!,,,,,,,dialogue,u07d08
+question,u07 dialogue,,¿Por qué Anna no puede el sábado?,,,,,✔ Trabaja / Tiene clase / Está en Utrecht,,question,u07q01
+question,u07 dialogue,,¿Qué día se ven?,,,,,El sábado / ✔ El domingo / El lunes,,question,u07q02
+question,u07 dialogue,,¿A qué hora se ven?,,,,,A las tres y media / ✔ A las dos y media / A las tres,,question,u07q03
+word card,u08l1,"de kamer  (kamer, kamers)","el cuarto, la habitación",,,,,el dormitorio,,word,kamer
+word card,u08l1,de keuken,la cocina,,,,,,,word,keuken
+"word card; fixed after the checker: badkamer is glossed only as ""el baño""",u08l1,de badkamer,el baño  [El cuarto con la ducha. El inodoro suele estar aparte: de wc.],,,,,el cuarto de baño,,word,badkamer
+"word card; fixed after the checker: Both kamer and slaapkamer carry the main Spanish gloss ""el cuarto"", and in Venezuelan Spanish ""cuarto"" normally means the bedroom",u08l1,"de slaapkamer  (slaapkamer, slaapkamers)","el cuarto, el dormitorio",,,,,la habitación | la recámara,,word,slaapkamer
+word card,u08l1,de woonkamer,la sala,,,,,el salón | la sala de estar,,word,woonkamer
+word card,u08l1,de tuin,el jardín,,,,,el patio,,word,tuin
+word card,u08l2,op,"sobre, en  [op de tafel = en la mesa, encima.]",,,,,encima de,,word,op
+word card,u08l2,onder,"debajo de, bajo",,,,,abajo de,,word,onder
+word card,u08l2,naast,al lado de,,,,,junto a,,word,naast
+word card,u08l2,bij,"con, en casa de  [Ik woon bij mijn ouders = Vivo con mis papás. Ik ben bij Tom = Estoy donde Tom.]",,,,,cerca de,,word,bij
+word card,u08l2,achter,detrás de,,,,,atrás de,,word,achter
+word card,u08l3,"liggen  (ligt, liggen)",estar (acostado)  [Para cosas planas o acostadas: Het boek ligt op de tafel.],,,,,estar | estar tumbado,,word,liggen
+word card,u08l3,"staan  (staat, staan)",estar (de pie)  [Para cosas de pie: De fiets staat in de tuin.],,,,,estar | estar parado,,word,staan
+word card,u08l3,zitten  (zit),"estar (sentado), estar (dentro)  [Para personas y animales sentados, y para lo que está dentro de algo: De sleutel zit in mijn tas.]",,,,,estar | sentarse,,word,zitten
+word card,u08l3,de bank,el sofá  [También significa «el banco».],,,,,el mueble | el banco,,word,bank
+"word card; fixed after the checker: accept_es includes ""la gaveta""",u08l3,de kast,el armario,,,,,el clóset | el closet | el estante | la alacena | el gabinete,,word,kast
+word card,u08l3,het raam,la ventana,,,,,,,word,raam
+word card,u08l4,de koelkast,la nevera,,,,,el refrigerador | la heladera | el refri,,word,koelkast
+word card,u08l4,"het glas  (glas, glazen)",el vaso  [También «el vidrio». Plural: glazen.],,,,,el vidrio | la copa,,word,glas
+word card,u08l4,het kopje,la taza  [Een kopje koffie = una taza de café.],,,,,la tacita,,word,kopje
+word card,u08l4,"het bord  (bord, borden)",el plato,,,,,,,word,bord
+word card,u08l4,schoon,limpio,,,,,limpia | limpios | limpias,,word,schoon
+word card,u08l4,vies,sucio  [Con comida: asqueroso.],,,,,sucia | sucios | sucias | asqueroso,,word,vies
+word card,u08l5,"koken  (kook, kookt, koken)",cocinar,,,,,,,word,koken
+word card,u08l5,"slapen  (slaap, slaapt, slapen)",dormir,,,,,,,word,slapen
+word card,u08l5,"lezen  (lees, leest)",leer,,,,,,,word,lezen
+word card,u08l5,boven,arriba  [En una casa: en el piso de arriba.],,,,,,,word,boven
+word card,u08l5,beneden,abajo  [En una casa: en la planta baja.],,,,,,,word,beneden
+word card,u08l6,"zoeken  (zoek, zoekt, zoeken)",buscar,,,,,,,word,zoeken
+word card,u08l6,het appartement,el apartamento,,,,,el departamento | el piso,,word,appartement
+word card,u08l6,de huur,el alquiler,,,,,la renta | el arriendo,,word,huur
+word card,u08l6,licht,"claro, luminoso  [Como sustantivo, het licht = la luz.]",,,,,clara | luminosa,,word,licht
+word card,u08l6,donker,oscuro,,,,,oscura,,word,donker
+word card,u08l6,het centrum,el centro,,,,,,,word,centrum
+"grammar note; fixed after the checker: ""Para decir dónde está una cosa, el neerlandés casi nunca usa is"" (and goals_es ""Usar staan, liggen y zitten en vez de is"") is false as stated, and the unit contradicts i / The ""Si dudas"" rule of thumb says books liggen, and that everything inside a container zit / ""Los edificios y los lugares liggen"" overgeneralises / The ui hint (""empieza como una «a» corta con los labios redondeados y termina casi en «i»"") lets a Spanish speaker unround her lips at the end / ""glas → glazen: la s se vuelve z delante de -en"" is true for this word, but it reads as a general rule, and it is not general (mens → mensen, dans → dansen / bus → bussen doubles instead)",u08,"Read it in the app: unit 8, «Notas»",Mi casa,,,,,,,grammar,u08:grammar
+sample,u08l1,Waar is de badkamer?,¿Dónde está el baño?,,,,,,,sentence,u08l1s03
+sample,u08l1,De tuin is heel mooi.,El jardín es muy bonito.,,,,,El jardín es muy lindo. | El jardín está muy bonito. | El jardín está muy lindo.,,sentence,u08l1s08
+"sentence; fixed after the checker: The main Dutch is ""Waar is jouw kamer?"" with stressed jouw, but nothing is contrasted",u08l1,Waar is je kamer?,¿Dónde está tu cuarto?,,,,,¿Dónde está tu habitación?,Waar is jouw kamer? | Waar is je slaapkamer? | Waar is jouw slaapkamer?,sentence,u08l1s12
+sample,u08l2,Onder het bed? Nee.,¿Debajo de la cama? No.,,,,,,,sentence,u08l2s08
+sample,u08l2,Op de stoel of op de tafel?,¿En la silla o en la mesa?,,,,,¿Sobre la silla o sobre la mesa?,,sentence,u08l2s13
+sample,u08l3,De sleutel zit in mijn tas.,La llave está en mi bolso.,,,,,La llave está en mi cartera. | La llave está en mi bolsa. | La llave está dentro de mi bolso.,,sentence,u08l3s04
+"sentence; fixed after the checker: From ""Los libros están en el estante"", ""De boeken liggen in de kast"" is a correct Dutch sentence (books lying flat), and it is exactly what the grammar note's current ""lo",u08l3,De boeken staan in de kast.,Los libros están en el estante.,,,,,Los libros están en el armario. | Los libros están en la biblioteca.,De boeken liggen in de kast.,sentence,u08l3s09
+sample,u08l3,De kast staat naast het raam.,El armario está al lado de la ventana.,,,,,El clóset está al lado de la ventana. | El closet está al lado de la ventana. | El estante está al lado de la ventana.,,sentence,u08l3s10
+"sentence; fixed after the checker: ""Waar staat de bank?"" out of context is also ""¿Dónde está el banco?"": a bench (Dutch bank, which also staat) or a bank",u08l3,Waar staat de bank?,¿Dónde está el sofá?,,,,,¿Dónde está el mueble? | ¿Dónde está el banco?,,sentence,u08l3s12
+"sentence; fixed after the checker: alt_es contains ""El plata está en mi chaqueta.""",u08l3,Het geld zit in mijn jas.,El dinero está en mi chaqueta.,,,,,El plata está en mi chaqueta. | El dinero está en mi abrigo.,,sentence,u08l3s14
+sample,u08l4,Is dit glas schoon?,¿Este vaso está limpio?,,,,,¿Está limpio este vaso?,,sentence,u08l4s05
+sample,u08l4,Dit kopje is vies.,Esta taza está sucia.,,,,,,,sentence,u08l4s14
+sample,u08l5,Wie kookt vandaag?,¿Quién cocina hoy?,,,,,¿Hoy quién cocina?,,sentence,u08l5s02
+sample,u08l5,Het kind slaapt al.,El niño ya está dormido.,,,,,El niño ya duerme. | La niña ya está dormida. | El niño ya se durmió.,,sentence,u08l5s06
+"sentence; fixed after the checker: ""in bed"" without an article is idiomatic (= en la cama, lying in it), but the learner was taught ""het bed"" and ""op het bed"" (u08l3s13), and nothing explains the missing a",u08l5,Ik lees een boek in bed.,Leo un libro en la cama.,,,,,Yo leo un libro en la cama.,,sentence,u08l5s09
+sample,u08l5,Wij koken samen.,Cocinamos juntos.,,,,,Cocinamos juntas. | Nosotros cocinamos juntos.,We koken samen.,sentence,u08l5s13
+"sentence; fixed after the checker: ""De huur is te duur"" is a semantic mismatch / the thing you rent is duur",u08l6,Ik betaal de huur.,Yo pago el alquiler.,,,,,Pago el alquiler. | Yo pago la renta.,,sentence,u08l6s05
+sample,u08l6,Is het centrum ver?,¿El centro está lejos?,,,,,¿Está lejos el centro? | ¿El centro queda lejos?,,sentence,u08l6s12
+dialogue,u08 dialogue,Emma: Welkom! Dit is mijn appartement.,¡Bienvenido! Este es mi apartamento.,,,,,,,dialogue,u08d01
+dialogue,u08 dialogue,Luis: Wat mooi! En heel licht.,¡Qué bonito! Y muy claro.,,,,,,,dialogue,u08d02
+dialogue,u08 dialogue,"Emma: Dit is de woonkamer, en daar is de keuken.","Esta es la sala, y allá está la cocina.",,,,,,,dialogue,u08d03
+dialogue,u08 dialogue,"Luis: De keuken is klein, maar mooi. Waar is de badkamer?","La cocina es pequeña, pero bonita. ¿Dónde está el baño?",,,,,,,dialogue,u08d04
+dialogue,u08 dialogue,"Emma: Boven, naast de slaapkamer.","Arriba, al lado del cuarto.",,,,,,,dialogue,u08d05
+dialogue,u08 dialogue,Luis: En waar is je kat?,¿Y dónde está tu gato?,,,,,,,dialogue,u08d06
+dialogue,u08 dialogue,"Emma: Ze ligt op de bank, kijk!","Está acostada en el sofá, ¡mira!",,,,,,,dialogue,u08d07
+"dialogue; FLAG: Same issue as u08l6s05: ""Is de huur duur?"" pairs huur (an amount) with duur. A native would ask ""Is de huur hoog?"" or ""Is het duur?"" / ""Is het appartement duur?"".",u08 dialogue,Luis: Is het appartement duur?,¿El apartamento es caro?,,,,,,,dialogue,u08d08
+dialogue,u08 dialogue,Emma: Een beetje. Maar het centrum is niet ver.,Un poco. Pero el centro no está lejos.,,,,,,,dialogue,u08d09
+question,u08 dialogue,,¿Dónde está el baño?,,,,,"Abajo, al lado de la cocina / ✔ Arriba, al lado del cuarto / En el jardín",,question,u08q01
+question,u08 dialogue,,¿Dónde está la gata de Emma?,,,,,✔ En el sofá / En la cama / En la cocina,,question,u08q02
+question,u08 dialogue,,"¿Qué tiene de bueno el apartamento, según Emma?",,,,,Es muy barato / Tiene jardín / ✔ El centro no está lejos,,question,u08q03
+word card,u09l1,het weer,"el tiempo, el clima  [El tiempo que hace afuera. El tiempo del reloj es tijd.]",,,,,,,word,weer
+word card,u09l1,de zon,el sol,,,,,,,word,zon
+word card,u09l1,de regen,la lluvia,,,,,,,word,regen
+word card,u09l1,de wind,el viento,,,,,,,word,wind
+word card,u09l1,koud,frío,,,,,fría,,word,koud
+word card,u09l1,warm,"caliente, calor  [Het is warm = Hace calor.]",,,,,cálido | caluroso,,word,warm
+word card,u09l2,regenen  (regent),"llover  [Het regent = Llueve, está lloviendo.]",,,,,,,word,regenen
+word card,u09l2,waaien  (waait),hacer viento  [Het waait = Hace viento.],,,,,,,word,waaien
+word card,u09l2,schijnen  (schijnt),brillar  [De zon schijnt = Hace sol.],,,,,salir (el sol),,word,schijnen
+word card,u09l2,sneeuwen  (sneeuwt),nevar,,,,,,,word,sneeuwen
+word card,u09l2,veel,mucho,,,,,mucha | muchos | muchas,,word,veel
+word card,u09l2,hard,fuerte  [Het regent hard = Llueve fuerte.],,,,,duro | rápido,,word,hard
+word card,u09l3,de graad  (graden),el grado  [Twintig graden = veinte grados.],,,,,,,word,graad
+word card; fixed after the checker: Homograph with a form the learner has used since unit 1: heet from heten (Hoe heet je? = ¿Cómo te llamas?),u09l3,heet,muy caliente  [Más que warm: Het is heet = Hace un calor tremendo. Ojo: heet también es «se llama» (Hoe heet je?).],,,,,caliente | caluroso,,word,heet
+word card,u09l3,fris,fresco,,,,,fresca,,word,fris
+word card,u09l3,bewolkt,nublado,,,,,,,word,bewolkt
+word card,u09l3,zonnig,soleado,,,,,,,word,zonnig
+word card,u09l3,nat,mojado,,,,,mojada | húmedo,,word,nat
+word card,u09l4,de lente,la primavera,,,,,,,word,lente
+word card,u09l4,de zomer,el verano,,,,,,,word,zomer
+word card,u09l4,de herfst,el otoño,,,,,,,word,herfst
+word card,u09l4,de winter,el invierno,,,,,,,word,winter
+word card,u09l4,het seizoen,"la estación  [Las cuatro del año: lente, zomer, herfst, winter.]",,,,,la temporada,,word,seizoen
+word card,u09l5,de paraplu,el paraguas,,,,,,,word,paraplu
+word card,u09l5,de trui,el suéter,,,,,el sweater | el jersey | el buzo,,word,trui
+word card,u09l5,de sjaal,la bufanda,,,,,,,word,sjaal
+word card; fixed after the checker: Misleading gloss,u09l5,de muts,el gorro  [Gorro de lana para el frío. Una gorra con visera es een pet.],,,,,el gorro de lana,,word,muts
+word card,u09l5,nodig,necesario  [Ik heb … nodig = Necesito …: Ik heb een paraplu nodig.],,,,,necesitar,,word,nodig
+word card,u09l6,gelukkig,"por suerte, menos mal  [También significa «feliz».]",,,,,afortunadamente | feliz,,word,gelukkig
+word card,u09l6,droog,seco  [Het is droog = No llueve.],,,,,seca,,word,droog
+"word card; fixed after the checker: The note_es «Het wordt warm = Va a hacer calor, se pone caliente» uses «ponerse caliente»",u09l6,worden  (wordt),"ponerse, volverse  [Het wordt warm = Va a hacer calor, empieza a hacer calor. Het wordt laat = Se hace tarde.]",,,,,hacerse,,word,worden
+word card,u09l6,jammer,una lástima  [Wat jammer! = ¡Qué lástima!],,,,,lástima | qué pena | una pena,,word,jammer
+word card,u09l6,buiten,afuera,,,,,fuera,,word,buiten
+word card,u09l6,binnen,adentro,,,,,dentro,,word,binnen
+grammar note; fixed after the checker: Pronunciation claim for w is wrong for Netherlands Dutch and contradicts unit 2 / welk/welke rule leaves out plurals,u09,"Read it in the app: unit 9, «Notas»",El tiempo,,,,,,,grammar,u09:grammar
+"sentence; fixed after the checker: «Está haciendo frío» is the everyday Venezuelan way to describe the weather right now, and the unit already accepts the parallel «Está haciendo viento / sol»",u09l1,Het is koud.,Hace frío.,,,,,Está haciendo frío. | Está frío.,,sentence,u09l1s02
+sentence; fixed after the checker: «Het is mooi weer» is the idiomatic Dutch form (taught in u09l6s07) and uses exactly the same four tiles as «Het weer is mooi»,u09l1,Het weer is mooi.,El tiempo está bonito.,,,,,El tiempo está lindo. | El tiempo está bueno. | Hace buen tiempo. | El clima está bonito.,Het is mooi weer.,sentence,u09l1s04
+sample,u09l1,Regen en wind!,¡Lluvia y viento!,,,,,,,sentence,u09l1s11
+sample,u09l1,Hoe is het weer in Utrecht?,¿Cómo está el tiempo en Utrecht?,,,,,¿Qué tiempo hace en Utrecht? | ¿Cómo está el clima en Utrecht?,,sentence,u09l1s12
+sample,u09l1,Het weer is niet goed.,El tiempo no está bueno.,,,,,No hace buen tiempo. | El clima no está bueno. | El tiempo no está bien.,,sentence,u09l1s13
+sample,u09l2,Het waait heel hard.,Hace mucho viento.,,,,,Está haciendo mucho viento. | Hay mucho viento. | Sopla muy fuerte el viento.,,sentence,u09l2s06
+sentence; fixed after the checker: alt_nl accepts «Het is min vijf graden» but alt_es has no form with «grados»,u09l3,Het is min vijf.,Hace cinco bajo cero.,,,,,Hace menos cinco. | Estamos a menos cinco. | Hace cinco grados bajo cero. | Hace menos cinco grados. | Estamos a cinco bajo cero.,Het is min vijf graden.,sentence,u09l3s03
+sentence; fixed after the checker: Collision with an earlier sentence,u09l3,Het is heet vandaag.,Hoy hace un calor tremendo.,,,,,Hoy hace mucho calor. | Hace mucho calor hoy. | Hoy hace muchísimo calor.,Het is vandaag heet. | Het is heel warm vandaag. | Het is vandaag heel warm.,sentence,u09l3s04
+sample,u09l3,Het is fris.,Hace fresco.,,,,,Está fresco. | Está fresquito.,,sentence,u09l3s05
+sentence; fixed after the checker: Same heet/heel warm collision / Content and Spanish / «warm» is the right word / «suele hacer…» (already in alt_es) is how one says it,u09l3,Het is vaak warm in Caracas.,En Caracas suele hacer calor.,,,,,En Caracas hace calor a menudo. | En Caracas muchas veces hace calor.,In Caracas is het vaak warm.,sentence,u09l3s11
+sample,u09l4,"Lente, zomer, herfst, winter.","Primavera, verano, otoño, invierno.",,,,,,,sentence,u09l4s01
+sentence; fixed after the checker: The Dutch has «nu» and the main Spanish drops it,u09l4,Welk seizoen is het nu?,¿En qué estación estamos?,,,,,¿Qué estación es ahora? | ¿En qué estación estamos ahora? | ¿Cuál estación es ahora? | ¿Qué estación es?,,sentence,u09l4s07
+sample,u09l4,Sneeuwt het in de winter?,¿Nieva en invierno?,,,,,¿En invierno nieva? | ¿Nieva en el invierno?,,sentence,u09l4s10
+sentence; fixed after the checker: Unnatural in both languages,u09l4,In welk seizoen is het warm?,¿En qué estación hace calor?,,,,,¿En cuál estación hace calor?,,sentence,u09l4s11
+sample,u09l4,Is de herfst koud?,¿El otoño es frío?,,,,,¿Es frío el otoño? | ¿Hace frío en otoño?,,sentence,u09l4s13
+sample,u09l5,Ik heb een paraplu nodig.,Necesito un paraguas.,,,,,Yo necesito un paraguas.,,sentence,u09l5s03
+sentence; fixed after the checker: The op word card glosses «sobre» first,u09l5,Je sjaal ligt op de stoel.,Tu bufanda está en la silla.,,,,,Tu bufanda está sobre la silla.,Jouw sjaal ligt op de stoel.,sentence,u09l5s07
+sample,u09l5,Het regent. Heb je een paraplu?,Llueve. ¿Tienes paraguas?,,,,,Está lloviendo. ¿Tienes paraguas? | Llueve. ¿Tienes un paraguas? | Está lloviendo. ¿Tienes un paraguas?,Het regent. Heb jij een paraplu?,sentence,u09l5s10
+sentence; fixed after the checker: The main Spanish «Por suerte no llueve.» translates literally to «Het regent gelukkig niet.» / «Gelukkig regent het niet.»,u09l6,Het is gelukkig droog.,Por suerte no llueve.,,,,,Menos mal que no llueve. | Por suerte está seco. | Menos mal que está seco.,Gelukkig is het droog. | Het regent gelukkig niet. | Gelukkig regent het niet.,sentence,u09l6s01
+"sentence; fixed after the checker: u09l6s10 accepts both «Het is binnen warm» and the inverted «Binnen is het warm», but this sentence accepts neither variant",u09l6,Het is mooi weer buiten.,Afuera hace buen tiempo.,,,,,Hace buen tiempo afuera. | Afuera está bonito el tiempo.,Buiten is het mooi weer. | Het is buiten mooi weer.,sentence,u09l6s07
+"sentence; fixed after the checker: Same problem, worse",u09l6,Is het droog buiten?,¿Afuera no llueve?,,,,,¿Está seco afuera? | ¿Afuera está seco?,Regent het buiten niet? | Regent het niet buiten? | Is het buiten droog?,sentence,u09l6s08
+sample,u09l6,De zon schijnt gelukkig.,Por suerte hace sol.,,,,,Menos mal que hace sol. | Por suerte brilla el sol.,Gelukkig schijnt de zon.,sentence,u09l6s11
+sample,u09l6,Het wordt laat.,Se está haciendo tarde.,,,,,Se hace tarde.,,sentence,u09l6s13
+dialogue,u09 dialogue,María: Ik heb het koud!,¡Tengo frío!,,,,,,,dialogue,u09d01
+dialogue,u09 dialogue,"Tom: Ja, het is vijf graden.","Sí, hace cinco grados.",,,,,,,dialogue,u09d02
+dialogue,u09 dialogue,María: Het is nu heet in Caracas.,Ahora hace mucho calor en Caracas.,,,,,,,dialogue,u09d03
+dialogue,u09 dialogue,Tom: Lekker! Maar hier niet. Heb je geen muts?,¡Qué rico! Pero aquí no. ¿No tienes gorro?,,,,,,,dialogue,u09d04
+dialogue,u09 dialogue,"María: Nee, en ook geen sjaal.","No, y tampoco bufanda.",,,,,,,dialogue,u09d05
+dialogue,u09 dialogue,"Tom: Hier, mijn sjaal. En kijk, het regent ook.","Toma, mi bufanda. Y mira, también está lloviendo.",,,,,,,dialogue,u09d06
+dialogue,u09 dialogue,María: Wat jammer! Heb je een paraplu?,¡Qué lástima! ¿Tienes paraguas?,,,,,,,dialogue,u09d07
+dialogue,u09 dialogue,"Tom: Ja, gelukkig! Kom, ik heb het ook koud.","¡Sí, por suerte! Ven, yo también tengo frío.",,,,,,,dialogue,u09d08
+question,u09 dialogue,,¿Cuántos grados hace?,,,,,✔ Cinco / Quince / Treinta,,question,u09q01
+question,u09 dialogue,,¿Qué le da Tom a María?,,,,,Su gorro / ✔ Su bufanda / Su chaqueta,,question,u09q02
+question,u09 dialogue,,¿Tom tiene paraguas?,,,,,✔ Sí / No / No lo dice,,question,u09q03
+word card,u10l1,"leren  (leer, leert, leren)",aprender  [También puede significar «enseñar»: Hij leert mij Nederlands = Me enseña neerlandés.],,,,,,,word,leren
+"word card; fixed after the checker: Note «Siempre con naar» is contradicted in the same lesson by u10l1s06 «Hij luistert niet» and u10l1s11 «Luister!», both correct Dutch without naar",u10l1,"luisteren  (luister, luistert)",escuchar  [Con naar cuando dices qué escuchas: luisteren naar muziek. Solo: Luister!],,,,,,,word,luisteren
+word card,u10l1,naar,"a, hacia  [Ik ga naar huis = Voy a casa.]",,,,,,,word,naar
+word card,u10l1,de muziek,la música,,,,,,,word,muziek
+word card,u10l1,"praten  (praat, praten)","hablar, conversar  [praten = hablar, conversar con alguien. Para saber un idioma se usa spreken: Ik spreek Nederlands.]",,,,,charlar | platicar,,word,praten
+word card,u10l2,het werk,el trabajo  [Se escribe igual que ik werk (yo trabajo).],,,,,,,word,werk-n
+word card,u10l2,de school,la escuela,,,,,el colegio,,word,school
+word card,u10l2,de supermarkt,el supermercado,,,,,el súper | el automercado,,word,supermarkt
+word card,u10l2,de bus,el autobús,,,,,el bus | la camioneta,,word,bus
+word card,u10l2,de trein,el tren,,,,,,,word,trein
+word card,u10l3,"ontbijten  (ontbijt, ontbijten)",desayunar  [También het ontbijt = el desayuno.],,,,,,,word,ontbijten
+word card,u10l3,"lunchen  (lunch, luncht, lunchen)",almorzar  [También de lunch = el almuerzo.],,,,,comer al mediodía,,word,lunchen
+word card,u10l3,het avondeten,la cena  [La comida de la noche.],,,,,,,word,avondeten
+word card,u10l3,vanavond,esta noche,,,,,hoy en la noche,,word,vanavond
+word card,u10l3,vanmiddag,esta tarde,,,,,hoy en la tarde,,word,vanmiddag
+word card,u10l4,de tv,la tele  [Se dice «tee-vee».],,,,,la televisión | el televisor,,word,tv
+word card,u10l4,"sporten  (sport, sporten)",hacer deporte,,,,,hacer ejercicio | entrenar,,word,sporten
+word card,u10l4,"wandelen  (wandel, wandelt, wandelen)","caminar, pasear  [Caminar por gusto.]",,,,,dar un paseo,,word,wandelen
+word card,u10l4,"spelen  (speel, speelt, spelen)",jugar,,,,,tocar,,word,spelen
+word card,u10l4,het voetbal,el fútbol,,,,,,,word,voetbal
+word card,u10l5,moe,cansado,,,,,cansada | cansados | cansadas,,word,moe
+word card,u10l5,welterusten,que descanses  [Se dice al ir a dormir.],,,,,buenas noches | que duermas bien | que descanse,,word,welterusten
+word card,u10l5,wakker,despierto,,,,,despierta,,word,wakker
+word card,u10l5,altijd,siempre,,,,,,,word,altijd
+word card,u10l5,nooit,nunca,,,,,jamás,,word,nooit
+word card,u10l6,"doen  (doe, doet, doen)",hacer,,,,,,,word,doen
+word card,u10l6,de student,el estudiante,,,,,la estudiante,,word,student
+word card,u10l6,niets,nada,,,,,nada de nada,,word,niets
+word card,u10l6,soms,a veces,,,,,algunas veces,,word,soms
+"grammar note; fixed after the checker: Wrong example for the stem-spelling rule / Sound line for ie: the bold is misplaced, «m**uzie**k» highlights 'uzie' instead of 'ie' / hier, vier are long) / «Van después del verbo» for altijd/vaak/soms/nooit is too loose for the unit's own material: «Ik heb het altijd druk» (u10l5s14, dialogue line 5) puts altijd after het, n",u10,"Read it in the app: unit 10, «Notas»",Mi día,,,,,,,grammar,u10:grammar
+sample,u10l1,Ik luister naar muziek.,Escucho música.,,,,,Estoy escuchando música. | Yo escucho música.,,sentence,u10l1s04
+sample,u10l1,Luister je vaak naar muziek?,¿Escuchas música a menudo?,,,,,¿Escuchas música seguido? | ¿Escuchas música mucho? | ¿Tú escuchas música a menudo? | ¿Tú escuchas música seguido? | ¿Tú escuchas música mucho?,Luister jij vaak naar muziek?,sentence,u10l1s05
+"sentence; fixed after the checker: «Wij praten Nederlands» is acceptable colloquial Dutch, but the praten card says «praten = conversar / spreken = hablar un idioma», so the course itself teaches spreken with languages",u10l1,Wij praten Nederlands.,Hablamos en neerlandés.,,,,,Hablamos neerlandés. | Conversamos en neerlandés. | Hablamos en holandés. | Nosotros hablamos en neerlandés.,We praten Nederlands. | Wij spreken Nederlands. | We spreken Nederlands.,sentence,u10l1s07
+sample,u10l1,Zij praten met de kinderen.,Ellos hablan con los niños.,,,,,Hablan con los niños. | Ellas hablan con los niños. | Ellos conversan con los niños. | Ellos hablan con los hijos.,Ze praten met de kinderen.,sentence,u10l1s13
+"sentence; fixed after the checker: «Me voy al trabajo» is a very common rendering of «Ik ga naar mijn werk», and the unit accepts the same pattern elsewhere («Me voy a casa» is the main for u10l2s07, «Él s",u10l2,Ik ga naar mijn werk.,Voy a mi trabajo.,,,,,Voy al trabajo. | Yo voy a mi trabajo. | Me voy al trabajo. | Me voy a mi trabajo.,Ik ga naar het werk.,sentence,u10l2s01
+"sentence; fixed after the checker: The everyday Latin American/Venezuelan word for a late train or bus is «atrasado» / «El tren está atrasado» is a likely correct answer and is not accepted (only 'retrasado', 'con retraso', 'llega/viene tarde').",u10l2,De trein is te laat.,El tren viene con retraso.,,,,,El tren llega tarde. | El tren está retrasado. | El tren viene tarde. | El tren está atrasado.,,sentence,u10l2s09
+sample,u10l3,Wij ontbijten met brood en kaas.,Desayunamos pan con queso.,,,,,Desayunamos pan y queso. | Nosotros desayunamos pan con queso.,We ontbijten met brood en kaas.,sentence,u10l3s02
+sentence; fixed after the checker: «Wat eten we vanavond?» is naturally rendered «¿Qué cenamos (hoy)?» in Spanish / that is a likely answer and is not accepted.,u10l3,Wat eten we vanavond?,¿Qué comemos esta noche?,,,,,¿Qué vamos a comer esta noche? | ¿Qué comemos hoy en la noche? | ¿Qué cenamos esta noche?,Wat eten wij vanavond?,sentence,u10l3s06
+sample,u10l3,Ontbijt je vroeg?,¿Desayunas temprano?,,,,,¿Tú desayunas temprano?,Ontbijt jij vroeg?,sentence,u10l3s10
+sample,u10l4,Sport jij?,¿Haces deporte?,,,,,¿Haces ejercicio? | ¿Tú haces deporte?,Sport je?,sentence,u10l4s05
+sample,u10l4,Ik wandel graag met de hond.,Me gusta pasear al perro.,,,,,Me gusta caminar con el perro. | Me gusta sacar a pasear al perro.,,sentence,u10l4s07
+sample,u10l4,De kinderen spelen in de tuin.,Los niños juegan en el jardín.,,,,,Los niños están jugando en el jardín. | Los niños juegan en el patio.,,sentence,u10l4s08
+sample,u10l4,"Ja, ik speel op zaterdag.","Sí, juego los sábados.",,,,,"Sí, juego el sábado. | Sí, yo juego los sábados.",,sentence,u10l4s10
+sample,u10l4,Voetbal op tv? Leuk!,¿Fútbol en la tele? ¡Chévere!,,,,,¿Fútbol en la televisión? ¡Chévere!,,sentence,u10l4s13
+sample,u10l5,Ik ga slapen.,Voy a dormir.,,,,,Me voy a dormir. | Yo voy a dormir. | Me voy a acostar.,,sentence,u10l5s03
+sample,u10l6,Ik doe niets in het weekend.,No hago nada el fin de semana.,,,,,El fin de semana no hago nada. | Yo no hago nada el fin de semana.,,sentence,u10l6s13
+dialogue,u10 dialogue,Emma: Hallo Luis! Wat doe je hier?,¡Hola Luis! ¿Qué haces aquí?,,,,,,,dialogue,u10d01
+dialogue,u10 dialogue,Luis: Ik ga naar de supermarkt. En jij?,Voy al supermercado. ¿Y tú?,,,,,,,dialogue,u10d02
+dialogue,u10 dialogue,Emma: Ik ga naar huis. Ik ben moe.,Voy a casa. Estoy cansada.,,,,,,,dialogue,u10d03
+dialogue,u10 dialogue,Luis: Werk je elke dag?,¿Trabajas todos los días?,,,,,,,dialogue,u10d04
+dialogue,u10 dialogue,"Emma: Ja, en ik leer ook Spaans. Ik heb het altijd druk!","Sí, y además aprendo español. ¡Siempre estoy ocupada!",,,,,,,dialogue,u10d05
+dialogue,u10 dialogue,"Luis: Ik leer Nederlands. Praten we samen? Jij Spaans, ik Nederlands!","Yo aprendo neerlandés. ¿Hablamos juntos? ¡Tú español, yo neerlandés!",,,,,,,dialogue,u10d06
+dialogue,u10 dialogue,Emma: Leuk! Morgen om half vijf?,¡Chévere! ¿Mañana a las cuatro y media?,,,,,,,dialogue,u10d07
+"dialogue; FLAG: «Tot morgen, en welterusten!» on parting in the street, with Luis on his way to the supermarket and nothing saying it is late: welterusten is said only when someone is going to bed (as the card says). The Spanish «que descanses» is used much more broadly in Venezuela as a goodbye to someone tired, so this line teaches an overextension of welterusten.",u10 dialogue,Luis: Goed. Tot morgen!,Bien. ¡Hasta mañana!,,,,,,,dialogue,u10d08
+question,u10 dialogue,,¿Adónde va Luis?,,,,,A casa / ✔ Al supermercado / Al trabajo,,question,u10q01
+question,u10 dialogue,,¿Por qué está ocupada Emma?,,,,,✔ Trabaja todos los días y aprende español / Tiene hijos / Hace deporte,,question,u10q02
+question,u10 dialogue,,¿A qué hora se ven mañana?,,,,,A las cinco y media / ✔ A las cuatro y media / A las cuatro,,question,u10q03
+"word card from an earlier unit; gained «ver», «kijkt», «kijken» (tv kijken)",u10l4,"kijken  (kijk, kijkt, kijken)","mirar, ver  [tv kijken = ver televisión.]",,,,,,,word,kijken
+word card from an earlier unit; gained «welk» (with het-words),u09l4,"welke  (welke, welk)","qué, cuál  [Welke con palabras de de y con todos los plurales (welke dag); welk con palabras de het en singular (welk seizoen).]",,,,,cuáles,,word,welke
+word card from an earlier unit; gained the plural «boeken»,u08l3,"het boek  (boek, boeken)",el libro,,,,,,,word,boek
