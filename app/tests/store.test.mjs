@@ -128,9 +128,9 @@ test('broken or blocked storage does not crash the app', () => {
   assert.equal(corrupt.data.xp, 0);
   corrupt.completeLesson('u01l1', { correct: 1, total: 1 });
   assert.equal(mem.map.get('tegeltjes.progress.v1.unreadable'), '{oops', 'unreadable data is set aside, not destroyed');
-  const newer = memory({ 'tegeltjes.progress.v1': '{"schema":2,"lessons":{"x":{"done":true}}}' });
+  const newer = memory({ 'tegeltjes.progress.v1': '{"schema":99,"lessons":{"x":{"done":true}}}' });
   createStore(newer, c.now).noteAttempt('u01l1');
-  assert.match(newer.map.get('tegeltjes.progress.v1.unreadable'), /"schema":2/, 'data from a newer version is kept');
+  assert.match(newer.map.get('tegeltjes.progress.v1.unreadable'), /"schema":99/, 'data from a newer version is kept');
   const wrongSchema = createStore(memory({ 'tegeltjes.progress.v1': '{"schema":0}' }), c.now);
   assert.equal(wrongSchema.data.xp, 0);
   const blocked = createStore({ getItem() { throw new Error('denied'); }, setItem() { throw new Error('denied'); } }, c.now);

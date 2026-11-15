@@ -35,6 +35,13 @@ A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One l
 - A step marked `soft` (for speaking, later) offers "Intentar otra vez" and "Continuar" after a wrong answer and is never repeated, so it cannot block a lesson.
 - After five lessons without a backup, the home screen reminds her every 30 days (snooze: 14 days).
 
+## Reviews (spaced repetition)
+
+- `app/js/fsrs.js`: the FSRS-6 scheduler (re-implemented from ts-fsrs, default parameters, long-term mode, whole days), aiming at 85% recall, intervals capped at a year.
+- `app/js/review.js`: every new word of a lesson and 4 of its sentences (real sentences, spread over the lesson) are review items. Finishing a lesson rates them (right at the first try = Good, in 4 days; wrong = Again, tomorrow). Lessons finished before reviews existed, or passed by a unit test, form a backlog of at most 8 items a day.
+- A review session has up to 15 items: one exercise per sentence, harder as she knows it better (meaning → build the Dutch or listen → type), and matching games for words. A wrong answer comes back in the session; the rating counts the first answer only.
+- Why 4 sentences and 85%: a 60-day simulation of her use (`app/tests/review.test.mjs`) gives about 27 items due a day; all sentences at 90% gave about 60.
+
 ## Keeping her progress across updates
 
 - Progress is stored under lesson ids (`u03l2`) and dialogue ids (`u03d`). Every id that has been on `main` is listed in `content/published_ids.json`, with every sentence id and its lesson. The validator fails if one disappears or a sentence moves to another lesson. To remove something on purpose, add its id to `retired`.
@@ -50,14 +57,14 @@ python3 tools/test_review_batch.py             # review-batch selection
 python3 tools/test_build_audio.py              # audio build against a mock API
 python3 tools/test_tts_bakeoff.py              # voice script against a mock API
 node tools/test_scoring.mjs                    # speech-test scoring, incl. the real Pixel runs
-node --test app/tests/*.test.mjs               # app logic: checker, exercises, store, sounds (35 tests)
+node --test app/tests/*.test.mjs               # app logic: checker, exercises, store, sounds, scheduler, reviews (49 tests)
 ```
 
 End to end in a real Chrome at phone size (needs Chrome and `puppeteer-core`):
 
 ```
 python3 -m http.server 8765                    # in the repository root
-node app/tests/e2e.browser.mjs screenshots/    # every lesson, a dialogue, a test-out; install; sounds; practice steps; backup reminder; update; offline
+node app/tests/e2e.browser.mjs screenshots/    # upgrade from 0.2.0; every lesson, a dialogue, a test-out; reviews; install; sounds; practice steps; backup; update; offline
 ```
 
 Python 3.9+ and Node 20+. Nothing to install for the first block.

@@ -31,6 +31,7 @@ await page.evaluateOnNewDocument(() => {
   }
 });
 const tones = () => page.evaluate(() => window.__tones);
+const todayKey = () => page.evaluate(() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; });
 await page.setViewport({ width: 412, height: 892, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
 const problems = [];
 page.on('console', (m) => { if (m.type() === 'error' && !/audio\/index\.json|404/.test(m.text())) problems.push('console: ' + m.text()); });
@@ -68,8 +69,22 @@ async function answer({ wrong = false } = {}) {
   return st;
 }
 
-// ---- 1. first start ----
+// ---- 0. her phone after the update: a save from version 0.2.0 ----
+const SAVED_V1 = fs.readFileSync(new URL('./fixtures/progress_schema1.json', import.meta.url), 'utf8');
 await page.goto(BASE, { waitUntil: 'networkidle0' });
+await page.evaluate((v) => { localStorage.clear(); localStorage.setItem('tegeltjes.progress.v1', v); }, SAVED_V1);
+await page.reload({ waitUntil: 'networkidle0' });
+await page.waitForSelector('.wall');
+const upgraded = await page.evaluate(() => JSON.parse(localStorage.getItem('tegeltjes.progress.v1')));
+assert.equal(upgraded.schema, 2);
+assert.equal(upgraded.xp, JSON.parse(SAVED_V1).xp, 'points kept');
+assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 15, 'unit 1: 6 lessons, dialogue, medal; unit 2: 6 lessons by test, medal');
+assert.equal(await page.evaluate(() => localStorage.getItem('tegeltjes.progress.v1.unreadable')), null);
+assert.match(await page.$eval('.review-card', (e) => e.textContent), /8 frases y palabras/);
+await shot('00-upgraded-from-0.2.0');
+ok('a save from 0.2.0 upgrades: every tile and point kept, reviews start with 8 items today');
+
+// ---- 1. first start ----
 await page.evaluate(() => { localStorage.clear(); });
 await page.reload({ waitUntil: 'networkidle0' });
 await page.waitForSelector('.wall');
@@ -162,7 +177,15 @@ assert.equal(await page.$eval('.tile.is-next', (t) => t.dataset.tile), 'u01l2');
 assert.match(await text(), /Hecho por hoy/);
 assert.match(await text(), /1 día/);
 await shot('21-home-after-one');
-ok('home after the lesson: tile painted, next lesson highlighted, streak 1');
+// the lesson put its review items on the schedule, none of them due today
+const sched = await page.evaluate(() => window.__tegel.store.reviews.cards);
+const keys = Object.keys(sched);
+assert.equal(keys.filter((k) => k.startsWith('s:u01l1')).length, 4, 'four sentences of the lesson');
+assert.ok(keys.some((k) => k.startsWith('w:')), 'and its new words');
+const t0 = await todayKey();
+assert.ok(Object.values(sched).every((c) => typeof c.s === 'number' && c.due > t0), 'rated, due later');
+assert.equal(await page.$('#start-review'), null, 'nothing to review yet');
+ok('home after the lesson: tile painted, next lesson highlighted, streak 1; its items scheduled for later');
 
 // ---- 3. progress survives a reload ----
 await page.reload({ waitUntil: 'networkidle0' });
@@ -281,7 +304,15 @@ await shot('53-test-passed');
 await tap('#result-done');
 await page.waitForSelector('.wall');
 assert.equal(await page.$eval('.tile.is-next', (t) => t.dataset.tile), 'u02l1');
-ok('test-out: 9 of 12 fails and changes nothing; 10 of 12 passes and completes the unit');
+// the lessons passed by the test join the review schedule as a backlog: some are due today,
+// and then reviewing comes first on the home screen
+const backlog = await page.evaluate(() => Object.values(window.__tegel.store.reviews.cards).filter((c) => typeof c.s !== 'number').length);
+assert.ok(backlog > 0, 'backlog from the passed unit');
+assert.ok(await page.$('#start-review'), 'review card shown');
+assert.match(await page.$eval('#start-review', (b) => b.className), /btn-primary/);
+assert.match(await page.$eval('#start-next', (b) => b.className), /btn-quiet/, 'the new lesson is the second choice');
+await shot('62-home-review-and-lesson');
+ok(`test-out: 9 of 12 fails and changes nothing; 10 of 12 passes and completes the unit; ${backlog} items join the reviews`);
 
 // ---- 7. dialogue ----
 await tap('[data-tile="u01d"]');
@@ -336,6 +367,53 @@ assert.match(await page.$eval('#backup-age', (e) => e.textContent), /hoy/);
 await tap('#back');
 await page.waitForSelector('.wall');
 ok('backup reminder: shown with progress and no copy, snooze survives a reload, a download counts as a copy');
+
+// ---- 8b2. a review session ----
+const t = await todayKey();
+const forced = await page.evaluate((day) => {
+  const cards = window.__tegel.store.reviews.cards;
+  const rated = Object.keys(cards).filter((k) => typeof cards[k].s === 'number').slice(0, 20);
+  for (const k of rated) cards[k].due = day;
+  window.__tegel.store.commit();
+  return rated.length;
+}, t);
+await page.reload({ waitUntil: 'networkidle0' });
+await page.waitForSelector('#start-review');
+assert.match(await text(), /para repasar hoy/);
+await shot('84-home-review');
+const xpBefore = await page.evaluate(() => window.__tegel.store.data.xp);
+await tap('#start-review');
+let firstKey = null, rounds = 0, reviewSteps = 0;
+for (;;) {
+  let g = 0;
+  while ((await state()).screen === 'session') {
+    assert.ok(++g < 60, 'review ends');
+    const st = await state();
+    const key = await page.evaluate(() => window.__tegel.ui.session.step.key || null);
+    const wrong = firstKey === null && key && st.type !== 'match';
+    if (wrong) firstKey = key;
+    if (reviewSteps === 0) await shot('85-review-step');
+    await answer({ wrong });
+    reviewSteps++;
+    await tap('#continue');
+  }
+  rounds++;
+  assert.match(await text(), /Repaso hecho/);
+  if (rounds === 1) await shot('86-review-result');
+  if (!(await page.$('#review-again'))) break;
+  assert.ok(rounds < 6, 'rounds end');
+  await tap('#review-again');
+}
+await tap('#result-done');
+await page.waitForSelector('.wall');
+assert.equal(await page.$('#start-review'), null, 'nothing left to review today');
+const after = await page.evaluate(() => window.__tegel.store.reviews.cards);
+const tomorrow = await page.evaluate(() => { const d = new Date(); d.setDate(d.getDate() + 1); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; });
+assert.ok(firstKey, 'a sentence was answered wrong on purpose');
+assert.equal(after[firstKey].due, tomorrow, 'the wrong one comes back tomorrow');
+assert.ok(Object.values(after).every((c) => c.due > t), 'everything reviewed is due later');
+assert.ok(await page.evaluate(() => window.__tegel.store.data.xp) > xpBefore, 'points for the review');
+ok(`review: ${forced} items due, ${rounds} round(s), ${reviewSteps} steps; a wrong answer comes back tomorrow, the rest later`);
 
 // ---- 8c. an update keeps her progress: same storage, new service worker ----
 const progressBefore = await page.evaluate(() => localStorage.getItem('tegeltjes.progress.v1'));
