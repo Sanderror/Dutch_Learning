@@ -8,7 +8,7 @@
     "Quedar a una hora con om",
     "Decir si estás libre u ocupado"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ij** suena «ei»: vr**ij**dag, v**ij**f, m**ij**n.\n- **oe** es la u española: w**oe**nsdag.\n- **aa** es una a larga: m**aa**ndag, v**a**nd**aa**g.\n- **uu** de **uu**r es una «i» con los labios redondeados, larga.\n- En los días la fuerza va en la primera sílaba: **MAAN**-dag, **DINS**-dag, **ZON**-dag.\n\n## Los días\n\nmaandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag. Todos terminan en **-dag** (día) y se escriben con minúscula.\n\n- **vandaag** = hoy, **morgen** = mañana.\n- «El lunes» no lleva artículo: Ik werk **maandag** = Trabajo el lunes.\n- **het weekend** = el fin de semana.\n\n## ¿Qué hora es?\n\n**Hoe laat is het?** = ¿Qué hora es? Se contesta con **Het is…**\n\n- Het is drie **uur** = Son las tres. **uur** no cambia: twee uur, tien uur.\n- Het is **kwart over** vier = Son las cuatro y cuarto.\n- Het is **kwart voor** vijf = Son las cinco menos cuarto.\n- Het is tien **over** zes = Son las seis y diez.\n\n## ¡Cuidado con half!\n\n**half** cuenta hacia la hora siguiente: **half drie** = las dos y media, porque falta media hora para las tres.\n\n- half acht = 7:30\n- half twaalf = 11:30\n\nEs el error más común de los hispanohablantes. Piensa «media hora antes de…».\n\nLos minutos cerca de la media hora se cuentan desde half:\n\n- tien **voor half** vijf = 4:20 (diez minutos antes de las cuatro y media)\n- vijf **over half** twee = 1:35 (cinco minutos después de la una y media)\n\n## A qué hora: om\n\n**om** = a (una hora): **om** drie uur = a las tres. **Om hoe laat?** = ¿A qué hora?\n\n## Despedirse según cuándo\n\n- **Tot morgen!** = ¡Hasta mañana!\n- **Tot straks!** = ¡Hasta ahorita! (más tarde el mismo día)\n- **Tot zondag!** = ¡Hasta el domingo!\n- **Fijn weekend!** = ¡Buen fin de semana!\n\n## Libre u ocupado\n\n- Ik ben **vrij** = Estoy libre (no trabajo).\n- Ik heb het **druk** = Estoy ocupado. Se dice con hebben y het, como Ik heb het koud.\n",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ij** suena «ei»: vr**ij**dag, v**ij**f, m**ij**n.\n- **oe** es la u española: w**oe**nsdag.\n- **aa** es una a larga: m**aa**ndag, vand**aa**g.\n- **uu** de **uu**r es una «i» con los labios redondeados, larga.\n- En los días la fuerza va en la primera sílaba: **MAAN**-dag, **DINS**-dag, **ZON**-dag.\n\n## Los días\n\nmaandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag. Todos terminan en **-dag** (día) y se escriben con minúscula.\n\n- **vandaag** = hoy, **morgen** = mañana.\n- «El lunes» no lleva artículo: Ik werk **maandag** = Trabajo el lunes.\n- **het weekend** = el fin de semana.\n\n## ¿Qué hora es?\n\n**Hoe laat is het?** = ¿Qué hora es? Se contesta con **Het is…**\n\n- Het is drie **uur** = Son las tres. **uur** no cambia: twee uur, tien uur.\n- Het is **kwart over** vier = Son las cuatro y cuarto.\n- Het is **kwart voor** vijf = Es un cuarto para las cinco.\n- Het is tien **over** zes = Son las seis y diez.\n\n## ¡Cuidado con half!\n\n**half** cuenta hacia la hora siguiente: **half drie** = las dos y media, porque falta media hora para las tres.\n\n- half acht = 7:30\n- half twaalf = 11:30\n\nEs el error más común de los hispanohablantes. Piensa «media hora antes de…».\n\nLos minutos de :20 a :40 se cuentan desde half:\n\n- tien **voor half** vijf = 4:20 (diez minutos antes de las cuatro y media)\n- vijf **over half** twee = 1:35 (cinco minutos después de la una y media)\n\nTambién se oye twintig over vier para las 4:20, y es correcto.\n\n## A qué hora: om\n\n**om** = a (una hora): **om** drie uur = a las tres. **Om hoe laat?** = ¿A qué hora?\n\nEn una pregunta completa también se dice solo **Hoe laat**: **Hoe laat** is de les? = ¿A qué hora es la clase? Las dos formas significan lo mismo.\n\n## Despedirse según cuándo\n\n- **Tot morgen!** = ¡Hasta mañana!\n- **Tot straks!** = ¡Hasta ahorita! (más tarde el mismo día)\n- **Tot zondag!** = ¡Hasta el domingo!\n- **Fijn weekend!** = ¡Buen fin de semana!\n\n## Libre u ocupado\n\n- Ik ben **vrij** = Estoy libre (no trabajo).\n- Ik heb het **druk** = Estoy ocupado. Se dice con hebben y het.\n",
   "lessons": [
     {
       "id": "u07l1",
@@ -252,9 +252,7 @@
           "id": "u07l2s11",
           "nl": "Is het morgen zondag?",
           "es": "¿Mañana es domingo?",
-          "alt_nl": [
-            "Is het zondag morgen?"
-          ],
+          "alt_nl": [],
           "alt_es": [
             "¿Es domingo mañana?"
           ]
@@ -440,12 +438,12 @@
         {
           "id": "u07l4s03",
           "nl": "Het is kwart voor vijf.",
-          "es": "Son las cinco menos cuarto.",
+          "es": "Es un cuarto para las cinco.",
           "alt_nl": [],
           "alt_es": [
-            "Son las cuatro y cuarenta y cinco.",
-            "Es un cuarto para las cinco.",
-            "Son un cuarto para las cinco."
+            "Son un cuarto para las cinco.",
+            "Son las cinco menos cuarto.",
+            "Son las cuatro y cuarenta y cinco."
           ]
         },
         {
@@ -467,12 +465,12 @@
         {
           "id": "u07l4s06",
           "nl": "Het is vijf voor twaalf.",
-          "es": "Son las doce menos cinco.",
+          "es": "Son cinco para las doce.",
           "alt_nl": [],
           "alt_es": [
-            "Son las once y cincuenta y cinco.",
-            "Son cinco para las doce.",
-            "Faltan cinco para las doce."
+            "Faltan cinco para las doce.",
+            "Son las doce menos cinco.",
+            "Son las once y cincuenta y cinco."
           ]
         },
         {
@@ -503,11 +501,11 @@
         {
           "id": "u07l4s10",
           "nl": "Het is al kwart voor tien.",
-          "es": "Ya son las diez menos cuarto.",
+          "es": "Ya es un cuarto para las diez.",
           "alt_nl": [],
           "alt_es": [
-            "Ya es un cuarto para las diez.",
-            "Ya son un cuarto para las diez."
+            "Ya son un cuarto para las diez.",
+            "Ya son las diez menos cuarto."
           ]
         },
         {
@@ -530,7 +528,9 @@
           "id": "u07l4s13",
           "nl": "Het is tien voor half vijf.",
           "es": "Son las cuatro y veinte.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Het is twintig over vier."
+          ],
           "alt_es": []
         }
       ]
@@ -543,7 +543,9 @@
           "id": "u07l5s01",
           "nl": "Om hoe laat?",
           "es": "¿A qué hora?",
-          "alt_nl": [],
+          "alt_nl": [
+            "Hoe laat?"
+          ],
           "alt_es": []
         },
         {
@@ -566,7 +568,9 @@
           "id": "u07l5s04",
           "nl": "Hoe laat is de les?",
           "es": "¿A qué hora es la clase?",
-          "alt_nl": [],
+          "alt_nl": [
+            "Om hoe laat is de les?"
+          ],
           "alt_es": [
             "¿A qué hora es la lección?"
           ]
@@ -595,7 +599,9 @@
           "id": "u07l5s07",
           "nl": "Is dat niet te vroeg?",
           "es": "¿No es muy temprano?",
-          "alt_nl": [],
+          "alt_nl": [
+            "Is dat niet heel vroeg?"
+          ],
           "alt_es": [
             "¿No es demasiado temprano?",
             "¿Eso no es muy temprano?",
@@ -628,11 +634,12 @@
         {
           "id": "u07l5s10",
           "nl": "Het is te laat.",
-          "es": "Es muy tarde.",
+          "es": "Es demasiado tarde.",
           "alt_nl": [],
           "alt_es": [
-            "Es demasiado tarde.",
-            "Ya es muy tarde."
+            "Es muy tarde.",
+            "Ya es muy tarde.",
+            "Ya es demasiado tarde."
           ]
         },
         {
@@ -821,7 +828,9 @@
           "nl": "Dank je, fijn weekend, Anna!",
           "es": "Gracias, ¡buen fin de semana, Anna!",
           "alt_nl": [
-            "Dank je wel, fijn weekend, Anna!"
+            "Dank je wel, fijn weekend, Anna!",
+            "Dank u, fijn weekend, Anna!",
+            "Dank u wel, fijn weekend, Anna!"
           ],
           "alt_es": [
             "Gracias, ¡feliz fin de semana, Anna!"

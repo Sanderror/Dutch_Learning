@@ -1,0 +1,101 @@
+{
+  "checker": "independent-agent-2026-11-15-u08",
+  "coverage": {
+    "sentences_read": 83,
+    "word_cards_read": 35,
+    "dialogue_lines_read": 9,
+    "grammar_note_read": true
+  },
+  "flags": [
+    {
+      "id": "u08:grammar",
+      "severity": "a",
+      "reason": "\"Para decir dónde está una cosa, el neerlandés casi nunca usa is\" (and goals_es \"Usar staan, liggen y zitten en vez de is\") is false as stated, and the unit contradicts it. \"Waar is mijn telefoon?\" (u08l2s02), \"Waar is de kat?\" (u08l2s01), \"De tuin is achter het huis\" (u08l2s03), \"De badkamer is naast de slaapkamer\" (u08l2s07), \"De hond is achter de deur\" (u08l2s11) and the note's own \"De slaapkamer is boven / De keuken is beneden\" are all normal native Dutch. A Waar is...? question is the everyday default. Rooms and parts of a house take is. is also works with animals and with hier/daar, not only with people as the last line implies. A learner who believes the rule will doubt half the unit, or decide that these correct sentences are wrong.",
+      "suggestion": "Replace the opening line with: \"Para decir dónde está un objeto (un libro, un vaso, un mueble, un carro), el neerlandés prefiere staan, liggen o zitten según la posición. is también es normal en la pregunta Waar is…?, con cuartos y partes de la casa (De badkamer is boven), con personas y animales (Anna is in de keuken) y con hier/daar.\" Remove the last line, \"Con personas también se puede usar is\". Change the goal to \"Usar staan, liggen y zitten para la posición de las cosas\"."
+    },
+    {
+      "id": "lexicon:slaapkamer",
+      "severity": "a",
+      "reason": "Both kamer and slaapkamer carry the main Spanish gloss \"el cuarto\", and in Venezuelan Spanish \"cuarto\" normally means the bedroom. With a Spanish prompt that says \"cuarto\", the learner cannot know which Dutch noun is expected, and the other one is always rejected even though it is a correct translation. Affected: kamer is main and slaapkamer is rejected in u08l1s05, u08l1s12, u08l1s14, u08l6s07 and u08l6s13. slaapkamer is main and kamer is rejected in u08l1s06, u08l1s11, u08l2s07, u08l5s04 and u08l6s14. This happens about ten times in the unit's core vocabulary, so it is systematic, not a one-off missing alternative. Not affected: u08l6s10 (een kamer in Utrecht, a rented room), where only kamer is right.",
+      "suggestion": "Add the other noun to alt_nl in each affected sentence. For example: u08l1s06 alt_nl \"De kamer is klein.\"; u08l1s11 \"Het huis heeft twee kamers.\"; u08l1s05 \"Mijn huis heeft drie slaapkamers.\"; u08l1s12 \"Waar is je slaapkamer?\" / \"Waar is jouw slaapkamer?\"; u08l1s14 \"Mijn slaapkamer is hier.\"; u08l2s07 \"De badkamer is naast de kamer.\"; u08l5s04 \"De kamer is boven.\"; u08l6s07 \"De slaapkamer is te donker.\"; u08l6s13 \"Mijn slaapkamer is een beetje donker.\"; u08l6s14 \"Het huis heeft drie kamers en een tuin.\". Also add a line to the grammar note: \"cuarto puede ser kamer (cualquier cuarto) o slaapkamer (el cuarto para dormir).\""
+    },
+    {
+      "id": "u08:grammar",
+      "severity": "b",
+      "reason": "The \"Si dudas\" rule of thumb says books liggen, and that everything inside a container zit. But the unit itself says \"De boeken staan in de kast\" (u08l3s09), \"De borden staan in de kast\" (u08l4s04), \"De melk staat in de koelkast\" (u08l4s01) and \"De kaas ligt in de koelkast\" (u08l4s13). All four are correct native Dutch. The rule as written predicts \"De boeken liggen in de kast\", and a learner who reads kast or koelkast as a container like tas or cajón will predict zit. The example sentences do not match the rule stated.",
+      "suggestion": "Change it to: \"los libros acostados sobre la mesa liggen, pero de pie en el estante staan\". Add: \"En un armario o en la nevera las cosas están sobre una repisa, así que staan o liggen según su forma: De melk staat in de koelkast, de kaas ligt in de koelkast. zit es para lo que está metido en algo cerrado: una tas, un bolsillo de la jas, un cajón.\""
+    },
+    {
+      "id": "u08:grammar",
+      "severity": "b",
+      "reason": "\"Los edificios y los lugares liggen\" overgeneralises. Places (cities, neighbourhoods) liggen, and so does a house or flat when you say what area it is in (\"Het appartement ligt in het centrum\", which is correct). But a building seen as a physical object usually staat: \"Op het plein staat een kerk\", \"Ons huis staat in een rustige straat\". The rule as stated will produce \"Er ligt een kerk op het plein\" later.",
+      "suggestion": "\"Para decir en qué zona queda un lugar, una casa o un apartamento se usa liggen: Het appartement ligt in het centrum. Utrecht ligt in het midden van Nederland.\" Drop the word \"edificios\"."
+    },
+    {
+      "id": "u08:grammar",
+      "severity": "b",
+      "reason": "The ui hint (\"empieza como una «a» corta con los labios redondeados y termina casi en «i»\") lets a Spanish speaker unround her lips at the end. That gives [ai]/[ɛi], which Dutch listeners hear as ij/ei, so huis sounds like hijs or ijs. The end point of ui is a rounded vowel (like French u), not i. This is the single most important thing to get right in this vowel for a Spanish speaker, and the hint points the wrong way.",
+      "suggestion": "\"ui (tuin, huis) no existe en español: empieza con una «a» corta con los labios redondeados y termina en una «i» dicha con los labios todavía redondeados (como la u francesa). Si los labios se abren al final suena «ai», y eso se oye como ij.\""
+    },
+    {
+      "id": "u08:grammar",
+      "severity": "b",
+      "reason": "\"glas → glazen: la s se vuelve z delante de -en\" is true for this word, but it reads as a general rule, and it is not general (mens → mensen, dans → dansen; bus → bussen doubles instead). It also misses the bigger change in this word: glas has a short a, glazen has a long a (gla-zen). The learner hears this in listening exercises and in dictation of u08l4s08.",
+      "suggestion": "\"glas → glazen: palabra especial. La a corta se vuelve larga (GLA-zen) y la s se vuelve z. Apréndela de memoria.\""
+    },
+    {
+      "id": "u08l1s12",
+      "severity": "b",
+      "reason": "The main Dutch is \"Waar is jouw kamer?\" with stressed jouw, but nothing is contrasted. The settled preference is unstressed je, and \"Waar is je kamer?\" is what a native says. Dictation and the model answer show the main form.",
+      "suggestion": "nl \"Waar is je kamer?\"; move \"Waar is jouw kamer?\" to alt_nl."
+    },
+    {
+      "id": "u08l6s05",
+      "severity": "b",
+      "reason": "\"De huur is te duur\" is a semantic mismatch. Rent is an amount, and Dutch pairs an amount or price with hoog/laag; the thing you rent is duur. The standard collocation is \"De huur is te hoog\" or \"Het appartement is te duur\". Taal advisers flag \"de prijs is duur\" for the same reason. It is heard in casual speech, but it is a poor model sentence.",
+      "suggestion": "nl \"Het appartement is te duur.\", es \"El apartamento es demasiado caro.\" (all words are taught). Alternatively, teach hoog and use \"De huur is te hoog.\" with es \"El alquiler es demasiado alto.\" / alt_es \"El alquiler es demasiado caro.\""
+    },
+    {
+      "id": "u08:dialogue:8",
+      "severity": "b",
+      "reason": "Same issue as u08l6s05: \"Is de huur duur?\" pairs huur (an amount) with duur. A native would ask \"Is de huur hoog?\" or \"Is het duur?\" / \"Is het appartement duur?\".",
+      "suggestion": "nl \"Is het appartement duur?\", es \"¿El apartamento es caro?\". Emma's answer \"Een beetje.\" and question 3 still work unchanged."
+    },
+    {
+      "id": "lexicon:badkamer",
+      "severity": "b",
+      "reason": "badkamer is glossed only as \"el baño\". In Venezuelan Spanish \"¿Dónde está el baño?\" (u08l1s03) is what a guest says when looking for the toilet. In most Dutch homes the toilet is a separate room (de wc), and the badkamer is the room with the shower. Taught as is, the learner will ask \"Waar is de badkamer?\" when she means the toilet. It is understood, but it is the wrong room and a recognisable learner error.",
+      "suggestion": "Add note_es: \"La badkamer es el cuarto con la ducha. En Holanda el inodoro suele estar aparte: de wc. Para pedir el baño de visita se dice: Waar is de wc?\" (Teach wc in a later unit if it is not planned.)"
+    },
+    {
+      "id": "u08l5s09",
+      "severity": "b",
+      "reason": "\"in bed\" without an article is idiomatic (= en la cama, lying in it), but the learner was taught \"het bed\" and \"op het bed\" (u08l3s13), and nothing explains the missing article. When translating \"Leo un libro en la cama\", she will very likely type \"in het bed\", which is unnatural and is rejected. She cannot work out the bare form from the gloss.",
+      "suggestion": "Add a line to the grammar note: \"in bed (sin artículo) = en la cama, acostado en ella: Ik lees in bed. op het bed = encima de la cama: Mijn jas ligt op het bed.\""
+    },
+    {
+      "id": "u08l3s14",
+      "severity": "b",
+      "reason": "alt_es contains \"El plata está en mi chaqueta.\". plata is feminine, so this is ungrammatical Spanish accepted as a correct answer (the correct \"La plata...\" is already listed).",
+      "suggestion": "Remove \"El plata está en mi chaqueta.\" from alt_es."
+    },
+    {
+      "id": "lexicon:kast",
+      "severity": "b",
+      "reason": "accept_es includes \"la gaveta\". In Venezuelan Spanish gaveta means a drawer (Dutch la/lade), not a cupboard or wardrobe. That is a wrong meaning, and it will be accepted once accept_es is wired into exercises.",
+      "suggestion": "Remove \"la gaveta\". If more Venezuelan options are wanted, add \"la alacena\" (kitchen cupboard, already used in u08l4s04) or \"el gabinete\"."
+    },
+    {
+      "id": "u08l3s09",
+      "severity": "c",
+      "reason": "From \"Los libros están en el estante\", \"De boeken liggen in de kast\" is a correct Dutch sentence (books lying flat), and it is exactly what the grammar note's current \"los libros liggen\" tells the learner to write. It is rejected.",
+      "suggestion": "Either fix the note (see the u08:grammar \"Si dudas\" flag) or add alt_nl \"De boeken liggen in de kast.\". Fixing the note is preferred, and the alt_nl is a safety net."
+    },
+    {
+      "id": "u08l3s12",
+      "severity": "c",
+      "reason": "\"Waar staat de bank?\" out of context is also \"¿Dónde está el banco?\": a bench (Dutch bank, which also staat) or a bank. The lexicon card points this out to the learner (\"También significa «el banco»\"), so this is a likely answer in the NL→ES direction, and it is rejected.",
+      "suggestion": "Add alt_es \"¿Dónde está el banco?\"."
+    }
+  ]
+}

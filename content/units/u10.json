@@ -9,7 +9,7 @@
     "Decir cada cuánto: altijd, vaak, soms, nooit",
     "Preguntar qué hace alguien con doen"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- **oe** de d**oe**n, m**oe**, v**oe**tbal es la u española.\n- **ui** de l**ui**steren, como en h**ui**s.\n- **ie** de m**uzie**k es la i española, larga.\n- **oo** larga de n**oo**it y sch**oo**l. En **sch**ool, sch es una s seguida de la j fuerte, no «sh».\n- **ei** de tr**ei**n suena igual que ij.\n\n## El presente: una sola regla\n\nCasi todos los verbos siguen el mismo modelo. Se parte del verbo entero (werken) y se quita **-en**: queda la raíz, **werk**.\n\n- ik **werk**, ik **leer**, ik **praat**\n- jij **werkt**, u **werkt**, hij **werkt**, zij **werkt**\n- wij **werken**, jullie **werken**, zij **werken**\n\n- **ik**: la raíz sola.\n- **jij, u, hij, zij**: la raíz + **t**. Si la raíz ya termina en t, no se añade otra: hij **praat**, hij **ontbijt**.\n- **wij, jullie, zij** (plural): el verbo entero.\n- En pregunta con jij, la t se va: **Werk jij** morgen? **Speel je** voetbal?\n\n## La ortografía de la raíz\n\nLa raíz debe sonar igual que en el verbo entero:\n\n- Vocal larga: se escribe doble. **le**ren → **leer**, **spe**len → **speel**, **sla**pen → **slaap**.\n- Consonante doble: se escribe una. be**ll**en → **bel**, zi**tt**en → **zit**.\n- La v y la z al final se vuelven f y s. le**z**en → **lees**.\n\nYa conoces muchos verbos así: woon, kom, spreek, kook, zoek, bel.\n\n## Muy irregulares\n\nYa los viste: **zijn** (ben, bent, is, zijn), **hebben** (heb, hebt/heeft, hebben), **gaan** (ga, gaat, gaan), **doen** (doe, doet, doen), **willen** y **mogen**.\n\n## Voy a…: gaan + verbo\n\n**gaan** + otro verbo entero al final = ir a hacer algo:\n\n- Ik **ga** slapen = Voy a dormir.\n- Wij **gaan** eten = Vamos a comer.\n\n**naar** + lugar = ir a un sitio: Ik ga **naar** huis. Hij gaat **naar** school.\n\n## Cada cuánto\n\n**altijd** (siempre), **vaak** (a menudo), **soms** (a veces), **nooit** (nunca). Van después del verbo: Ik ben **altijd** moe. Hij kookt **nooit**.\n",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **oe** de d**oe**n, m**oe**, v**oe**tbal es la u española.\n- **ui** de l**ui**steren, como en h**ui**s.\n- **ie** de muz**ie**k es la i española.\n- **oo** larga de n**oo**it y sch**oo**l. En **sch**ool, sch es una s seguida de la j fuerte, no «sh».\n- **ei** de tr**ei**n suena igual que ij.\n\n## El presente: una sola regla\n\nCasi todos los verbos siguen el mismo modelo. Se parte del verbo entero (werken) y se quita **-en**: queda la raíz, **werk**.\n\n- ik **werk**, ik **leer**, ik **praat**\n- jij **werkt**, u **werkt**, hij **werkt**, zij **werkt**\n- wij **werken**, jullie **werken**, zij **werken**\n\n- **ik**: la raíz sola.\n- **jij, u, hij, zij**: la raíz + **t**. Si la raíz ya termina en t, no se añade otra: hij **praat**, hij **ontbijt**.\n- **wij, jullie, zij** (plural): el verbo entero.\n- En pregunta con jij, la t se va: **Werk jij** morgen? **Speel je** voetbal?\n\n## La ortografía de la raíz\n\nLa raíz debe sonar igual que en el verbo entero:\n\n- Vocal larga: se escribe doble. **le**ren → **leer**, **spe**len → **speel**, **sla**pen → **slaap**.\n- Consonante doble: se escribe una. be**ll**en → **bel**, zi**tt**en → **zit**.\n- La v y la z al final se vuelven f y s. le**z**en → **lees**.\n\nYa conoces muchos verbos así: woon, spreek, kook, zoek, bel.\n\nExcepción: komen → ik **kom** (la o es corta).\n\n## Muy irregulares\n\nYa los viste: **zijn** (ben, bent, is, zijn), **hebben** (heb, hebt/heeft, hebben), **gaan** (ga, gaat, gaan), **doen** (doe, doet, doen), **willen** y **mogen**.\n\n## Voy a…: gaan + verbo\n\n**gaan** + otro verbo entero al final = ir a hacer algo:\n\n- Ik **ga** slapen = Voy a dormir.\n- Wij **gaan** eten = Vamos a comer.\n\n**naar** + lugar = ir a un sitio: Ik ga **naar** huis. Hij gaat **naar** school.\n\n## Cada cuánto\n\n**altijd** (siempre), **vaak** (a menudo), **soms** (a veces), **nooit** (nunca). Van después del verbo: Ik ben **altijd** moe. Hij kookt **nooit**. Con het, después de het: Ik heb het **altijd** druk.\n",
   "lessons": [
     {
       "id": "u10l1",
@@ -94,7 +94,9 @@
           "nl": "Wij praten Nederlands.",
           "es": "Hablamos en neerlandés.",
           "alt_nl": [
-            "We praten Nederlands."
+            "We praten Nederlands.",
+            "Wij spreken Nederlands.",
+            "We spreken Nederlands."
           ],
           "alt_es": [
             "Hablamos neerlandés.",
@@ -195,7 +197,9 @@
           ],
           "alt_es": [
             "Voy al trabajo.",
-            "Yo voy a mi trabajo."
+            "Yo voy a mi trabajo.",
+            "Me voy al trabajo.",
+            "Me voy a mi trabajo."
           ]
         },
         {
@@ -288,7 +292,8 @@
           "alt_es": [
             "El tren llega tarde.",
             "El tren está retrasado.",
-            "El tren viene tarde."
+            "El tren viene tarde.",
+            "El tren está atrasado."
           ]
         },
         {
@@ -406,7 +411,8 @@
           ],
           "alt_es": [
             "¿Qué vamos a comer esta noche?",
-            "¿Qué comemos hoy en la noche?"
+            "¿Qué comemos hoy en la noche?",
+            "¿Qué cenamos esta noche?"
           ]
         },
         {
@@ -1040,8 +1046,8 @@
       },
       {
         "speaker": "Luis",
-        "nl": "Goed. Tot morgen, en welterusten!",
-        "es": "Bien. ¡Hasta mañana, y que descanses!"
+        "nl": "Goed. Tot morgen!",
+        "es": "Bien. ¡Hasta mañana!"
       }
     ],
     "questions": [

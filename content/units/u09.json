@@ -9,7 +9,7 @@
     "Decir que tienes frío o calor con Ik heb het koud",
     "Decir lo que necesitas con nodig hebben"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- **w** en neerlandés no es la «u» del inglés: los labios casi se tocan, como una v suave. **w**eer, **w**ind, **w**inter, **w**arm.\n- **ee** larga: w**ee**r, h**ee**t.\n- **ui** de tr**ui** y b**ui**ten, igual que en h**ui**s.\n- **sj** de **sj**aal suena como la sh del inglés.\n- **aai** de w**aai**t: una a larga seguida de i.\n- **eeuw** de sn**eeuw**t: una e larga seguida de u.\n- **ou** de k**ou**d suena «au».\n\n## El tiempo empieza con het\n\nComo en español «llueve» o «hace frío», el tiempo no tiene un sujeto real. El neerlandés pone **het**:\n\n- **Het** regent = Llueve, está lloviendo.\n- **Het** waait = Hace viento.\n- **Het** sneeuwt = Nieva.\n- **Het** is koud = Hace frío. **Het** is warm = Hace calor.\n\nSolo con el sol hay sujeto: **De zon schijnt** = Hace sol.\n\n**Hoe is het weer?** = ¿Cómo está el tiempo? **weer** es el tiempo de afuera; **tijd** es el tiempo del reloj.\n\n## Ik heb het koud\n\nUna persona que siente frío no dice «ik ben koud». Dice:\n\n- Ik **heb het** koud = Tengo frío.\n- Ik **heb het** warm = Tengo calor.\n\nEs la misma forma que Ik heb het druk.\n\n## Grados\n\n- Het is twintig **graden** = Hace veinte grados.\n- Het is min vijf = Hace cinco bajo cero.\n- **Hoeveel graden is het?** = ¿Cuántos grados hace?\n\n## Las estaciones\n\n**de lente** (primavera), **de zomer** (verano), **de herfst** (otoño), **de winter** (invierno). Todas llevan de.\n\n- **in de** zomer = en verano: Het is warm in de zomer.\n- **Welk** seizoen? = ¿Qué estación? Con palabras de het se dice **welk**; con palabras de de, **welke** (welke dag).\n\n## Necesitar: nodig hebben\n\n- Ik heb een paraplu **nodig** = Necesito un paraguas.\n- Heb je een jas **nodig**? = ¿Necesitas una chaqueta?\n\nhebben va en su lugar de siempre y **nodig** va al final.\n\n## worden\n\n**wordt** = se pone, va a hacer: Het **wordt** koud = Se está poniendo frío, va a hacer frío.\n",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **w** no es la «u» del inglés: el labio de abajo se acerca a los dientes de arriba, sin apretar (como viste en la unidad 2). **w**eer, **w**ind, **w**inter, **w**arm.\n- **ee** larga: w**ee**r, h**ee**t.\n- **ui** de tr**ui** y b**ui**ten, igual que en h**ui**s.\n- **sj** de **sj**aal suena como la sh del inglés.\n- **aai** de w**aai**t: una a larga seguida de i.\n- **eeuw** de sn**eeuw**t: una e larga seguida de u.\n- **ou** de k**ou**d suena «au».\n\n## El tiempo empieza con het\n\nComo en español «llueve» o «hace frío», el tiempo no tiene un sujeto real. El neerlandés pone **het**:\n\n- **Het** regent = Llueve, está lloviendo.\n- **Het** waait = Hace viento.\n- **Het** sneeuwt = Nieva.\n- **Het** is koud = Hace frío. **Het** is warm = Hace calor.\n\nSolo con el sol hay sujeto: **De zon schijnt** = Hace sol.\n\n**Hoe is het weer?** = ¿Cómo está el tiempo? **weer** es el tiempo de afuera; **tijd** es el tiempo del reloj.\n\n## Ik heb het koud\n\nUna persona que siente frío no dice «ik ben koud». Dice:\n\n- Ik **heb het** koud = Tengo frío.\n- Ik **heb het** warm = Tengo calor.\n\nEs la misma forma que Ik heb het druk.\n\n## Grados\n\n- Het is twintig **graden** = Hace veinte grados.\n- Het is min vijf = Hace cinco bajo cero.\n- **Hoeveel graden is het?** = ¿Cuántos grados hace?\n\n## Las estaciones\n\n**de lente** (primavera), **de zomer** (verano), **de herfst** (otoño), **de winter** (invierno). Todas llevan de.\n\n- **in de** zomer = en verano: Het is warm in de zomer.\n- **Welk** seizoen? = ¿Qué estación? Con palabras de het en singular se dice **welk**; con palabras de de y con todos los plurales, **welke** (welke dag, welke seizoenen).\n\n## Necesitar: nodig hebben\n\n- Ik heb een paraplu **nodig** = Necesito un paraguas.\n- Heb je een jas **nodig**? = ¿Necesitas una chaqueta?\n\nhebben va en su lugar de siempre y **nodig** va al final.\n\n## worden\n\n**wordt** = se pone, va a hacer: Het **wordt** koud = Se está poniendo frío, va a hacer frío.\n",
   "lessons": [
     {
       "id": "u09l1",
@@ -31,7 +31,10 @@
           "nl": "Het is koud.",
           "es": "Hace frío.",
           "alt_nl": [],
-          "alt_es": []
+          "alt_es": [
+            "Está haciendo frío.",
+            "Está frío."
+          ]
         },
         {
           "id": "u09l1s03",
@@ -42,14 +45,17 @@
             "Vandaag is het warm."
           ],
           "alt_es": [
-            "Hace calor hoy."
+            "Hace calor hoy.",
+            "Hoy está haciendo calor."
           ]
         },
         {
           "id": "u09l1s04",
           "nl": "Het weer is mooi.",
           "es": "El tiempo está bonito.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Het is mooi weer."
+          ],
           "alt_es": [
             "El tiempo está lindo.",
             "El tiempo está bueno.",
@@ -88,7 +94,10 @@
           "nl": "Het is niet koud.",
           "es": "No hace frío.",
           "alt_nl": [],
-          "alt_es": []
+          "alt_es": [
+            "No está haciendo frío.",
+            "No está frío."
+          ]
         },
         {
           "id": "u09l1s09",
@@ -302,18 +311,25 @@
           ],
           "alt_es": [
             "Hace menos cinco.",
-            "Estamos a menos cinco."
+            "Estamos a menos cinco.",
+            "Hace cinco grados bajo cero.",
+            "Hace menos cinco grados.",
+            "Estamos a cinco bajo cero."
           ]
         },
         {
           "id": "u09l3s04",
           "nl": "Het is heet vandaag.",
-          "es": "Hoy hace mucho calor.",
+          "es": "Hoy hace un calor tremendo.",
           "alt_nl": [
-            "Het is vandaag heet."
+            "Het is vandaag heet.",
+            "Het is heel warm vandaag.",
+            "Het is vandaag heel warm."
           ],
           "alt_es": [
-            "Hace mucho calor hoy."
+            "Hoy hace mucho calor.",
+            "Hace mucho calor hoy.",
+            "Hoy hace muchísimo calor."
           ]
         },
         {
@@ -372,25 +388,35 @@
         },
         {
           "id": "u09l3s11",
-          "nl": "Het is vaak heet in Caracas.",
-          "es": "En Caracas hace mucho calor a menudo.",
+          "nl": "Het is vaak warm in Caracas.",
+          "es": "En Caracas suele hacer calor.",
           "alt_nl": [
-            "In Caracas is het vaak heet."
+            "In Caracas is het vaak warm."
           ],
           "alt_es": [
-            "En Caracas suele hacer mucho calor.",
-            "En Caracas muchas veces hace mucho calor."
+            "En Caracas hace calor a menudo.",
+            "En Caracas muchas veces hace calor."
           ]
         },
         {
           "id": "u09l3s12",
+          "nl": "De koffie is heet!",
+          "es": "¡El café está hirviendo!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡El café está muy caliente!",
+            "¡El café está caliente!"
+          ]
+        },
+        {
+          "id": "u09l3s13",
           "nl": "Het is twaalf graden en bewolkt.",
           "es": "Hace doce grados y está nublado.",
           "alt_nl": [],
           "alt_es": []
         },
         {
-          "id": "u09l3s13",
+          "id": "u09l3s14",
           "nl": "Ik ben nat!",
           "es": "¡Estoy mojado!",
           "alt_nl": [],
@@ -399,7 +425,7 @@
           ]
         },
         {
-          "id": "u09l3s14",
+          "id": "u09l3s15",
           "nl": "Het is nu zonnig en vijftien graden.",
           "es": "Ahora está soleado y hace quince grados.",
           "alt_nl": [],
@@ -482,7 +508,10 @@
           "es": "¿En qué estación estamos?",
           "alt_nl": [],
           "alt_es": [
-            "¿Qué estación es ahora?"
+            "¿Qué estación es ahora?",
+            "¿En qué estación estamos ahora?",
+            "¿Cuál estación es ahora?",
+            "¿Qué estación es?"
           ]
         },
         {
@@ -517,11 +546,11 @@
         },
         {
           "id": "u09l4s11",
-          "nl": "Welk seizoen is mooi?",
-          "es": "¿Qué estación es bonita?",
+          "nl": "In welk seizoen is het warm?",
+          "es": "¿En qué estación hace calor?",
           "alt_nl": [],
           "alt_es": [
-            "¿Cuál estación es bonita?"
+            "¿En cuál estación hace calor?"
           ]
         },
         {
@@ -613,7 +642,9 @@
           "alt_nl": [
             "Jouw sjaal ligt op de stoel."
           ],
-          "alt_es": []
+          "alt_es": [
+            "Tu bufanda está sobre la silla."
+          ]
         },
         {
           "id": "u09l5s08",
@@ -621,7 +652,7 @@
           "es": "Hace frío. ¿Dónde está mi gorro?",
           "alt_nl": [],
           "alt_es": [
-            "Hace frío. ¿Dónde está mi gorra?"
+            "Hace frío. ¿Dónde está mi gorro de lana?"
           ]
         },
         {
@@ -631,8 +662,7 @@
           "alt_nl": [],
           "alt_es": [
             "Mi gorro está en mi cartera.",
-            "Mi gorro está en mi bolsa.",
-            "Mi gorra está en mi bolso."
+            "Mi gorro está en mi bolsa."
           ]
         },
         {
@@ -684,7 +714,7 @@
             "Heb jij een muts nodig?"
           ],
           "alt_es": [
-            "¿Necesitas una gorra?"
+            "¿Necesitas un gorro de lana?"
           ]
         }
       ]
@@ -698,7 +728,9 @@
           "nl": "Het is gelukkig droog.",
           "es": "Por suerte no llueve.",
           "alt_nl": [
-            "Gelukkig is het droog."
+            "Gelukkig is het droog.",
+            "Het regent gelukkig niet.",
+            "Gelukkig regent het niet."
           ],
           "alt_es": [
             "Menos mal que no llueve.",
@@ -712,8 +744,8 @@
           "es": "Va a hacer calor.",
           "alt_nl": [],
           "alt_es": [
-            "Se está poniendo caliente.",
-            "Empieza a hacer calor."
+            "Empieza a hacer calor.",
+            "Está empezando a hacer calor."
           ]
         },
         {
@@ -760,7 +792,10 @@
           "id": "u09l6s07",
           "nl": "Het is mooi weer buiten.",
           "es": "Afuera hace buen tiempo.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Buiten is het mooi weer.",
+            "Het is buiten mooi weer."
+          ],
           "alt_es": [
             "Hace buen tiempo afuera.",
             "Afuera está bonito el tiempo."
@@ -770,7 +805,11 @@
           "id": "u09l6s08",
           "nl": "Is het droog buiten?",
           "es": "¿Afuera no llueve?",
-          "alt_nl": [],
+          "alt_nl": [
+            "Regent het buiten niet?",
+            "Regent het niet buiten?",
+            "Is het buiten droog?"
+          ],
           "alt_es": [
             "¿Está seco afuera?",
             "¿Afuera está seco?"
@@ -780,7 +819,9 @@
           "id": "u09l6s09",
           "nl": "Nee, het regent buiten.",
           "es": "No, afuera llueve.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Nee, buiten regent het."
+          ],
           "alt_es": [
             "No, afuera está lloviendo.",
             "No, llueve afuera."

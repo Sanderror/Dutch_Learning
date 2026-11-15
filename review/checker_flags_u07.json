@@ -1,0 +1,83 @@
+{
+  "checker": "independent-agent-2026-11-15-u07",
+  "flags": [
+    {
+      "id": "u07l6s14",
+      "severity": "a",
+      "reason": "Course rule not applied: Spanish 'Gracias' does not mark jij/u, so 'Dank u, fijn weekend, Anna!' is an equally correct answer in the es→nl direction and would be marked wrong. alt_nl only has the je variants (Dank je / Dank je wel).",
+      "suggestion": "Add to alt_nl: 'Dank u, fijn weekend, Anna!' and 'Dank u wel, fijn weekend, Anna!'."
+    },
+    {
+      "id": "u07:grammar",
+      "severity": "b",
+      "reason": "Pronunciation section, aa line: 'v**a**nd**aa**g' bolds the first a of vandaag as an example of the long aa. That a is short (van-DAAG, [vɑnˈdaːx]); only the second is long. A Spanish speaker following the hint will lengthen both.",
+      "suggestion": "Write 'vand**aa**g' (bold only aa) and, if wanted, add: «la primera a de vandaag es corta»."
+    },
+    {
+      "id": "u07:grammar",
+      "severity": "b",
+      "reason": "The note equates only 'Om hoe laat?' with '¿A qué hora?', but the unit itself uses bare 'Hoe laat …?' for '¿A qué hora?' (u07l5s04 'Hoe laat is de les?' = '¿A qué hora es la clase?'; dialogue line 4 'Hoe laat?' = '¿A qué hora?'). Both are correct and 'Hoe laat …?' is the more common one in speech, but the learner is never told, so the sentences look inconsistent with the rule and the exercises reject the om-form (see u07l5s04) and the bare form (see u07l5s01).",
+      "suggestion": "In «A qué hora: om» add: «Para preguntar, también basta Hoe laat…?: Hoe laat is de les? = ¿A qué hora es la clase? Om hoe laat? y Hoe laat? significan lo mismo. En la respuesta siempre va om: om drie uur.»"
+    },
+    {
+      "id": "u07:grammar",
+      "severity": "b",
+      "reason": "Spain-leaning time format as the main model. Main Spanish for voor-times (u07l4s03 'las cinco menos cuarto', u07l4s06 'las doce menos cinco', u07l4s10 'las diez menos cuarto'), the grammar note ('Son las cinco menos cuarto') and lexicon:voor ('menos (en la hora)') all use the 'menos' pattern. In Venezuela the everyday form is 'un cuarto para las cinco' / 'cinco para las doce' (already in alt_es and accept_es). The Venezuelan form is also the better teaching tool: Dutch voor maps word-for-word onto 'para'.",
+      "suggestion": "Make the 'para' form the main es: u07l4s03 'Es un cuarto para las cinco.', u07l4s06 'Son cinco para las doce.', u07l4s10 'Ya es un cuarto para las diez.' (move the 'menos' versions to alt_es). Note: «Het is kwart voor vijf = Es un cuarto para las cinco (voor = para).» lexicon:voor es ['para (en la hora)'], accept_es ['menos']."
+    },
+    {
+      "id": "u07:grammar",
+      "severity": "b",
+      "reason": "The rule «Los minutos cerca de la media hora se cuentan desde half» does not say which minutes, so the learner cannot produce e.g. 4:25 or 4:40. It also suggests that 'twintig over vier' is wrong, but it is common and correct for 4:20 (see u07l4s13).",
+      "suggestion": "«De :20 a :40 los minutos se cuentan desde half: tien voor half vijf = 4:20, vijf voor half vijf = 4:25, tien over half vijf = 4:40. Para :20 y :40 también se oye twintig over vier / twintig voor vijf.»"
+    },
+    {
+      "id": "u07:grammar",
+      "severity": "b",
+      "reason": "The druk line explains the construction by analogy with 'Ik heb het koud', but koud is first taught in u09l1, so the learner has never seen the comparison and it explains nothing at this point.",
+      "suggestion": "Replace with: «Se dice con hebben y het: Ik heb het druk (literalmente «lo tengo ocupado»). No digas Ik ben druk.» Bring in the koud comparison in u09."
+    },
+    {
+      "id": "u07l2s11",
+      "severity": "b",
+      "reason": "alt_nl 'Is het zondag morgen?' reads to a Dutch speaker as 'Is it Sunday morning?' (zondagmorgen, often written as two words). The course avoids the parallel 'Het is zaterdag morgen' in u07l2s03, so this alt is inconsistent and could show a misleading model if alts are ever displayed.",
+      "suggestion": "Remove 'Is het zondag morgen?' from alt_nl; keep 'Is het morgen zondag?' (and optionally add 'Is morgen zondag?' if inversion-free variants are wanted)."
+    },
+    {
+      "id": "u07l5s10",
+      "severity": "b",
+      "reason": "Meaning mismatch: 'Het is te laat' = 'it is too late'; standalone 'Es muy tarde' most naturally means 'it is very late'. In the es→nl direction the learner will reasonably type 'Het is heel laat' (heel = muy, taught u02l6), which is correct for the prompt but rejected. It also blurs te (demasiado, per its own word card) and heel (muy).",
+      "suggestion": "Main es 'Es demasiado tarde.'; keep 'Es muy tarde.' and 'Ya es muy tarde.' in alt_es."
+    },
+    {
+      "id": "u07l5s07",
+      "severity": "c",
+      "reason": "Same te/muy pairing as u07l5s10, but here 'muy temprano' is the natural Venezuelan way to say 'too early' in this context, so the main es is fine. In the es→nl direction a learner who maps muy → heel types 'Is dat niet heel vroeg?', a correct translation of the Spanish prompt, and is rejected.",
+      "suggestion": "Add alt_nl 'Is dat niet heel vroeg?' or, if te should be drilled, use main es '¿No es demasiado temprano?' and keep 'muy' in alt_es."
+    },
+    {
+      "id": "u07l5s04",
+      "severity": "c",
+      "reason": "The grammar note teaches 'Om hoe laat? = ¿A qué hora?', so for '¿A qué hora es la clase?' the learner will likely type 'Om hoe laat is de les?' (correct Dutch). It is not in alt_nl.",
+      "suggestion": "Add alt_nl 'Om hoe laat is de les?'."
+    },
+    {
+      "id": "u07l5s01",
+      "severity": "c",
+      "reason": "For '¿A qué hora?' the bare 'Hoe laat?' is correct and very common, and the unit's own dialogue (line 4) uses it for exactly this Spanish. It is not accepted.",
+      "suggestion": "Add alt_nl 'Hoe laat?'."
+    },
+    {
+      "id": "u07l4s13",
+      "severity": "c",
+      "reason": "For 'Son las cuatro y veinte' the learner can apply the over rule from this lesson and type 'Het is twintig over vier' (twintig taught u03l5). That is correct and common Dutch but is rejected.",
+      "suggestion": "Add alt_nl 'Het is twintig over vier.'."
+    }
+  ],
+  "coverage": {
+    "sentences_read": 81,
+    "word_cards_read": 28,
+    "dialogue_lines_read": 8,
+    "grammar_note_read": true
+  }
+}
