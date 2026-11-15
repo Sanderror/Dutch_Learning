@@ -106,7 +106,7 @@ def select(lexicon, units, unit_id, reviewed_ids, flags, sample_n, seed=None):
 
     # grammar note: one row pointing at the text
     gflags = flag_by_id.get(f"{unit_id}:grammar", [])
-    row("grammar note" + ("; FLAG: " + gflags[0]["reason"] if gflags else ""),
+    row("grammar note" + "".join(f"; FLAG {i + 1}: " + g["reason"] for i, g in enumerate(gflags)),
         unit_id, "grammar", f"{unit_id}:grammar",
         "(lee la nota completa en el archivo de notas)", unit.get("title_es", ""))
     stats["grammar"] += 1

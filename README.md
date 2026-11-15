@@ -2,7 +2,9 @@
 
 A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One lesson a day; every finished lesson paints a tile.
 
-**App:** https://sanderror.github.io/Dutch_Learning/ (open in Chrome on Android, then menu, "Add to Home screen" to install)
+**App:** https://sanderror.github.io/Dutch_Learning/ (open in Chrome on Android and tap "Instalar la app"; Chrome's menu, "Add to Home screen", does the same)
+
+**Course so far:** units 1 to 6 (36 lessons, 476 sentences, 188 words, 6 dialogues), all in section 1 (A0).
 
 | Folder | What it is |
 |---|---|
@@ -28,12 +30,13 @@ A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One l
 - `app/js/main.js`: the interface. `app/sw.js` makes it installable and usable offline.
 - A unit is eight tiles: six lessons, a dialogue, and a test-out (12 questions, 10 right completes the unit).
 - Until recordings exist for a text, the phone's own Dutch voice reads it.
+- When Chrome reports the app can be installed, the home screen and the settings show an install button.
 
 ## Tests
 
 ```
 python3 tools/validate_content.py content      # content rules; exit code 1 on errors
-python3 tools/test_validator.py                # 26 injected mistakes, each must be caught
+python3 tools/test_validator.py                # 27 injected mistakes, each must be caught
 python3 tools/test_review_batch.py             # review-batch selection
 python3 tools/test_build_audio.py              # audio build against a mock API
 python3 tools/test_tts_bakeoff.py              # voice script against a mock API
@@ -45,7 +48,7 @@ End to end in a real Chrome at phone size (needs Chrome and `puppeteer-core`):
 
 ```
 python3 -m http.server 8765                    # in the repository root
-node app/tests/e2e.browser.mjs screenshots/    # plays lessons, a dialogue, a test-out; offline; reload
+node app/tests/e2e.browser.mjs screenshots/    # plays every lesson, a dialogue, a test-out; install; offline; reload
 ```
 
 Python 3.9+ and Node 20+. Nothing to install for the first block.
@@ -55,6 +58,7 @@ Python 3.9+ and Node 20+. Nothing to install for the first block.
 - `lexicon.json` lists every Dutch form taught and the lesson where it first appears (`"forms": {"ben": "u01l1", "bent": "u01l2"}`). It is the single source for "what has she been taught so far". `accept_es` / `accept_nl` are extra answers accepted on the word card only.
 - A unit holds lessons; a lesson holds sentences with Dutch (`nl`), Spanish (`es`) and other accepted answers (`alt_nl`, `alt_es`); plus a grammar note in Spanish and a dialogue with questions.
 - `names` in the lexicon are people and places that may appear without being taught.
+- A Dutch word with two unrelated uses is two entries with the same `nl` (het as pronoun and as article; zij as ella and as ellos; zijn as verb and as possessive). The number one is written `één` so it stays apart from the article `een`; answers without accents are accepted.
 
 | Validator check | Rule |
 |---|---|

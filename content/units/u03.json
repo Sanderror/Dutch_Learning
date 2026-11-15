@@ -1,0 +1,857 @@
+{
+  "id": "u03",
+  "section": 1,
+  "title_es": "Los números y la edad",
+  "goals_es": [
+    "Contar del 0 al 20",
+    "Sumar y restar en voz alta",
+    "Decir tu edad y preguntar la de otra persona",
+    "Dar y pedir un número de teléfono",
+    "Confirmar o corregir con Dat klopt"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- La **u** corta no es la u española (esa se escribe oe). Suena entre una e y una u, muy breve: n**u**l, n**u**mmer, pl**u**s.\n- **z** es un zumbido, como el de una abeja: **z**es, **z**even. No suena como la s.\n- **ch** suena igual que la g, como una j fuerte: a**ch**t, a**ch**ttien.\n- En **-tig** la i casi no se oye: twin**tig** suena «tuin-tej», con una e muy breve.\n- **ou** suena como «au»: **ou**d, j**ou**w.\n\n## Sumar y restar\n\n- **plus** = más, **min** = menos.\n- El resultado siempre va con **is**: Twee plus twee **is** vier. Tien min drie **is** zeven.\n- También se puede sumar con **en**: Twee en twee is vier.\n- **Hoeveel is…?** = ¿Cuánto es…?\n\n## Del 13 al 19\n\nSe forman con el número + **tien**: vijf**tien**, zes**tien**, zeven**tien**, negen**tien**.\n\n- 13 es **der**tien (no «drietien») y 14 es **veer**tien (no «viertien»).\n- 18 se escribe con dos t: ach**tt**ien.\n\n## La edad se dice con zijn\n\nEn español «tienes» años; en neerlandés «eres» años. Se usa **zijn**, nunca hebben.\n\n- Hoe oud **ben** je? = ¿Cuántos años tienes?\n- Ik **ben** twintig. Ik ben twintig **jaar**. Ik ben twintig jaar **oud**. Las tres formas significan lo mismo.\n- **jaar** no cambia después de un número: twintig jaar (no «jaren»).\n\n## één y een\n\n**één** es el número 1 y se dice con una e larga. **een** significa «un, una» y se dice con una e muy corta; ya lo viste en een beetje y lo usarás mucho en la unidad 4.\n\nEn este curso el número siempre lleva acentos para que no los confundas. En textos reales muchas veces se escribe **een** también para el número: lo que siempre los distingue es el sonido.\n\n## Wat, jouw y uw\n\n- **Wat** = qué. Con naam y nummer el neerlandés pregunta con wat donde el español usa «cuál»: **Wat** is jouw naam?\n- **mijn** = mi, **jouw** = tu, **uw** = su (de usted): mijn nummer, jouw nummer, uw nummer.\n- **Dat klopt** = así es, es correcto. **Klopt dat?** = ¿es correcto?\n\n## El número de teléfono\n\nPuedes decirlo cifra por cifra, en grupos de dos. Los celulares en los Países Bajos empiezan con 06: **nul zes**.\n\nMuchos neerlandeses leen cada par como un solo número (12 = twaalf, 34 = vierendertig; los números de 21 a 99 vienen más adelante). Si no entiendes, pide que te lo digan cifra por cifra.\n",
+  "lessons": [
+    {
+      "id": "u03l1",
+      "title_es": "Del cero al cinco",
+      "sentences": [
+        {
+          "id": "u03l1s01",
+          "nl": "Één, twee, drie.",
+          "es": "Uno, dos, tres.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s02",
+          "nl": "Nul.",
+          "es": "Cero.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s03",
+          "nl": "Vier en vijf.",
+          "es": "Cuatro y cinco.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s04",
+          "nl": "Nul, één, twee.",
+          "es": "Cero, uno, dos.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s05",
+          "nl": "Drie, vier, vijf.",
+          "es": "Tres, cuatro, cinco.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s06",
+          "nl": "Twee of drie?",
+          "es": "¿Dos o tres?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s07",
+          "nl": "Nee, vier.",
+          "es": "No, cuatro.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s08",
+          "nl": "Twee en twee is vier.",
+          "es": "Dos y dos son cuatro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Dos y dos es cuatro.",
+            "Dos más dos son cuatro.",
+            "Dos más dos es cuatro."
+          ]
+        },
+        {
+          "id": "u03l1s09",
+          "nl": "Vijf, vier, drie.",
+          "es": "Cinco, cuatro, tres.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s10",
+          "nl": "Twee en drie is vijf.",
+          "es": "Dos y tres son cinco.",
+          "alt_nl": [],
+          "alt_es": [
+            "Dos y tres es cinco.",
+            "Dos más tres son cinco.",
+            "Dos más tres es cinco."
+          ]
+        },
+        {
+          "id": "u03l1s11",
+          "nl": "Één en nul.",
+          "es": "Uno y cero.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l1s12",
+          "nl": "Drie, twee, één, nul!",
+          "es": "¡Tres, dos, uno, cero!",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u03l2",
+      "title_es": "Del seis al diez",
+      "sentences": [
+        {
+          "id": "u03l2s01",
+          "nl": "Zes, zeven, acht.",
+          "es": "Seis, siete, ocho.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l2s02",
+          "nl": "Negen en tien.",
+          "es": "Nueve y diez.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l2s03",
+          "nl": "Vijf plus één is zes.",
+          "es": "Cinco más uno son seis.",
+          "alt_nl": [],
+          "alt_es": [
+            "Cinco más uno es seis."
+          ]
+        },
+        {
+          "id": "u03l2s04",
+          "nl": "Acht, negen, tien.",
+          "es": "Ocho, nueve, diez.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l2s05",
+          "nl": "Zes plus twee is acht.",
+          "es": "Seis más dos son ocho.",
+          "alt_nl": [],
+          "alt_es": [
+            "Seis más dos es ocho."
+          ]
+        },
+        {
+          "id": "u03l2s06",
+          "nl": "Zeven of acht?",
+          "es": "¿Siete u ocho?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Siete o ocho?"
+          ]
+        },
+        {
+          "id": "u03l2s07",
+          "nl": "Vier plus drie is zeven.",
+          "es": "Cuatro más tres son siete.",
+          "alt_nl": [],
+          "alt_es": [
+            "Cuatro más tres es siete."
+          ]
+        },
+        {
+          "id": "u03l2s08",
+          "nl": "Negen plus één is tien.",
+          "es": "Nueve más uno son diez.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nueve más uno es diez."
+          ]
+        },
+        {
+          "id": "u03l2s09",
+          "nl": "Tien, negen, acht, zeven.",
+          "es": "Diez, nueve, ocho, siete.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l2s10",
+          "nl": "Vijf en vijf is tien.",
+          "es": "Cinco y cinco son diez.",
+          "alt_nl": [],
+          "alt_es": [
+            "Cinco y cinco es diez.",
+            "Cinco más cinco son diez.",
+            "Cinco más cinco es diez."
+          ]
+        },
+        {
+          "id": "u03l2s11",
+          "nl": "Zes, acht, tien.",
+          "es": "Seis, ocho, diez.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l2s12",
+          "nl": "Zeven plus twee is negen.",
+          "es": "Siete más dos son nueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "Siete más dos es nueve."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03l3",
+      "title_es": "Sumar y restar",
+      "sentences": [
+        {
+          "id": "u03l3s01",
+          "nl": "Tien min drie is zeven.",
+          "es": "Diez menos tres son siete.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez menos tres es siete."
+          ]
+        },
+        {
+          "id": "u03l3s02",
+          "nl": "Hoeveel is twee plus twee?",
+          "es": "¿Cuánto es dos más dos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto son dos más dos?",
+            "¿Cuántos son dos más dos?"
+          ]
+        },
+        {
+          "id": "u03l3s03",
+          "nl": "Elf en twaalf.",
+          "es": "Once y doce.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l3s04",
+          "nl": "Tien plus één is elf.",
+          "es": "Diez más uno son once.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez más uno es once."
+          ]
+        },
+        {
+          "id": "u03l3s05",
+          "nl": "Tien plus twee is twaalf.",
+          "es": "Diez más dos son doce.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez más dos es doce."
+          ]
+        },
+        {
+          "id": "u03l3s06",
+          "nl": "Hoeveel is twaalf min vier?",
+          "es": "¿Cuánto es doce menos cuatro?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto son doce menos cuatro?"
+          ]
+        },
+        {
+          "id": "u03l3s07",
+          "nl": "Twaalf min vier is acht.",
+          "es": "Doce menos cuatro son ocho.",
+          "alt_nl": [],
+          "alt_es": [
+            "Doce menos cuatro es ocho."
+          ]
+        },
+        {
+          "id": "u03l3s08",
+          "nl": "Nummer elf.",
+          "es": "Número once.",
+          "alt_nl": [],
+          "alt_es": [
+            "El número once."
+          ]
+        },
+        {
+          "id": "u03l3s09",
+          "nl": "Dit is nummer twaalf.",
+          "es": "Este es el número doce.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es el número doce.",
+            "Esto es el número doce."
+          ]
+        },
+        {
+          "id": "u03l3s10",
+          "nl": "Hoeveel is zes plus zes?",
+          "es": "¿Cuánto es seis más seis?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto son seis más seis?"
+          ]
+        },
+        {
+          "id": "u03l3s11",
+          "nl": "Elf min twee is negen.",
+          "es": "Once menos dos son nueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "Once menos dos es nueve."
+          ]
+        },
+        {
+          "id": "u03l3s12",
+          "nl": "Is dit nummer tien?",
+          "es": "¿Este es el número diez?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es este el número diez?",
+            "¿Es el número diez?"
+          ]
+        },
+        {
+          "id": "u03l3s13",
+          "nl": "Nee, dit is nummer elf.",
+          "es": "No, este es el número once.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, es el número once."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03l4",
+      "title_es": "Del trece al dieciocho",
+      "sentences": [
+        {
+          "id": "u03l4s01",
+          "nl": "Dertien, veertien, vijftien.",
+          "es": "Trece, catorce, quince.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l4s02",
+          "nl": "Zestien, zeventien, achttien.",
+          "es": "Dieciséis, diecisiete, dieciocho.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l4s03",
+          "nl": "Tien plus drie is dertien.",
+          "es": "Diez más tres son trece.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez más tres es trece."
+          ]
+        },
+        {
+          "id": "u03l4s04",
+          "nl": "Twaalf plus twee is veertien.",
+          "es": "Doce más dos son catorce.",
+          "alt_nl": [],
+          "alt_es": [
+            "Doce más dos es catorce."
+          ]
+        },
+        {
+          "id": "u03l4s05",
+          "nl": "Hoeveel is acht plus zeven?",
+          "es": "¿Cuánto es ocho más siete?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuánto son ocho más siete?"
+          ]
+        },
+        {
+          "id": "u03l4s06",
+          "nl": "Acht plus zeven is vijftien.",
+          "es": "Ocho más siete son quince.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ocho más siete es quince."
+          ]
+        },
+        {
+          "id": "u03l4s07",
+          "nl": "Ik ben nummer zestien.",
+          "es": "Soy el número dieciséis.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo soy el número dieciséis.",
+            "Tengo el número dieciséis."
+          ]
+        },
+        {
+          "id": "u03l4s08",
+          "nl": "Zeventien min vier is dertien.",
+          "es": "Diecisiete menos cuatro son trece.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diecisiete menos cuatro es trece."
+          ]
+        },
+        {
+          "id": "u03l4s09",
+          "nl": "Achttien min vier is veertien.",
+          "es": "Dieciocho menos cuatro son catorce.",
+          "alt_nl": [],
+          "alt_es": [
+            "Dieciocho menos cuatro es catorce."
+          ]
+        },
+        {
+          "id": "u03l4s10",
+          "nl": "Negen plus negen is achttien.",
+          "es": "Nueve más nueve son dieciocho.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nueve más nueve es dieciocho."
+          ]
+        },
+        {
+          "id": "u03l4s11",
+          "nl": "Vijftien of zestien?",
+          "es": "¿Quince o dieciséis?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l4s12",
+          "nl": "Tien plus zeven is zeventien.",
+          "es": "Diez más siete son diecisiete.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez más siete es diecisiete."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03l5",
+      "title_es": "¿Cuántos años tienes?",
+      "sentences": [
+        {
+          "id": "u03l5s01",
+          "nl": "Negentien en twintig.",
+          "es": "Diecinueve y veinte.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l5s02",
+          "nl": "Hoe oud ben jij?",
+          "es": "¿Cuántos años tienes?",
+          "alt_nl": [
+            "Hoe oud ben je?"
+          ],
+          "alt_es": [
+            "¿Cuántos años tienes tú?",
+            "¿Qué edad tienes?",
+            "¿Tú cuántos años tienes?"
+          ]
+        },
+        {
+          "id": "u03l5s03",
+          "nl": "Ik ben negentien jaar.",
+          "es": "Tengo diecinueve años.",
+          "alt_nl": [
+            "Ik ben negentien.",
+            "Ik ben negentien jaar oud."
+          ],
+          "alt_es": [
+            "Yo tengo diecinueve años."
+          ]
+        },
+        {
+          "id": "u03l5s04",
+          "nl": "Ik ben twintig jaar oud.",
+          "es": "Tengo veinte años.",
+          "alt_nl": [
+            "Ik ben twintig jaar.",
+            "Ik ben twintig."
+          ],
+          "alt_es": [
+            "Yo tengo veinte años.",
+            "Tengo veinte años de edad."
+          ]
+        },
+        {
+          "id": "u03l5s05",
+          "nl": "Hoe oud is Tom?",
+          "es": "¿Cuántos años tiene Tom?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué edad tiene Tom?",
+            "¿Tom cuántos años tiene?"
+          ]
+        },
+        {
+          "id": "u03l5s06",
+          "nl": "Hij is achttien.",
+          "es": "Él tiene dieciocho años.",
+          "alt_nl": [
+            "Hij is achttien jaar.",
+            "Hij is achttien jaar oud."
+          ],
+          "alt_es": [
+            "Tiene dieciocho años.",
+            "Él tiene dieciocho.",
+            "Tiene dieciocho."
+          ]
+        },
+        {
+          "id": "u03l5s07",
+          "nl": "Zij is bijna twintig.",
+          "es": "Ella tiene casi veinte años.",
+          "alt_nl": [
+            "Ze is bijna twintig.",
+            "Zij is bijna twintig jaar.",
+            "Ze is bijna twintig jaar.",
+            "Zij is bijna twintig jaar oud.",
+            "Ze is bijna twintig jaar oud."
+          ],
+          "alt_es": [
+            "Tiene casi veinte años.",
+            "Ella casi tiene veinte años.",
+            "Casi tiene veinte años.",
+            "Ella tiene casi veinte.",
+            "Tiene casi veinte."
+          ]
+        },
+        {
+          "id": "u03l5s08",
+          "nl": "Hoe oud bent u?",
+          "es": "¿Cuántos años tiene usted?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuántos años tiene?",
+            "¿Qué edad tiene usted?",
+            "¿Usted cuántos años tiene?"
+          ]
+        },
+        {
+          "id": "u03l5s09",
+          "nl": "Tien plus tien is twintig.",
+          "es": "Diez más diez son veinte.",
+          "alt_nl": [],
+          "alt_es": [
+            "Diez más diez es veinte."
+          ]
+        },
+        {
+          "id": "u03l5s10",
+          "nl": "Anna is bijna negentien jaar.",
+          "es": "Anna tiene casi diecinueve años.",
+          "alt_nl": [
+            "Anna is bijna negentien.",
+            "Anna is bijna negentien jaar oud."
+          ],
+          "alt_es": [
+            "Anna casi tiene diecinueve años."
+          ]
+        },
+        {
+          "id": "u03l5s11",
+          "nl": "Ben jij twintig?",
+          "es": "¿Tienes veinte años?",
+          "alt_nl": [
+            "Ben je twintig?",
+            "Ben jij twintig jaar?",
+            "Ben je twintig jaar?",
+            "Ben jij twintig jaar oud?",
+            "Ben je twintig jaar oud?"
+          ],
+          "alt_es": [
+            "¿Tú tienes veinte años?",
+            "¿Tienes veinte?"
+          ]
+        },
+        {
+          "id": "u03l5s12",
+          "nl": "Nee, ik ben negentien.",
+          "es": "No, tengo diecinueve años.",
+          "alt_nl": [
+            "Nee, ik ben negentien jaar.",
+            "Nee, ik ben negentien jaar oud."
+          ],
+          "alt_es": [
+            "No, tengo diecinueve.",
+            "No, yo tengo diecinueve años."
+          ]
+        },
+        {
+          "id": "u03l5s13",
+          "nl": "Daan is niet oud.",
+          "es": "Daan no es viejo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Daan no está viejo.",
+            "Daan no es mayor."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03l6",
+      "title_es": "Mi número de teléfono",
+      "sentences": [
+        {
+          "id": "u03l6s01",
+          "nl": "Wat is dat?",
+          "es": "¿Qué es eso?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué es?",
+            "¿Eso qué es?"
+          ]
+        },
+        {
+          "id": "u03l6s02",
+          "nl": "Wat is je naam?",
+          "es": "¿Cuál es tu nombre?",
+          "alt_nl": [
+            "Wat is jouw naam?"
+          ],
+          "alt_es": [
+            "¿Cómo es tu nombre?",
+            "¿Qué nombre tienes?"
+          ]
+        },
+        {
+          "id": "u03l6s03",
+          "nl": "Wat is je telefoonnummer?",
+          "es": "¿Cuál es tu número de teléfono?",
+          "alt_nl": [
+            "Wat is jouw telefoonnummer?"
+          ],
+          "alt_es": [
+            "¿Cuál es tu número telefónico?",
+            "¿Cuál es tu teléfono?",
+            "¿Cuál es tu número de celular?"
+          ]
+        },
+        {
+          "id": "u03l6s04",
+          "nl": "Mijn nummer? Nul zes, één twee, drie vier.",
+          "es": "¿Mi número? Cero seis, uno dos, tres cuatro.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u03l6s05",
+          "nl": "Dat klopt.",
+          "es": "Así es.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es correcto.",
+            "Eso es correcto.",
+            "Correcto.",
+            "Exacto.",
+            "Es cierto.",
+            "Eso es cierto."
+          ]
+        },
+        {
+          "id": "u03l6s06",
+          "nl": "Klopt dat?",
+          "es": "¿Es correcto?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Eso es correcto?",
+            "¿Así es?",
+            "¿Es cierto?",
+            "¿Está bien?",
+            "¿Es así?"
+          ]
+        },
+        {
+          "id": "u03l6s07",
+          "nl": "Nee, dat klopt niet.",
+          "es": "No, no es correcto.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, eso no es correcto.",
+            "No, no es así.",
+            "No, eso no es así.",
+            "No, no es cierto.",
+            "No, eso no es cierto."
+          ]
+        },
+        {
+          "id": "u03l6s08",
+          "nl": "Wat is uw naam?",
+          "es": "¿Cuál es su nombre?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cómo es su nombre?"
+          ]
+        },
+        {
+          "id": "u03l6s09",
+          "nl": "Wat is uw telefoonnummer, meneer?",
+          "es": "¿Cuál es su número de teléfono, señor?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuál es su número telefónico, señor?",
+            "¿Cuál es su teléfono, señor?"
+          ]
+        },
+        {
+          "id": "u03l6s10",
+          "nl": "Is dit jouw nummer?",
+          "es": "¿Este es tu número?",
+          "alt_nl": [
+            "Is dit je nummer?"
+          ],
+          "alt_es": [
+            "¿Es este tu número?",
+            "¿Es tu número?"
+          ]
+        },
+        {
+          "id": "u03l6s11",
+          "nl": "Ja, dat is mijn telefoonnummer.",
+          "es": "Sí, ese es mi número de teléfono.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, es mi número de teléfono.",
+            "Sí, ese es mi número telefónico.",
+            "Sí, ese es mi teléfono."
+          ]
+        },
+        {
+          "id": "u03l6s12",
+          "nl": "Dit is mijn nummer. Wat is jouw nummer?",
+          "es": "Este es mi número. ¿Cuál es el tuyo?",
+          "alt_nl": [
+            "Dit is mijn nummer. Wat is je nummer?"
+          ],
+          "alt_es": [
+            "Este es mi número. ¿Cuál es tu número?",
+            "Este es mi número. ¿Y el tuyo?"
+          ]
+        },
+        {
+          "id": "u03l6s13",
+          "nl": "Je naam is Luis, klopt dat?",
+          "es": "Tu nombre es Luis, ¿es correcto?",
+          "alt_nl": [
+            "Jouw naam is Luis, klopt dat?"
+          ],
+          "alt_es": [
+            "Tu nombre es Luis, ¿cierto?",
+            "Tu nombre es Luis, ¿verdad?",
+            "Tu nombre es Luis, ¿correcto?",
+            "Tu nombre es Luis, ¿no?"
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "En la inscripción",
+    "lines": [
+      {
+        "speaker": "Anna",
+        "nl": "Goedemiddag, meneer. Wat is uw naam?",
+        "es": "Buenas tardes, señor. ¿Cuál es su nombre?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Goedemiddag. Mijn naam is Luis.",
+        "es": "Buenas tardes. Mi nombre es Luis."
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Hoe oud bent u?",
+        "es": "¿Cuántos años tiene usted?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Ik ben negentien jaar.",
+        "es": "Tengo diecinueve años."
+      },
+      {
+        "speaker": "Anna",
+        "nl": "En wat is uw telefoonnummer?",
+        "es": "¿Y cuál es su número de teléfono?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Nul zes, één twee, drie vier, vijf zes, zeven acht.",
+        "es": "Cero seis, uno dos, tres cuatro, cinco seis, siete ocho."
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Nul zes, één twee, drie vier, vijf zes, zeven negen?",
+        "es": "¿Cero seis, uno dos, tres cuatro, cinco seis, siete nueve?"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Nee, dat klopt niet. Zeven acht.",
+        "es": "No, no es correcto. Siete ocho."
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Dank u. Welkom, meneer!",
+        "es": "Gracias. ¡Bienvenido, señor!"
+      },
+      {
+        "speaker": "Luis",
+        "nl": "Dank u, mevrouw. Tot ziens!",
+        "es": "Gracias, señora. ¡Hasta luego!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuántos años tiene Luis?",
+        "options_es": [
+          "Dieciocho",
+          "Diecinueve",
+          "Veinte"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿En qué cifras termina el número de Luis?",
+        "options_es": [
+          "Siete ocho",
+          "Siete nueve",
+          "Ocho siete"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Cómo se tratan Anna y Luis?",
+        "options_es": [
+          "De tú, con jij",
+          "De usted, con u",
+          "No se sabe"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

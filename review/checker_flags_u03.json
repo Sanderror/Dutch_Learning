@@ -1,0 +1,53 @@
+{
+  "checker": "independent-agent-2026-11-15-u03",
+  "flags": [
+    {
+      "id": "u03:grammar",
+      "severity": "b",
+      "reason": "Section 'El número de teléfono' says numbers are said digit by digit, 'normalmente en grupos de dos'. In the Netherlands, after 'nul zes' the pairs are very often read as two-digit numbers (06-12 34 56 78 -> 'nul zes, twaalf, vierendertig, zesenvijftig, achtentachtig'), as well as digit by digit. As a rule for speaking, digit by digit is safe. As a description of what she will hear, it is misleading: the first real Dutch person who gives her a number may use number words she has not learned.",
+      "suggestion": "Keep digit by digit as the way to say it, and add one line: 'Muchos neerlandeses leen cada par como un número (12 = twaalf, 34 = vierendertig); si no entiendes, pide: één voor één, alsjeblieft' (or a similar request once the words are taught). Alternatively change 'normalmente' to 'puedes decirlo'."
+    },
+    {
+      "id": "u03:grammar",
+      "severity": "b",
+      "reason": "Section 'één y een' presents the accents as how the numeral is written ('één, con acentos ... es el número 1. een, sin acentos ... significa un, una'). In standard Dutch spelling the numeral is normally written 'een'. The accents are an optional mark added only where the two could be confused or the numeral is stressed. The course spelling choice is deliberate and fine. The note, however, states a rule that real texts break all the time ('een jaar', 'een uur' are often the numeral). The lexicon note for een-num ('Con acentos es el número 1. Sin acentos, een significa «un, una»') has the same issue. The pronunciation part of both notes is correct.",
+      "suggestion": "Keep the spelling, but reword the claim: 'En este curso escribimos el número 1 como één (con acentos) para no confundirlo con een («un, una»). En textos reales muchas veces se escribe sin acentos; lo que siempre cambia es el sonido: één con e larga, een con una e muy corta.' Mirror this in lexicon:een-num note_es."
+    },
+    {
+      "id": "u03l6s02",
+      "severity": "b",
+      "reason": "Main Dutch 'Wat is jouw naam?' uses the stressed possessive jouw. In neutral speech a Dutch speaker says 'Wat is je naam?'. 'jouw' sounds contrastive ('and what is YOUR name?'). The main sentence is the one played as audio and shown as the model answer, so she learns to over-stress. The lexicon note for jouw already says the unstressed form is je. The same pattern is in u03l6s03 ('Wat is jouw telefoonnummer?'), u03l6s10 ('Is dit jouw nummer?') and u03l6s12 ('Jouw naam is Luis, klopt dat?'). jouw is natural only where there is contrast.",
+      "suggestion": "Make 'je' the main form in u03l6s02, s03, s10 and s12 and move 'jouw' to alt_nl. Keep jouw taught through one sentence with real contrast if the vocabulary allows (e.g. 'Mijn nummer is ... En jouw nummer?')."
+    },
+    {
+      "id": "u03l6s04",
+      "severity": "b",
+      "reason": "'Mijn nummer is nul zes, één twee drie.' presents a 5-digit number as a complete phone number. Dutch mobile numbers have 10 digits. The digits after 06 are also grouped in three, which contradicts the grammar note ('en grupos de dos') and the dialogue (06 12 34 56 78). This is a weak example of exactly the pattern the lesson teaches.",
+      "suggestion": "Use pairs and show it is a fragment within the 8-word cap, e.g. nl 'Nul zes, één twee, drie vier, vijf zes.' / es 'Cero seis, uno dos, tres cuatro, cinco seis.' Or keep 'Mijn nummer is nul zes ...' with an ellipsis in both languages so it reads as the start of a number."
+    },
+    {
+      "id": "u03:dialogue:10",
+      "severity": "b",
+      "reason": "Luis says 'Dank u, mevrouw. Tot ziens!', which is polite and formal, and the Spanish renders it 'Gracias, señora. ¡Nos vemos!'. At a registration desk, a young man speaking de usted to a stranger he calls 'señora' would not say '¡Nos vemos!' in Venezuela: it is casual, between acquaintances. The Spanish register clashes with the u/mevrouw register the third question explicitly tests.",
+      "suggestion": "es: 'Gracias, señora. ¡Hasta luego!' (or '¡Que le vaya bien!'). 'Hasta luego' is already a listed gloss of tot ziens."
+    },
+    {
+      "id": "u03l5s07",
+      "severity": "c",
+      "reason": "The grammar note teaches 'Ik ben twintig / twintig jaar / twintig jaar oud' as equivalent, and the other age sentences accept all three. For this sentence alt_nl has 'Zij is bijna twintig jaar.' and 'Ze is bijna twintig.' but not 'Zij is bijna twintig jaar oud.' or 'Ze is bijna twintig jaar.'. The main sentence has 4 words, so it is a typing exercise from the Spanish 'Ella tiene casi veinte años.', and a learner who types the full form taught in the note is marked wrong. On the Spanish side, 'Tiene casi veinte.' is missing, although both 'Tiene casi veinte años.' and 'Ella tiene casi veinte.' are accepted.",
+      "suggestion": "Add to alt_nl: 'Zij is bijna twintig jaar oud.', 'Ze is bijna twintig jaar.', 'Ze is bijna twintig jaar oud.'. Add to alt_es: 'Tiene casi veinte.'"
+    },
+    {
+      "id": "u03l5s06",
+      "severity": "c",
+      "reason": "Dutch 'Hij is achttien.' has neither subject emphasis nor jaar, so 'Tiene dieciocho.' is a very likely tile answer. alt_es accepts 'Tiene dieciocho años.' and 'Él tiene dieciocho.' but not the combination of both omissions.",
+      "suggestion": "Add 'Tiene dieciocho.' to alt_es."
+    }
+  ],
+  "coverage": {
+    "sentences_read": 74,
+    "word_cards_read": 33,
+    "dialogue_lines_read": 10,
+    "grammar_note_read": true
+  }
+}

@@ -64,11 +64,39 @@ await page.evaluate(() => { localStorage.clear(); });
 await page.reload({ waitUntil: 'networkidle0' });
 await page.waitForSelector('.wall');
 assert.match(await text(), /Hola, soy…/);
-assert.equal(await page.$$eval('.tile', (t) => t.length), 16);
+const UNITS = await page.evaluate(() => window.__tegel.course.units.length);
+assert.ok(UNITS >= 6);
+assert.equal(await page.$$eval('.tile', (t) => t.length), UNITS * 8);
 assert.equal(await page.$$eval('.tile.is-next', (t) => t.length), 1);
 assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 0);
 await shot('01-home-first');
-ok('home: two units of eight tiles, one marked as next');
+ok('home: eight tiles per unit, one marked as next');
+
+// the install button appears when Chrome says the app can be installed, and goes away once used.
+// Headless Chrome may fire the real event itself; the test replaces it with one it can observe.
+const realEvent = !!(await page.$('#install'));
+await page.evaluate(() => {
+  const e = new Event('beforeinstallprompt', { cancelable: true });
+  e.prompt = () => { window.__prompted = (window.__prompted || 0) + 1; return Promise.resolve(); };
+  e.userChoice = Promise.resolve({ outcome: 'accepted' });
+  window.dispatchEvent(e);
+});
+await page.waitForSelector('#install');
+await shot('01b-home-install');
+await tap('.icon-btn[aria-label="Ajustes"]');
+assert.ok(await page.$('#install-settings'), 'settings offers the same button');
+await shot('01c-settings-install');
+await tap('#back');
+await page.waitForSelector('#install');
+await tap('#install');
+await page.waitForFunction(() => !document.getElementById('install'));
+assert.equal(await page.evaluate(() => window.__prompted), 1);
+await tap('.icon-btn[aria-label="Ajustes"]');
+assert.match(await text(), /Agregar a pantalla principal/, 'without the event, settings explains the Chrome menu');
+await tap('#back');
+await page.waitForSelector('.wall');
+console.log(`    (Chrome fired its own install event: ${realEvent ? 'yes' : 'no'})`);
+ok('install: button on home and in settings, opens the browser prompt once, then disappears');
 
 // a locked lesson explains itself and cannot be started
 await tap('[data-tile="u01l3"]');
@@ -235,10 +263,10 @@ while (await page.$('#start-next')) {
   await page.waitForSelector('.wall');
   lessons++;
 }
-assert.equal(lessons, 6);
+assert.equal(lessons, (UNITS - 1) * 6);
 assert.match(await text(), /Todo al día/);
 await shot('80-home-all-done');
-ok('unit 2: all six lessons play through; home says there is nothing new');
+ok(`units 2 to ${UNITS}: every lesson plays through; home says there is nothing new`);
 
 // ---- 9. offline: the installed app opens without a connection ----
 await page.evaluate(() => navigator.serviceWorker.ready);
@@ -246,7 +274,7 @@ await page.reload({ waitUntil: 'networkidle0' });           // one online load u
 await page.setOfflineMode(true);
 await page.reload({ waitUntil: 'domcontentloaded' });
 await page.waitForSelector('.wall', { timeout: 10000 });
-assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 15, 'everything but the unit 2 dialogue');
+assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 8 + (UNITS - 1) * 7, 'everything but the later dialogues');
 await tap('[data-tile="u02l3"]'); await tap('#sheet-go');
 assert.equal((await state()).screen, 'session');
 await page.goBack();

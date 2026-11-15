@@ -1,0 +1,107 @@
+{
+  "checker": "independent-agent-2026-11-15-u05",
+  "flags": [
+    {
+      "id": "u05:grammar",
+      "severity": "b",
+      "reason": "In 'Sonidos', bold marks two things: the letters being discussed (d**uu**r, **th**ee) and the stressed syllable (alsje**blieft**, **ko**ffie). In two places the bold falls on an unstressed syllable: smake**lijk** (stress is on SMA: SMA-ke-lijk), and 'En koff**ie** el acento va en la primera sílaba: **ko**ffie', where the same line bolds the unstressed ie and then the stressed ko. A Spanish speaker already tends to stress the last syllable (café), so smakeLIJK / koffIE is the likely misreading. 'Eet smakelijk' is then practised in u05l6.",
+      "suggestion": "Write '-lijk al final ... suena «lek», con una e muy breve, y nunca lleva el acento: **sma**kelijk.' and 'En koffie el acento va en la primera sílaba: **ko**ffie.' (no bold on ie). Use bold only for stress in this section, or say once which one it means."
+    },
+    {
+      "id": "u05:grammar",
+      "severity": "b",
+      "reason": "'ik mag, jij mag, u mag, hij mag. Es igual para todos.' is true only in the singular. Plurals arrive in u06 (wij, jullie, zij-pl) with 'wij mogen / jullie mogen / zij mogen', so the note states a rule the next unit contradicts. The same applies implicitly to the willen table (wij willen).",
+      "suggestion": "'ik mag, jij mag, u mag, hij mag, zij mag: en singular es igual para todos.' (or 'igual para ik, jij, u, hij y zij')."
+    },
+    {
+      "id": "u05l2s01",
+      "severity": "a",
+      "reason": "Spanish \"por favor\" carries no register, so both alsjeblieft and alstublieft are correct Dutch for it, and this unit exists to teach that pair. The typed and tile exercises accept only nl + alt_nl (app/js/checker.js has no synonym handling, and alsjeblieft/alstublieft is more than one edit apart, so it is not forgiven as a typo). A learner who picks the other, equally correct form is marked wrong, and the feedback suggests a false rule (that 'por favor' with this drink needs this form). Same pattern in u05l1s10, u05l2s01, u05l2s02, u05l2s06, u05l3s12, u05l5s03: fixable in one pass.",
+      "suggestion": "alt_nl: [\"Een koffie, alstublieft.\"]"
+    },
+    {
+      "id": "u05l2s02",
+      "severity": "a",
+      "reason": "Same as u05l2s01: 'Un té, por favor.' does not mark register, so 'Een thee, alsjeblieft.' is correct but rejected.",
+      "suggestion": "alt_nl: [\"Een thee, alsjeblieft.\"]"
+    },
+    {
+      "id": "u05l2s06",
+      "severity": "a",
+      "reason": "Same as u05l2s01: 'Agua, por favor.' → 'Water, alstublieft.' is correct but rejected.",
+      "suggestion": "alt_nl: [\"Water, alstublieft.\"]"
+    },
+    {
+      "id": "u05l3s12",
+      "severity": "a",
+      "reason": "Same as u05l2s01: 'Otro té, por favor.' → 'Nog een thee, alstublieft.' is correct but rejected.",
+      "suggestion": "alt_nl: [\"Nog een thee, alstublieft.\"]"
+    },
+    {
+      "id": "u05l5s03",
+      "severity": "a",
+      "reason": "Same as u05l2s01: 'La cuenta, por favor.' → 'De rekening, alsjeblieft.' is correct (talking to a young waiter, or in an informal café) but rejected.",
+      "suggestion": "alt_nl: [\"De rekening, alsjeblieft.\"]"
+    },
+    {
+      "id": "u05l1s10",
+      "severity": "a",
+      "reason": "Same as u05l2s01: 'Sí, por favor.' → 'Ja, alstublieft.' is correct but rejected. Also, u05l3s05 uses the identical Spanish prompt '¡Sí, por favor!' and expects 'Ja, graag!', and the grammar note itself says 'Ja, graag! = ¡Sí, por favor!'. So the same Spanish has two different single answers in two lessons, and each rejects the other.",
+      "suggestion": "alt_nl: [\"Ja, alstublieft.\"] now, plus \"Ja, graag.\" if the vocabulary gate allows alternatives with words from later lessons (graag arrives in u05l3). Otherwise rely on the u05l3s05 fix."
+    },
+    {
+      "id": "u05l3s05",
+      "severity": "a",
+      "reason": "'¡Sí, por favor!' → 'Ja, alsjeblieft!' / 'Ja, alstublieft!' are correct, and are exactly what u05l1s10 teaches for the same Spanish, but alt_nl is empty, so they are marked wrong.",
+      "suggestion": "alt_nl: [\"Ja, alsjeblieft!\", \"Ja, alstublieft!\"]"
+    },
+    {
+      "id": "u05l1s11",
+      "severity": "a",
+      "reason": "'No, muchas gracias.' does not mark register; 'Nee, dank u wel.' is correct and is rejected. u05l1s02 already accepts 'Dank u wel!' for the same Spanish '¡Muchas gracias!', so this is inconsistent within the lesson.",
+      "suggestion": "alt_nl: [\"Nee, dankjewel.\", \"Nee, dank u wel.\"]"
+    },
+    {
+      "id": "u05l5s13",
+      "severity": "b",
+      "reason": "'Twee thee' (no plural after a number, normal when ordering in Dutch: twee koffie, twee thee) is not explained anywhere. The grammar note gives the no-plural rule only for euro, and the Spanish 'Dos tés' is visibly plural. When plurals arrive in u06 (broers, zussen) she has nothing to explain why thee did not change here.",
+      "suggestion": "Add to the 'Precios' section: 'Al pedir, koffie y thee tampoco cambian después de un número: twee koffie, twee thee.' Keep the sentence."
+    },
+    {
+      "id": "u05:dialogue:6",
+      "severity": "b",
+      "reason": "Turn-taking: in line 5 Daan serves the coffee and sandwich ('Alstublieft, eet smakelijk!'). In line 6 María immediately asks for the bill, and in line 8 she says 'Tot ziens!' and leaves, before eating anything. Paying straight away at a counter happens, but leaving right after 'eet smakelijk' reads as a mistake, and it makes question 2 ('¿Qué come María?' → sándwich de queso) rest on something the dialogue never shows her doing.",
+      "suggestion": "Make the time gap explicit, or let her stay: e.g. line 8 'Alstublieft.' / 'Aquí tiene.' and line 9 'Dank u wel. Fijne dag!' unchanged; or ask question 2 as '¿Qué pide María para comer?' (answer still 'Un sándwich de queso')."
+    },
+    {
+      "id": "u05l3s01",
+      "severity": "c",
+      "reason": "Most likely Venezuelan word order missing: '¿Tú qué quieres tomar?' (topicalised pronoun, the rubric's own example pattern) and '¿Qué quieres tomar tú?'. The accepted '¿Qué quieres tú tomar?' is the least natural of the three.",
+      "suggestion": "alt_es add: \"¿Tú qué quieres tomar?\", \"¿Tú qué quieres beber?\", \"¿Qué quieres tomar tú?\""
+    },
+    {
+      "id": "u05l4s04",
+      "severity": "c",
+      "reason": "Same as u05l3s01: '¿Tú qué quieres comer?' is the most natural Venezuelan variant and is missing.",
+      "suggestion": "alt_es add: \"¿Tú qué quieres comer?\""
+    },
+    {
+      "id": "u05l4s01",
+      "severity": "c",
+      "reason": "'¿Me trae un café?' / '¿Me traes un café?' are very likely functional renderings for ordering, as likely as the main '¿Me da…?'. u05l5s04 already accepts '¿Me trae la cuenta?', so the same learner answer is accepted there and rejected here. Same gap in u05l4s03 and u05l4s11.",
+      "suggestion": "alt_es add \"¿Me trae un café?\", \"¿Me traes un café?\" (and the same 'trae/traes' forms in u05l4s03 and u05l4s11)."
+    },
+    {
+      "id": "u05l6s12",
+      "severity": "c",
+      "reason": "'Gracias, ¡buen provecho!' → 'Dank je wel, eet smakelijk!' and 'Dank u wel, eet smakelijk!' are correct but rejected; alt_nl is empty.",
+      "suggestion": "alt_nl: [\"Dank je wel, eet smakelijk!\", \"Dank u wel, eet smakelijk!\", \"Dankjewel, eet smakelijk!\"]"
+    }
+  ],
+  "coverage": {
+    "sentences_read": 85,
+    "word_cards_read": 33,
+    "dialogue_lines_read": 9,
+    "grammar_note_read": true
+  }
+}

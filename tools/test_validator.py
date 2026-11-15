@@ -83,6 +83,11 @@ def _(lex, units):
     sentence(units, "u01l2s03")["es"] = "¿Quiénes sois?"
 
 
+@case("vosotros verb next to the number dieciséis (which is not one)", "spanish", "u03l4s02")
+def _(lex, units):
+    sentence(units, "u03l4s02")["es"] = "Tenéis dieciséis."
+
+
 @case("vosotros pronoun in an accepted answer", "spanish", "u02l2s02")
 def _(lex, units):
     sentence(units, "u02l2s02")["alt_es"].append("¿Dónde vivís vosotros?")

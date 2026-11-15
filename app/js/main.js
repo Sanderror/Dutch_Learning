@@ -11,7 +11,7 @@ import { createAudio, loadAudioIndex } from './audio.js';
 import { renderNotes } from './md.js';
 import { motif, ICON } from './glyphs.js';
 
-const VERSION = '0.1.0';
+const VERSION = '0.2.0';
 const CONTENT = '../content/';
 const AUDIO = '../audio/';
 const root = document.getElementById('app');
@@ -40,6 +40,32 @@ function h(tag, attrs, ...kids) {
 }
 const icon = (name, cls) => h('span', { class: cls || null, html: ICON[name] });
 const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+
+// ---------- installing on the phone ----------
+// Chrome fires `beforeinstallprompt` when the app can be installed and is not
+// yet. We keep the event and show our own button; Chrome's own menu entry
+// («Agregar a pantalla principal») keeps working either way.
+let installEvent = null;
+function isInstalled() {
+  try { return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; }
+}
+function canInstall() { return !!installEvent && !isInstalled(); }
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  installEvent = e;
+  if (course && (ui.screen === 'home' || ui.screen === 'settings')) render();
+});
+window.addEventListener('appinstalled', () => {
+  installEvent = null;
+  if (course && (ui.screen === 'home' || ui.screen === 'settings')) render();
+});
+async function install() {
+  const e = installEvent;
+  if (!e) return;
+  installEvent = null;                                  // the event can be used once
+  try { e.prompt(); await e.userChoice; } catch (err) { /* she closed it: Chrome's menu still works */ }
+  if (ui.screen === 'home' || ui.screen === 'settings') render();
+}
 
 // ---------- where she is in the course ----------
 function nextLessonId() { return course.lessonOrder.find((id) => !store.isDone(id)) || null; }
@@ -210,6 +236,9 @@ function viewHome() {
   });
 
   return [top, !store.persisted && h('p', { class: 'notice' }, 'Este navegador no deja guardar tu progreso. Abre la app instalada o revisa los ajustes de Chrome.'),
+    canInstall() && h('section', { class: 'install' },
+      h('p', {}, 'Pon Tegeltjes en tu pantalla de inicio para abrirla como cualquier otra app.'),
+      h('button', { class: 'btn btn-quiet', id: 'install', onclick: install }, 'Instalar la app')),
     todayCard, walls, h('p', { class: 'soon' }, 'Hay más unidades en camino.')];
 }
 
@@ -528,6 +557,14 @@ function viewSettings() {
         h('div', { class: 'stat' }, h('b', {}, String(d.xp)), d.xp === 1 ? 'punto' : 'puntos'),
         h('div', { class: 'stat' }, h('b', {}, String(store.streak())), store.streak() === 1 ? 'día de racha' : 'días de racha'),
         h('div', { class: 'stat' }, h('b', {}, String(d.streak.best)), 'mejor racha, en días'))),
+    h('section', { class: 'panel' },
+      h('h2', {}, 'Instalar'),
+      isInstalled()
+        ? h('p', { class: 'muted small', id: 'install-state' }, 'Estás usando la app instalada.')
+        : canInstall()
+          ? [h('p', { class: 'muted small' }, 'Pon Tegeltjes en tu pantalla de inicio para abrirla como cualquier otra app.'),
+            h('button', { class: 'btn btn-quiet', id: 'install-settings', onclick: install }, 'Instalar la app')]
+          : h('p', { class: 'muted small', id: 'install-state' }, 'En Chrome, toca el menú ⋮ (arriba a la derecha) y elige «Agregar a pantalla principal» o «Instalar app».')),
     h('section', { class: 'panel' },
       h('h2', {}, 'Audio'),
       h('button', { class: 'toggle', id: 'slow', 'aria-pressed': String(!!d.settings.slow), onclick: () => { store.setSetting('slow', !d.settings.slow); render(); } },

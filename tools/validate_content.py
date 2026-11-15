@@ -30,7 +30,8 @@ MIN_USES_IN_LESSON = 2
 LENGTH_CAP = {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 12}   # words per sentence, by section
 DIALOGUE_LINE_CAP = 12
 MIN_RECURRENCE = 3          # warning threshold: sentences containing the word, whole course so far
-VOSOTROS = re.compile(r"\b(vosotr[oa]s|vuestr[oa]s?|os|sois|estáis|habéis|\w+[áé]is)\b", re.IGNORECASE)
+# "dieciséis" and "veintiséis" end like a vosotros verb but are numbers.
+VOSOTROS = re.compile(r"\b(vosotr[oa]s|vuestr[oa]s?|os|sois|estáis|habéis|(?!dieciséis\b|veintiséis\b)\w+[áé]is)\b", re.IGNORECASE)
 SPANISH_ARTICLE = re.compile(r"^(el|la|los|las|lo)\s", re.IGNORECASE)
 WORD = re.compile(r"[^\W\d_]+(?:'[^\W\d_]+)?", re.UNICODE)
 

@@ -1,0 +1,253 @@
+Why,Lesson,Dutch,Spanish,OK?,Corrected Dutch,Corrected Spanish,Comment,Also accepted (Spanish),Also accepted (Dutch),Type,ID
+word card,u03l1,nul,cero,,,,,,,word,nul
+word card,u03l1,één,"uno, un, una  [El número 1. En este curso lleva acentos para no confundirlo con een («un, una»); en textos reales a menudo se escribe sin acentos. Lo que siempre cambia es el sonido: één con e larga, een con una e muy corta.]",,,,,,,word,een-num
+word card,u03l1,twee,dos,,,,,,,word,twee
+word card,u03l1,drie,tres,,,,,,,word,drie
+word card,u03l1,vier,cuatro,,,,,,,word,vier
+word card,u03l1,vijf,cinco,,,,,,,word,vijf
+word card,u03l2,zes,seis,,,,,,,word,zes
+word card,u03l2,zeven,siete,,,,,,,word,zeven
+word card,u03l2,acht,ocho,,,,,,,word,acht
+word card,u03l2,negen,nueve,,,,,,,word,negen
+word card,u03l2,tien,diez,,,,,,,word,tien
+word card,u03l2,plus,más  [Para sumar: twee plus twee.],,,,,,,word,plus
+word card,u03l3,min,menos  [Para restar: tien min drie.],,,,,,,word,min
+word card,u03l3,hoeveel,cuánto,,,,,cuántos | cuántas | cuánta,,word,hoeveel
+word card,u03l3,elf,once,,,,,,,word,elf
+word card,u03l3,twaalf,doce,,,,,,,word,twaalf
+word card,u03l3,het nummer,el número,,,,,,,word,nummer
+word card,u03l4,dertien,trece,,,,,,,word,dertien
+word card,u03l4,veertien,catorce,,,,,,,word,veertien
+word card,u03l4,vijftien,quince,,,,,,,word,vijftien
+word card,u03l4,zestien,dieciséis,,,,,,,word,zestien
+word card,u03l4,zeventien,diecisiete,,,,,,,word,zeventien
+word card,u03l4,achttien,dieciocho,,,,,,,word,achttien
+word card,u03l5,negentien,diecinueve,,,,,,,word,negentien
+word card,u03l5,twintig,veinte,,,,,,,word,twintig
+word card,u03l5,het jaar,el año  [Después de un número no cambia: twintig jaar = veinte años.],,,,,,,word,jaar
+word card,u03l5,oud,viejo  [Hoe oud ben je? = ¿Cuántos años tienes?],,,,,vieja | mayor | antiguo,,word,oud
+word card,u03l5,bijna,casi,,,,,,,word,bijna
+word card,u03l6,wat,qué  [Con naam y nummer el español dice «cuál»: Wat is jouw naam? = ¿Cuál es tu nombre?],,,,,cuál,,word,wat
+word card,u03l6,jouw,tu  [Sin énfasis también se dice je: je naam.],,,,,,je,word,jouw
+word card,u03l6,het telefoonnummer,el número de teléfono,,,,,el número telefónico | el teléfono,,word,telefoonnummer
+word card,u03l6,kloppen  (klopt),"ser correcto  [Dat klopt = Así es, es correcto.]",,,,,estar bien | ser cierto,,word,kloppen
+word card,u03l6,uw,su (de usted)  [Va con u: uw naam = su nombre (de usted).],,,,,,,word,uw
+"grammar note; fixed after the checker: Section 'El número de teléfono' says numbers are said digit by digit, 'normalmente en grupos de dos' / Section 'één y een' presents the accents as how the numeral is written ('één, con acentos ..",u03,"Read it in the app: unit 3, «Notas»",Los números y la edad,,,,,,,grammar,u03:grammar
+sample,u03l2,"Zes, acht, tien.","Seis, ocho, diez.",,,,,,,sentence,u03l2s11
+sample,u03l3,Hoeveel is twaalf min vier?,¿Cuánto es doce menos cuatro?,,,,,¿Cuánto son doce menos cuatro?,,sentence,u03l3s06
+sample,u03l3,Twaalf min vier is acht.,Doce menos cuatro son ocho.,,,,,Doce menos cuatro es ocho.,,sentence,u03l3s07
+sample,u03l3,Hoeveel is zes plus zes?,¿Cuánto es seis más seis?,,,,,¿Cuánto son seis más seis?,,sentence,u03l3s10
+sample,u03l3,"Nee, dit is nummer elf.","No, este es el número once.",,,,,"No, es el número once.",,sentence,u03l3s13
+sample,u03l4,Tien plus drie is dertien.,Diez más tres son trece.,,,,,Diez más tres es trece.,,sentence,u03l4s03
+sample,u03l4,Acht plus zeven is vijftien.,Ocho más siete son quince.,,,,,Ocho más siete es quince.,,sentence,u03l4s06
+sample,u03l5,Ik ben twintig jaar oud.,Tengo veinte años.,,,,,Yo tengo veinte años. | Tengo veinte años de edad.,Ik ben twintig jaar. | Ik ben twintig.,sentence,u03l5s04
+"sentence; fixed after the checker: Dutch 'Hij is achttien.' has neither subject emphasis nor jaar, so 'Tiene dieciocho.' is a very likely tile answer",u03l5,Hij is achttien.,Él tiene dieciocho años.,,,,,Tiene dieciocho años. | Él tiene dieciocho. | Tiene dieciocho.,Hij is achttien jaar. | Hij is achttien jaar oud.,sentence,u03l5s06
+"sentence; fixed after the checker: The grammar note teaches 'Ik ben twintig / twintig jaar / twintig jaar oud' as equivalent, and the other age sentences accept all three",u03l5,Zij is bijna twintig.,Ella tiene casi veinte años.,,,,,Tiene casi veinte años. | Ella casi tiene veinte años. | Casi tiene veinte años. | Ella tiene casi veinte. | Tiene casi veinte.,Ze is bijna twintig. | Zij is bijna twintig jaar. | Ze is bijna twintig jaar. | Zij is bijna twintig jaar oud. | Ze is bijna twintig jaar oud.,sentence,u03l5s07
+sample,u03l5,"Nee, ik ben negentien.","No, tengo diecinueve años.",,,,,"No, tengo diecinueve. | No, yo tengo diecinueve años.","Nee, ik ben negentien jaar. | Nee, ik ben negentien jaar oud.",sentence,u03l5s12
+sample,u03l5,Daan is niet oud.,Daan no es viejo.,,,,,Daan no está viejo. | Daan no es mayor.,,sentence,u03l5s13
+sentence; fixed after the checker: Main Dutch 'Wat is jouw naam?' uses the stressed possessive jouw,u03l6,Wat is je naam?,¿Cuál es tu nombre?,,,,,¿Cómo es tu nombre? | ¿Qué nombre tienes?,Wat is jouw naam?,sentence,u03l6s02
+"sentence; fixed after the checker: 'Mijn nummer is nul zes, één twee drie.' presents a 5-digit number as a complete phone number",u03l6,"Mijn nummer? Nul zes, één twee, drie vier.","¿Mi número? Cero seis, uno dos, tres cuatro.",,,,,,,sentence,u03l6s04
+sample,u03l6,Klopt dat?,¿Es correcto?,,,,,¿Eso es correcto? | ¿Así es? | ¿Es cierto? | ¿Está bien? | ¿Es así?,,sentence,u03l6s06
+sample,u03l6,"Nee, dat klopt niet.","No, no es correcto.",,,,,"No, eso no es correcto. | No, no es así. | No, eso no es así. | No, no es cierto. | No, eso no es cierto.",,sentence,u03l6s07
+dialogue,u03 dialogue,"Anna: Goedemiddag, meneer. Wat is uw naam?","Buenas tardes, señor. ¿Cuál es su nombre?",,,,,,,dialogue,u03d01
+dialogue,u03 dialogue,Luis: Goedemiddag. Mijn naam is Luis.,Buenas tardes. Mi nombre es Luis.,,,,,,,dialogue,u03d02
+dialogue,u03 dialogue,Anna: Hoe oud bent u?,¿Cuántos años tiene usted?,,,,,,,dialogue,u03d03
+dialogue,u03 dialogue,Luis: Ik ben negentien jaar.,Tengo diecinueve años.,,,,,,,dialogue,u03d04
+dialogue,u03 dialogue,Anna: En wat is uw telefoonnummer?,¿Y cuál es su número de teléfono?,,,,,,,dialogue,u03d05
+dialogue,u03 dialogue,"Luis: Nul zes, één twee, drie vier, vijf zes, zeven acht.","Cero seis, uno dos, tres cuatro, cinco seis, siete ocho.",,,,,,,dialogue,u03d06
+dialogue,u03 dialogue,"Anna: Nul zes, één twee, drie vier, vijf zes, zeven negen?","¿Cero seis, uno dos, tres cuatro, cinco seis, siete nueve?",,,,,,,dialogue,u03d07
+dialogue,u03 dialogue,"Luis: Nee, dat klopt niet. Zeven acht.","No, no es correcto. Siete ocho.",,,,,,,dialogue,u03d08
+dialogue,u03 dialogue,"Anna: Dank u. Welkom, meneer!","Gracias. ¡Bienvenido, señor!",,,,,,,dialogue,u03d09
+"dialogue; FLAG: Luis says 'Dank u, mevrouw. Tot ziens!', which is polite and formal, and the Spanish renders it 'Gracias, señora. ¡Nos vemos!'. At a registration desk, a young man speaking de usted to a stranger he calls 'señora' would not say '¡Nos vemos!' in Venezuela: it is casual, between acquaintances. The Spanish register clashes with the u/mevrouw register the third question explicitly tests.",u03 dialogue,"Luis: Dank u, mevrouw. Tot ziens!","Gracias, señora. ¡Hasta luego!",,,,,,,dialogue,u03d10
+question,u03 dialogue,,¿Cuántos años tiene Luis?,,,,,Dieciocho / ✔ Diecinueve / Veinte,,question,u03q01
+question,u03 dialogue,,¿En qué cifras termina el número de Luis?,,,,,✔ Siete ocho / Siete nueve / Ocho siete,,question,u03q02
+question,u03 dialogue,,¿Cómo se tratan Anna y Luis?,,,,,"De tú, con jij / ✔ De usted, con u / No se sabe",,question,u03q03
+word card,u04l1,de,"el, la, los, las  [Artículo de la mayoría de las palabras: de hond, de tafel. No coincide con el género del español.]",,,,,,,word,de
+word card,u04l1,een,"un, una  [Se pronuncia con una e muy corta. Con acentos, één es el número 1.]",,,,,,,word,een-art
+word card,u04l1,de hond,el perro,,,,,,,word,hond
+word card,u04l1,de kat,el gato,,,,,la gata,,word,kat
+word card,u04l1,kijken  (kijk),mirar  [Kijk! = ¡Mira!],,,,,,,word,kijken
+word card,u04l2,het,"el, la  [Artículo de las palabras neutras: het huis, het boek. Hay que aprenderlo con cada palabra.]",,,,,,,word,het-art
+word card,u04l2,het huis,la casa,,,,,,,word,huis
+word card,u04l2,het boek,el libro,,,,,,,word,boek
+word card,u04l2,de auto,el carro,,,,,el auto | el coche | el automóvil,,word,auto
+word card,u04l3,groot,grande,,,,,,,word,groot
+word card,u04l3,klein,pequeño,,,,,pequeña | chiquito | chiquita | chico | chica,,word,klein
+word card,u04l3,mooi,"bonito, lindo  [Solo, como exclamación: Mooi! = ¡Qué bien!]",,,,,bonita | linda | hermoso | hermosa | bello | bella,,word,mooi
+word card,u04l3,nieuw,nuevo,,,,,nueva,,word,nieuw
+word card,u04l3,te,demasiado  [Delante de un adjetivo: te groot = demasiado grande.],,,,,,,word,te
+word card,u04l4,de fiets,la bicicleta,,,,,la bici,,word,fiets
+word card,u04l4,de tafel,la mesa,,,,,,,word,tafel
+word card,u04l4,de stoel,la silla,,,,,,,word,stoel
+word card,u04l4,het bed,la cama,,,,,,,word,bed
+word card,u04l4,de deur,la puerta,,,,,,,word,deur
+word card,u04l5,"hebben  (heb, hebt, heeft, hebben)","tener  [ik heb, jij hebt, u heeft, hij heeft, zij heeft.]",,,,,,,word,hebben
+word card,u04l5,de telefoon,"el teléfono, el celular",,,,,,,word,telefoon
+"word card; fixed after the checker: laptop is used in both genders in Latin America, including Venezuela (el laptop / la laptop)",u04l5,de laptop,la laptop,,,,,el laptop | el portátil | la computadora portátil | la computadora,,word,laptop
+word card,u04l5,het geld,"el dinero, la plata",,,,,,,word,geld
+word card,u04l5,de tijd,"el tiempo  [El tiempo del reloj, no el clima.]",,,,,,,word,tijd
+word card,u04l6,van,de  [Dice de quién es algo: de jas van Tom = la chaqueta de Tom.],,,,,,,word,van
+word card,u04l6,"mij  (mij, me)",mí  [Forma de ik después de una preposición (van mij = mío) y como objeto: Hij belt mij = Me llama. Sin énfasis: me (Hij belt me).],,,,,me,,word,mij
+word card,u04l6,de tas,el bolso,,,,,la cartera | la bolsa | el morral,,word,tas
+word card,u04l6,de sleutel,la llave,,,,,,,word,sleutel
+word card,u04l6,de jas,la chaqueta,,,,,el abrigo,,word,jas
+grammar note,u04,"Read it in the app: unit 4, «Notas»","Las cosas: de, het, een",,,,,,,grammar,u04:grammar
+sample,u04l1,Dat is een hond.,Ese es un perro.,,,,,Eso es un perro. | Es un perro.,,sentence,u04l1s01
+sample,u04l2,Dat is een boek.,Ese es un libro.,,,,,Eso es un libro. | Es un libro.,,sentence,u04l2s02
+sample,u04l3,Wat mooi!,¡Qué bonito!,,,,,¡Qué lindo! | ¡Qué bonita! | ¡Qué linda! | ¡Qué bello! | ¡Qué hermoso!,,sentence,u04l3s04
+"sentence; fixed after the checker: ""Is het boek nieuw?"" The most likely learner answer follows the Dutch word order: ""¿Es el libro nuevo?"", which is correct Spanish",u04l3,Is het boek nieuw?,¿El libro es nuevo?,,,,,¿Es nuevo el libro? | ¿Es el libro nuevo?,,sentence,u04l3s06
+sample,u04l3,Het huis is te klein.,La casa es demasiado pequeña.,,,,,La casa es demasiado chiquita.,,sentence,u04l3s08
+sample,u04l3,Dat huis is heel groot.,Esa casa es muy grande.,,,,,Aquella casa es muy grande.,,sentence,u04l3s10
+sample,u04l4,De tafel is groot.,La mesa es grande.,,,,,,,sentence,u04l4s04
+sample,u04l5,Ik heb een fiets.,Tengo una bicicleta.,,,,,Tengo una bici. | Yo tengo una bicicleta. | Yo tengo una bici.,,sentence,u04l5s01
+sample,u04l5,Mijn vriend heeft een auto.,Mi novio tiene carro.,,,,,Mi novio tiene auto. | Mi novio tiene coche. | Mi amigo tiene carro. | Mi amigo tiene auto. | Mi amigo tiene coche. | Mi novio tiene un carro. | Mi novio tiene un auto. | Mi novio tiene un coche. | Mi amigo tiene un carro. | Mi amigo tiene un auto. | Mi amigo tiene un coche.,,sentence,u04l5s11
+sample,u04l5,Ik heb ook een laptop.,Yo también tengo una laptop.,,,,,También tengo una laptop. | Yo también tengo laptop. | Yo también tengo un laptop. | También tengo un laptop.,,sentence,u04l5s14
+sample,u04l6,Van wie is deze tas?,¿De quién es este bolso?,,,,,¿De quién es esta cartera? | ¿De quién es esta bolsa? | ¿De quién es este morral?,,sentence,u04l6s01
+sample,u04l6,Ik heb de sleutel van het huis.,Tengo la llave de la casa.,,,,,Yo tengo la llave de la casa.,,sentence,u04l6s12
+sample,u04l6,"Deze tas is mooi, maar te klein.","Este bolso es bonito, pero demasiado pequeño.",,,,,"Esta cartera es bonita, pero demasiado pequeña. | Esta cartera es bonita, pero demasiado chiquita. | Esta cartera es linda, pero demasiado pequeña. | Esta cartera es linda, pero demasiado chiquita. | Esta bolsa es bonita, pero demasiado pequeña. | Esta bolsa es bonita, pero demasiado chiquita. | Esta bolsa es linda, pero demasiado pequeña. | Esta bolsa es linda, pero demasiado chiquita. | Este bolso es lindo, pero demasiado pequeño. | Este bolso es lindo, pero demasiado chiquito. | Este bolso es bonito, pero demasiado chiquito.",,sentence,u04l6s14
+dialogue,u04 dialogue,"Tom: Anna, waar is mijn sleutel?","Anna, ¿dónde está mi llave?",,,,,,,dialogue,u04d01
+dialogue,u04 dialogue,"Anna: Kijk, daar is een sleutel. Is dat jouw sleutel?","Mira, allá hay una llave. ¿Esa es tu llave?",,,,,,,dialogue,u04d02
+dialogue,u04 dialogue,"Tom: Nee, dat is de sleutel van de auto.","No, esa es la llave del carro.",,,,,,,dialogue,u04d03
+dialogue,u04 dialogue,Anna: En deze tas? Van wie is deze tas?,¿Y este bolso? ¿De quién es este bolso?,,,,,,,dialogue,u04d04
+dialogue,u04 dialogue,Tom: Die tas is van mij. Dank je!,Ese bolso es mío. ¡Gracias!,,,,,,,dialogue,u04d05
+"dialogue; FLAG: ""Heb je jouw telefoon en jouw jas?"" combines unstressed subject je with stressed possessive jouw twice. A Dutch speaker asking this neutrally says ""Heb je je telefoon en je jas?""; jouw is only used when contrasting (yours, not mine). As written it sounds odd and teaches the learner to overuse jouw.",u04 dialogue,Anna: Heb je je telefoon en je jas?,¿Tienes tu teléfono y tu chaqueta?,,,,,,,dialogue,u04d06
+dialogue,u04 dialogue,"Tom: Ja, ik heb mijn telefoon. Maar waar is mijn jas?","Sí, tengo mi teléfono. Pero ¿dónde está mi chaqueta?",,,,,,,dialogue,u04d07
+"dialogue; FLAG: ""En de sleutel is in jouw jas!"" Dutch uses a position verb for an object in a pocket: ""de sleutel zit in je jas"". ""is in jouw jas"" sounds non-native, and stressed jouw has nothing to contrast with, so the first half also sounds odd: ""Jouw jas is hier"" would normally be ""Je jas is hier"".",u04 dialogue,Anna: Hier is je jas. En de sleutel? In je jas!,Aquí está tu chaqueta. ¿Y la llave? ¡En tu chaqueta!,,,,,,,dialogue,u04d08
+"dialogue; FLAG: ""Heel goed."" is how a teacher praises an answer. It is not how a Dutch speaker reacts with relief to hearing that their lost key is in their jacket. A native would say ""Mooi!"" or ""Gelukkig!"" (or ""Top!""). The Spanish ""Muy bien"" works in Spanish, but the Dutch does not.",u04 dialogue,"Tom: Mooi! Dank je, Anna!","¡Qué bien! ¡Gracias, Anna!",,,,,,,dialogue,u04d09
+question,u04 dialogue,,¿Qué busca Tom primero?,,,,,✔ Su llave / Su teléfono / Su bolso,,question,u04q01
+question,u04 dialogue,,¿De quién es el bolso?,,,,,De Anna / ✔ De Tom / No lo dicen,,question,u04q02
+question,u04 dialogue,,¿Dónde estaba la llave de Tom?,,,,,En el carro / ✔ En su chaqueta / En el bolso,,question,u04q03
+word card,u05l1,alsjeblieft,"por favor, aquí tienes  [Con jij. También se dice al darle algo a alguien.]",,,,,,,word,alsjeblieft
+word card,u05l1,alstublieft,"por favor, aquí tiene  [Con u (usted). También se dice al darle algo a alguien.]",,,,,,,word,alstublieft
+word card,u05l1,"dank je wel  (dank je wel, dank u wel)",muchas gracias  [Con usted: dank u wel.],,,,,,dankjewel | bedankt,word,dank-je-wel
+word card,u05l1,graag gedaan,"de nada, con gusto",,,,,a la orden | no hay de qué | con mucho gusto,,word,graag-gedaan
+word card,u05l1,sorry,"perdón, disculpa",,,,,lo siento | disculpe,,word,sorry
+word card,u05l1,geen probleem,no hay problema,,,,,ningún problema | sin problema | no es problema,,word,geen-probleem
+word card,u05l2,de koffie,el café,,,,,,,word,koffie
+word card,u05l2,de thee,el té,,,,,,,word,thee
+word card,u05l2,het water,el agua,,,,,,,word,water
+word card,u05l2,de melk,la leche,,,,,,,word,melk
+word card,u05l2,de suiker,el azúcar,,,,,la azúcar,,word,suiker
+word card,u05l2,zonder,sin,,,,,,,word,zonder
+word card,u05l3,"willen  (wil, wilt)","querer  [ik wil, jij wilt, u wilt, hij wil, zij wil. Con hij y zij no lleva -t.]",,,,,,,word,willen
+word card,u05l3,"drinken  (drinken, drink, drinkt)","tomar, beber",,,,,,,word,drinken
+word card,u05l3,iets,algo,,,,,,,word,iets
+word card,u05l3,nog,"más, todavía  [nog een koffie = otro café.]",,,,,,,word,nog
+word card,u05l3,graag,con gusto  [Ik wil graag… = Quisiera… Con un verbo dice que algo te gusta: Ik drink graag thee = Me gusta tomar té.],,,,,,,word,graag
+word card,u05l4,mogen  (mag),"poder  [Poder en el sentido de tener permiso. Mag ik…? = ¿Me da…?, ¿Puedo…?]",,,,,tener permiso,,word,mogen
+word card,u05l4,"eten  (eten, eet)",comer,,,,,,,word,eten
+word card,u05l4,het broodje,"el sándwich  [Un pan pequeño, casi siempre relleno: broodje kaas = sándwich de queso.]",,,,,el pancito | el pan | el bocadillo,,word,broodje
+word card,u05l4,de kaas,el queso,,,,,,,word,kaas
+word card,u05l4,het brood,el pan,,,,,,,word,brood
+word card,u05l5,de euro,el euro  [Después de un número no cambia: drie euro = tres euros.],,,,,,,word,euro
+word card,u05l5,kosten  (kost),costar,,,,,valer,,word,kosten
+word card,u05l5,de rekening,la cuenta,,,,,,,word,rekening
+word card,u05l5,duur,caro,,,,,cara | costoso | costosa,,word,duur
+word card,u05l5,samen,"juntos, en total",,,,,juntas,,word,samen
+word card,u05l5,"betalen  (betalen, betaal)",pagar,,,,,,,word,betalen
+word card,u05l6,de honger,el hambre  [Ik heb honger = Tengo hambre.],,,,,,,word,honger
+word card,u05l6,de dorst,la sed  [Ik heb dorst = Tengo sed.],,,,,,,word,dorst
+word card,u05l6,lekker,"rico, sabroso",,,,,rica | sabrosa | delicioso | deliciosa | bueno,,word,lekker
+word card,u05l6,eet smakelijk,buen provecho,,,,,provecho | buen apetito,,word,eet-smakelijk
+word card,u05l6,proost,salud  [Al brindar.],,,,,,,word,proost
+"grammar note; fixed after the checker: In 'Sonidos', bold marks two things: the letters being discussed (d**uu**r, **th**ee) and the stressed syllable (alsje**blieft**, **ko**ffie) / 'ik mag, jij mag, u mag, hij mag",u05,"Read it in the app: unit 5, «Notas»",En el café,,,,,,,grammar,u05:grammar
+sample,u05l1,"Dank u wel, mevrouw.","Muchas gracias, señora.",,,,,"Gracias, señora.",,sentence,u05l1s07
+"sentence; fixed after the checker: Same as u05l2s01: 'Sí, por favor.' → 'Ja, alstublieft.' is correct but rejected",u05l1,"Ja, alsjeblieft.","Sí, por favor.",,,,,,"Ja, alstublieft.",sentence,u05l1s10
+"sentence; fixed after the checker: 'No, muchas gracias.' does not mark register / 'Nee, dank u wel.' is correct and is rejected",u05l1,"Nee, dank je wel.","No, muchas gracias.",,,,,"No, gracias.","Nee, dankjewel. | Nee, dank u wel.",sentence,u05l1s11
+sample,u05l1,"Geen probleem, graag gedaan!","No hay problema, ¡de nada!",,,,,"No hay problema, ¡con gusto! | No hay problema, ¡a la orden!",,sentence,u05l1s14
+"sentence; fixed after the checker: Spanish ""por favor"" carries no register, so both alsjeblieft and alstublieft are correct Dutch for it, and this unit exists to teach that pair",u05l2,"Een koffie, alsjeblieft.","Un café, por favor.",,,,,,"Een koffie, alstublieft.",sentence,u05l2s01
+"sentence; fixed after the checker: Same as u05l2s01: 'Un té, por favor.' does not mark register, so 'Een thee, alsjeblieft.' is correct but rejected.",u05l2,"Een thee, alstublieft.","Un té, por favor.",,,,,,"Een thee, alsjeblieft.",sentence,u05l2s02
+"sentence; fixed after the checker: Same as u05l2s01: 'Agua, por favor.' → 'Water, alstublieft.' is correct but rejected.",u05l2,"Water, alsjeblieft.","Agua, por favor.",,,,,,"Water, alstublieft.",sentence,u05l2s06
+sample,u05l2,"Nee, zonder melk.","No, sin leche.",,,,,,,sentence,u05l2s08
+"sentence; fixed after the checker: Most likely Venezuelan word order missing: '¿Tú qué quieres tomar?' (topicalised pronoun, the rubric's own example pattern) and '¿Qué quieres tomar tú?'",u05l3,Wat wil je drinken?,¿Qué quieres tomar?,,,,,¿Qué quieres beber? | ¿Qué quieres tú tomar? | ¿Qué quieres tú beber? | ¿Tú qué quieres tomar? | ¿Tú qué quieres beber? | ¿Qué quieres tomar tú? | ¿Qué quieres beber tú?,Wat wil jij drinken?,sentence,u05l3s01
+sample,u05l3,Ik wil graag een thee.,Quisiera un té.,,,,,"Me gustaría un té. | Yo quisiera un té. | Quiero un té, por favor. | Quiero un té.",,sentence,u05l3s03
+"sentence; fixed after the checker: '¡Sí, por favor!' → 'Ja, alsjeblieft!' / 'Ja, alstublieft!' are correct, and are exactly what u05l1s10 teaches for the same Spanish, but alt_nl is empty, so they are mark",u05l3,"Ja, graag!","¡Sí, por favor!",,,,,"¡Sí, con gusto! | ¡Sí, gracias! | ¡Sí, claro! | ¡Sí, con mucho gusto!","Ja, alsjeblieft! | Ja, alstublieft!",sentence,u05l3s05
+sample,u05l3,Ik drink koffie.,Tomo café.,,,,,Bebo café. | Yo tomo café. | Yo bebo café.,,sentence,u05l3s06
+sample,u05l3,Drink jij thee?,¿Tomas té?,,,,,¿Bebes té? | ¿Tú tomas té? | ¿Tú bebes té?,Drink je thee?,sentence,u05l3s07
+"sentence; fixed after the checker: Same as u05l2s01: 'Otro té, por favor.' → 'Nog een thee, alstublieft.' is correct but rejected.",u05l3,"Nog een thee, alsjeblieft.","Otro té, por favor.",,,,,"Un té más, por favor.","Nog een thee, alstublieft.",sentence,u05l3s12
+sample,u05l3,Ik drink graag thee.,Me gusta tomar té.,,,,,Me gusta beber té. | Me gusta el té. | A mí me gusta tomar té. | A mí me gusta beber té. | A mí me gusta el té.,,sentence,u05l3s14
+"sentence; fixed after the checker: '¿Me trae un café?' / '¿Me traes un café?' are very likely functional renderings for ordering, as likely as the main '¿Me da…?'",u05l4,Mag ik een koffie?,¿Me da un café?,,,,,¿Me das un café? | ¿Me puede dar un café? | ¿Me puedes dar un café? | ¿Me trae un café? | ¿Me traes un café? | ¿Puedo pedir un café? | ¿Puedo tomar un café?,,sentence,u05l4s01
+sentence; fixed after the checker: Same as u05l3s01: '¿Tú qué quieres comer?' is the most natural Venezuelan variant and is missing.,u05l4,Wat wil je eten?,¿Qué quieres comer?,,,,,¿Qué quieres comer tú? | ¿Tú qué quieres comer?,Wat wil jij eten?,sentence,u05l4s04
+sample,u05l4,Mag ik iets drinken?,¿Puedo tomar algo?,,,,,¿Puedo beber algo? | ¿Me da algo de tomar? | ¿Me da algo de beber? | ¿Me das algo de tomar? | ¿Me das algo de beber?,,sentence,u05l4s08
+sample,u05l4,Het broodje is heel groot.,El sándwich es muy grande.,,,,,El pan es muy grande. | El pancito es muy grande. | El sándwich está muy grande.,,sentence,u05l4s10
+sample,u05l4,Mag ik nog een thee?,¿Me da otro té?,,,,,¿Me das otro té? | ¿Me puede dar otro té? | ¿Me puedes dar otro té? | ¿Me trae otro té? | ¿Me traes otro té? | ¿Puedo pedir otro té? | ¿Puedo tomar otro té?,,sentence,u05l4s11
+"sentence; fixed after the checker: Same as u05l2s01: 'La cuenta, por favor.' → 'De rekening, alsjeblieft.' is correct (talking to a young waiter, or in an informal café) but rejected.",u05l5,"De rekening, alstublieft.","La cuenta, por favor.",,,,,,"De rekening, alsjeblieft.",sentence,u05l5s03
+"sentence; fixed after the checker: 'Twee thee' (no plural after a number, normal when ordering in Dutch: twee koffie, twee thee) is not explained anywhere",u05l5,"Twee thee en een koffie, samen acht euro.","Dos tés y un café, ocho euros en total.",,,,,"Dos tés y un café, en total ocho euros. | Dos tés y un café, son ocho euros en total.",,sentence,u05l5s13
+sample,u05l6,De koffie is lekker.,El café está rico.,,,,,El café está sabroso. | El café está bueno. | El café está delicioso. | El café es rico.,,sentence,u05l6s05
+sample,u05l6,Lekker!,¡Qué rico!,,,,,¡Rico! | ¡Qué sabroso! | ¡Sabroso! | ¡Delicioso! | ¡Qué delicioso! | ¡Qué bueno!,,sentence,u05l6s06
+"sentence; fixed after the checker: 'Gracias, ¡buen provecho!' → 'Dank je wel, eet smakelijk!' and 'Dank u wel, eet smakelijk!' are correct but rejected / alt_nl is empty.",u05l6,"Dank je, eet smakelijk!","Gracias, ¡buen provecho!",,,,,"Gracias, ¡provecho! | Gracias, ¡buen apetito!","Dank u, eet smakelijk! | Dank je wel, eet smakelijk! | Dank u wel, eet smakelijk! | Dankjewel, eet smakelijk!",sentence,u05l6s12
+dialogue,u05 dialogue,Daan: Goedemiddag! Wilt u iets drinken?,¡Buenas tardes! ¿Quiere tomar algo?,,,,,,,dialogue,u05d01
+dialogue,u05 dialogue,"María: Ja, graag. Een koffie met melk, alstublieft.","Sí, por favor. Un café con leche, por favor.",,,,,,,dialogue,u05d02
+dialogue,u05 dialogue,Daan: Met suiker?,¿Con azúcar?,,,,,,,dialogue,u05d03
+dialogue,u05 dialogue,"María: Nee, zonder suiker. En mag ik een broodje kaas?","No, sin azúcar. ¿Y me da un sándwich de queso?",,,,,,,dialogue,u05d04
+dialogue,u05 dialogue,"Daan: Geen probleem. Alstublieft, eet smakelijk!","No hay problema. Aquí tiene, ¡buen provecho!",,,,,,,dialogue,u05d05
+"dialogue; FLAG: Turn-taking: in line 5 Daan serves the coffee and sandwich ('Alstublieft, eet smakelijk!'). In line 6 María immediately asks for the bill, and in line 8 she says 'Tot ziens!' and leaves, before eating anything. Paying straight away at a counter happens, but leaving right after 'eet smakelijk' reads as a mistake, and it makes question 2 ('¿Qué come María?' → sándwich de queso) rest on something the dialogue never shows her doing.",u05 dialogue,María: Dank u wel. Mag ik ook de rekening?,Muchas gracias. ¿Me da también la cuenta?,,,,,,,dialogue,u05d06
+dialogue,u05 dialogue,Daan: Ja. Dat is samen zeven euro.,Sí. Son siete euros en total.,,,,,,,dialogue,u05d07
+dialogue,u05 dialogue,María: Alstublieft.,Aquí tiene.,,,,,,,dialogue,u05d08
+dialogue,u05 dialogue,Daan: Dank u wel. Fijne dag!,Muchas gracias. ¡Que tenga un buen día!,,,,,,,dialogue,u05d09
+question,u05 dialogue,,¿Qué pide María para tomar?,,,,,Un té con leche / ✔ Un café con leche / Un café con azúcar,,question,u05q01
+question,u05 dialogue,,¿Qué pide María para comer?,,,,,✔ Un sándwich de queso / Pan con mantequilla / Nada,,question,u05q02
+question,u05 dialogue,,¿Cuánto paga María?,,,,,Seis euros / ✔ Siete euros / Doce euros,,question,u05q03
+word card,u06l1,de moeder,"la mamá, la madre",,,,,,,word,moeder
+word card,u06l1,de vader,"el papá, el padre",,,,,,,word,vader
+word card,u06l1,"de broer  (broer, broers)",el hermano,,,,,,,word,broer
+word card,u06l1,"de zus  (zus, zussen)",la hermana,,,,,,,word,zus
+word card,u06l1,de familie,la familia,,,,,,,word,familie
+word card,u06l2,"het kind  (kind, kinderen)","el niño, el hijo  [También «hijo o hija», sin decir cuál: Ik heb twee kinderen = Tengo dos hijos. Plural: kinderen.]",,,,,la niña | la hija,,word,kind
+word card,u06l2,de zoon,el hijo,,,,,,,word,zoon
+word card,u06l2,de dochter,la hija,,,,,,,word,dochter
+word card,u06l2,de oma,la abuela,,,,,,,word,oma
+word card,u06l2,de opa,el abuelo,,,,,,,word,opa
+word card,u06l3,"wij  (wij, we)","nosotros, nosotras  [Sin énfasis se dice we.]",,,,,,,word,wij
+word card,u06l3,jullie,ustedes  [Para varias personas a las que tratas de tú.],,,,,,,word,jullie
+word card,u06l3,"zij  (zij, ze)","ellos, ellas  [Se escribe igual que zij = ella. El verbo dice cuál es: zij woont (ella), zij wonen (ellos). Sin énfasis se dice ze.]",,,,,,,word,zij-pl
+"word card; fixed after the checker: note_es 'Siempre en plural' is not true: singular 'ouder' (a parent) exists and is common (één ouder, elke ouder, alleenstaande ouder)",u06l3,de ouders,"los padres, los papás  [Casi siempre en plural: mijn ouders = mis papás. Para uno solo, di mijn vader o mijn moeder.]",,,,,,,word,ouders
+word card,u06l4,zijn,su (de él)  [zijn moeder = la mamá de él. Se escribe igual que el verbo zijn (ser).],,,,,,,word,zijn-pos
+word card,u06l4,haar,su (de ella)  [haar broer = el hermano de ella.],,,,,,,word,haar
+word card,u06l4,"ons  (ons, onze)","nuestro, nuestra  [ons con palabras de het (ons huis); onze con palabras de de y con todos los plurales (onze hond, onze kinderen).]",,,,,nuestros | nuestras,,word,ons
+word card,u06l4,de man,"el hombre, el esposo  [mijn man = mi esposo.]",,,,,el marido,,word,man
+word card,u06l4,de vrouw,"la mujer, la esposa  [mijn vrouw = mi esposa.]",,,,,,,word,vrouw
+word card,u06l5,"houden van  (hou, houdt, houden)","amar, querer, gustar  [Con una persona: Ik hou van jou = Te amo. Con una cosa: Ik hou van koffie = Me gusta el café.]",,,,,,,word,houden-van
+word card,u06l5,lief,"cariñoso, tierno",,,,,cariñosa | tierna | dulce | amable | lindo | linda,,word,lief
+word card,u06l5,jong,joven,,,,,,,word,jong
+word card,u06l5,getrouwd,casado,,,,,casada,,word,getrouwd
+word card; fixed after the checker: Gloss 'el amor' is misleading as a word-card meaning / schat means 'amor' only as a term of address ('mi amor'),u06l5,de schat,"el tesoro  [Así se le dice a la pareja: schat = mi amor, cariño.]",,,,,mi amor | cariño | el cariño,,word,schat
+word card,u06l6,"missen  (mis, mist)",extrañar,,,,,echar de menos,,word,missen
+word card,u06l6,"bellen  (bel, belt, bellen)",llamar  [Llamar por teléfono.],,,,,,,word,bellen
+word card,u06l6,vaak,"a menudo, seguido",,,,,muchas veces | con frecuencia | frecuentemente | mucho,,word,vaak
+word card,u06l6,elke dag,"todos los días, cada día",,,,,,,word,elke-dag
+word card,u06l6,de foto,la foto,,,,,la fotografía,,word,foto
+word card,u06l6,ver,lejos,,,,,,,word,ver
+"grammar note; fixed after the checker: Pronunciation hint invites wrong stress for a Spanish reader / Dutch is KIN-de-ren / Plurals section: the -en example zus → zus**sen** silently doubles the s, and the bold on 'sen' makes the ending look like '-sen' / «En español «su» sirve para todo / en neerlandés hay que elegir entre uw, zijn y haar» is incomplete: «su» also means 'de ellos/de ellas' (hun) and 'de ustedes' (jullie)",u06,"Read it in the app: unit 6, «Notas»",Mi familia,,,,,,,grammar,u06:grammar
+sample,u06l1,Mijn vader heet Luis.,Mi papá se llama Luis.,,,,,Mi padre se llama Luis.,,sentence,u06l1s02
+sample,u06l1,Waar woont jouw familie?,¿Dónde vive tu familia?,,,,,,Waar woont je familie?,sentence,u06l1s09
+sample,u06l2,Ik heb twee broers.,Tengo dos hermanos.,,,,,Yo tengo dos hermanos.,,sentence,u06l2s01
+sample,u06l2,Zij heeft drie kinderen.,Ella tiene tres hijos.,,,,,Ella tiene tres niños. | Tiene tres hijos. | Tiene tres niños.,Ze heeft drie kinderen.,sentence,u06l2s02
+sample,u06l2,De dochter van Anna heet Emma.,La hija de Anna se llama Emma.,,,,,,,sentence,u06l2s12
+sentence; fixed after the checker: Main es '¿Ustedes son hermanos?' loses the gender information of 'broer en zus',u06l3,Zijn jullie broer en zus?,¿Ustedes son hermanos?,,,,,¿Son hermanos? | ¿Son ustedes hermanos? | ¿Ustedes son hermano y hermana? | ¿Son hermano y hermana?,Zijn jullie broers? | Zijn jullie broers en zussen?,sentence,u06l3s15
+sample,u06l4,Is dat haar auto?,¿Ese es el carro de ella?,,,,,¿Ese es el auto de ella? | ¿Ese es el coche de ella? | ¿Ese es su carro? | ¿Ese es su auto? | ¿Ese es su coche? | ¿Es su carro? | ¿Es su auto? | ¿Es su coche? | ¿Es el carro de ella?,,sentence,u06l4s12
+sample,u06l4,Die vrouw is mijn moeder.,Esa mujer es mi mamá.,,,,,Esa mujer es mi madre. | Esa señora es mi mamá. | Esa señora es mi madre.,,sentence,u06l4s13
+sample,u06l5,Wat lief!,¡Qué tierno!,,,,,¡Qué dulce! | ¡Qué lindo! | ¡Qué amable! | ¡Qué bello! | ¡Qué cuchi! | ¡Qué tierna! | ¡Qué linda!,,sentence,u06l5s06
+sample,u06l5,Mijn broer is getrouwd.,Mi hermano está casado.,,,,,Mi hermano es casado.,,sentence,u06l5s09
+"sentence; fixed after the checker: Main es 'Los queremos.' is ambiguous when shown as an es→nl prompt: los = ellos or ustedes, and querer = love or want",u06l5,Wij houden van jullie.,Los queremos a ustedes.,,,,,Los queremos. | Los amamos. | Las queremos. | Las amamos. | Nosotros los queremos. | Nosotros los amamos. | Nosotras los queremos. | Nosotras los amamos. | Los amamos a ustedes.,We houden van jullie.,sentence,u06l5s14
+sample,u06l6,Ik mis mijn familie.,Extraño a mi familia.,,,,,Yo extraño a mi familia. | Echo de menos a mi familia.,,sentence,u06l6s01
+"sentence; fixed after the checker: Pedagogy/gloss: first use of jou as a direct object without a preposition (Ik mis jou) / the learner cannot tell why it is jou and not jij / it is in alt_nl, which is fine.",u06l6,"Ik mis jou, schat.","Te extraño, mi amor.",,,,,"Te extraño, cariño. | Te extraño, amor. | Te extraño, cielo. | Te extraño, mi vida. | Te echo de menos, mi amor.","Ik mis je, schat.",sentence,u06l6s02
+sentence; fixed after the checker: 'Mijn zus belt mij vaak' uses stressed mij as a direct object / a Dutch speaker says 'Mijn zus belt me vaak' unless contrasting (she calls ME),u06l6,Mijn zus belt me vaak.,Mi hermana me llama a menudo.,,,,,Mi hermana me llama seguido. | Mi hermana me llama mucho. | Mi hermana me llama con frecuencia. | Mi hermana me llama muchas veces.,Mijn zus belt mij vaak.,sentence,u06l6s06
+sample,u06l6,Dit is een foto van mijn familie.,Esta es una foto de mi familia.,,,,,Es una foto de mi familia.,,sentence,u06l6s07
+sample,u06l6,Venezuela is ver.,Venezuela está lejos.,,,,,Venezuela queda lejos.,,sentence,u06l6s10
+sentence; fixed after the checker: Main nl 'Heb je een foto van jouw broer?' mixes unstressed subject je with stressed possessive jouw in one clause,u06l6,Heb je een foto van je broer?,¿Tienes una foto de tu hermano?,,,,,,Heb jij een foto van je broer? | Heb je een foto van jouw broer? | Heb jij een foto van jouw broer?,sentence,u06l6s14
+sentence; fixed after the checker: Same issue: 'Mis je jouw familie?' combines unstressed je with stressed jouw,u06l6,Mis je je familie?,¿Extrañas a tu familia?,,,,,¿Tú extrañas a tu familia? | ¿Echas de menos a tu familia?,Mis jij je familie? | Mis je jouw familie? | Mis jij jouw familie?,sentence,u06l6s15
+dialogue,u06 dialogue,"Daan: Wat is dat, María? Een foto?","¿Qué es eso, María? ¿Una foto?",,,,,,,dialogue,u06d01
+dialogue,u06 dialogue,"María: Ja, dit is een foto van mijn familie.","Sí, esta es una foto de mi familia.",,,,,,,dialogue,u06d02
+dialogue,u06 dialogue,Daan: Wat mooi! Wie is die vrouw?,¡Qué bonita! ¿Quién es esa mujer?,,,,,,,dialogue,u06d03
+dialogue,u06 dialogue,"María: Dat is mijn moeder, en die man is mijn vader.","Esa es mi mamá, y ese hombre es mi papá.",,,,,,,dialogue,u06d04
+dialogue,u06 dialogue,Daan: Jouw moeder is jong! Heb je ook broers of zussen?,¡Tu mamá es joven! ¿También tienes hermanos o hermanas?,,,,,,,dialogue,u06d05
+dialogue,u06 dialogue,"María: Ja, ik heb twee broers. Zij wonen in Caracas.","Sí, tengo dos hermanos. Ellos viven en Caracas.",,,,,,,dialogue,u06d06
+"dialogue; FLAG: Daan: 'Dat is ver. Mis je jouw familie?' has the same je + jouw mismatch as u06l6s15. In a dialogue that is meant to model natural speech, this sounds stilted, as if contrasting María's family with someone else's.",u06 dialogue,Daan: Dat is ver. Mis je je familie?,Eso está lejos. ¿Extrañas a tu familia?,,,,,,,dialogue,u06d07
+dialogue,u06 dialogue,"María: Ja, heel vaak. Maar ik bel mijn moeder elke dag.","Sí, muy a menudo. Pero llamo a mi mamá todos los días.",,,,,,,dialogue,u06d08
+dialogue,u06 dialogue,Daan: Wat lief!,¡Qué tierno!,,,,,,,dialogue,u06d09
+question,u06 dialogue,,¿Qué le muestra María a Daan?,,,,,✔ Una foto de su familia / Su casa / Su teléfono,,question,u06q01
+question,u06 dialogue,,¿Cuántos hermanos tiene María?,,,,,Uno / ✔ Dos / Tres,,question,u06q02
+question,u06 dialogue,,¿Cada cuánto llama María a su mamá?,,,,,✔ Todos los días / Casi nunca / Una vez por semana,,question,u06q03
+"word card from an earlier unit; note changed after the checker (object use, me)",u06l6,jou,ti  [Forma de jij después de una preposición (met jou) y como objeto: Ik mis jou = Te extraño. Sin énfasis: je (Ik mis je).],,,,,,,word,jou
+"word card from an earlier unit; note changed after the checker (object use, me)",u06l6,"mij  (mij, me)",mí  [Forma de ik después de una preposición (van mij = mío) y como objeto: Hij belt mij = Me llama. Sin énfasis: me (Hij belt me).],,,,,me,,word,mij

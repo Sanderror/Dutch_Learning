@@ -1,0 +1,41 @@
+{
+  "checker": "independent-agent-2026-11-15-u04",
+  "flags": [
+    {
+      "id": "u04:dialogue:6",
+      "severity": "b",
+      "reason": "\"Heb je jouw telefoon en jouw jas?\" combines unstressed subject je with stressed possessive jouw twice. A Dutch speaker asking this neutrally says \"Heb je je telefoon en je jas?\"; jouw is only used when contrasting (yours, not mine). As written it sounds odd and teaches the learner to overuse jouw.",
+      "suggestion": "\"Heb je je telefoon en je jas?\" (the lexicon note on jouw already teaches je as the unstressed possessive). If je je looks confusing at this stage, use \"Heb jij je telefoon en je jas?\". Keep the es line as it is."
+    },
+    {
+      "id": "u04:dialogue:8",
+      "severity": "b",
+      "reason": "\"En de sleutel is in jouw jas!\" Dutch uses a position verb for an object in a pocket: \"de sleutel zit in je jas\". \"is in jouw jas\" sounds non-native, and stressed jouw has nothing to contrast with, so the first half also sounds odd: \"Jouw jas is hier\" would normally be \"Je jas is hier\".",
+      "suggestion": "\"Je jas is hier. En de sleutel zit in je jas!\". zit is not taught yet, so either allow it here as a glossed one-off (zit = está, said of something inside something) or rewrite the line so it doesn't need a location verb. Q3 depends on this line, so keep the key in the jacket."
+    },
+    {
+      "id": "u04:dialogue:9",
+      "severity": "b",
+      "reason": "\"Heel goed.\" is how a teacher praises an answer. It is not how a Dutch speaker reacts with relief to hearing that their lost key is in their jacket. A native would say \"Mooi!\" or \"Gelukkig!\" (or \"Top!\"). The Spanish \"Muy bien\" works in Spanish, but the Dutch does not.",
+      "suggestion": "\"Mooi! Dank je, Anna!\" with es \"¡Qué bien! ¡Gracias, Anna!\" (mooi is taught in this unit; consider adding \"qué bien\" to the mooi card's accept_es or a note that Mooi! also means ¡Qué bien!). Alternatively, introduce gelukkig later and keep Heel goed out of reaction lines."
+    },
+    {
+      "id": "u04l3s06",
+      "severity": "c",
+      "reason": "\"Is het boek nieuw?\" The most likely learner answer follows the Dutch word order: \"¿Es el libro nuevo?\", which is correct Spanish. It is not in alt_es, while the parallel sentences (u04l1s05, u04l6s03, u04l6s09, u04l5s15) do accept the verb-first order.",
+      "suggestion": "Add \"¿Es el libro nuevo?\" to alt_es."
+    },
+    {
+      "id": "lexicon:laptop",
+      "severity": "c",
+      "reason": "laptop is used in both genders in Latin America, including Venezuela (el laptop / la laptop). Only the feminine is accepted on the card and in the sentences, so \"Él tiene un laptop\" would be marked wrong.",
+      "suggestion": "Add \"el laptop\" to accept_es, and add the masculine variants to alt_es of u04l5s05 (\"Él tiene un laptop.\"), u04l5s13 (\"¿Tom tiene un laptop?\") and u04l5s14 (\"Yo también tengo un laptop.\")."
+    }
+  ],
+  "coverage": {
+    "sentences_read": 80,
+    "word_cards_read": 29,
+    "dialogue_lines_read": 9,
+    "grammar_note_read": true
+  }
+}
