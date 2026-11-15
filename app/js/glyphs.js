@@ -38,5 +38,6 @@ export const ICON = {
   back: wrap('<path d="M28 10L14 24l14 14"/>'),
   settings: wrap('<path d="M7 14h34M7 24h34M7 34h34"/><circle cx="17" cy="14" r="4" fill="currentColor"/><circle cx="31" cy="24" r="4" fill="currentColor"/><circle cx="21" cy="34" r="4" fill="currentColor"/>'),
   sun: wrap('<circle cx="24" cy="24" r="9" fill="currentColor"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9.9 9.9l4.2 4.2M33.9 33.9l4.2 4.2M9.9 38.1l4.2-4.2M33.9 14.1l4.2-4.2"/>'),
+  mic: wrap('<rect x="18" y="6" width="12" height="22" rx="6"/><path d="M11 23a13 13 0 0026 0M24 36v7M17 43h14"/>'),
   lock: wrap('<path d="M13 22h22v18H13z"/><path d="M17 22v-6a7 7 0 0114 0v6"/>'),
 };

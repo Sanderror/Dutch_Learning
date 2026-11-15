@@ -10,10 +10,11 @@ import { createStore, dayKey } from './store.js';
 import { sync as syncReviews, gradeLesson, rate, buildReview, dueCount, summary as reviewSummary } from './review.js';
 import { createAudio, loadAudioIndex } from './audio.js';
 import { createSfx } from './sfx.js';
+import { canRecognise, listen, judge, displayWords } from './speech.js';
 import { renderNotes } from './md.js';
 import { motif, ICON } from './glyphs.js';
 
-const VERSION = '0.4.0';
+const VERSION = '0.5.0';
 const CONTENT = '../content/';
 const AUDIO = '../audio/';
 const root = document.getElementById('app');
@@ -93,6 +94,7 @@ function show(screen) {
   window.scrollTo(0, 0);
 }
 function goHome() {
+  stopListening();
   if (audio) audio.stop();
   ui.session = null; ui.sheet = null; ui.notes = null; ui.result = null; ui.notice = '';
   ui.screen = 'home';
@@ -109,12 +111,18 @@ window.addEventListener('popstate', () => {
 });
 
 // ---------- sessions (lesson, dialogue, unit test) ----------
+/** Speaking needs the recogniser, a connection (it runs on Google's servers) and her switch in Ajustes. */
+function canSpeakNow() {
+  return canRecognise(window) && store.speaking() && navigator.onLine !== false;
+}
+
 function startSession(kind, id) {
   const canListen = audio.can();
+  const canSpeak = canSpeakNow();
   let built;
-  if (kind === 'lesson') built = buildLesson(course, id, { attempt: store.attempts(id), canListen });
+  if (kind === 'lesson') built = buildLesson(course, id, { attempt: store.attempts(id), canListen, canSpeak });
   else if (kind === 'dialogue') built = buildDialogue(course, id);
-  else if (kind === 'review') built = buildReview(course, store.reviews, today(), { canListen, round: ui.reviewRound++ });
+  else if (kind === 'review') built = buildReview(course, store.reviews, today(), { canListen, canSpeak, round: ui.reviewRound++ });
   else built = buildUnitTest(course, id, { attempt: store.attempts(id + 't'), canListen });
   if (!built.steps.length) return goHome();
   ui.session = {
@@ -130,7 +138,8 @@ function startSession(kind, id) {
 
 function initAnswer(step) {
   switch (step.type) {
-    case 'mc': return { picked: null };
+    case 'mc': case 'gap': return { picked: null };
+    case 'speak': return { stage: 'idle', stop: null };
     case 'tiles': return { chosen: [] };
     case 'type': return { text: '' };
     case 'match': return { nl: null, matched: [], misses: 0, miss: null, missed: new Set() };
@@ -138,21 +147,28 @@ function initAnswer(step) {
   }
 }
 
+function stopListening() {
+  const a = ui.session && ui.session.answer;
+  if (a && a.stop) { const stop = a.stop; a.stop = null; stop(); }
+}
+
 function advance() {
   const s = ui.session;
+  stopListening();
   s.step = s.queue.shift() || null;
+  while (s.step && s.step.type === 'speak' && s.noSpeak) s.step = s.queue.shift() || null;
   if (!s.step) return finish();
   s.phase = 'answer'; s.result = null; s.reported = false; s.askExit = false; s.retried = false;
   s.answer = initAnswer(s.step);
   render();
   window.scrollTo(0, 0);
   const st = s.step;
-  if (st.type === 'card' || (st.audio && (st.type === 'mc' || st.mode === 'nl2es' || st.mode === 'listen'))) audio.play(st.audio);
+  if (st.type === 'card' || (st.audio && (st.type === 'mc' || st.type === 'speak' || st.mode === 'nl2es' || st.mode === 'listen'))) audio.play(st.audio);
 }
 
 function hasAnswer(s) {
   const a = s.answer, st = s.step;
-  if (st.type === 'mc') return a.picked !== null;
+  if (st.type === 'mc' || st.type === 'gap') return a.picked !== null;
   if (st.type === 'tiles') return a.chosen.length > 0;
   if (st.type === 'type') return a.text.trim().length > 0;
   return true;
@@ -182,9 +198,39 @@ function record(ok, result) {
   }
 }
 
+// ---------- speaking ----------
+function startSpeaking() {
+  const s = ui.session, st = s.step, a = s.answer;
+  if (a.stage !== 'idle') return;
+  audio.stop();                                   // the microphone must not hear the recording
+  a.stage = 'waiting';
+  render();
+  const mine = (fn) => (...args) => { if (ui.session === s && s.step === st && s.answer === a && s.phase === 'answer') fn(...args); };
+  a.stop = listen(window, {
+    // only now is the microphone open: words said earlier are lost
+    onReady: mine(() => { a.stage = 'listening'; try { if (navigator.vibrate) navigator.vibrate(40); } catch (e) { /* optional */ } render(); }),
+    onDone: mine(({ alternatives, error }) => {
+      a.stop = null;
+      if (error === 'blocked' || error === 'offline') s.noSpeak = true;       // no more speaking in this session
+      const j = error ? { verdict: error, flags: [], heard: '', matched: 0, total: 0 } : judge(st.nl, alternatives);
+      s.result = { kind: 'speak', ok: j.verdict === 'ok', soft: j.verdict !== 'ok', ...j };
+      s.phase = 'feedback';
+      if (s.result.ok) sfx.correct();             // no buzzer for pronunciation: it is practice
+      render();
+    }),
+  });
+}
+
+/** "No puedo hablar ahora": no speaking for the rest of this session. */
+function skipSpeaking() {
+  ui.session.noSpeak = true;
+  advance();
+}
+
 /** Soft step: answer it again. A later right answer no longer counts as first try. */
 function retrySoft() {
   const s = ui.session;
+  stopListening();
   s.retried = true;
   s.phase = 'answer'; s.result = null; s.reported = false;
   s.answer = initAnswer(s.step);
@@ -193,7 +239,7 @@ function retrySoft() {
 
 /** Soft step: move on without it coming back. */
 function continueSoft() {
-  ui.session.done++;
+  if (isGraded(ui.session.step)) ui.session.done++;
   advance();
 }
 
@@ -203,6 +249,10 @@ function checkAnswer() {
   if (st.type === 'mc') {
     const ok = a.picked === st.answer;
     return record(ok, { ok, kind: ok ? 'exact' : 'wrong', best: st.options[st.answer] });
+  }
+  if (st.type === 'gap') {
+    const ok = a.picked === st.answer;
+    return record(ok, { ok, kind: ok ? 'exact' : 'wrong', best: st.reveal.nl, given: st.options[a.picked] });
   }
   const given = st.type === 'tiles'
     ? a.chosen.map((id) => st.tiles.find((t) => t.id === id).text).join(' ')
@@ -239,6 +289,7 @@ function finish() {
 
 function leaveSession() {
   const s = ui.session;
+  stopListening();
   if (s && s.kind === 'lesson') store.noteAttempt(s.id);
   goHome();
 }
@@ -297,12 +348,12 @@ function viewHome() {
       h('p', {}, 'Pon Tegeltjes en tu pantalla de inicio para abrirla como cualquier otra app.'),
       h('button', { class: 'btn btn-quiet', id: 'install', onclick: install }, 'Instalar la app')),
     reviewCard, todayCard,
+    walls, h('p', { class: 'soon' }, 'Hay más unidades en camino.'),
     store.backupDue() && h('section', { class: 'backup', id: 'backup-reminder' },
       h('p', {}, 'Guarda una copia de tu progreso, por si cambias de teléfono o se borran los datos.'),
       h('div', { class: 'row' },
         h('button', { class: 'btn btn-quiet', id: 'backup-later', onclick: () => { store.snoozeBackup(); render(); } }, 'Más tarde'),
-        h('button', { class: 'btn btn-primary', id: 'backup-go', onclick: () => show('settings') }, 'Hacer una copia'))),
-    walls, h('p', { class: 'soon' }, 'Hay más unidades en camino.')];
+        h('button', { class: 'btn btn-primary', id: 'backup-go', onclick: () => show('settings') }, 'Hacer una copia')))];
 }
 
 function viewUnit(unit, index, next) {
@@ -399,6 +450,9 @@ const TASK = {
   'tiles:listen': 'Escucha y forma la frase',
   'type:es2nl': 'Escríbelo en neerlandés',
   'type:listen': 'Escribe lo que oyes',
+  'tiles:order': 'Ordena las palabras',
+  gap: 'Completa la frase',
+  speak: 'Dilo en voz alta',
   match: 'Une las parejas',
 };
 
@@ -438,6 +492,16 @@ function viewSession() {
       h('p', { class: 'muted small' }, 'Toca una línea para escucharla.'),
     ];
     foot = h('button', { class: 'btn btn-primary', id: 'continue', onclick: advance }, 'Ir a las preguntas');
+  } else if (st.type === 'speak') {
+    work = viewSpeak(s, answered);
+    const stuck = answered && (s.result.verdict === 'blocked' || s.result.verdict === 'offline');
+    foot = !answered
+      ? h('button', { class: 'link', id: 'speak-skip', onclick: skipSpeaking }, 'No puedo hablar ahora')
+      : [viewSpeakFeedback(s), s.result.ok || stuck
+        ? h('button', { class: 'btn ' + (s.result.ok ? 'btn-ok' : 'btn-primary'), id: 'continue', onclick: advance }, 'Continuar')
+        : h('div', { class: 'row' },
+          h('button', { class: 'btn btn-quiet', id: 'retry', onclick: retrySoft }, 'Intentar otra vez'),
+          h('button', { class: 'btn btn-primary', id: 'continue', onclick: continueSoft }, 'Continuar'))];
   } else {
     work = [viewPrompt(st), viewAnswerArea(s, answered)];
     foot = answered
@@ -451,8 +515,61 @@ function viewSession() {
   return h('div', { class: 'player' }, top, exitAsk, h('p', { class: 'task' }, TASK[taskKey]), h('div', { class: 'work' }, work), h('div', { class: 'foot' }, foot));
 }
 
+function viewSpeak(s, answered) {
+  const st = s.step, a = s.answer, r = s.result;
+  // after an attempt, each word shows whether it was understood
+  let sentence = st.nl;
+  if (answered && r.flags.length) {
+    let k = 0;
+    sentence = displayWords(st.nl).flatMap((p) => {
+      const ok = r.flags.slice(k, k + p.count).every(Boolean);
+      k += p.count;
+      return [h('span', { class: 'word ' + (ok ? 'is-heard' : 'is-missed') }, p.text), ' '];
+    });
+  }
+  const label = { idle: 'Hablar', waiting: 'Un momento…', listening: 'Habla ahora' }[a.stage] || 'Hablar';
+  return [
+    h('div', { class: 'prompt' }, speakBtn(st.audio), h('span', { class: 'prompt-text', lang: 'nl', id: 'speak-sentence' }, sentence)),
+    h('p', { class: 'muted speak-es' }, st.es),
+    answered ? null : h('div', { class: 'mic-row' },
+      h('button', {
+        class: 'mic is-' + a.stage, id: 'speak-go', 'aria-label': label, disabled: a.stage === 'waiting',
+        onclick: () => (a.stage === 'listening' ? stopListening() : startSpeaking()),
+      }, icon('mic')),
+      h('p', { class: 'mic-label', id: 'speak-state', 'aria-live': 'polite' }, label),
+      a.stage === 'idle' ? h('p', { class: 'muted small' }, 'Escucha la frase, toca el micrófono y léela en voz alta.') : null),
+  ];
+}
+
+function viewSpeakFeedback(s) {
+  const r = s.result;
+  const heard = r.heard ? h('p', { class: 'gloss', id: 'speak-heard' }, `Se oyó: «${r.heard}»`) : null;
+  switch (r.verdict) {
+    case 'ok': return h('div', { class: 'feedback is-ok' }, h('h3', {}, '¡Se entendió todo!'), heard);
+    case 'partly': return h('div', { class: 'feedback is-soft' },
+      h('h3', {}, `Se ${r.matched === 1 ? 'entendió' : 'entendieron'} ${r.matched} de ${plural(r.total, 'palabra', 'palabras')}`),
+      h('p', {}, 'Las palabras en verde se entendieron. Escucha la frase y prueba otra vez, o sigue.'), heard);
+    case 'unclear': return h('div', { class: 'feedback is-soft' }, h('h3', {}, 'No te entendí en neerlandés'),
+      h('p', {}, 'Escucha la frase otra vez y dila despacio.'), heard);
+    case 'silence': return h('div', { class: 'feedback is-soft' }, h('h3', {}, 'No se oyó nada'),
+      h('p', {}, 'Toca el micrófono y empieza a hablar cuando diga «Habla ahora».'));
+    case 'blocked': return h('div', { class: 'feedback is-soft' }, h('h3', {}, 'El micrófono está bloqueado'),
+      h('p', {}, 'Para practicar hablando, dale permiso de micrófono a esta app en los ajustes de Chrome. Por ahora seguimos sin hablar.'));
+    case 'offline': return h('div', { class: 'feedback is-soft' }, h('h3', {}, 'Sin conexión'),
+      h('p', {}, 'Para reconocer la voz hace falta internet. Por ahora seguimos sin hablar.'));
+    default: return h('div', { class: 'feedback is-soft' }, h('h3', {}, 'No se pudo escuchar'), h('p', {}, 'Inténtalo otra vez, o sigue.'));
+  }
+}
+
 function viewPrompt(st) {
   if (st.type === 'match') return null;
+  if (st.type === 'gap') {
+    const s = ui.session, shown = s.phase === 'feedback';
+    const blank = h('span', { class: 'blank' + (shown ? ' is-filled' : ''), id: 'gap-blank' }, shown ? st.options[st.answer] : '\u00a0');
+    return h('div', { class: 'gap' },
+      h('p', { class: 'prompt-text', lang: 'nl' }, st.before ? st.before + ' ' : '', blank, st.joinAfter ? '' : ' ', st.after),
+      h('p', { class: 'muted gap-es' }, st.hintEs));
+  }
   if (st.mode === 'listen') {
     return h('div', { class: 'listen-row' }, speakBtn(st.audio, true),
       h('button', { class: 'speak-slow', onclick: () => audio.play(st.audio, { slow: true }) }, 'Más lento'));
@@ -466,8 +583,8 @@ function viewPrompt(st) {
 
 function viewAnswerArea(s, answered) {
   const st = s.step, a = s.answer;
-  if (st.type === 'mc') {
-    return h('div', { class: 'options' }, st.options.map((text, i) => {
+  if (st.type === 'mc' || st.type === 'gap') {
+    return h('div', { class: 'options' + (st.type === 'gap' ? ' is-gap' : ''), lang: st.type === 'gap' ? 'nl' : null }, st.options.map((text, i) => {
       let cls = 'option';
       if (answered) cls += i === st.answer ? ' is-right' : (i === a.picked ? ' is-wrong' : '');
       else if (i === a.picked) cls += ' is-picked';
@@ -656,6 +773,8 @@ function viewSettings() {
         'Reproducir siempre más lento', h('i', {})),
       h('button', { class: 'toggle', id: 'sounds', 'aria-pressed': String(store.sounds()), onclick: () => { store.setSetting('sounds', !store.sounds()); render(); } },
         'Sonidos al responder', h('i', {})),
+      canRecognise(window) ? h('button', { class: 'toggle', id: 'speaking', 'aria-pressed': String(store.speaking()), onclick: () => { store.setSetting('speaking', !store.speaking()); render(); } },
+        'Ejercicios de hablar', h('i', {})) : null,
       h('p', { class: 'muted small' }, `Fuente del audio: ${sources[audio.source('hallo')]}.`)),
     h('section', { class: 'panel' },
       h('h2', {}, 'Copia de seguridad'),
@@ -738,7 +857,8 @@ window.__tegel = {
   solve() {
     const st = ui.session && ui.session.step;
     if (!st) return null;
-    if (st.type === 'mc') return { option: st.answer };
+    if (st.type === 'mc' || st.type === 'gap') return { option: st.answer };
+    if (st.type === 'speak') return { say: st.nl };
     if (st.type === 'type') return { text: st.accepted[0] };
     if (st.type === 'match') return { pairs: st.pairs.map((p) => p.id) };
     if (st.type === 'tiles') {

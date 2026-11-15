@@ -6,7 +6,7 @@ import { buildCourse } from '../js/content.js';
 import { tileWords } from '../js/exercises.js';
 import { check, fold } from '../js/checker.js';
 import { addDays, daysBetween, retrievability } from '../js/fsrs.js';
-import { lessonItems, reviewSentences, REVIEW_SENTENCES, sync, gradeLesson, rate, dueKeys, buildReview, kindFor, emptyReviews, itemOf, BACKLOG_PER_DAY, SESSION_SIZE } from '../js/review.js';
+import { lessonItems, reviewSentences, REVIEW_SENTENCES, SPEAK_PER_REVIEW, sync, gradeLesson, rate, dueKeys, buildReview, kindFor, emptyReviews, itemOf, BACKLOG_PER_DAY, SESSION_SIZE } from '../js/review.js';
 import { upgrade } from '../js/store.js';
 
 const root = new URL('../../content/', import.meta.url);
@@ -81,11 +81,14 @@ test('due items: oldest first, rated before backlog, missing content skipped', (
 test('the exercise gets harder as she knows the sentence better', () => {
   assert.ok(['mc', 'nl2es'].includes(kindFor({ due: TODAY }, 0)));
   assert.ok(['mc', 'nl2es'].includes(kindFor({ s: 2 }, 1)));
-  assert.ok(['es2nl', 'listen'].includes(kindFor({ s: 5 }, 0)));
-  assert.ok(['type', 'listen'].includes(kindFor({ s: 30 }, 0)));
+  const medium = new Set([0, 1, 2, 3].map((i) => kindFor({ s: 5 }, i)));
+  assert.deepEqual([...medium].sort(), ['es2nl', 'gap', 'listen', 'order']);
+  const strong = new Set([0, 1, 2, 3].map((i) => kindFor({ s: 30 }, i)));
+  assert.deepEqual([...strong].sort(), ['gap', 'listen', 'type']);
 });
 
 function playable(st) {
+  if (st.type === 'gap') return st.options.length === 3 && st.answer >= 0;
   if (st.type === 'mc') return st.options.length === 3 && st.options[st.answer] === st.reveal.es;
   if (st.type === 'match') return st.pairs.length >= 3 && new Set(st.pairs.map((p) => fold(p.es))).size === st.pairs.length;
   const answer = st.lang === 'es' ? st.reveal.es : st.reveal.nl;
@@ -103,10 +106,19 @@ test('a review session: at most 15 items, each rated once, every exercise solvab
   // make everything due to stress the builder
   for (const c of Object.values(data.reviews.cards)) c.due = TODAY;
   for (let round = 0; round < 6; round++) {
-    const r = buildReview(course, data.reviews, TODAY, { round });
+    const r = buildReview(course, data.reviews, TODAY, { round, canSpeak: true });
     assert.ok(r.keys.length > 0 && r.keys.length <= SESSION_SIZE, `round ${round}: ${r.keys.length} items`);
+    const quiet = buildReview(course, data.reviews, TODAY, { round });
+    assert.equal(quiet.steps.filter((x) => x.type === 'speak').length, 0);
+    const speak = r.steps.filter((x) => x.type === 'speak');
+    assert.ok(speak.length <= SPEAK_PER_REVIEW);
+    r.steps.forEach((st, i) => {
+      if (st.type !== 'speak') return;
+      assert.equal(st.key, undefined, 'speaking does not rate the item');
+      assert.equal(r.steps[i - 1].sid, st.sid, 'said right after its exercise');
+    });
     const keysInSteps = [];
-    for (const st of r.steps) {
+    for (const st of r.steps.filter((x) => x.type !== 'speak')) {
       assert.ok(playable(st), `round ${round}: unsolvable ${st.type} ${st.mode || ''} ${st.key || ''}`);
       if (st.key) keysInSteps.push(st.key);
       if (st.pairs) for (const p of st.pairs) if (p.key) keysInSteps.push(p.key);

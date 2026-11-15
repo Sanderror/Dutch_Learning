@@ -30,7 +30,38 @@ await page.evaluateOnNewDocument(() => {
     Ctx.prototype.createOscillator = function () { window.__tones++; return make.call(this); };
   }
 });
+// a stand-in for Chrome's speech recogniser: it "hears" whatever the test sets in window.__say
+// ({alternatives: [...]}, {error: 'not-allowed'}, or null for silence)
+await page.evaluateOnNewDocument(() => {
+  window.__say = null;
+  window.__listens = 0;
+  class FakeRecogniser {
+    start() {
+      window.__listens++;
+      setTimeout(() => {
+        if (this.onaudiostart) this.onaudiostart();
+        setTimeout(() => {
+          const say = window.__say;
+          if (say && say.error) { if (this.onerror) this.onerror({ error: say.error }); }
+          else if (say && say.alternatives && this.onresult) this.onresult({ results: [say.alternatives.map((t) => ({ transcript: t, confidence: 0.9 }))] });
+          if (this.onend) this.onend();
+        }, 60);
+      }, 40);
+    }
+    stop() {}
+    abort() {}
+  }
+  Object.defineProperty(window, 'webkitSpeechRecognition', { value: FakeRecogniser, configurable: true, writable: true });
+  Object.defineProperty(window, 'SpeechRecognition', { value: FakeRecogniser, configurable: true, writable: true });
+});
 const tones = () => page.evaluate(() => window.__tones);
+const feedback = () => page.waitForFunction(() => window.__tegel.ui.session && window.__tegel.ui.session.phase === 'feedback');
+/** Say something into the stand-in recogniser and wait for the verdict. */
+async function say(what) {
+  await page.evaluate((w) => { window.__say = w; }, what);
+  await tap('#speak-go');
+  await feedback();
+}
 const todayKey = () => page.evaluate(() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; });
 await page.setViewport({ width: 412, height: 892, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
 const problems = [];
@@ -52,7 +83,9 @@ async function answer({ wrong = false } = {}) {
   const st = await state();
   const sol = await page.evaluate(() => window.__tegel.solve());
   if (st.type === 'card' || st.type === 'dialogue') { await tap('#continue'); return st; }
-  if (st.type === 'mc') {
+  if (st.type === 'speak') {
+    await say({ alternatives: [wrong ? 'hello this is something else entirely' : sol.say] });
+  } else if (st.type === 'mc' || st.type === 'gap') {
     await tap(`[data-option="${wrong ? (sol.option + 1) % 3 : sol.option}"]`);
     await tap('#check');
   } else if (st.type === 'tiles') {
@@ -137,13 +170,53 @@ ok('tile sheets: locked lesson blocked, open lesson lists its new words');
 // ---- 2. a whole lesson, with one mistake per exercise type ----
 await tap('#sheet-go');
 const seen = new Set(), failed = new Set();
-let guard = 0, requeued = 0;
+let guard = 0, requeued = 0, spoken = 0;
 while ((await state()).screen === 'session') {
   assert.ok(++guard < 80, 'lesson does not end');
   const st = await state();
   const key = st.type + (st.mode ? '-' + st.mode : '');
   if (!seen.has(key)) { seen.add(key); await shot(`10-step-${key}`); }
   if (st.type === 'card') { await answer(); continue; }
+  if (st.type === 'speak') {
+    spoken++;
+    const before = await state();
+    assert.match(await text(), /Dilo en voz alta/);
+    if (spoken === 1) {
+      await shot('13-speak-idle');
+      // not understood: a gentle message, no wrong tone, try again or continue
+      const tonesBefore = await tones();
+      await page.evaluate(() => { window.__say = { alternatives: ['It Come Out Venezuela'] }; });
+      await tap('#speak-go');
+      await page.waitForFunction(() => document.getElementById('speak-state') && /Un momento|Habla ahora/.test(document.getElementById('speak-state').textContent));
+      await feedback();
+      assert.match(await text(), /No te entendí en neerlandés/);
+      assert.match(await text(), /Se oyó: «It Come Out Venezuela»/);
+      assert.equal(await tones(), tonesBefore, 'no buzzer for pronunciation');
+      assert.ok(await page.$('#retry') && await page.$('#continue'));
+      await shot('14-speak-unclear');
+      await tap('#retry');
+      assert.equal((await state()).phase, 'answer');
+      await say(null);                                   // the recogniser returns nothing
+      assert.match(await text(), /No se oyó nada/);
+      await tap('#retry');
+      await answer();                                    // said right
+      assert.match(await text(), /¡Se entendió todo!/);
+      assert.equal(await page.$$eval('.word.is-heard', (w) => w.length) > 0, true);
+      await shot('15-speak-ok');
+    } else {
+      // half understood, and she moves on: it does not come back
+      const target = await page.evaluate(() => window.__tegel.solve().say);
+      await say({ alternatives: [target.split(' ').slice(0, -1).join(' ') + ' blabla'] });
+      assert.match(await text(), /Se entendi(ó|eron) \d de \d palabras?/);
+      assert.ok(await page.$$eval('.word.is-missed', (w) => w.length) >= 1);
+      await shot('16-speak-partly');
+    }
+    await tap('#continue');
+    const after = await state();
+    assert.equal(after.done, before.done, 'speaking does not count for the score');
+    assert.ok(after.queue <= before.queue, 'and is never queued again');
+    continue;
+  }
   const makeMistake = !failed.has(st.type) && !st.retry;
   if (makeMistake) failed.add(st.type);
   if (st.retry) requeued++;
@@ -165,10 +238,11 @@ assert.match(await text(), /Lección completa/);
 assert.match(await text(), /Aciertos a la primera: 8 de 12/);
 assert.ok(await tones() >= 20, 'a sound for every answer and for the finish: ' + await tones());
 assert.ok(requeued >= 3, 'wrong answers came back: ' + requeued);
+assert.equal(spoken, 2, 'two sentences said aloud');
 for (const t of ['card', 'mc', 'tiles-nl2es', 'tiles-es2nl', 'tiles-listen', 'type-es2nl', 'type-listen', 'match']) assert.ok(seen.has(t), 'saw ' + t);
 await new Promise((r) => setTimeout(r, 1500));     // let the tile finish being painted
 await shot('20-result');
-ok(`lesson 1 played to the end: all 8 step kinds seen, ${requeued} wrong answers repeated, result shown, ${await tones()} tones played`);
+ok(`lesson 1 played to the end: all 8 step kinds and 2 speaking steps seen, ${requeued} wrong answers repeated, result shown, ${await tones()} tones played`);
 
 await tap('#result-done');
 await page.waitForSelector('.wall');
@@ -283,6 +357,56 @@ await tap('#exit'); await tap('#exit-yes');
 await page.waitForSelector('.wall');
 ok('practice step: wrong answer offers try again and continue; continue moves on without repeating it');
 
+// ---- 5c. speaking: "No puedo hablar ahora", a blocked microphone, and the switch in Ajustes ----
+const speakCount = () => page.evaluate(() => { const q = window.__tegel.ui.session; return [q.step, ...q.queue].filter((x) => x && x.type === 'speak').length; });
+await tap('#start-next');
+assert.equal(await speakCount(), 2);
+while ((await state()).type !== 'speak') { await answer(); if (!['card'].includes((await state()).type) && (await state()).phase === 'feedback') await tap('#continue'); }
+const listensBefore = await page.evaluate(() => window.__listens);
+await tap('#speak-skip');
+assert.notEqual((await state()).type, 'speak');
+let sawSpeak = false, g5 = 0;
+while ((await state()).screen === 'session') {
+  assert.ok(++g5 < 60);
+  const st = await answer();
+  if (st.type === 'speak') sawSpeak = true;
+  if (st.type !== 'card') await tap('#continue');
+}
+assert.equal(sawSpeak, false, 'no more speaking in that session');
+assert.equal(await page.evaluate(() => window.__listens), listensBefore, 'the microphone was not used');
+assert.match(await text(), /Lección completa/);
+await tap('#result-done');
+await page.waitForSelector('.wall');
+// a blocked microphone: explained once, then the session goes on without speaking
+await tap('#start-next');
+while ((await state()).type !== 'speak') { await answer(); if ((await state()).phase === 'feedback') await tap('#continue'); }
+await say({ error: 'not-allowed' });
+assert.match(await text(), /El micrófono está bloqueado/);
+assert.equal(await page.$('#retry'), null);
+await shot('46-speak-blocked');
+await tap('#continue');
+assert.equal(await speakCount(), 1, 'the other speaking step is still queued…');
+let g6 = 0;
+while ((await state()).screen === 'session' && (await state()).type !== 'speak') { assert.ok(++g6 < 60); const st = await answer(); if (st.type !== 'card') await tap('#continue'); }
+assert.equal((await state()).screen, 'result', '…but it is skipped');
+await tap('#result-done');
+await page.waitForSelector('.wall');
+// switched off in Ajustes: lessons have no speaking steps
+await tap('.icon-btn[aria-label="Ajustes"]');
+await tap('#speaking');
+assert.equal(await page.$eval('#speaking', (b) => b.getAttribute('aria-pressed')), 'false');
+await tap('#back');
+await page.waitForSelector('.wall');
+await tap('#start-next');
+assert.equal(await speakCount(), 0);
+await tap('#exit'); await tap('#exit-yes');
+await page.waitForSelector('.wall');
+await tap('.icon-btn[aria-label="Ajustes"]');
+await tap('#speaking');
+await tap('#back');
+await page.waitForSelector('.wall');
+ok('speaking: "No puedo hablar ahora" and a blocked microphone end speaking for the session; the switch in Ajustes removes it');
+
 // ---- 6. unit test-out ----
 await tap('[data-tile="u01t"]');
 assert.match(await text(), /12 preguntas sin segundas oportunidades/);
@@ -295,11 +419,11 @@ assert.match(await text(), /Acertaste 9 de 12; hacen falta 10/);
 await shot('51-test-failed');
 await tap('#result-done');
 await page.waitForSelector('.wall');
-assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 1, 'a failed test changes nothing');
+assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 3, 'a failed test changes nothing (lessons 1 to 3 were done above)');
 await tap('[data-tile="u01t"]'); await tap('#sheet-go');
 for (let i = 0; i < 12; i++) { const st = await answer({ wrong: i < 2 }); if (i === 5) await shot(`52-test-step-${st.type}`); await tap('#continue'); }
 assert.match(await text(), /Unidad superada/);
-assert.match(await text(), /5 azulejos puestos de una vez/);
+assert.match(await text(), /3 azulejos puestos de una vez/);
 await shot('53-test-passed');
 await tap('#result-done');
 await page.waitForSelector('.wall');
@@ -334,12 +458,32 @@ ok('dialogue: translation toggle, three questions, completion');
 
 // ---- 8. every remaining lesson can be played to the end ----
 let lessons = 0;
+const newKinds = new Set();
 while (await page.$('#start-next')) {
   await tap('#start-next');
   let g = 0;
   while ((await state()).screen === 'session') {
     assert.ok(++g < 60);
+    const now = await state();
+    const kind = now.type + (now.mode ? '-' + now.mode : '');
+    if (['gap', 'tiles-order'].includes(kind) && !newKinds.has(kind)) {
+      newKinds.add(kind);
+      await shot(`70-step-${kind}`);
+      if (kind === 'gap') {
+        // a wrong choice shows the whole sentence and comes back; the right one fills the blank
+        await answer({ wrong: true });
+        assert.match(await text(), /Respuesta correcta/);
+        await shot('71-gap-wrong');
+        await tap('#continue');
+        continue;
+      }
+    }
     const st = await answer();
+    if (kind === 'gap' && !newKinds.has('gap-right')) {
+      newKinds.add('gap-right');
+      assert.equal(await page.$eval('#gap-blank', (b) => b.className.includes('is-filled')), true);
+      await shot('72-gap-right');
+    }
     if (st.type !== 'card' && st.type !== 'dialogue') await tap('#continue');
   }
   assert.match(await text(), /Lección completa/);
@@ -348,12 +492,18 @@ while (await page.$('#start-next')) {
   lessons++;
 }
 assert.equal(lessons, (UNITS - 1) * 6);
+for (const k of ['gap', 'tiles-order', 'gap-right']) assert.ok(newKinds.has(k), 'saw ' + k);
 assert.match(await text(), /Todo al día/);
 await shot('80-home-all-done');
-ok(`units 2 to ${UNITS}: every lesson plays through; home says there is nothing new`);
+ok(`units 2 to ${UNITS}: every lesson plays through, with gap, word-order and speaking steps; home says there is nothing new`);
 
 // ---- 8b. backup reminder once there is something to lose ----
 assert.ok(await page.$('#backup-reminder'), 'reminder shows: many lessons, no copy yet');
+assert.equal(await page.evaluate(() => {
+  const card = document.getElementById('backup-reminder');
+  const walls = [...document.querySelectorAll('.wall')];
+  return walls.every((w) => w.compareDocumentPosition(card) & Node.DOCUMENT_POSITION_FOLLOWING) && !card.nextElementSibling;
+}), true, 'the reminder is the last thing on the home screen');
 await shot('81-backup-reminder');
 await tap('#backup-later');
 assert.equal(await page.$('#backup-reminder'), null);

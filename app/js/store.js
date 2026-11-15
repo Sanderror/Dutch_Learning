@@ -190,6 +190,7 @@ export function createStore(storage, now = () => new Date()) {
 
     /** Settings that are on unless she turned them off (older saves lack them). */
     sounds() { return data.settings.sounds !== false; },
+    speaking() { return data.settings.speaking !== false; },
 
     exportText() { return JSON.stringify({ app: 'tegeltjes', exportedAt: now().toISOString(), progress: data }); },
 

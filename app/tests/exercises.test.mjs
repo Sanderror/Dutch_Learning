@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { buildCourse } from '../js/content.js';
-import { buildLesson, buildDialogue, buildUnitTest, tileWords, isGraded, seedRandom, UNIT_TEST_SIZE } from '../js/exercises.js';
+import { buildLesson, buildDialogue, buildUnitTest, tileWords, isGraded, seedRandom, UNIT_TEST_SIZE, canBeSpoken } from '../js/exercises.js';
 import { check, fold } from '../js/checker.js';
 
 const root = new URL('../../content/', import.meta.url);
@@ -36,7 +36,7 @@ test('course loads: lessons in order, new words known per lesson', () => {
 test('every lesson: each sentence exactly once, every new word gets a card before its first use', () => {
   eachLesson((built, id) => {
     const { lesson } = course.lessonInfo.get(id);
-    const sids = built.steps.filter((s) => s.sid).map((s) => s.sid);
+    const sids = built.steps.filter((s) => s.sid && isGraded(s)).map((s) => s.sid);
     assert.deepEqual([...sids].sort(), lesson.sentences.map((s) => s.id).sort(), id);
     const fresh = course.newEntries(id).map((e) => e.id);
     const cards = built.steps.filter((s) => s.type === 'card').map((s) => s.entryId);
@@ -76,7 +76,11 @@ test('tile exercises: solvable, with distractors that cannot also be right', () 
         assert.ok(i >= 0, `${step.sid}: tile "${w}" missing`);
         pool.splice(i, 1);
       }
-      assert.ok(pool.length >= 2, `${step.sid}: needs at least 2 distractors`);
+      if (step.mode === 'order') {
+        assert.equal(pool.length, 0, `${step.sid}: ordering has no extra tiles`);
+        assert.ok(words.length >= 4, `${step.sid}: too short to order`);
+        assert.equal(step.prompt, step.reveal.es);
+      } else assert.ok(pool.length >= 2, `${step.sid}: needs at least 2 distractors`);
       const r = check(words.join(' '), step.accepted, { lang: step.lang, knownForms: course.allForms });
       assert.ok(r.ok, `${step.sid}: correct tiles rejected (${r.kind})`);
       // no distractor repeats a word of the answer
@@ -141,6 +145,67 @@ test('matching game: 3 to 5 pairs, no ambiguous Spanish, comes after all word ca
   // nee, niet and geen all mean "no": never two of them in one game
   const m = buildLesson(course, 'u02l5').steps.find((s) => s.type === 'match');
   assert.ok(m.pairs.filter((p) => fold(p.es) === 'no').length <= 1);
+});
+
+test('fill the gap: three taught options, the sentence is rebuilt exactly, only one option is accepted', () => {
+  let count = 0;
+  const kinds = {};
+  const samples = [];
+  eachLesson((built, id, attempt) => {
+    const { lesson } = course.lessonInfo.get(id);
+    for (const step of built.steps.filter((s) => s.type === 'gap')) {
+      count++;
+      const s = lesson.sentences.find((x) => x.id === step.sid);
+      assert.equal(step.options.length, 3, step.sid);
+      assert.equal(new Set(step.options).size, 3, step.sid);
+      const fill = (w) => [step.before, w + (step.joinAfter ? '' : ' ') + step.after].join(' ').trim();
+      const right = step.options[step.answer];
+      assert.equal(fold(fill(right)), fold(s.nl), `${step.sid}: the gap rebuilds the sentence`);
+      const accepted = new Set([s.nl, ...(s.alt_nl || [])].map(fold));
+      const known = course.formsUpTo(id);
+      step.options.forEach((o, i) => {
+        assert.ok(known.has(o), `${step.sid}: option "${o}" not taught by ${id}`);
+        if (i !== step.answer) assert.ok(!accepted.has(fold(fill(o))), `${step.sid}: "${o}" would also be accepted`);
+      });
+      assert.equal(step.hintEs, s.es);
+      assert.equal(step.audio, null, 'the audio would give the answer away');
+      // both forms are right with these subjects: never against each other
+      const toks = s.nl.toLowerCase().split(/[^a-zé]+/);
+      if (toks.includes('u')) {
+        assert.ok(!(step.options.includes('hebt') && step.options.includes('heeft')), step.sid);
+        assert.ok(!(step.options.includes('bent') && step.options.includes('is')), step.sid);
+      }
+      if (['u', 'jij', 'je'].some((w) => toks.includes(w))) assert.ok(!(step.options.includes('wil') && step.options.includes('wilt')), step.sid);
+      const kind = ['de', 'het', 'een'].includes(right) ? 'article' : (['deze', 'die', 'dit', 'dat'].includes(right) ? 'demonstrative' : (['niet', 'geen'].includes(right) ? 'negation' : 'verb'));
+      kinds[kind] = (kinds[kind] || 0) + 1;
+      if (attempt === 0 && samples.length < 400) samples.push(`${step.before} ___${step.joinAfter ? '' : ' '}${step.after}  [${step.options.join(' / ')}] -> ${right}`);
+    }
+  });
+  if (process.env.DUMP_GAPS) fs.writeFileSync(process.env.DUMP_GAPS, [...new Set(samples)].join('\n') + '\n');
+  console.log(`    gaps: ${count} over all lessons and attempts; ${JSON.stringify(kinds)}`);
+  assert.ok(count > 300);
+  assert.ok(kinds.verb > kinds.article, 'mostly verb forms');
+});
+
+test('speaking: only when it can be recognised, right after the sentence, never counted', () => {
+  for (const id of course.lessonOrder) for (const attempt of ATTEMPTS) {
+    const silent = buildLesson(course, id, { attempt });
+    const spoken = buildLesson(course, id, { attempt, canSpeak: true });
+    assert.equal(silent.steps.filter((s) => s.type === 'speak').length, 0);
+    const speak = spoken.steps.filter((s) => s.type === 'speak');
+    assert.ok(speak.length >= 1 && speak.length <= 2, `${id}: ${speak.length} speaking steps`);
+    assert.deepEqual(spoken.steps.filter((s) => s.type !== 'speak'), silent.steps, `${id}: the rest of the lesson is unchanged`);
+    assert.equal(spoken.steps.filter(isGraded).length, silent.steps.filter(isGraded).length);
+    const { lesson } = course.lessonInfo.get(id);
+    spoken.steps.forEach((st, i) => {
+      if (st.type !== 'speak') return;
+      assert.equal(st.soft, true);
+      assert.equal(st.audio, st.nl);
+      assert.ok(canBeSpoken(course, lesson.sentences.find((x) => x.id === st.sid)), `${st.sid}: 2 to 8 words`);
+      const before = spoken.steps[i - 1];
+      assert.ok(before.sid === st.sid && isGraded(before), `${st.sid}: said right after its exercise`);
+    });
+  }
 });
 
 test('without audio there are no listening exercises; with audio there are', () => {
