@@ -5,7 +5,7 @@
 // is tested without a browser (app/tests/store.test.mjs).
 
 const KEY = 'tegeltjes.progress.v1';
-export const SCHEMA = 1;
+export const SCHEMA = 2;
 
 // How to keep her progress across app updates:
 // - Progress is keyed by lesson id ("u03l2") and dialogue id ("u03d"). Those ids
@@ -18,7 +18,9 @@ export const SCHEMA = 1;
 //   tests load it with every later version.
 // - Data from a newer version than this one is set aside, not overwritten.
 export const MIGRATIONS = {
-  // 1: (data) => { ...turn schema 1 into schema 2...; data.schema = 2; return data; },
+  // 2: review sessions. Adds the review schedule, empty; the app fills it from
+  // the lessons she has finished (review.js sync), spread over the coming days.
+  1: (data) => ({ ...data, schema: 2, reviews: { cards: {} } }),
 };
 
 /** Bring stored data up to SCHEMA. Returns null when it cannot be read. */
@@ -57,12 +59,13 @@ function daysBetween(a, b) {
 function empty(now) {
   return { schema: SCHEMA, createdAt: now.toISOString(), xp: 0, lessons: {}, days: {},
     streak: { current: 0, best: 0, lastDay: null }, reports: [], settings: { slow: false, sounds: true },
-    backup: { lastAt: null, snoozeUntil: null } };
+    backup: { lastAt: null, snoozeUntil: null }, reviews: { cards: {} } };
 }
 
 function isValid(data) {
   return data && typeof data === 'object' && data.schema === SCHEMA &&
-    data.lessons && typeof data.lessons === 'object' && data.streak && Array.isArray(data.reports);
+    data.lessons && typeof data.lessons === 'object' && data.streak && Array.isArray(data.reports) &&
+    data.reviews && typeof data.reviews.cards === 'object';
 }
 
 /**
@@ -158,6 +161,23 @@ export function createStore(storage, now = () => new Date()) {
       save();
       return { xp, added };
     },
+
+    /** The review schedule (review.js works on it); call commit() after changing it. */
+    get reviews() { return data.reviews; },
+    commit() { return save(); },
+
+    /** A review session finished: a point per item right at the first try; counts for the streak. */
+    completeReview({ correct, total }) {
+      const xp = correct;
+      data.xp += xp;
+      touchDay(xp, 0);
+      const d = data.days[dayKey(now())];
+      d.reviews = (d.reviews || 0) + total;
+      save();
+      return { xp, streak: streakNow() };
+    },
+
+    reviewedToday() { const d = data.days[dayKey(now())]; return (d && d.reviews) || 0; },
 
     /** "My answer was right": kept on the phone until exported. */
     report(entry) {

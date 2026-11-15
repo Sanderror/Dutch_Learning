@@ -2,10 +2,10 @@
 // - audio files never change (their name is a hash of voice and text): cache first
 // - everything else: network first, so a new version or new content shows up
 //   the next time she opens the app online; the cache is the offline fallback
-const CACHE = 'tegeltjes-v2';
+const CACHE = 'tegeltjes-v3';
 const SHELL = ['./', 'index.html', 'css/app.css', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png',
   'fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2',
-  'js/main.js', 'js/content.js', 'js/exercises.js', 'js/checker.js', 'js/store.js', 'js/audio.js', 'js/md.js', 'js/glyphs.js', 'js/sfx.js'];
+  'js/main.js', 'js/content.js', 'js/exercises.js', 'js/checker.js', 'js/store.js', 'js/audio.js', 'js/md.js', 'js/glyphs.js', 'js/sfx.js', 'js/fsrs.js', 'js/review.js'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

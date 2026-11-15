@@ -21,7 +21,7 @@ export function seedRandom(text) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
-function shuffled(arr, rnd) {
+export function shuffled(arr, rnd) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(rnd() * (i + 1));
@@ -128,6 +128,27 @@ function cardStep(e) {
   return { type: 'card', entryId: e.id, nl: e.display, forms: extraForms, es: e.es, note: e.note_es || null, audio: e.display };
 }
 
+/**
+ * Matching game for review: the given entries (graded), topped up with other
+ * known words to at least three pairs (not graded).
+ */
+export function wordsMatchStep(entries, fillers, rnd) {
+  const pairs = [];
+  const seenEs = new Set(), seenNl = new Set();
+  const add = (e, graded) => {
+    const es = e.es[0];
+    if (seenEs.has(fold(es)) || seenNl.has(fold(e.display))) return false;
+    seenEs.add(fold(es)); seenNl.add(fold(e.display));
+    pairs.push({ id: e.id, nl: e.display, es, audio: e.display, key: graded ? 'w:' + e.id : null });
+    return true;
+  };
+  const left = [];
+  for (const e of entries) if (!add(e, true)) left.push(e);
+  for (const e of shuffled(fillers, rnd)) { if (pairs.length >= 3) break; add(e, false); }
+  if (pairs.length < 3) return { step: null, left: entries };
+  return { step: { type: 'match', pairs, left: shuffled(pairs.map((p) => p.id), rnd), right: shuffled(pairs.map((p) => p.id), rnd) }, left };
+}
+
 function matchStep(course, lessonId, rnd) {
   const fresh = course.newEntries(lessonId);
   const older = shuffled(course.entriesUpTo(lessonId).filter((e) => e.intro !== lessonId), rnd);
@@ -139,7 +160,8 @@ function matchStep(course, lessonId, rnd) {
     // "no" is the gloss of nee, niet and geen: only one of them can be in a matching game
     if (seenEs.has(fold(es)) || seenNl.has(fold(e.display))) continue;
     seenEs.add(fold(es)); seenNl.add(fold(e.display));
-    pairs.push({ id: e.id, nl: e.display, es, audio: e.display });
+    // the lesson's own new words are graded for the review schedule; older ones are just practice
+    pairs.push({ id: e.id, nl: e.display, es, audio: e.display, key: e.intro === lessonId ? 'w:' + e.id : null });
   }
   if (pairs.length < 3) return null;
   return { type: 'match', pairs, left: shuffled(pairs.map((p) => p.id), rnd), right: shuffled(pairs.map((p) => p.id), rnd) };
@@ -150,7 +172,7 @@ function matchStep(course, lessonId, rnd) {
 const PATTERN = ['mc', 'nl2es', 'es2nl', 'listen', 'mc', 'es2nl', 'type', 'listen', 'nl2es', 'type', 'es2nl', 'listen', 'type', 'es2nl'];
 const LONG_FOR_TYPING = 5;      // in sections 1 and 2, longer sentences are built from tiles instead
 
-function sentenceStep(course, s, wanted, ctx) {
+export function sentenceStep(course, s, wanted, ctx) {
   const { lessonId, section, canListen, rnd, mcPool, lessonSentences } = ctx;
   const nNl = tileWords(s.nl, course.proper).length;
   const nEs = tileWords(s.es, course.proper).length;

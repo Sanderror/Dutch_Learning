@@ -6,13 +6,14 @@
 import { loadContent } from './content.js';
 import { buildLesson, buildDialogue, buildUnitTest, isGraded, tileWords, UNIT_TEST_SIZE, UNIT_TEST_PASS } from './exercises.js';
 import { check } from './checker.js';
-import { createStore } from './store.js';
+import { createStore, dayKey } from './store.js';
+import { sync as syncReviews, gradeLesson, rate, buildReview, dueCount, summary as reviewSummary } from './review.js';
 import { createAudio, loadAudioIndex } from './audio.js';
 import { createSfx } from './sfx.js';
 import { renderNotes } from './md.js';
 import { motif, ICON } from './glyphs.js';
 
-const VERSION = '0.3.0';
+const VERSION = '0.4.0';
 const CONTENT = '../content/';
 const AUDIO = '../audio/';
 const root = document.getElementById('app');
@@ -21,7 +22,7 @@ let course = null;
 let store = null;
 let audio = null;
 let sfx = null;
-const ui = { screen: 'loading', sheet: null, session: null, notes: null, result: null, error: null, notice: '', pushed: false, ignorePop: false };
+const ui = { reviewRound: 0, screen: 'loading', sheet: null, session: null, notes: null, result: null, error: null, notice: '', pushed: false, ignorePop: false };
 
 // ---------- small helpers ----------
 function h(tag, attrs, ...kids) {
@@ -70,6 +71,13 @@ async function install() {
 }
 
 // ---------- where she is in the course ----------
+const today = () => dayKey(new Date());
+function reviewsDue() { return dueCount(store.reviews, course, today()); }
+/** Lessons finished (or passed by a test) go into the review schedule. */
+function syncSchedule() {
+  if (syncReviews(store.reviews, course, (id) => store.isDone(id), today())) store.commit();
+}
+
 function nextLessonId() { return course.lessonOrder.find((id) => !store.isDone(id)) || null; }
 function unitOf(lessonId) { return course.lessonInfo.get(lessonId).unit; }
 function unitLessonIds(unit) { return unit.lessons.map((l) => l.id); }
@@ -106,10 +114,13 @@ function startSession(kind, id) {
   let built;
   if (kind === 'lesson') built = buildLesson(course, id, { attempt: store.attempts(id), canListen });
   else if (kind === 'dialogue') built = buildDialogue(course, id);
+  else if (kind === 'review') built = buildReview(course, store.reviews, today(), { canListen, round: ui.reviewRound++ });
   else built = buildUnitTest(course, id, { attempt: store.attempts(id + 't'), canListen });
+  if (!built.steps.length) return goHome();
   ui.session = {
     kind, id, built, queue: built.steps.slice(), total: built.steps.filter(isGraded).length,
     done: 0, firstTry: 0, step: null, phase: 'answer', answer: null, result: null, askExit: false, reported: false,
+    outcomes: {},          // review key -> right at the first try? (only the first answer counts)
   };
   ui.sheet = null;
   if (kind === 'test') store.noteAttempt(id + 't');
@@ -122,7 +133,7 @@ function initAnswer(step) {
     case 'mc': return { picked: null };
     case 'tiles': return { chosen: [] };
     case 'type': return { text: '' };
-    case 'match': return { nl: null, matched: [], misses: 0, miss: null };
+    case 'match': return { nl: null, matched: [], misses: 0, miss: null, missed: new Set() };
     default: return { showEs: false };
   }
 }
@@ -150,8 +161,14 @@ function hasAnswer(s) {
 // A step marked `soft` (speaking, later) is practice: a wrong answer offers
 // "Intentar otra vez" and "Continuar", and is never repeated at the end, so a
 // sound she cannot make yet never blocks a lesson.
+function noteOutcome(key, ok) {
+  const o = ui.session.outcomes;
+  if (key && !(key in o)) o[key] = ok;
+}
+
 function record(ok, result) {
   const s = ui.session, st = s.step;
+  noteOutcome(st.key || (st.sid ? 's:' + st.sid : null), ok);
   if (!st._retry && !s.retried && ok) s.firstTry++;
   if (ok) s.done++;
   else if (st.soft) result = { ...result, soft: true };   // counted when she continues
@@ -196,14 +213,21 @@ function checkAnswer() {
 
 function finish() {
   const s = ui.session;
-  if (s.kind === 'test') {
+  if (s.kind === 'review') {
+    for (const key of s.built.keys) rate(store.reviews, key, s.outcomes[key] !== false, today());
+    const r = store.completeReview({ correct: s.firstTry, total: s.total });
+    ui.result = { kind: 'review', correct: s.firstTry, total: s.total, ...r, left: reviewsDue() };
+  } else if (s.kind === 'test') {
     const pass = s.firstTry >= s.built.pass;
     const unit = course.unitById(s.id);
     const gained = pass ? store.passUnitTest(unitLessonIds(unit)) : { xp: 0, added: 0 };
+    if (pass) syncSchedule();             // lessons passed by the test join the backlog
     ui.result = { kind: 'test', pass, correct: s.firstTry, total: s.total, need: s.built.pass, ...gained, streak: store.streak() };
   } else {
+    // a lesson finished for the first time rates its review items from how it went
+    if (s.kind === 'lesson') gradeLesson(store.reviews, course, s.built.id, s.outcomes, today());
     // built.id is the lesson id, or unit id + "d" for a dialogue: the id its tile looks up
-    const r = store.completeLesson(s.built.id, { correct: s.firstTry, total: s.total, via: s.kind });
+    const r = store.completeLesson(s.built.id, { correct: s.firstTry, total: s.total, via: s.kind });   // also saves the schedule
     ui.result = { kind: s.kind, id: s.built.id, correct: s.firstTry, total: s.total, ...r };
   }
   if (ui.result.kind !== 'test' || ui.result.pass) sfx.finish();
@@ -232,6 +256,13 @@ function viewHome() {
         icon('sun'), plural(streak, 'día', 'días')),
       h('button', { class: 'icon-btn', 'aria-label': 'Ajustes', onclick: () => show('settings') }, icon('settings'))));
 
+  const due = reviewsDue();
+  const reviewCard = due > 0 && h('section', { class: 'today review-card' },
+    h('h1', {}, 'Repaso'),
+    h('p', { class: 'muted' }, `${plural(due, 'frase o palabra', 'frases y palabras')} para repasar hoy.`),
+    h('button', { class: 'btn btn-primary', id: 'start-review', onclick: () => startSession('review', 'review') }, due > 15 ? 'Repasar 15' : 'Repasar'));
+  const lessonBtn = due > 0 ? 'btn btn-quiet' : 'btn btn-primary';
+
   let todayCard;
   if (!next) {
     todayCard = h('section', { class: 'today is-done' },
@@ -243,7 +274,7 @@ function viewHome() {
       ? h('section', { class: 'today' },
         h('h1', {}, title),
         h('p', { class: 'muted' }, `Tu lección de hoy: unidad ${unitNumber(unitOf(next))}, lección ${lessonNumber(next)}.`),
-        h('button', { class: 'btn btn-primary', id: 'start-next', onclick: () => startSession('lesson', next) }, 'Empezar'))
+        h('button', { class: lessonBtn, id: 'start-next', onclick: () => startSession('lesson', next) }, 'Empezar'))
       : h('section', { class: 'today is-done' },
         h('h1', {}, 'Hecho por hoy'),
         h('p', { class: 'muted' }, `Si quieres más, la siguiente es «${title}».`),
@@ -265,7 +296,7 @@ function viewHome() {
     canInstall() && h('section', { class: 'install' },
       h('p', {}, 'Pon Tegeltjes en tu pantalla de inicio para abrirla como cualquier otra app.'),
       h('button', { class: 'btn btn-quiet', id: 'install', onclick: install }, 'Instalar la app')),
-    todayCard,
+    reviewCard, todayCard,
     store.backupDue() && h('section', { class: 'backup', id: 'backup-reminder' },
       h('p', {}, 'Guarda una copia de tu progreso, por si cambias de teléfono o se borran los datos.'),
       h('div', { class: 'row' },
@@ -383,7 +414,7 @@ function viewSession() {
       h('i', { style: `width:${s.total ? (100 * s.done) / s.total : 0}%` })));
 
   const exitAsk = s.askExit && h('div', { class: 'exit-ask' },
-    h('strong', {}, s.kind === 'test' ? '¿Salir de la prueba?' : '¿Salir de la lección?'), ' Lo que llevas no se guarda.',
+    h('strong', {}, s.kind === 'test' ? '¿Salir de la prueba?' : (s.kind === 'review' ? '¿Salir del repaso?' : '¿Salir de la lección?')), ' Lo que llevas no se guarda.',
     h('div', { class: 'row' },
       h('button', { class: 'btn btn-quiet', id: 'exit-yes', onclick: leaveSession }, 'Salir'),
       h('button', { class: 'btn btn-primary', onclick: () => { s.askExit = false; render(); } }, 'Seguir aquí')));
@@ -499,10 +530,13 @@ function tapMatch(side, id) {
       s.done++;
       s.result = { ok: true, kind: 'match', best: '' };
       s.phase = 'feedback';
+      for (const p of st.pairs) if (p.key) noteOutcome(p.key, !a.missed.has(p.id));
       sfx.correct();
     }
   } else {
-    a.misses++; a.miss = { nl: a.nl, es: id }; a.nl = null;
+    a.misses++; a.miss = { nl: a.nl, es: id };
+    a.missed.add(a.nl); a.missed.add(id);       // both words were confused
+    a.nl = null;
     sfx.wrong();
   }
   render();
@@ -547,6 +581,18 @@ function viewResult() {
       h('div', { class: 'facts' },
         h('span', {}, `Acertaste ${r.correct} de ${r.total}; hacen falta ${r.need}.`),
         h('span', { class: 'muted' }, 'Haz las lecciones de la unidad, o inténtalo otra vez cuando quieras.')),
+      done);
+  }
+  if (r.kind === 'review') {
+    return h('div', { class: 'result' },
+      h('div', { class: 'result-tile' }, h('div', { class: 'tile is-done', html: ICON.sun })),
+      h('h1', {}, 'Repaso hecho'),
+      h('div', { class: 'facts' },
+        h('span', {}, `Aciertos a la primera: ${r.correct} de ${r.total}`),
+        h('span', {}, `+${r.xp} puntos`),
+        h('span', {}, `Racha: ${plural(r.streak, 'día', 'días')}`),
+        r.left ? h('span', { class: 'muted' }, `Quedan ${plural(r.left, 'frase o palabra', 'frases y palabras')} para hoy.`) : null),
+      r.left ? h('button', { class: 'btn btn-quiet', id: 'review-again', onclick: () => startSession('review', 'review') }, 'Otra ronda') : null,
       done);
   }
   const tile = h('div', { class: 'result-tile' }, h('div', { class: 'tile is-done', html: r.kind === 'test' ? ICON.sun : (r.kind === 'dialogue' ? ICON.dialogue : motif(r.id)) }));
@@ -594,7 +640,8 @@ function viewSettings() {
         h('div', { class: 'stat' }, h('b', {}, String(doneCount)), doneCount === 1 ? 'azulejo puesto' : 'azulejos puestos'),
         h('div', { class: 'stat' }, h('b', {}, String(d.xp)), d.xp === 1 ? 'punto' : 'puntos'),
         h('div', { class: 'stat' }, h('b', {}, String(store.streak())), store.streak() === 1 ? 'día de racha' : 'días de racha'),
-        h('div', { class: 'stat' }, h('b', {}, String(d.streak.best)), 'mejor racha, en días'))),
+        h('div', { class: 'stat' }, h('b', {}, String(d.streak.best)), 'mejor racha, en días')),
+      h('p', { class: 'muted small', id: 'review-stats' }, `En repaso: ${plural(reviewSummary(store.reviews).total, 'frase o palabra', 'frases y palabras')}; para hoy: ${reviewsDue()}.`)),
     h('section', { class: 'panel' },
       h('h2', {}, 'Instalar'),
       isInstalled()
@@ -677,6 +724,7 @@ async function boot() {
   }
   audio = createAudio({ base: AUDIO, index, win: window, isSlow: () => !!store.data.settings.slow });
   sfx = createSfx({ win: window, enabled: () => store.sounds() });
+  syncSchedule();
   ui.screen = 'home';
   render();
   try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch (e) { /* optional */ }
