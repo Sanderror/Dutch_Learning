@@ -1,0 +1,83 @@
+{
+  "checker": "independent-agent-2026-11-15-u06",
+  "flags": [
+    {
+      "id": "u06:grammar",
+      "severity": "b",
+      "reason": "Pronunciation hint invites wrong stress for a Spanish reader. The respelling «kindere» ends in a vowel, so by Spanish rules it is read kin-DE-re (llana); Dutch is KIN-de-ren. The same trap applies to the -er words listed right below (moeder, vader, dochter): Spanish words ending in -r are read agudas (moe-DER, va-DER, doch-TER), but Dutch stresses the first syllable. 'Una e muy breve' helps but does not say where the stress goes.",
+      "suggestion": "Write «KIN-de-re» (fuerza en KIN) and add to the -er line: «y la fuerza va en la primera sílaba: MOE-der, VA-der, DOCH-ter»."
+    },
+    {
+      "id": "u06:grammar",
+      "severity": "b",
+      "reason": "Plurals section: the -en example zus → zus**sen** silently doubles the s, and the bold on 'sen' makes the ending look like '-sen'. The note explains the vowel rule (woon → wonen) a few lines up but not its mirror, the consonant doubling after a short vowel, so the learner cannot generalise (e.g. kat → katten, tas → tassen).",
+      "suggestion": "Bold only the ending (zus → zuss**en**) and add: «Si la vocal es corta, la consonante se duplica para que siga corta: zus → zussen.»"
+    },
+    {
+      "id": "u06:grammar",
+      "severity": "b",
+      "reason": "«En español «su» sirve para todo; en neerlandés hay que elegir entre uw, zijn y haar» is incomplete: «su» also means 'de ellos/de ellas' (hun) and 'de ustedes' (jullie). In this very unit the learner has just met zij = ellos, so she may well produce *'zijn/haar' for 'su (de ellos)'. Not false for the three forms given, but the 'elegir entre' wording presents the list as complete.",
+      "suggestion": "Add: «Para 'su' de ellos (de ellas) se usa otra palabra, hun, que verás más adelante.» or change to «…hay que elegir, por ejemplo entre uw, zijn y haar»."
+    },
+    {
+      "id": "u06l6s02",
+      "severity": "b",
+      "reason": "Pedagogy/gloss: first use of jou as a direct object without a preposition (Ik mis jou). The jou word card note says 'Forma de jij después de una preposición: met jou', and every earlier use (u01-u05) is after met/van. The gloss is misleading for this sentence; the learner cannot tell why it is jou and not jij. Also, the everyday unmarked form is 'Ik mis je' (jou is the stressed form); it is in alt_nl, which is fine.",
+      "suggestion": "Extend the jou note: «Forma de jij después de una preposición y como objeto: met jou, Ik mis jou = Te extraño. Sin énfasis: je (Ik mis je).» Optionally make 'Ik mis je, schat.' the main nl."
+    },
+    {
+      "id": "u06l6s06",
+      "severity": "b",
+      "reason": "'Mijn zus belt mij vaak' uses stressed mij as a direct object; a Dutch speaker says 'Mijn zus belt me vaak' unless contrasting (she calls ME). The mij card note says 'forma de ik después de una preposición', so the gloss also does not cover this use. alt_nl already contains 'me', but me is not a taught form on any word card.",
+      "suggestion": "Make 'Mijn zus belt me vaak.' the main nl and add me to the mij card (forms/note: «como objeto sin énfasis: me — Ze belt me = Me llama»), or keep mij and extend the note to cover object use."
+    },
+    {
+      "id": "u06l6s14",
+      "severity": "b",
+      "reason": "Main nl 'Heb je een foto van jouw broer?' mixes unstressed subject je with stressed possessive jouw in one clause. That puts contrastive stress on 'your' (as opposed to someone else's brother), which is not the meaning. A native says 'Heb je een foto van je broer?' (already in alt_nl). The main sentence is what the learner hears and sees as the model.",
+      "suggestion": "Swap: main nl 'Heb je een foto van je broer?' and keep the jouw variants in alt_nl."
+    },
+    {
+      "id": "u06l6s15",
+      "severity": "b",
+      "reason": "Same issue: 'Mis je jouw familie?' combines unstressed je with stressed jouw. The neutral question is 'Mis je je familie?' (in alt_nl).",
+      "suggestion": "Make 'Mis je je familie?' the main nl, or 'Mis jij jouw familie?' if the course prefers to model jouw. Keep the rest in alt_nl."
+    },
+    {
+      "id": "u06:dialogue:7",
+      "severity": "b",
+      "reason": "Daan: 'Dat is ver. Mis je jouw familie?' has the same je + jouw mismatch as u06l6s15. In a dialogue that is meant to model natural speech, this sounds stilted, as if contrasting María's family with someone else's.",
+      "suggestion": "'Dat is ver. Mis je je familie?'"
+    },
+    {
+      "id": "u06l5s14",
+      "severity": "b",
+      "reason": "Main es 'Los queremos.' is ambiguous when shown as an es→nl prompt: los = ellos or ustedes, and querer = love or want. It most naturally reads 'we love/want them', which would be '…van ze/hen' or a willen sentence, not 'van jullie'. The disambiguated form 'Los queremos a ustedes' is already in alt_es.",
+      "suggestion": "Main es: 'Los queremos a ustedes.' Keep 'Los queremos.' and the other variants in alt_es."
+    },
+    {
+      "id": "lexicon:ouders",
+      "severity": "b",
+      "reason": "note_es 'Siempre en plural' is not true: singular 'ouder' (a parent) exists and is common (één ouder, elke ouder, alleenstaande ouder). The useful point for the learner is that you use vader/moeder for one parent.",
+      "suggestion": "«Casi siempre en plural: mijn ouders = mis papás (el papá y la mamá). Para uno solo, di mijn vader o mijn moeder.»"
+    },
+    {
+      "id": "lexicon:schat",
+      "severity": "b",
+      "reason": "Gloss 'el amor' is misleading as a word-card meaning. Abstract 'el amor' is de liefde; schat means 'amor' only as a term of address ('mi amor'). In an es→nl vocabulary drill, the prompt 'el amor' → 'schat' teaches a wrong equation.",
+      "suggestion": "es: ['el tesoro', 'mi amor (a la pareja)'] or ['el tesoro', 'cariño']; keep the note «Así se le dice a la pareja»."
+    },
+    {
+      "id": "u06l3s15",
+      "severity": "c",
+      "reason": "Main es '¿Ustedes son hermanos?' loses the gender information of 'broer en zus'. In the es→nl direction, a learner who types 'Zijn jullie broers?' gives a correct translation of the Spanish prompt but would be rejected.",
+      "suggestion": "Add alt_nl 'Zijn jullie broers?' (and optionally 'Zijn jullie broers en zussen?'), or use main es '¿Ustedes son hermano y hermana?' when this sentence is used es→nl."
+    }
+  ],
+  "coverage": {
+    "sentences_read": 87,
+    "word_cards_read": 36,
+    "dialogue_lines_read": 9,
+    "grammar_note_read": true
+  }
+}

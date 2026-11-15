@@ -9,7 +9,7 @@
     "Preguntar el precio y pedir la cuenta",
     "Decir que tienes hambre o sed"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- **uu** no es la u española: di «i» con los labios redondeados. d**uu**r.\n- **eu** de **eu**ro es el mismo sonido de d**eu**r: una «e» con los labios redondeados.\n- **th** en **th**ee es una t normal.\n- En **alsjeblieft** y **alstublieft** la primera l casi no se oye y el acento va al final: alsje**blieft**, alstu**blieft**.\n- **-lijk** al final de una palabra suena «lek», con una e muy breve: smake**lijk**.\n- En koff**ie** el acento va en la primera sílaba: **ko**ffie.\n\n## alsjeblieft y alstublieft\n\nLas dos significan «por favor». **alsjeblieft** va con jij y **alstublieft** va con u.\n\nTambién se dicen al darle algo a alguien, como «aquí tienes» o «aquí tiene». Por eso el mesero dice **Alstublieft** cuando trae el café.\n\nPara dar las gracias: **dank je wel** (con usted: **dank u wel**). Se responde **graag gedaan**.\n\n## graag\n\n- Con un pedido lo hace más amable: Ik wil **graag** een thee = Quisiera un té. Ja, **graag**! = ¡Sí, por favor!\n- Con otro verbo dice que algo te gusta: Ik drink **graag** thee = Me gusta tomar té.\n\n## willen y mogen\n\n- ik **wil**, jij **wilt**, u **wilt**, hij **wil**, zij **wil**. Con hij y zij no lleva -t.\n- ik **mag**, jij **mag**, u **mag**, hij **mag**. Es igual para todos.\n\n**Mag ik…?** es la forma normal y amable de pedir algo: **Mag ik** een koffie? = ¿Me da un café? **Mag ik** de rekening? = ¿Me da la cuenta?\n\n## El segundo verbo va al final\n\nCon willen y mogen, el otro verbo va entero al final de la frase:\n\n- Wat wil je **drinken**?\n- Wil je iets **eten**?\n- Mag ik **betalen**?\n\n## honger y dorst\n\nIgual que en español, el hambre y la sed se «tienen»: Ik **heb** honger. Ik **heb** dorst. Para negar se usa geen: Ik heb **geen** honger.\n\n## Precios\n\n- **Hoeveel kost…?** = ¿Cuánto cuesta…?\n- **euro** no cambia después de un número: drie **euro**, twaalf **euro**.\n- **samen** = en total: Dat is samen zeven euro.\n- **nog een** = otro, otra: nog een koffie.\n",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **uu** no es la u española: di «i» con los labios redondeados. d**uu**r.\n- **eu** de **eu**ro es el mismo sonido de d**eu**r: una «e» con los labios redondeados.\n- **th** en **th**ee es una t normal.\n- En **alsjeblieft** y **alstublieft** la primera l casi no se oye y la fuerza va al final: alsje**blieft**, alstu**blieft**.\n- **-lijk** al final de una palabra suena «lek», con una e muy breve, y nunca lleva la fuerza: **sma**kelijk.\n- En koffie la fuerza va en la primera sílaba: **ko**ffie.\n\n## alsjeblieft y alstublieft\n\nLas dos significan «por favor». **alsjeblieft** va con jij y **alstublieft** va con u.\n\nTambién se dicen al darle algo a alguien, como «aquí tienes» o «aquí tiene». Por eso el mesero dice **Alstublieft** cuando trae el café.\n\nPara dar las gracias: **dank je wel** (con usted: **dank u wel**). Se responde **graag gedaan**.\n\n## graag\n\n- Con un pedido lo hace más amable: Ik wil **graag** een thee = Quisiera un té. Ja, **graag**! = ¡Sí, por favor!\n- Con otro verbo dice que algo te gusta: Ik drink **graag** thee = Me gusta tomar té.\n\n## willen y mogen\n\n- ik **wil**, jij **wilt**, u **wilt**, hij **wil**, zij **wil**. Con hij y zij no lleva -t.\n- ik **mag**, jij **mag**, u **mag**, hij **mag**, zij **mag**: en singular es igual para todos.\n\n**Mag ik…?** es la forma normal y amable de pedir algo: **Mag ik** een koffie? = ¿Me da un café? **Mag ik** de rekening? = ¿Me da la cuenta?\n\n## El segundo verbo va al final\n\nCon willen y mogen, el otro verbo va entero al final de la frase:\n\n- Wat wil je **drinken**?\n- Wil je iets **eten**?\n- Mag ik **betalen**?\n\n## honger y dorst\n\nIgual que en español, el hambre y la sed se «tienen»: Ik **heb** honger. Ik **heb** dorst. Para negar se usa geen: Ik heb **geen** honger.\n\n## Precios\n\n- **Hoeveel kost…?** = ¿Cuánto cuesta…?\n- **euro** no cambia después de un número: drie **euro**, twaalf **euro**.\n- Al pedir, **koffie** y **thee** tampoco cambian: twee koffie, twee thee.\n- **samen** = en total: Dat is samen zeven euro.\n- **nog een** = otro, otra: nog een koffie.\n",
   "lessons": [
     {
       "id": "u05l1",
@@ -125,7 +125,9 @@
           "id": "u05l1s10",
           "nl": "Ja, alsjeblieft.",
           "es": "Sí, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Ja, alstublieft."
+          ],
           "alt_es": []
         },
         {
@@ -133,7 +135,8 @@
           "nl": "Nee, dank je wel.",
           "es": "No, muchas gracias.",
           "alt_nl": [
-            "Nee, dankjewel."
+            "Nee, dankjewel.",
+            "Nee, dank u wel."
           ],
           "alt_es": [
             "No, gracias."
@@ -199,14 +202,18 @@
           "id": "u05l2s01",
           "nl": "Een koffie, alsjeblieft.",
           "es": "Un café, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Een koffie, alstublieft."
+          ],
           "alt_es": []
         },
         {
           "id": "u05l2s02",
           "nl": "Een thee, alstublieft.",
           "es": "Un té, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Een thee, alsjeblieft."
+          ],
           "alt_es": []
         },
         {
@@ -234,7 +241,9 @@
           "id": "u05l2s06",
           "nl": "Water, alsjeblieft.",
           "es": "Agua, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Water, alstublieft."
+          ],
           "alt_es": []
         },
         {
@@ -323,7 +332,11 @@
           "alt_es": [
             "¿Qué quieres beber?",
             "¿Qué quieres tú tomar?",
-            "¿Qué quieres tú beber?"
+            "¿Qué quieres tú beber?",
+            "¿Tú qué quieres tomar?",
+            "¿Tú qué quieres beber?",
+            "¿Qué quieres tomar tú?",
+            "¿Qué quieres beber tú?"
           ]
         },
         {
@@ -366,7 +379,10 @@
           "id": "u05l3s05",
           "nl": "Ja, graag!",
           "es": "¡Sí, por favor!",
-          "alt_nl": [],
+          "alt_nl": [
+            "Ja, alsjeblieft!",
+            "Ja, alstublieft!"
+          ],
           "alt_es": [
             "¡Sí, con gusto!",
             "¡Sí, gracias!",
@@ -447,7 +463,9 @@
           "id": "u05l3s12",
           "nl": "Nog een thee, alsjeblieft.",
           "es": "Otro té, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Nog een thee, alstublieft."
+          ],
           "alt_es": [
             "Un té más, por favor."
           ]
@@ -491,6 +509,8 @@
             "¿Me das un café?",
             "¿Me puede dar un café?",
             "¿Me puedes dar un café?",
+            "¿Me trae un café?",
+            "¿Me traes un café?",
             "¿Puedo pedir un café?",
             "¿Puedo tomar un café?"
           ]
@@ -499,7 +519,9 @@
           "id": "u05l4s02",
           "nl": "Een broodje kaas, alstublieft.",
           "es": "Un sándwich de queso, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "Een broodje kaas, alsjeblieft."
+          ],
           "alt_es": [
             "Un pan de queso, por favor.",
             "Un pan con queso, por favor.",
@@ -518,6 +540,8 @@
             "¿Me das un sándwich de queso?",
             "¿Me puede dar un sándwich de queso?",
             "¿Me puedes dar un sándwich de queso?",
+            "¿Me trae un sándwich de queso?",
+            "¿Me traes un sándwich de queso?",
             "¿Puedo pedir un sándwich de queso?",
             "¿Me da un pan con queso?",
             "¿Me da un pancito con queso?"
@@ -531,7 +555,8 @@
             "Wat wil jij eten?"
           ],
           "alt_es": [
-            "¿Qué quieres comer tú?"
+            "¿Qué quieres comer tú?",
+            "¿Tú qué quieres comer?"
           ]
         },
         {
@@ -609,6 +634,8 @@
             "¿Me das otro té?",
             "¿Me puede dar otro té?",
             "¿Me puedes dar otro té?",
+            "¿Me trae otro té?",
+            "¿Me traes otro té?",
             "¿Puedo pedir otro té?",
             "¿Puedo tomar otro té?"
           ]
@@ -668,7 +695,9 @@
           "id": "u05l5s03",
           "nl": "De rekening, alstublieft.",
           "es": "La cuenta, por favor.",
-          "alt_nl": [],
+          "alt_nl": [
+            "De rekening, alsjeblieft."
+          ],
           "alt_es": []
         },
         {
@@ -926,7 +955,12 @@
           "id": "u05l6s12",
           "nl": "Dank je, eet smakelijk!",
           "es": "Gracias, ¡buen provecho!",
-          "alt_nl": [],
+          "alt_nl": [
+            "Dank u, eet smakelijk!",
+            "Dank je wel, eet smakelijk!",
+            "Dank u wel, eet smakelijk!",
+            "Dankjewel, eet smakelijk!"
+          ],
           "alt_es": [
             "Gracias, ¡provecho!",
             "Gracias, ¡buen apetito!"
@@ -1004,8 +1038,8 @@
       },
       {
         "speaker": "María",
-        "nl": "Alstublieft. Tot ziens!",
-        "es": "Aquí tiene. ¡Nos vemos!"
+        "nl": "Alstublieft.",
+        "es": "Aquí tiene."
       },
       {
         "speaker": "Daan",
@@ -1024,7 +1058,7 @@
         "answer": 1
       },
       {
-        "q_es": "¿Qué come María?",
+        "q_es": "¿Qué pide María para comer?",
         "options_es": [
           "Un sándwich de queso",
           "Pan con mantequilla",

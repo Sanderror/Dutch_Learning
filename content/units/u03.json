@@ -9,7 +9,7 @@
     "Dar y pedir un número de teléfono",
     "Confirmar o corregir con Dat klopt"
   ],
-  "grammar_note_es": "## Sonidos de esta unidad\n\n- La **u** corta no es la u española (esa se escribe oe). Suena entre una e y una u, muy breve: n**u**l, n**u**mmer, pl**u**s.\n- **z** es un zumbido, como el de una abeja: **z**es, **z**even. No suena como la s.\n- **ch** suena igual que la g, como una j fuerte: a**ch**t, a**ch**ttien.\n- En **-tig** la i casi no se oye: twin**tig** suena «tuin-tej», con una e muy breve.\n- **ou** suena como «au»: **ou**d, j**ou**w.\n\n## Sumar y restar\n\n- **plus** = más, **min** = menos.\n- El resultado siempre va con **is**: Twee plus twee **is** vier. Tien min drie **is** zeven.\n- También se puede sumar con **en**: Twee en twee is vier.\n- **Hoeveel is…?** = ¿Cuánto es…?\n\n## Del 13 al 19\n\nSe forman con el número + **tien**: vijf**tien**, zes**tien**, zeven**tien**, negen**tien**.\n\n- 13 es **der**tien (no «drietien») y 14 es **veer**tien (no «viertien»).\n- 18 se escribe con dos t: ach**tt**ien.\n\n## La edad se dice con zijn\n\nEn español «tienes» años; en neerlandés «eres» años. Se usa **zijn**, nunca hebben.\n\n- Hoe oud **ben** je? = ¿Cuántos años tienes?\n- Ik **ben** twintig. Ik ben twintig **jaar**. Ik ben twintig jaar **oud**. Las tres formas significan lo mismo.\n- **jaar** no cambia después de un número: twintig jaar (no «jaren»).\n\n## één y een\n\n**één**, con acentos y e larga, es el número 1. **een**, sin acentos y con una e muy corta, significa «un, una»; ya lo viste en een beetje y lo usarás mucho en la unidad 4.\n\n## Wat, jouw y uw\n\n- **Wat** = qué. Con naam y nummer el neerlandés pregunta con wat donde el español usa «cuál»: **Wat** is jouw naam?\n- **mijn** = mi, **jouw** = tu, **uw** = su (de usted): mijn nummer, jouw nummer, uw nummer.\n- **Dat klopt** = así es, es correcto. **Klopt dat?** = ¿es correcto?\n\n## El número de teléfono\n\nSe dice cifra por cifra, normalmente en grupos de dos. Los celulares en los Países Bajos empiezan con 06: **nul zes**.\n",
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- La **u** corta no es la u española (esa se escribe oe). Suena entre una e y una u, muy breve: n**u**l, n**u**mmer, pl**u**s.\n- **z** es un zumbido, como el de una abeja: **z**es, **z**even. No suena como la s.\n- **ch** suena igual que la g, como una j fuerte: a**ch**t, a**ch**ttien.\n- En **-tig** la i casi no se oye: twin**tig** suena «tuin-tej», con una e muy breve.\n- **ou** suena como «au»: **ou**d, j**ou**w.\n\n## Sumar y restar\n\n- **plus** = más, **min** = menos.\n- El resultado siempre va con **is**: Twee plus twee **is** vier. Tien min drie **is** zeven.\n- También se puede sumar con **en**: Twee en twee is vier.\n- **Hoeveel is…?** = ¿Cuánto es…?\n\n## Del 13 al 19\n\nSe forman con el número + **tien**: vijf**tien**, zes**tien**, zeven**tien**, negen**tien**.\n\n- 13 es **der**tien (no «drietien») y 14 es **veer**tien (no «viertien»).\n- 18 se escribe con dos t: ach**tt**ien.\n\n## La edad se dice con zijn\n\nEn español «tienes» años; en neerlandés «eres» años. Se usa **zijn**, nunca hebben.\n\n- Hoe oud **ben** je? = ¿Cuántos años tienes?\n- Ik **ben** twintig. Ik ben twintig **jaar**. Ik ben twintig jaar **oud**. Las tres formas significan lo mismo.\n- **jaar** no cambia después de un número: twintig jaar (no «jaren»).\n\n## één y een\n\n**één** es el número 1 y se dice con una e larga. **een** significa «un, una» y se dice con una e muy corta; ya lo viste en een beetje y lo usarás mucho en la unidad 4.\n\nEn este curso el número siempre lleva acentos para que no los confundas. En textos reales muchas veces se escribe **een** también para el número: lo que siempre los distingue es el sonido.\n\n## Wat, jouw y uw\n\n- **Wat** = qué. Con naam y nummer el neerlandés pregunta con wat donde el español usa «cuál»: **Wat** is jouw naam?\n- **mijn** = mi, **jouw** = tu, **uw** = su (de usted): mijn nummer, jouw nummer, uw nummer.\n- **Dat klopt** = así es, es correcto. **Klopt dat?** = ¿es correcto?\n\n## El número de teléfono\n\nPuedes decirlo cifra por cifra, en grupos de dos. Los celulares en los Países Bajos empiezan con 06: **nul zes**.\n\nMuchos neerlandeses leen cada par como un solo número (12 = twaalf, 34 = vierendertig; los números de 21 a 99 vienen más adelante). Si no entiendes, pide que te lo digan cifra por cifra.\n",
   "lessons": [
     {
       "id": "u03l1",
@@ -517,7 +517,8 @@
           ],
           "alt_es": [
             "Tiene dieciocho años.",
-            "Él tiene dieciocho."
+            "Él tiene dieciocho.",
+            "Tiene dieciocho."
           ]
         },
         {
@@ -525,14 +526,18 @@
           "nl": "Zij is bijna twintig.",
           "es": "Ella tiene casi veinte años.",
           "alt_nl": [
+            "Ze is bijna twintig.",
             "Zij is bijna twintig jaar.",
-            "Ze is bijna twintig."
+            "Ze is bijna twintig jaar.",
+            "Zij is bijna twintig jaar oud.",
+            "Ze is bijna twintig jaar oud."
           ],
           "alt_es": [
             "Tiene casi veinte años.",
             "Ella casi tiene veinte años.",
             "Casi tiene veinte años.",
-            "Ella tiene casi veinte."
+            "Ella tiene casi veinte.",
+            "Tiene casi veinte."
           ]
         },
         {
@@ -624,10 +629,10 @@
         },
         {
           "id": "u03l6s02",
-          "nl": "Wat is jouw naam?",
+          "nl": "Wat is je naam?",
           "es": "¿Cuál es tu nombre?",
           "alt_nl": [
-            "Wat is je naam?"
+            "Wat is jouw naam?"
           ],
           "alt_es": [
             "¿Cómo es tu nombre?",
@@ -636,10 +641,10 @@
         },
         {
           "id": "u03l6s03",
-          "nl": "Wat is jouw telefoonnummer?",
+          "nl": "Wat is je telefoonnummer?",
           "es": "¿Cuál es tu número de teléfono?",
           "alt_nl": [
-            "Wat is je telefoonnummer?"
+            "Wat is jouw telefoonnummer?"
           ],
           "alt_es": [
             "¿Cuál es tu número telefónico?",
@@ -649,8 +654,8 @@
         },
         {
           "id": "u03l6s04",
-          "nl": "Mijn nummer is nul zes, één twee drie.",
-          "es": "Mi número es cero seis, uno dos tres.",
+          "nl": "Mijn nummer? Nul zes, één twee, drie vier.",
+          "es": "¿Mi número? Cero seis, uno dos, tres cuatro.",
           "alt_nl": [],
           "alt_es": []
         },
@@ -738,10 +743,22 @@
         },
         {
           "id": "u03l6s12",
-          "nl": "Jouw naam is Luis, klopt dat?",
+          "nl": "Dit is mijn nummer. Wat is jouw nummer?",
+          "es": "Este es mi número. ¿Cuál es el tuyo?",
+          "alt_nl": [
+            "Dit is mijn nummer. Wat is je nummer?"
+          ],
+          "alt_es": [
+            "Este es mi número. ¿Cuál es tu número?",
+            "Este es mi número. ¿Y el tuyo?"
+          ]
+        },
+        {
+          "id": "u03l6s13",
+          "nl": "Je naam is Luis, klopt dat?",
           "es": "Tu nombre es Luis, ¿es correcto?",
           "alt_nl": [
-            "Je naam is Luis, klopt dat?"
+            "Jouw naam is Luis, klopt dat?"
           ],
           "alt_es": [
             "Tu nombre es Luis, ¿cierto?",
@@ -804,7 +821,7 @@
       {
         "speaker": "Luis",
         "nl": "Dank u, mevrouw. Tot ziens!",
-        "es": "Gracias, señora. ¡Nos vemos!"
+        "es": "Gracias, señora. ¡Hasta luego!"
       }
     ],
     "questions": [

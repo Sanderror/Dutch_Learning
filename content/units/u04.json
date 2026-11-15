@@ -345,7 +345,8 @@
           "es": "¿El libro es nuevo?",
           "alt_nl": [],
           "alt_es": [
-            "¿Es nuevo el libro?"
+            "¿Es nuevo el libro?",
+            "¿Es el libro nuevo?"
           ]
         },
         {
@@ -622,6 +623,8 @@
           "alt_nl": [],
           "alt_es": [
             "Tiene una laptop.",
+            "Él tiene un laptop.",
+            "Tiene un laptop.",
             "Él tiene un portátil.",
             "Él tiene una computadora portátil.",
             "Él tiene una computadora."
@@ -729,7 +732,9 @@
           "alt_es": [
             "¿Tom tiene una laptop?",
             "¿Tiene Tom una laptop?",
-            "¿Tiene Tom laptop?"
+            "¿Tiene Tom laptop?",
+            "¿Tom tiene un laptop?",
+            "¿Tiene Tom un laptop?"
           ]
         },
         {
@@ -739,7 +744,9 @@
           "alt_nl": [],
           "alt_es": [
             "También tengo una laptop.",
-            "Yo también tengo laptop."
+            "Yo también tengo laptop.",
+            "Yo también tengo un laptop.",
+            "También tengo un laptop."
           ]
         },
         {
@@ -936,7 +943,7 @@
       },
       {
         "speaker": "Anna",
-        "nl": "Heb je jouw telefoon en jouw jas?",
+        "nl": "Heb je je telefoon en je jas?",
         "es": "¿Tienes tu teléfono y tu chaqueta?"
       },
       {
@@ -946,13 +953,13 @@
       },
       {
         "speaker": "Anna",
-        "nl": "Jouw jas is hier. En de sleutel is in jouw jas!",
-        "es": "Tu chaqueta está aquí. ¡Y la llave está en tu chaqueta!"
+        "nl": "Hier is je jas. En de sleutel? In je jas!",
+        "es": "Aquí está tu chaqueta. ¿Y la llave? ¡En tu chaqueta!"
       },
       {
         "speaker": "Tom",
-        "nl": "Heel goed. Dank je, Anna!",
-        "es": "Muy bien. ¡Gracias, Anna!"
+        "nl": "Mooi! Dank je, Anna!",
+        "es": "¡Qué bien! ¡Gracias, Anna!"
       }
     ],
     "questions": [
