@@ -80,6 +80,10 @@ svg { display: block; }
 .today.is-done { border-color: var(--grout); }
 .install { margin: 0.75rem 0 0; padding: 0.9rem 1rem 1rem; border-radius: var(--radius); background: var(--araguaney-wash); }
 .install p { margin-bottom: 0.75rem; font-weight: 600; }
+.backup { margin: 0.75rem 0 0; padding: 0.9rem 1rem 1rem; border-radius: var(--radius); border: 2px solid var(--grout); }
+.backup p { margin-bottom: 0.75rem; }
+.foot .row, .backup .row { display: flex; gap: 0.6rem; align-items: stretch; }
+.foot .row .btn, .backup .row .btn { flex: 1; margin: 0; }
 
 .section-title { font-size: var(--step--1); font-weight: 700; color: var(--muted); margin: 1.25rem 0 0.5rem; }
 .unit { margin-bottom: 1.75rem; }

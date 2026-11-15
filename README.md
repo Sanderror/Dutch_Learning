@@ -31,24 +31,33 @@ A private Duolingo-style app for learning Dutch from (Venezuelan) Spanish. One l
 - A unit is eight tiles: six lessons, a dialogue, and a test-out (12 questions, 10 right completes the unit).
 - Until recordings exist for a text, the phone's own Dutch voice reads it.
 - When Chrome reports the app can be installed, the home screen and the settings show an install button.
+- Short sounds for right and wrong answers and a finished lesson, generated on the phone (`app/js/sfx.js`); switch in Ajustes.
+- A step marked `soft` (for speaking, later) offers "Intentar otra vez" and "Continuar" after a wrong answer and is never repeated, so it cannot block a lesson.
+- After five lessons without a backup, the home screen reminds her every 30 days (snooze: 14 days).
+
+## Keeping her progress across updates
+
+- Progress is stored under lesson ids (`u03l2`) and dialogue ids (`u03d`). Every id that has been on `main` is listed in `content/published_ids.json`, with every sentence id and its lesson. The validator fails if one disappears or a sentence moves to another lesson. To remove something on purpose, add its id to `retired`.
+- When new content goes to `main`: `python3 tools/validate_content.py content --publish` adds the new ids.
+- When the saved data changes shape, `SCHEMA` in `app/js/store.js` goes up and a migration is added. `app/tests/fixtures/progress_schema1.json` is a save made by version 0.2.0; the tests load it with every later version. Data from a newer version is set aside, never overwritten.
 
 ## Tests
 
 ```
 python3 tools/validate_content.py content      # content rules; exit code 1 on errors
-python3 tools/test_validator.py                # 27 injected mistakes, each must be caught
+python3 tools/test_validator.py                # 32 injected mistakes (incl. removed or moved ids), each must be caught
 python3 tools/test_review_batch.py             # review-batch selection
 python3 tools/test_build_audio.py              # audio build against a mock API
 python3 tools/test_tts_bakeoff.py              # voice script against a mock API
 node tools/test_scoring.mjs                    # speech-test scoring, incl. the real Pixel runs
-node --test app/tests/*.test.mjs               # app logic: checker, exercises, store (26 tests)
+node --test app/tests/*.test.mjs               # app logic: checker, exercises, store, sounds (35 tests)
 ```
 
 End to end in a real Chrome at phone size (needs Chrome and `puppeteer-core`):
 
 ```
 python3 -m http.server 8765                    # in the repository root
-node app/tests/e2e.browser.mjs screenshots/    # plays every lesson, a dialogue, a test-out; install; offline; reload
+node app/tests/e2e.browser.mjs screenshots/    # every lesson, a dialogue, a test-out; install; sounds; practice steps; backup reminder; update; offline
 ```
 
 Python 3.9+ and Node 20+. Nothing to install for the first block.

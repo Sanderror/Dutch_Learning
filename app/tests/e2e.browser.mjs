@@ -21,6 +21,16 @@ const browser = await puppeteer.launch({
   args: ['--no-sandbox', '--autoplay-policy=no-user-gesture-required', '--lang=es'],
 });
 const page = await browser.newPage();
+// count the tones the app makes, without listening to them
+await page.evaluateOnNewDocument(() => {
+  window.__tones = 0;
+  const Ctx = window.AudioContext;
+  if (Ctx) {
+    const make = Ctx.prototype.createOscillator;
+    Ctx.prototype.createOscillator = function () { window.__tones++; return make.call(this); };
+  }
+});
+const tones = () => page.evaluate(() => window.__tones);
 await page.setViewport({ width: 412, height: 892, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
 const problems = [];
 page.on('console', (m) => { if (m.type() === 'error' && !/audio\/index\.json|404/.test(m.text())) problems.push('console: ' + m.text()); });
@@ -138,11 +148,12 @@ while ((await state()).screen === 'session') {
 assert.equal((await state()).screen, 'result');
 assert.match(await text(), /Lección completa/);
 assert.match(await text(), /Aciertos a la primera: 8 de 12/);
+assert.ok(await tones() >= 20, 'a sound for every answer and for the finish: ' + await tones());
 assert.ok(requeued >= 3, 'wrong answers came back: ' + requeued);
 for (const t of ['card', 'mc', 'tiles-nl2es', 'tiles-es2nl', 'tiles-listen', 'type-es2nl', 'type-listen', 'match']) assert.ok(seen.has(t), 'saw ' + t);
 await new Promise((r) => setTimeout(r, 1500));     // let the tile finish being painted
 await shot('20-result');
-ok(`lesson 1 played to the end: all 8 step kinds seen, ${requeued} wrong answers repeated, result shown`);
+ok(`lesson 1 played to the end: all 8 step kinds seen, ${requeued} wrong answers repeated, result shown, ${await tones()} tones played`);
 
 await tap('#result-done');
 await page.waitForSelector('.wall');
@@ -195,6 +206,11 @@ await tap('#slow');
 assert.equal(await page.$eval('#slow', (b) => b.getAttribute('aria-pressed')), 'true');
 await shot('41-settings');
 await tap('#slow');
+// sounds can be switched off, and then nothing plays
+assert.equal(await page.$eval('#sounds', (b) => b.getAttribute('aria-pressed')), 'true');
+await tap('#sounds');
+assert.equal(await page.$eval('#sounds', (b) => b.getAttribute('aria-pressed')), 'false');
+assert.equal(await page.evaluate(() => window.__tegel.store.sounds()), false);
 // restore from a copy made by the app itself
 const copy = await page.evaluate(() => window.__tegel.store.exportText());
 await page.type('#import-text', 'esto no es una copia');
@@ -205,7 +221,44 @@ await tap('#import-go');
 assert.match(await text(), /Copia restaurada/);
 await tap('#back');
 await page.waitForSelector('.wall');
-ok('notes render; settings: slow audio toggle, import rejects junk and accepts a real copy');
+ok('notes render; settings: slow audio and sound toggles, import rejects junk and accepts a real copy');
+
+// with sounds off, answering makes no tone
+await tap('#start-next');
+while ((await state()).type === 'card') await answer();
+const silentBefore = await tones();
+await answer({ wrong: true });
+assert.equal(await tones(), silentBefore, 'sounds off: no tone');
+await tap('#exit'); await tap('#exit-yes');
+await page.waitForSelector('.wall');
+await tap('.icon-btn[aria-label="Ajustes"]');
+await tap('#sounds');
+assert.equal(await page.evaluate(() => window.__tegel.store.sounds()), true);
+await tap('#back');
+await page.waitForSelector('.wall');
+ok('sounds off: answering is silent; switched back on');
+
+// ---- 5b. a practice ("soft") step: try again or continue, never repeated ----
+await tap('#start-next');
+while ((await state()).type === 'card') await answer();
+await page.evaluate(() => { window.__tegel.ui.session.step.soft = true; });
+const before = await state();
+await answer({ wrong: true });
+assert.ok(await page.$('#retry'), 'Intentar otra vez is offered');
+assert.ok(await page.$('#continue'), 'Continuar is offered');
+assert.equal((await state()).queue, before.queue, 'a wrong practice step is not queued again');
+await shot('45-soft-wrong');
+await tap('#retry');
+assert.equal((await state()).phase, 'answer', 'trying again opens the same step');
+assert.equal((await state()).type, before.type);
+await answer({ wrong: true });
+await tap('#continue');
+const afterSoft = await state();
+assert.equal(afterSoft.done, before.done + 1, 'continuing counts the step as done');
+assert.equal(afterSoft.queue, before.queue - 1, 'the next step comes up; the practice step is gone');
+await tap('#exit'); await tap('#exit-yes');
+await page.waitForSelector('.wall');
+ok('practice step: wrong answer offers try again and continue; continue moves on without repeating it');
 
 // ---- 6. unit test-out ----
 await tap('[data-tile="u01t"]');
@@ -267,6 +320,31 @@ assert.equal(lessons, (UNITS - 1) * 6);
 assert.match(await text(), /Todo al día/);
 await shot('80-home-all-done');
 ok(`units 2 to ${UNITS}: every lesson plays through; home says there is nothing new`);
+
+// ---- 8b. backup reminder once there is something to lose ----
+assert.ok(await page.$('#backup-reminder'), 'reminder shows: many lessons, no copy yet');
+await shot('81-backup-reminder');
+await tap('#backup-later');
+assert.equal(await page.$('#backup-reminder'), null);
+await page.reload({ waitUntil: 'networkidle0' });
+await page.waitForSelector('.wall');
+assert.equal(await page.$('#backup-reminder'), null, 'the snooze is stored');
+await tap('.icon-btn[aria-label="Ajustes"]');
+assert.match(await page.$eval('#backup-age', (e) => e.textContent), /Todavía no/);
+await tap('#export-file');
+assert.match(await page.$eval('#backup-age', (e) => e.textContent), /hoy/);
+await tap('#back');
+await page.waitForSelector('.wall');
+ok('backup reminder: shown with progress and no copy, snooze survives a reload, a download counts as a copy');
+
+// ---- 8c. an update keeps her progress: same storage, new service worker ----
+const progressBefore = await page.evaluate(() => localStorage.getItem('tegeltjes.progress.v1'));
+await page.evaluate(async () => { for (const k of await caches.keys()) await caches.delete(k); });
+await page.reload({ waitUntil: 'networkidle0' });
+await page.waitForSelector('.wall');
+assert.equal(await page.evaluate(() => localStorage.getItem('tegeltjes.progress.v1')), progressBefore, 'progress untouched by a cache wipe');
+assert.equal(await page.$$eval('.tile.is-done', (t) => t.length), 8 + (UNITS - 1) * 7);
+ok('update: wiping every cached app file leaves progress as it was');
 
 // ---- 9. offline: the installed app opens without a connection ----
 await page.evaluate(() => navigator.serviceWorker.ready);

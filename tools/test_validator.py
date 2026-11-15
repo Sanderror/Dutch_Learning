@@ -189,7 +189,59 @@ def course_cases():
     return len(cases), failed
 
 
+PUBLISHED = vc.load_published(ROOT)
+
+
+def id_cases():
+    """Published ids are permanent: removing or moving one must be an error."""
+    cases = []
+
+    def drop_lesson(units):
+        units[0]["lessons"].pop(0)
+
+    def drop_sentence(units):
+        units[1]["lessons"][2]["sentences"].pop(3)
+
+    def move_sentence(units):
+        s = units[2]["lessons"][0]["sentences"].pop(0)
+        units[2]["lessons"][1]["sentences"].append(s)
+
+    def drop_dialogue(units):
+        del units[3]["dialogue"]
+
+    cases += [("published lesson removed", drop_lesson), ("published sentence removed", drop_sentence),
+              ("published sentence moved to another lesson", move_sentence), ("published dialogue removed", drop_dialogue)]
+    failed = 0
+    for name, fn in cases:
+        units = copy.deepcopy(UNITS)
+        fn(units)
+        rep = vc.Report()
+        vc.validate_published(PUBLISHED, units, rep)
+        if any(e[1] == "ids" for e in rep.errors):
+            print(f"ok    {name}  ->  {rep.errors[0][2][:70]}")
+        else:
+            failed += 1
+            print(f"FAIL  {name}")
+    # retiring an id on purpose is allowed
+    units = copy.deepcopy(UNITS)
+    gone = units[1]["lessons"][2]["sentences"].pop(3)["id"]
+    pub = copy.deepcopy(PUBLISHED)
+    pub["retired"] = [gone]
+    rep = vc.Report()
+    vc.validate_published(pub, units, rep)
+    if rep.errors:
+        failed += 1
+        print("FAIL  a retired id may disappear")
+    else:
+        print("ok    a retired id may disappear")
+    return len(cases) + 1, failed
+
+
 def main():
+    assert PUBLISHED is not None, "content/published_ids.json is missing"
+    clean = vc.Report()
+    vc.validate_published(PUBLISHED, copy.deepcopy(UNITS), clean)
+    assert not clean.errors, f"the published ids should all exist, got {clean.errors[:3]}"
     base, _ = vc.validate(copy.deepcopy(LEXICON), copy.deepcopy(UNITS))
     assert not base.errors, f"unmodified content should be clean, got {base.errors[:3]}"
     print("ok    unmodified content has no errors")
@@ -204,7 +256,9 @@ def main():
             print(f"FAIL  {name}: expected a '{check}' error at {where_part}; got {rep.errors[:3]}")
     n_course, f_course = course_cases()
     failed += f_course
-    total = len(CASES) + n_course
+    n_ids, f_ids = id_cases()
+    failed += f_ids
+    total = len(CASES) + n_course + n_ids
     print(f"\n{total - failed}/{total} injected mistakes caught")
     return 1 if failed else 0
 

@@ -117,7 +117,7 @@ test('export and import: round trip, and rejection of anything else', () => {
   const before = b.exportText();
   assert.match(b.importText('not json'), /no es una copia válida/);
   assert.match(b.importText('{"app":"other","progress":{}}'), /no es una copia de esta app/);
-  assert.match(b.importText(JSON.stringify({ app: 'tegeltjes', progress: { schema: 99 } })), /no es una copia/);
+  assert.match(b.importText(JSON.stringify({ app: 'tegeltjes', progress: { schema: 99 } })), /más nueva/, 'a copy from a newer version says so');
   assert.equal(JSON.parse(b.exportText()).progress.xp, JSON.parse(before).progress.xp, 'a failed import changes nothing');
 });
 
@@ -140,4 +140,76 @@ test('broken or blocked storage does not crash the app', () => {
   const none = createStore(null, c.now);
   none.completeLesson('u01l1', { correct: 1, total: 1 });
   assert.equal(none.persisted, false);
+});
+
+// ---------- keeping progress across app updates ----------
+import { readFileSync } from 'node:fs';
+import { SCHEMA, MIGRATIONS, upgrade } from '../js/store.js';
+
+const SAVED_V1 = readFileSync(new URL('./fixtures/progress_schema1.json', import.meta.url), 'utf8');
+
+test('a save from schema 1 (made by version 0.2.0) loads with everything intact', () => {
+  const c = clock('2026-11-20T09:00:00');
+  const mem = memory({ 'tegeltjes.progress.v1': SAVED_V1 });
+  const s = createStore(mem, c.now);
+  const old = JSON.parse(SAVED_V1);
+  for (const id of Object.keys(old.lessons)) assert.equal(s.isDone(id), old.lessons[id].done, id);
+  assert.equal(s.isDone('u01d'), true);
+  assert.equal(s.isDone('u02l6'), true, 'lessons passed by the unit test');
+  assert.equal(s.data.xp, old.xp);
+  assert.deepEqual(s.data.streak, old.streak);
+  assert.equal(s.data.reports.length, 1);
+  assert.equal(s.data.settings.slow, true);
+  assert.equal(s.sounds(), true, 'a setting added later defaults to on');
+  assert.equal(mem.getItem('tegeltjes.progress.v1.unreadable'), null, 'nothing was set aside');
+  // saving after the upgrade keeps it all
+  s.completeLesson('u03l1', { correct: 10, total: 12 });
+  const again = createStore(mem, c.now);
+  assert.equal(again.isDone('u01l1'), true);
+  assert.equal(again.isDone('u03l1'), true);
+});
+
+test('every schema from 1 up to the current one has a migration step', () => {
+  for (let v = 1; v < SCHEMA; v++) assert.equal(typeof MIGRATIONS[v], 'function', `missing MIGRATIONS[${v}]`);
+  assert.ok(upgrade(JSON.parse(SAVED_V1)), 'schema 1 upgrades to the current schema');
+});
+
+test('data from a newer version is set aside, not overwritten', () => {
+  const c = clock('2026-11-20T09:00:00');
+  const newer = JSON.stringify({ ...JSON.parse(SAVED_V1), schema: SCHEMA + 1 });
+  const mem = memory({ 'tegeltjes.progress.v1': newer });
+  const s = createStore(mem, c.now);
+  assert.equal(s.isDone('u01l1'), false);
+  s.completeLesson('u01l1', { correct: 1, total: 1 });
+  assert.equal(mem.getItem('tegeltjes.progress.v1.unreadable'), newer);
+});
+
+test('importing a copy from a newer version says so; an old copy is upgraded', () => {
+  const c = clock('2026-11-20T09:00:00');
+  const s = createStore(memory(), c.now);
+  const newer = JSON.stringify({ app: 'tegeltjes', progress: { ...JSON.parse(SAVED_V1), schema: SCHEMA + 1 } });
+  assert.match(s.importText(newer), /más nueva/);
+  assert.equal(s.importText(JSON.stringify({ app: 'tegeltjes', progress: JSON.parse(SAVED_V1) })), null);
+  assert.equal(s.isDone('u01l3'), true);
+});
+
+test('backup reminder: only after five lessons, every 30 days, snoozed for 14', () => {
+  const c = clock('2026-11-15T10:00:00');
+  const s = createStore(memory(), c.now);
+  for (const id of ['a', 'b', 'c', 'd']) s.completeLesson(id, { correct: 1, total: 1 });
+  assert.equal(s.backupDue(), false, 'four lessons: nothing to lose yet');
+  s.completeLesson('e', { correct: 1, total: 1 });
+  assert.equal(s.backupDue(), true);
+  s.snoozeBackup();
+  c.addDays(13);
+  assert.equal(s.backupDue(), false, 'snoozed');
+  c.addDays(1);
+  assert.equal(s.backupDue(), true, 'snooze over');
+  s.markBackup();
+  assert.equal(s.backupDue(), false);
+  assert.equal(s.daysSinceBackup(), 0);
+  c.addDays(29);
+  assert.equal(s.backupDue(), false);
+  c.addDays(1);
+  assert.equal(s.backupDue(), true, '30 days after the last copy');
 });

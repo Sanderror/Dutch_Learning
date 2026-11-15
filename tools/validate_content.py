@@ -305,6 +305,65 @@ def validate_course(course, units, rep):
                           f"speaker '{line.get('speaker')}' has no voice in course.json")
 
 
+def current_ids(units):
+    """Every id her progress (or a future review schedule) can point at."""
+    lessons, dialogues, sentences = [], [], {}
+    for u in units:
+        for les in u.get("lessons", []):
+            lessons.append(les["id"])
+            for snt in les.get("sentences", []):
+                sentences[snt["id"]] = les["id"]
+        if u.get("dialogue"):
+            dialogues.append(u["id"] + "d")
+    return {"lessons": lessons, "dialogues": dialogues, "sentences": sentences}
+
+
+def validate_published(published, units, rep):
+    """Ids that have been on main are permanent: her progress is stored under
+    them. A published lesson, dialogue or sentence may not disappear, and a
+    sentence may not move to another lesson. Deliberately removing one means
+    listing it under "retired" in content/published_ids.json."""
+    if published is None:
+        return
+    now = current_ids(units)
+    retired = set(published.get("retired", []))
+    for kind in ("lessons", "dialogues"):
+        have = set(now[kind])
+        for i in published.get(kind, []):
+            if i not in have and i not in retired:
+                rep.error(i, "ids", f"published {kind[:-1]} id {i} is gone; her progress points at it "
+                          "(add it to 'retired' in published_ids.json only if that is intended)")
+    for sid, lid in published.get("sentences", {}).items():
+        if sid in retired:
+            continue
+        if sid not in now["sentences"]:
+            rep.error(sid, "ids", f"published sentence id {sid} is gone (retire it in published_ids.json if intended)")
+        elif now["sentences"][sid] != lid:
+            rep.error(sid, "ids", f"sentence {sid} moved from {lid} to {now['sentences'][sid]}; ids must keep their meaning")
+    new = (len(set(now["lessons"]) - set(published.get("lessons", [])))
+           + len(set(now["sentences"]) - set(published.get("sentences", {}))))
+    if new:
+        rep.warn("published_ids", "ids", f"{new} lesson/sentence ids are not published yet: run with --publish when this content goes to main")
+
+
+def publish_ids(published, units):
+    """Add every current id to the published list; never removes one."""
+    now = current_ids(units)
+    out = published or {"about": "Ids that have been on main. Never delete one: her progress points at them. "
+                                  "To remove content on purpose, add its id to 'retired'.",
+                        "lessons": [], "dialogues": [], "sentences": {}, "retired": []}
+    for kind in ("lessons", "dialogues"):
+        out[kind] = out[kind] + [i for i in now[kind] if i not in out[kind]]
+    for sid, lid in now["sentences"].items():
+        out["sentences"].setdefault(sid, lid)
+    return out
+
+
+def load_published(content_dir):
+    p = pathlib.Path(content_dir) / "published_ids.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
 def load_course(content_dir):
     return json.loads((pathlib.Path(content_dir) / "course.json").read_text(encoding="utf-8"))
 
@@ -313,11 +372,31 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("content_dir", nargs="?", default="content")
     ap.add_argument("--json", help="write the full report to this file")
+    ap.add_argument("--publish", action="store_true",
+                    help="add all current lesson, dialogue and sentence ids to content/published_ids.json")
     args = ap.parse_args()
 
     lexicon, units = load(pathlib.Path(args.content_dir))
     rep, stats = validate(lexicon, units)
     validate_course(load_course(args.content_dir), units, rep)
+    published = load_published(args.content_dir)
+    validate_published(published, units, rep)
+    if args.publish and not rep.errors:
+        out = publish_ids(published, units)
+        lines = ["{"]
+        lines.append(f'  "about": {json.dumps(out["about"], ensure_ascii=False)},')
+        lines.append(f'  "lessons": {json.dumps(out["lessons"])},')
+        lines.append(f'  "dialogues": {json.dumps(out["dialogues"])},')
+        lines.append(f'  "retired": {json.dumps(out.get("retired", []))},')
+        lines.append('  "sentences": {')
+        items = list(out["sentences"].items())
+        for i, (sid, lid) in enumerate(items):
+            lines.append(f'    {json.dumps(sid)}: {json.dumps(lid)}' + ("," if i < len(items) - 1 else ""))
+        lines.append("  }")
+        lines.append("}")
+        (pathlib.Path(args.content_dir) / "published_ids.json").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        rep.warnings = [w for w in rep.warnings if w[1] != "ids"]
+        print(f"published ids: {len(out['lessons'])} lessons, {len(out['dialogues'])} dialogues, {len(out['sentences'])} sentences")
 
     for label, rows in (("ERROR", rep.errors), ("warn ", rep.warnings)):
         for where, check, msg in rows:

@@ -8,10 +8,11 @@ import { buildLesson, buildDialogue, buildUnitTest, isGraded, tileWords, UNIT_TE
 import { check } from './checker.js';
 import { createStore } from './store.js';
 import { createAudio, loadAudioIndex } from './audio.js';
+import { createSfx } from './sfx.js';
 import { renderNotes } from './md.js';
 import { motif, ICON } from './glyphs.js';
 
-const VERSION = '0.2.0';
+const VERSION = '0.3.0';
 const CONTENT = '../content/';
 const AUDIO = '../audio/';
 const root = document.getElementById('app');
@@ -19,6 +20,7 @@ const root = document.getElementById('app');
 let course = null;
 let store = null;
 let audio = null;
+let sfx = null;
 const ui = { screen: 'loading', sheet: null, session: null, notes: null, result: null, error: null, notice: '', pushed: false, ignorePop: false };
 
 // ---------- small helpers ----------
@@ -129,7 +131,7 @@ function advance() {
   const s = ui.session;
   s.step = s.queue.shift() || null;
   if (!s.step) return finish();
-  s.phase = 'answer'; s.result = null; s.reported = false; s.askExit = false;
+  s.phase = 'answer'; s.result = null; s.reported = false; s.askExit = false; s.retried = false;
   s.answer = initAnswer(s.step);
   render();
   window.scrollTo(0, 0);
@@ -145,14 +147,37 @@ function hasAnswer(s) {
   return true;
 }
 
+// A step marked `soft` (speaking, later) is practice: a wrong answer offers
+// "Intentar otra vez" and "Continuar", and is never repeated at the end, so a
+// sound she cannot make yet never blocks a lesson.
 function record(ok, result) {
   const s = ui.session, st = s.step;
-  if (!st._retry && ok) s.firstTry++;
-  if (ok || s.kind === 'test') s.done++;
+  if (!st._retry && !s.retried && ok) s.firstTry++;
+  if (ok) s.done++;
+  else if (st.soft) result = { ...result, soft: true };   // counted when she continues
+  else if (s.kind === 'test') s.done++;
   else s.queue.push({ ...st, _retry: true });           // wrong: it comes back at the end
   s.result = result; s.phase = 'feedback';
+  if (ok) sfx.correct(); else sfx.wrong();
   render();
-  if (ok && st.lang === 'nl' && st.reveal) audio.play(st.reveal.nl);   // hear the Dutch she just produced
+  if (ok && st.lang === 'nl' && st.reveal) {                // hear the Dutch she just produced, after the sound
+    setTimeout(() => { if (ui.session && ui.session.step === st) audio.play(st.reveal.nl); }, sfx.gap());
+  }
+}
+
+/** Soft step: answer it again. A later right answer no longer counts as first try. */
+function retrySoft() {
+  const s = ui.session;
+  s.retried = true;
+  s.phase = 'answer'; s.result = null; s.reported = false;
+  s.answer = initAnswer(s.step);
+  render();
+}
+
+/** Soft step: move on without it coming back. */
+function continueSoft() {
+  ui.session.done++;
+  advance();
 }
 
 function checkAnswer() {
@@ -181,6 +206,7 @@ function finish() {
     const r = store.completeLesson(s.built.id, { correct: s.firstTry, total: s.total, via: s.kind });
     ui.result = { kind: s.kind, id: s.built.id, correct: s.firstTry, total: s.total, ...r };
   }
+  if (ui.result.kind !== 'test' || ui.result.pass) sfx.finish();
   ui.session = null;
   ui.screen = 'result';
   render();
@@ -239,7 +265,13 @@ function viewHome() {
     canInstall() && h('section', { class: 'install' },
       h('p', {}, 'Pon Tegeltjes en tu pantalla de inicio para abrirla como cualquier otra app.'),
       h('button', { class: 'btn btn-quiet', id: 'install', onclick: install }, 'Instalar la app')),
-    todayCard, walls, h('p', { class: 'soon' }, 'Hay más unidades en camino.')];
+    todayCard,
+    store.backupDue() && h('section', { class: 'backup', id: 'backup-reminder' },
+      h('p', {}, 'Guarda una copia de tu progreso, por si cambias de teléfono o se borran los datos.'),
+      h('div', { class: 'row' },
+        h('button', { class: 'btn btn-quiet', id: 'backup-later', onclick: () => { store.snoozeBackup(); render(); } }, 'Más tarde'),
+        h('button', { class: 'btn btn-primary', id: 'backup-go', onclick: () => show('settings') }, 'Hacer una copia'))),
+    walls, h('p', { class: 'soon' }, 'Hay más unidades en camino.')];
 }
 
 function viewUnit(unit, index, next) {
@@ -378,7 +410,11 @@ function viewSession() {
   } else {
     work = [viewPrompt(st), viewAnswerArea(s, answered)];
     foot = answered
-      ? [viewFeedback(s), h('button', { class: 'btn ' + (s.result.ok ? 'btn-ok' : 'btn-bad'), id: 'continue', onclick: advance }, 'Continuar')]
+      ? [viewFeedback(s), s.result.soft
+        ? h('div', { class: 'row' },
+          h('button', { class: 'btn btn-quiet', id: 'retry', onclick: retrySoft }, 'Intentar otra vez'),
+          h('button', { class: 'btn btn-bad', id: 'continue', onclick: continueSoft }, 'Continuar'))
+        : h('button', { class: 'btn ' + (s.result.ok ? 'btn-ok' : 'btn-bad'), id: 'continue', onclick: advance }, 'Continuar')]
       : (st.type === 'match' ? null : h('button', { class: 'btn btn-primary', id: 'check', disabled: !hasAnswer(s), onclick: checkAnswer }, 'Comprobar'));
   }
   return h('div', { class: 'player' }, top, exitAsk, h('p', { class: 'task' }, TASK[taskKey]), h('div', { class: 'work' }, work), h('div', { class: 'foot' }, foot));
@@ -463,9 +499,11 @@ function tapMatch(side, id) {
       s.done++;
       s.result = { ok: true, kind: 'match', best: '' };
       s.phase = 'feedback';
+      sfx.correct();
     }
   } else {
     a.misses++; a.miss = { nl: a.nl, es: id }; a.nl = null;
+    sfx.wrong();
   }
   render();
 }
@@ -539,8 +577,8 @@ function viewNotes() {
       h('div', { html: renderNotes(unit.grammar_note_es) }))];
 }
 
-function copyText(text, okMessage) {
-  const done = (ok) => { ui.notice = ok ? okMessage : 'No se pudo copiar. Usa «Descargar archivo».'; render(); };
+function copyText(text, okMessage, onOk) {
+  const done = (ok) => { if (ok && onOk) onOk(); ui.notice = ok ? okMessage : 'No se pudo copiar. Usa «Descargar archivo».'; render(); };
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => done(true), () => done(false));
   else done(false);
 }
@@ -569,14 +607,18 @@ function viewSettings() {
       h('h2', {}, 'Audio'),
       h('button', { class: 'toggle', id: 'slow', 'aria-pressed': String(!!d.settings.slow), onclick: () => { store.setSetting('slow', !d.settings.slow); render(); } },
         'Reproducir siempre más lento', h('i', {})),
+      h('button', { class: 'toggle', id: 'sounds', 'aria-pressed': String(store.sounds()), onclick: () => { store.setSetting('sounds', !store.sounds()); render(); } },
+        'Sonidos al responder', h('i', {})),
       h('p', { class: 'muted small' }, `Fuente del audio: ${sources[audio.source('hallo')]}.`)),
     h('section', { class: 'panel' },
       h('h2', {}, 'Copia de seguridad'),
       h('p', { class: 'muted small' }, 'Tu progreso vive solo en este teléfono. Guarda una copia de vez en cuando; sirve para pasarlo a otro teléfono.'),
-      h('button', { class: 'btn btn-quiet', id: 'export-copy', onclick: () => copyText(store.exportText(), 'Copia copiada. Pégala en un mensaje para ti.') }, 'Copiar la copia'),
+      h('p', { class: 'muted small', id: 'backup-age' }, backupAge()),
+      h('button', { class: 'btn btn-quiet', id: 'export-copy', onclick: () => copyText(store.exportText(), 'Copia copiada. Pégala en un mensaje para ti.', () => store.markBackup()) }, 'Copiar la copia'),
       h('button', { class: 'btn btn-quiet', id: 'export-file', onclick: () => {
         const a = h('a', { href: URL.createObjectURL(new Blob([store.exportText()], { type: 'application/json' })), download: `tegeltjes-${new Date().toISOString().slice(0, 10)}.json` });
         document.body.append(a); a.click(); a.remove();
+        store.markBackup(); render();
       } }, 'Descargar archivo'),
       h('textarea', { class: 'field', id: 'import-text', rows: 2, placeholder: 'Pega aquí una copia para restaurarla', autocomplete: 'off', spellcheck: 'false' }),
       h('button', { class: 'btn btn-quiet', id: 'import-go', style: 'margin-top:0.6rem', onclick: () => {
@@ -592,6 +634,13 @@ function viewSettings() {
       h('button', { class: 'btn btn-quiet', id: 'reports-copy', disabled: d.reports.length === 0,
         onclick: () => copyText(JSON.stringify({ app: 'tegeltjes', reports: d.reports }, null, 1), 'Respuestas copiadas.') }, 'Copiar las respuestas')),
     h('p', { class: 'muted small' }, `Tegeltjes ${VERSION}`)];
+}
+
+function backupAge() {
+  const n = store.daysSinceBackup();
+  if (n === null) return 'Todavía no has guardado ninguna copia.';
+  if (n === 0) return 'Última copia: hoy.';
+  return `Última copia: hace ${plural(n, 'día', 'días')}.`;
 }
 
 // ---------- render ----------
@@ -627,6 +676,7 @@ async function boot() {
     return render();
   }
   audio = createAudio({ base: AUDIO, index, win: window, isSlow: () => !!store.data.settings.slow });
+  sfx = createSfx({ win: window, enabled: () => store.sounds() });
   ui.screen = 'home';
   render();
   try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch (e) { /* optional */ }
