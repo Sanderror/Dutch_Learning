@@ -1,0 +1,909 @@
+{
+  "id": "u09",
+  "section": 1,
+  "title_es": "El tiempo",
+  "goals_es": [
+    "Hablar del tiempo: frío, calor, lluvia, viento, sol",
+    "Decir la temperatura en grados",
+    "Nombrar las estaciones del año",
+    "Decir que tienes frío o calor con Ik heb het koud",
+    "Decir lo que necesitas con nodig hebben"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **w** en neerlandés no es la «u» del inglés: los labios casi se tocan, como una v suave. **w**eer, **w**ind, **w**inter, **w**arm.\n- **ee** larga: w**ee**r, h**ee**t.\n- **ui** de tr**ui** y b**ui**ten, igual que en h**ui**s.\n- **sj** de **sj**aal suena como la sh del inglés.\n- **aai** de w**aai**t: una a larga seguida de i.\n- **eeuw** de sn**eeuw**t: una e larga seguida de u.\n- **ou** de k**ou**d suena «au».\n\n## El tiempo empieza con het\n\nComo en español «llueve» o «hace frío», el tiempo no tiene un sujeto real. El neerlandés pone **het**:\n\n- **Het** regent = Llueve, está lloviendo.\n- **Het** waait = Hace viento.\n- **Het** sneeuwt = Nieva.\n- **Het** is koud = Hace frío. **Het** is warm = Hace calor.\n\nSolo con el sol hay sujeto: **De zon schijnt** = Hace sol.\n\n**Hoe is het weer?** = ¿Cómo está el tiempo? **weer** es el tiempo de afuera; **tijd** es el tiempo del reloj.\n\n## Ik heb het koud\n\nUna persona que siente frío no dice «ik ben koud». Dice:\n\n- Ik **heb het** koud = Tengo frío.\n- Ik **heb het** warm = Tengo calor.\n\nEs la misma forma que Ik heb het druk.\n\n## Grados\n\n- Het is twintig **graden** = Hace veinte grados.\n- Het is min vijf = Hace cinco bajo cero.\n- **Hoeveel graden is het?** = ¿Cuántos grados hace?\n\n## Las estaciones\n\n**de lente** (primavera), **de zomer** (verano), **de herfst** (otoño), **de winter** (invierno). Todas llevan de.\n\n- **in de** zomer = en verano: Het is warm in de zomer.\n- **Welk** seizoen? = ¿Qué estación? Con palabras de het se dice **welk**; con palabras de de, **welke** (welke dag).\n\n## Necesitar: nodig hebben\n\n- Ik heb een paraplu **nodig** = Necesito un paraguas.\n- Heb je een jas **nodig**? = ¿Necesitas una chaqueta?\n\nhebben va en su lugar de siempre y **nodig** va al final.\n\n## worden\n\n**wordt** = se pone, va a hacer: Het **wordt** koud = Se está poniendo frío, va a hacer frío.\n",
+  "lessons": [
+    {
+      "id": "u09l1",
+      "title_es": "¿Cómo está el tiempo?",
+      "sentences": [
+        {
+          "id": "u09l1s01",
+          "nl": "Hoe is het weer?",
+          "es": "¿Cómo está el tiempo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué tal el tiempo?",
+            "¿Cómo está el clima?",
+            "¿Qué tiempo hace?"
+          ]
+        },
+        {
+          "id": "u09l1s02",
+          "nl": "Het is koud.",
+          "es": "Hace frío.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l1s03",
+          "nl": "Het is warm vandaag.",
+          "es": "Hoy hace calor.",
+          "alt_nl": [
+            "Het is vandaag warm.",
+            "Vandaag is het warm."
+          ],
+          "alt_es": [
+            "Hace calor hoy."
+          ]
+        },
+        {
+          "id": "u09l1s04",
+          "nl": "Het weer is mooi.",
+          "es": "El tiempo está bonito.",
+          "alt_nl": [],
+          "alt_es": [
+            "El tiempo está lindo.",
+            "El tiempo está bueno.",
+            "Hace buen tiempo.",
+            "El clima está bonito."
+          ]
+        },
+        {
+          "id": "u09l1s05",
+          "nl": "Geen zon, maar regen.",
+          "es": "No hay sol, sino lluvia.",
+          "alt_nl": [],
+          "alt_es": [
+            "Nada de sol, sino lluvia.",
+            "Sin sol, pero con lluvia."
+          ]
+        },
+        {
+          "id": "u09l1s06",
+          "nl": "Kijk, de zon!",
+          "es": "¡Mira, el sol!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l1s07",
+          "nl": "De wind is koud.",
+          "es": "El viento está frío.",
+          "alt_nl": [],
+          "alt_es": [
+            "El viento es frío."
+          ]
+        },
+        {
+          "id": "u09l1s08",
+          "nl": "Het is niet koud.",
+          "es": "No hace frío.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l1s09",
+          "nl": "Is het warm in Caracas?",
+          "es": "¿Hace calor en Caracas?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿En Caracas hace calor?"
+          ]
+        },
+        {
+          "id": "u09l1s10",
+          "nl": "Ja, het is heel warm.",
+          "es": "Sí, hace mucho calor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, hace muchísimo calor."
+          ]
+        },
+        {
+          "id": "u09l1s11",
+          "nl": "Regen en wind!",
+          "es": "¡Lluvia y viento!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l1s12",
+          "nl": "Hoe is het weer in Utrecht?",
+          "es": "¿Cómo está el tiempo en Utrecht?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué tiempo hace en Utrecht?",
+            "¿Cómo está el clima en Utrecht?"
+          ]
+        },
+        {
+          "id": "u09l1s13",
+          "nl": "Het weer is niet goed.",
+          "es": "El tiempo no está bueno.",
+          "alt_nl": [],
+          "alt_es": [
+            "No hace buen tiempo.",
+            "El clima no está bueno.",
+            "El tiempo no está bien."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09l2",
+      "title_es": "Llueve",
+      "sentences": [
+        {
+          "id": "u09l2s01",
+          "nl": "Het regent.",
+          "es": "Llueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está lloviendo."
+          ]
+        },
+        {
+          "id": "u09l2s02",
+          "nl": "Het waait.",
+          "es": "Hace viento.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está haciendo viento.",
+            "Hay viento."
+          ]
+        },
+        {
+          "id": "u09l2s03",
+          "nl": "De zon schijnt.",
+          "es": "Hace sol.",
+          "alt_nl": [],
+          "alt_es": [
+            "Brilla el sol.",
+            "El sol brilla.",
+            "Está haciendo sol.",
+            "Salió el sol."
+          ]
+        },
+        {
+          "id": "u09l2s04",
+          "nl": "Het sneeuwt!",
+          "es": "¡Nieva!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Está nevando!"
+          ]
+        },
+        {
+          "id": "u09l2s05",
+          "nl": "Het regent hard.",
+          "es": "Llueve fuerte.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está lloviendo fuerte.",
+            "Llueve mucho."
+          ]
+        },
+        {
+          "id": "u09l2s06",
+          "nl": "Het waait heel hard.",
+          "es": "Hace mucho viento.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está haciendo mucho viento.",
+            "Hay mucho viento.",
+            "Sopla muy fuerte el viento."
+          ]
+        },
+        {
+          "id": "u09l2s07",
+          "nl": "Regent het in Utrecht?",
+          "es": "¿Llueve en Utrecht?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está lloviendo en Utrecht?",
+            "¿En Utrecht llueve?"
+          ]
+        },
+        {
+          "id": "u09l2s08",
+          "nl": "Het regent veel in Nederland.",
+          "es": "Llueve mucho en los Países Bajos.",
+          "alt_nl": [],
+          "alt_es": [
+            "En los Países Bajos llueve mucho.",
+            "Llueve mucho en Holanda.",
+            "En Holanda llueve mucho."
+          ]
+        },
+        {
+          "id": "u09l2s09",
+          "nl": "Sneeuwt het vaak?",
+          "es": "¿Nieva a menudo?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Nieva seguido?",
+            "¿Nieva mucho?",
+            "¿Nieva con frecuencia?"
+          ]
+        },
+        {
+          "id": "u09l2s10",
+          "nl": "Nee, het sneeuwt niet veel.",
+          "es": "No, no nieva mucho.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l2s11",
+          "nl": "Schijnt de zon in Caracas?",
+          "es": "¿Hace sol en Caracas?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿En Caracas hace sol?",
+            "¿Brilla el sol en Caracas?"
+          ]
+        },
+        {
+          "id": "u09l2s12",
+          "nl": "Het regent nu niet.",
+          "es": "Ahora no llueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ahora no está lloviendo.",
+            "No llueve ahora."
+          ]
+        },
+        {
+          "id": "u09l2s13",
+          "nl": "Veel regen en veel wind.",
+          "es": "Mucha lluvia y mucho viento.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u09l3",
+      "title_es": "Veinte grados",
+      "sentences": [
+        {
+          "id": "u09l3s01",
+          "nl": "Het is twintig graden.",
+          "es": "Hace veinte grados.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estamos a veinte grados."
+          ]
+        },
+        {
+          "id": "u09l3s02",
+          "nl": "Hoeveel graden is het?",
+          "es": "¿Cuántos grados hace?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿A cuántos grados estamos?"
+          ]
+        },
+        {
+          "id": "u09l3s03",
+          "nl": "Het is min vijf.",
+          "es": "Hace cinco bajo cero.",
+          "alt_nl": [
+            "Het is min vijf graden."
+          ],
+          "alt_es": [
+            "Hace menos cinco.",
+            "Estamos a menos cinco."
+          ]
+        },
+        {
+          "id": "u09l3s04",
+          "nl": "Het is heet vandaag.",
+          "es": "Hoy hace mucho calor.",
+          "alt_nl": [
+            "Het is vandaag heet."
+          ],
+          "alt_es": [
+            "Hace mucho calor hoy."
+          ]
+        },
+        {
+          "id": "u09l3s05",
+          "nl": "Het is fris.",
+          "es": "Hace fresco.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está fresco.",
+            "Está fresquito."
+          ]
+        },
+        {
+          "id": "u09l3s06",
+          "nl": "Het is bewolkt.",
+          "es": "Está nublado.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l3s07",
+          "nl": "Het is zonnig.",
+          "es": "Está soleado.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hace sol."
+          ]
+        },
+        {
+          "id": "u09l3s08",
+          "nl": "Mijn jas is nat.",
+          "es": "Mi chaqueta está mojada.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi abrigo está mojado."
+          ]
+        },
+        {
+          "id": "u09l3s09",
+          "nl": "Het is fris, maar zonnig.",
+          "es": "Hace fresco, pero está soleado.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está fresco, pero soleado.",
+            "Hace fresco, pero hace sol."
+          ]
+        },
+        {
+          "id": "u09l3s10",
+          "nl": "Het is bewolkt en het regent.",
+          "es": "Está nublado y llueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está nublado y está lloviendo."
+          ]
+        },
+        {
+          "id": "u09l3s11",
+          "nl": "Het is vaak heet in Caracas.",
+          "es": "En Caracas hace mucho calor a menudo.",
+          "alt_nl": [
+            "In Caracas is het vaak heet."
+          ],
+          "alt_es": [
+            "En Caracas suele hacer mucho calor.",
+            "En Caracas muchas veces hace mucho calor."
+          ]
+        },
+        {
+          "id": "u09l3s12",
+          "nl": "Het is twaalf graden en bewolkt.",
+          "es": "Hace doce grados y está nublado.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l3s13",
+          "nl": "Ik ben nat!",
+          "es": "¡Estoy mojado!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Estoy mojada!"
+          ]
+        },
+        {
+          "id": "u09l3s14",
+          "nl": "Het is nu zonnig en vijftien graden.",
+          "es": "Ahora está soleado y hace quince grados.",
+          "alt_nl": [],
+          "alt_es": [
+            "Está soleado y hace quince grados ahora."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09l4",
+      "title_es": "Las estaciones",
+      "sentences": [
+        {
+          "id": "u09l4s01",
+          "nl": "Lente, zomer, herfst, winter.",
+          "es": "Primavera, verano, otoño, invierno.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l4s02",
+          "nl": "Het is koud in de winter.",
+          "es": "En invierno hace frío.",
+          "alt_nl": [
+            "In de winter is het koud."
+          ],
+          "alt_es": [
+            "Hace frío en invierno.",
+            "En el invierno hace frío."
+          ]
+        },
+        {
+          "id": "u09l4s03",
+          "nl": "Het is warm in de zomer.",
+          "es": "En verano hace calor.",
+          "alt_nl": [
+            "In de zomer is het warm."
+          ],
+          "alt_es": [
+            "Hace calor en verano.",
+            "En el verano hace calor."
+          ]
+        },
+        {
+          "id": "u09l4s04",
+          "nl": "Ik hou van de zomer.",
+          "es": "Me gusta el verano.",
+          "alt_nl": [
+            "Ik houd van de zomer."
+          ],
+          "alt_es": [
+            "Me encanta el verano.",
+            "Amo el verano.",
+            "A mí me gusta el verano."
+          ]
+        },
+        {
+          "id": "u09l4s05",
+          "nl": "De herfst is nat.",
+          "es": "El otoño es lluvioso.",
+          "alt_nl": [],
+          "alt_es": [
+            "El otoño es mojado.",
+            "En otoño llueve mucho."
+          ]
+        },
+        {
+          "id": "u09l4s06",
+          "nl": "De lente is mooi.",
+          "es": "La primavera es bonita.",
+          "alt_nl": [],
+          "alt_es": [
+            "La primavera es linda."
+          ]
+        },
+        {
+          "id": "u09l4s07",
+          "nl": "Welk seizoen is het nu?",
+          "es": "¿En qué estación estamos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué estación es ahora?"
+          ]
+        },
+        {
+          "id": "u09l4s08",
+          "nl": "Het is nu herfst.",
+          "es": "Ahora es otoño.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estamos en otoño.",
+            "Es otoño ahora."
+          ]
+        },
+        {
+          "id": "u09l4s09",
+          "nl": "Is het nu winter in Nederland?",
+          "es": "¿Ahora es invierno en los Países Bajos?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es invierno ahora en los Países Bajos?",
+            "¿Ahora es invierno en Holanda?"
+          ]
+        },
+        {
+          "id": "u09l4s10",
+          "nl": "Sneeuwt het in de winter?",
+          "es": "¿Nieva en invierno?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿En invierno nieva?",
+            "¿Nieva en el invierno?"
+          ]
+        },
+        {
+          "id": "u09l4s11",
+          "nl": "Welk seizoen is mooi?",
+          "es": "¿Qué estación es bonita?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuál estación es bonita?"
+          ]
+        },
+        {
+          "id": "u09l4s12",
+          "nl": "Ik hou niet van de winter.",
+          "es": "No me gusta el invierno.",
+          "alt_nl": [
+            "Ik houd niet van de winter."
+          ],
+          "alt_es": [
+            "A mí no me gusta el invierno."
+          ]
+        },
+        {
+          "id": "u09l4s13",
+          "nl": "Is de herfst koud?",
+          "es": "¿El otoño es frío?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Es frío el otoño?",
+            "¿Hace frío en otoño?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09l5",
+      "title_es": "Tengo frío",
+      "sentences": [
+        {
+          "id": "u09l5s01",
+          "nl": "Ik heb het koud.",
+          "es": "Tengo frío.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo tengo frío."
+          ]
+        },
+        {
+          "id": "u09l5s02",
+          "nl": "Heb jij het warm?",
+          "es": "¿Tienes calor?",
+          "alt_nl": [
+            "Heb je het warm?"
+          ],
+          "alt_es": [
+            "¿Tú tienes calor?"
+          ]
+        },
+        {
+          "id": "u09l5s03",
+          "nl": "Ik heb een paraplu nodig.",
+          "es": "Necesito un paraguas.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo necesito un paraguas."
+          ]
+        },
+        {
+          "id": "u09l5s04",
+          "nl": "Heb je een trui nodig?",
+          "es": "¿Necesitas un suéter?",
+          "alt_nl": [
+            "Heb jij een trui nodig?"
+          ],
+          "alt_es": [
+            "¿Tú necesitas un suéter?",
+            "¿Necesitas un sweater?"
+          ]
+        },
+        {
+          "id": "u09l5s05",
+          "nl": "Ja, ik heb het koud.",
+          "es": "Sí, tengo frío.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l5s06",
+          "nl": "Waar is mijn sjaal?",
+          "es": "¿Dónde está mi bufanda?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u09l5s07",
+          "nl": "Je sjaal ligt op de stoel.",
+          "es": "Tu bufanda está en la silla.",
+          "alt_nl": [
+            "Jouw sjaal ligt op de stoel."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u09l5s08",
+          "nl": "Het is koud. Waar is mijn muts?",
+          "es": "Hace frío. ¿Dónde está mi gorro?",
+          "alt_nl": [],
+          "alt_es": [
+            "Hace frío. ¿Dónde está mi gorra?"
+          ]
+        },
+        {
+          "id": "u09l5s09",
+          "nl": "Mijn muts zit in mijn tas.",
+          "es": "Mi gorro está en mi bolso.",
+          "alt_nl": [],
+          "alt_es": [
+            "Mi gorro está en mi cartera.",
+            "Mi gorro está en mi bolsa.",
+            "Mi gorra está en mi bolso."
+          ]
+        },
+        {
+          "id": "u09l5s10",
+          "nl": "Het regent. Heb je een paraplu?",
+          "es": "Llueve. ¿Tienes paraguas?",
+          "alt_nl": [
+            "Het regent. Heb jij een paraplu?"
+          ],
+          "alt_es": [
+            "Está lloviendo. ¿Tienes paraguas?",
+            "Llueve. ¿Tienes un paraguas?",
+            "Está lloviendo. ¿Tienes un paraguas?"
+          ]
+        },
+        {
+          "id": "u09l5s11",
+          "nl": "Hij heeft het niet koud.",
+          "es": "Él no tiene frío.",
+          "alt_nl": [],
+          "alt_es": [
+            "No tiene frío."
+          ]
+        },
+        {
+          "id": "u09l5s12",
+          "nl": "Ik heb geen trui nodig.",
+          "es": "No necesito suéter.",
+          "alt_nl": [],
+          "alt_es": [
+            "No necesito un suéter.",
+            "Yo no necesito suéter."
+          ]
+        },
+        {
+          "id": "u09l5s13",
+          "nl": "Een trui en een sjaal.",
+          "es": "Un suéter y una bufanda.",
+          "alt_nl": [],
+          "alt_es": [
+            "Un sweater y una bufanda."
+          ]
+        },
+        {
+          "id": "u09l5s14",
+          "nl": "Heb je een muts nodig?",
+          "es": "¿Necesitas un gorro?",
+          "alt_nl": [
+            "Heb jij een muts nodig?"
+          ],
+          "alt_es": [
+            "¿Necesitas una gorra?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09l6",
+      "title_es": "¡Qué tiempo!",
+      "sentences": [
+        {
+          "id": "u09l6s01",
+          "nl": "Het is gelukkig droog.",
+          "es": "Por suerte no llueve.",
+          "alt_nl": [
+            "Gelukkig is het droog."
+          ],
+          "alt_es": [
+            "Menos mal que no llueve.",
+            "Por suerte está seco.",
+            "Menos mal que está seco."
+          ]
+        },
+        {
+          "id": "u09l6s02",
+          "nl": "Het wordt warm.",
+          "es": "Va a hacer calor.",
+          "alt_nl": [],
+          "alt_es": [
+            "Se está poniendo caliente.",
+            "Empieza a hacer calor."
+          ]
+        },
+        {
+          "id": "u09l6s03",
+          "nl": "Het wordt morgen koud.",
+          "es": "Mañana va a hacer frío.",
+          "alt_nl": [
+            "Morgen wordt het koud."
+          ],
+          "alt_es": [
+            "Va a hacer frío mañana."
+          ]
+        },
+        {
+          "id": "u09l6s04",
+          "nl": "Wat jammer!",
+          "es": "¡Qué lástima!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué pena!",
+            "¡Lástima!"
+          ]
+        },
+        {
+          "id": "u09l6s05",
+          "nl": "Het regent. Jammer!",
+          "es": "Llueve. ¡Qué lástima!",
+          "alt_nl": [],
+          "alt_es": [
+            "Está lloviendo. ¡Qué lástima!",
+            "Llueve. ¡Lástima!"
+          ]
+        },
+        {
+          "id": "u09l6s06",
+          "nl": "Ik ben binnen.",
+          "es": "Estoy adentro.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo estoy adentro."
+          ]
+        },
+        {
+          "id": "u09l6s07",
+          "nl": "Het is mooi weer buiten.",
+          "es": "Afuera hace buen tiempo.",
+          "alt_nl": [],
+          "alt_es": [
+            "Hace buen tiempo afuera.",
+            "Afuera está bonito el tiempo."
+          ]
+        },
+        {
+          "id": "u09l6s08",
+          "nl": "Is het droog buiten?",
+          "es": "¿Afuera no llueve?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está seco afuera?",
+            "¿Afuera está seco?"
+          ]
+        },
+        {
+          "id": "u09l6s09",
+          "nl": "Nee, het regent buiten.",
+          "es": "No, afuera llueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, afuera está lloviendo.",
+            "No, llueve afuera."
+          ]
+        },
+        {
+          "id": "u09l6s10",
+          "nl": "Het is warm binnen.",
+          "es": "Adentro hace calor.",
+          "alt_nl": [
+            "Het is binnen warm.",
+            "Binnen is het warm."
+          ],
+          "alt_es": [
+            "Adentro está caliente."
+          ]
+        },
+        {
+          "id": "u09l6s11",
+          "nl": "De zon schijnt gelukkig.",
+          "es": "Por suerte hace sol.",
+          "alt_nl": [
+            "Gelukkig schijnt de zon."
+          ],
+          "alt_es": [
+            "Menos mal que hace sol.",
+            "Por suerte brilla el sol."
+          ]
+        },
+        {
+          "id": "u09l6s12",
+          "nl": "Wat een weer!",
+          "es": "¡Qué tiempo!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Qué clima!",
+            "¡Qué tiempo tan malo!"
+          ]
+        },
+        {
+          "id": "u09l6s13",
+          "nl": "Het wordt laat.",
+          "es": "Se está haciendo tarde.",
+          "alt_nl": [],
+          "alt_es": [
+            "Se hace tarde."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "¡Qué frío!",
+    "lines": [
+      {
+        "speaker": "María",
+        "nl": "Ik heb het koud!",
+        "es": "¡Tengo frío!"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Ja, het is vijf graden.",
+        "es": "Sí, hace cinco grados."
+      },
+      {
+        "speaker": "María",
+        "nl": "Het is nu heet in Caracas.",
+        "es": "Ahora hace mucho calor en Caracas."
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Lekker! Maar hier niet. Heb je geen muts?",
+        "es": "¡Qué rico! Pero aquí no. ¿No tienes gorro?"
+      },
+      {
+        "speaker": "María",
+        "nl": "Nee, en ook geen sjaal.",
+        "es": "No, y tampoco bufanda."
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Hier, mijn sjaal. En kijk, het regent ook.",
+        "es": "Toma, mi bufanda. Y mira, también está lloviendo."
+      },
+      {
+        "speaker": "María",
+        "nl": "Wat jammer! Heb je een paraplu?",
+        "es": "¡Qué lástima! ¿Tienes paraguas?"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Ja, gelukkig! Kom, ik heb het ook koud.",
+        "es": "¡Sí, por suerte! Ven, yo también tengo frío."
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuántos grados hace?",
+        "options_es": [
+          "Cinco",
+          "Quince",
+          "Treinta"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Qué le da Tom a María?",
+        "options_es": [
+          "Su gorro",
+          "Su bufanda",
+          "Su chaqueta"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿Tom tiene paraguas?",
+        "options_es": [
+          "Sí",
+          "No",
+          "No lo dice"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+}

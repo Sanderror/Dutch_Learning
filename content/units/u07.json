@@ -1,0 +1,919 @@
+{
+  "id": "u07",
+  "section": 1,
+  "title_es": "Los días y la hora",
+  "goals_es": [
+    "Decir los días de la semana",
+    "Preguntar y decir la hora, con half y kwart",
+    "Quedar a una hora con om",
+    "Decir si estás libre u ocupado"
+  ],
+  "grammar_note_es": "## Sonidos de esta unidad\n\n- **ij** suena «ei»: vr**ij**dag, v**ij**f, m**ij**n.\n- **oe** es la u española: w**oe**nsdag.\n- **aa** es una a larga: m**aa**ndag, v**a**nd**aa**g.\n- **uu** de **uu**r es una «i» con los labios redondeados, larga.\n- En los días la fuerza va en la primera sílaba: **MAAN**-dag, **DINS**-dag, **ZON**-dag.\n\n## Los días\n\nmaandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag. Todos terminan en **-dag** (día) y se escriben con minúscula.\n\n- **vandaag** = hoy, **morgen** = mañana.\n- «El lunes» no lleva artículo: Ik werk **maandag** = Trabajo el lunes.\n- **het weekend** = el fin de semana.\n\n## ¿Qué hora es?\n\n**Hoe laat is het?** = ¿Qué hora es? Se contesta con **Het is…**\n\n- Het is drie **uur** = Son las tres. **uur** no cambia: twee uur, tien uur.\n- Het is **kwart over** vier = Son las cuatro y cuarto.\n- Het is **kwart voor** vijf = Son las cinco menos cuarto.\n- Het is tien **over** zes = Son las seis y diez.\n\n## ¡Cuidado con half!\n\n**half** cuenta hacia la hora siguiente: **half drie** = las dos y media, porque falta media hora para las tres.\n\n- half acht = 7:30\n- half twaalf = 11:30\n\nEs el error más común de los hispanohablantes. Piensa «media hora antes de…».\n\nLos minutos cerca de la media hora se cuentan desde half:\n\n- tien **voor half** vijf = 4:20 (diez minutos antes de las cuatro y media)\n- vijf **over half** twee = 1:35 (cinco minutos después de la una y media)\n\n## A qué hora: om\n\n**om** = a (una hora): **om** drie uur = a las tres. **Om hoe laat?** = ¿A qué hora?\n\n## Despedirse según cuándo\n\n- **Tot morgen!** = ¡Hasta mañana!\n- **Tot straks!** = ¡Hasta ahorita! (más tarde el mismo día)\n- **Tot zondag!** = ¡Hasta el domingo!\n- **Fijn weekend!** = ¡Buen fin de semana!\n\n## Libre u ocupado\n\n- Ik ben **vrij** = Estoy libre (no trabajo).\n- Ik heb het **druk** = Estoy ocupado. Se dice con hebben y het, como Ik heb het koud.\n",
+  "lessons": [
+    {
+      "id": "u07l1",
+      "title_es": "De lunes a viernes",
+      "sentences": [
+        {
+          "id": "u07l1s01",
+          "nl": "Maandag, dinsdag, woensdag.",
+          "es": "Lunes, martes, miércoles.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l1s02",
+          "nl": "Donderdag en vrijdag.",
+          "es": "Jueves y viernes.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l1s03",
+          "nl": "Het is vandaag maandag.",
+          "es": "Hoy es lunes.",
+          "alt_nl": [
+            "Vandaag is het maandag.",
+            "Het is maandag vandaag."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u07l1s04",
+          "nl": "Is het vandaag dinsdag?",
+          "es": "¿Hoy es martes?",
+          "alt_nl": [
+            "Is het dinsdag vandaag?"
+          ],
+          "alt_es": [
+            "¿Es martes hoy?",
+            "¿Es hoy martes?"
+          ]
+        },
+        {
+          "id": "u07l1s05",
+          "nl": "Nee, het is woensdag.",
+          "es": "No, es miércoles.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, hoy es miércoles."
+          ]
+        },
+        {
+          "id": "u07l1s06",
+          "nl": "Tom is donderdag hier.",
+          "es": "Tom está aquí el jueves.",
+          "alt_nl": [],
+          "alt_es": [
+            "Tom está acá el jueves.",
+            "El jueves Tom está aquí.",
+            "El jueves Tom está acá."
+          ]
+        },
+        {
+          "id": "u07l1s07",
+          "nl": "Ik ben vrijdag in Utrecht.",
+          "es": "El viernes estoy en Utrecht.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy en Utrecht el viernes.",
+            "Yo estoy en Utrecht el viernes."
+          ]
+        },
+        {
+          "id": "u07l1s08",
+          "nl": "Vandaag of vrijdag?",
+          "es": "¿Hoy o el viernes?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l1s09",
+          "nl": "Het is vandaag donderdag.",
+          "es": "Hoy es jueves.",
+          "alt_nl": [
+            "Vandaag is het donderdag."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u07l1s10",
+          "nl": "Kom je woensdag?",
+          "es": "¿Vienes el miércoles?",
+          "alt_nl": [
+            "Kom jij woensdag?"
+          ],
+          "alt_es": [
+            "¿Tú vienes el miércoles?"
+          ]
+        },
+        {
+          "id": "u07l1s11",
+          "nl": "Ja, ik kom woensdag.",
+          "es": "Sí, vengo el miércoles.",
+          "alt_nl": [],
+          "alt_es": [
+            "Sí, yo vengo el miércoles.",
+            "Sí, el miércoles vengo."
+          ]
+        },
+        {
+          "id": "u07l1s12",
+          "nl": "Maandag of dinsdag?",
+          "es": "¿El lunes o el martes?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Lunes o martes?"
+          ]
+        },
+        {
+          "id": "u07l1s13",
+          "nl": "Is Anna vandaag hier?",
+          "es": "¿Anna está aquí hoy?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Está Anna aquí hoy?",
+            "¿Anna está acá hoy?",
+            "¿Está Anna hoy aquí?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07l2",
+      "title_es": "El fin de semana",
+      "sentences": [
+        {
+          "id": "u07l2s01",
+          "nl": "Zaterdag en zondag.",
+          "es": "Sábado y domingo.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l2s02",
+          "nl": "Welke dag is het vandaag?",
+          "es": "¿Qué día es hoy?",
+          "alt_nl": [
+            "Welke dag is het?"
+          ],
+          "alt_es": [
+            "¿Qué día es?"
+          ]
+        },
+        {
+          "id": "u07l2s03",
+          "nl": "Het is morgen zaterdag.",
+          "es": "Mañana es sábado.",
+          "alt_nl": [
+            "Morgen is het zaterdag."
+          ],
+          "alt_es": [
+            "Mañana es el sábado."
+          ]
+        },
+        {
+          "id": "u07l2s04",
+          "nl": "Een week heeft zeven dagen.",
+          "es": "Una semana tiene siete días.",
+          "alt_nl": [],
+          "alt_es": [
+            "La semana tiene siete días."
+          ]
+        },
+        {
+          "id": "u07l2s05",
+          "nl": "Het weekend is zaterdag en zondag.",
+          "es": "El fin de semana es sábado y domingo.",
+          "alt_nl": [],
+          "alt_es": [
+            "El fin de semana son el sábado y el domingo."
+          ]
+        },
+        {
+          "id": "u07l2s06",
+          "nl": "Ben je in het weekend hier?",
+          "es": "¿Estás aquí el fin de semana?",
+          "alt_nl": [
+            "Ben jij in het weekend hier?",
+            "Ben je hier in het weekend?",
+            "Ben jij hier in het weekend?"
+          ],
+          "alt_es": [
+            "¿Estás acá el fin de semana?",
+            "¿Tú estás aquí el fin de semana?",
+            "¿El fin de semana estás aquí?"
+          ]
+        },
+        {
+          "id": "u07l2s07",
+          "nl": "Ik ben deze week in Caracas.",
+          "es": "Esta semana estoy en Caracas.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy en Caracas esta semana.",
+            "Yo estoy en Caracas esta semana."
+          ]
+        },
+        {
+          "id": "u07l2s08",
+          "nl": "Ik kom morgen.",
+          "es": "Vengo mañana.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo vengo mañana.",
+            "Mañana vengo."
+          ]
+        },
+        {
+          "id": "u07l2s09",
+          "nl": "Welke dag kom je?",
+          "es": "¿Qué día vienes?",
+          "alt_nl": [
+            "Welke dag kom jij?"
+          ],
+          "alt_es": [
+            "¿Tú qué día vienes?",
+            "¿Qué día vienes tú?"
+          ]
+        },
+        {
+          "id": "u07l2s10",
+          "nl": "Zondag is een fijne dag.",
+          "es": "El domingo es un día agradable.",
+          "alt_nl": [],
+          "alt_es": [
+            "El domingo es un día bonito.",
+            "El domingo es un día lindo.",
+            "El domingo es un buen día."
+          ]
+        },
+        {
+          "id": "u07l2s11",
+          "nl": "Is het morgen zondag?",
+          "es": "¿Mañana es domingo?",
+          "alt_nl": [
+            "Is het zondag morgen?"
+          ],
+          "alt_es": [
+            "¿Es domingo mañana?"
+          ]
+        },
+        {
+          "id": "u07l2s12",
+          "nl": "Nee, het is vandaag zaterdag.",
+          "es": "No, hoy es sábado.",
+          "alt_nl": [
+            "Nee, vandaag is het zaterdag."
+          ],
+          "alt_es": []
+        },
+        {
+          "id": "u07l2s13",
+          "nl": "Tot zondag!",
+          "es": "¡Hasta el domingo!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Nos vemos el domingo!"
+          ]
+        },
+        {
+          "id": "u07l2s14",
+          "nl": "Welke dag? Maandag?",
+          "es": "¿Qué día? ¿El lunes?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Cuál día? ¿El lunes?",
+            "¿Qué día? ¿Lunes?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07l3",
+      "title_es": "¿Qué hora es?",
+      "sentences": [
+        {
+          "id": "u07l3s01",
+          "nl": "Hoe laat is het?",
+          "es": "¿Qué hora es?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Qué hora son?"
+          ]
+        },
+        {
+          "id": "u07l3s02",
+          "nl": "Het is drie uur.",
+          "es": "Son las tres.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las tres en punto."
+          ]
+        },
+        {
+          "id": "u07l3s03",
+          "nl": "Het is één uur.",
+          "es": "Es la una.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es la una en punto."
+          ]
+        },
+        {
+          "id": "u07l3s04",
+          "nl": "Het is precies twaalf uur.",
+          "es": "Son las doce en punto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son exactamente las doce.",
+            "Son las doce exactas.",
+            "Son justo las doce."
+          ]
+        },
+        {
+          "id": "u07l3s05",
+          "nl": "Is het al vijf uur?",
+          "es": "¿Ya son las cinco?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Son ya las cinco?",
+            "¿Son las cinco ya?"
+          ]
+        },
+        {
+          "id": "u07l3s06",
+          "nl": "Ja, het is al laat.",
+          "es": "Sí, ya es tarde.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l3s07",
+          "nl": "Hoe laat is het nu?",
+          "es": "¿Qué hora es ahora?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l3s08",
+          "nl": "Het is nu acht uur.",
+          "es": "Ahora son las ocho.",
+          "alt_nl": [
+            "Het is acht uur nu."
+          ],
+          "alt_es": [
+            "Son las ocho ahora."
+          ]
+        },
+        {
+          "id": "u07l3s09",
+          "nl": "Is het al tien uur?",
+          "es": "¿Ya son las diez?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿Son ya las diez?",
+            "¿Son las diez ya?"
+          ]
+        },
+        {
+          "id": "u07l3s10",
+          "nl": "Nee, het is negen uur.",
+          "es": "No, son las nueve.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l3s11",
+          "nl": "Het is laat!",
+          "es": "¡Es tarde!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Ya es tarde!",
+            "¡Qué tarde!"
+          ]
+        },
+        {
+          "id": "u07l3s12",
+          "nl": "Sorry, hoe laat is het?",
+          "es": "Perdón, ¿qué hora es?",
+          "alt_nl": [],
+          "alt_es": [
+            "Disculpa, ¿qué hora es?",
+            "Disculpe, ¿qué hora es?"
+          ]
+        },
+        {
+          "id": "u07l3s13",
+          "nl": "Het is precies zeven uur.",
+          "es": "Son las siete en punto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son exactamente las siete.",
+            "Son las siete exactas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07l4",
+      "title_es": "Y media, y cuarto",
+      "sentences": [
+        {
+          "id": "u07l4s01",
+          "nl": "Het is half drie.",
+          "es": "Son las dos y media.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las dos y treinta."
+          ]
+        },
+        {
+          "id": "u07l4s02",
+          "nl": "Het is kwart over vier.",
+          "es": "Son las cuatro y cuarto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las cuatro y quince."
+          ]
+        },
+        {
+          "id": "u07l4s03",
+          "nl": "Het is kwart voor vijf.",
+          "es": "Son las cinco menos cuarto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las cuatro y cuarenta y cinco.",
+            "Es un cuarto para las cinco.",
+            "Son un cuarto para las cinco."
+          ]
+        },
+        {
+          "id": "u07l4s04",
+          "nl": "Het is tien over zes.",
+          "es": "Son las seis y diez.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l4s05",
+          "nl": "Het is half acht.",
+          "es": "Son las siete y media.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las siete y treinta."
+          ]
+        },
+        {
+          "id": "u07l4s06",
+          "nl": "Het is vijf voor twaalf.",
+          "es": "Son las doce menos cinco.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las once y cincuenta y cinco.",
+            "Son cinco para las doce.",
+            "Faltan cinco para las doce."
+          ]
+        },
+        {
+          "id": "u07l4s07",
+          "nl": "Is het half negen?",
+          "es": "¿Son las ocho y media?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l4s08",
+          "nl": "Nee, het is kwart over acht.",
+          "es": "No, son las ocho y cuarto.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, son las ocho y quince."
+          ]
+        },
+        {
+          "id": "u07l4s09",
+          "nl": "Het is half twaalf.",
+          "es": "Son las once y media.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son las once y treinta."
+          ]
+        },
+        {
+          "id": "u07l4s10",
+          "nl": "Het is al kwart voor tien.",
+          "es": "Ya son las diez menos cuarto.",
+          "alt_nl": [],
+          "alt_es": [
+            "Ya es un cuarto para las diez.",
+            "Ya son un cuarto para las diez."
+          ]
+        },
+        {
+          "id": "u07l4s11",
+          "nl": "Het is vijf over half twee.",
+          "es": "Es la una y treinta y cinco.",
+          "alt_nl": [],
+          "alt_es": [
+            "Son veinticinco para las dos."
+          ]
+        },
+        {
+          "id": "u07l4s12",
+          "nl": "Half drie? Nee, half vier!",
+          "es": "¿Las dos y media? ¡No, las tres y media!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l4s13",
+          "nl": "Het is tien voor half vijf.",
+          "es": "Son las cuatro y veinte.",
+          "alt_nl": [],
+          "alt_es": []
+        }
+      ]
+    },
+    {
+      "id": "u07l5",
+      "title_es": "¿A qué hora?",
+      "sentences": [
+        {
+          "id": "u07l5s01",
+          "nl": "Om hoe laat?",
+          "es": "¿A qué hora?",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l5s02",
+          "nl": "Om drie uur.",
+          "es": "A las tres.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l5s03",
+          "nl": "De les is om negen uur.",
+          "es": "La clase es a las nueve.",
+          "alt_nl": [],
+          "alt_es": [
+            "La lección es a las nueve."
+          ]
+        },
+        {
+          "id": "u07l5s04",
+          "nl": "Hoe laat is de les?",
+          "es": "¿A qué hora es la clase?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿A qué hora es la lección?"
+          ]
+        },
+        {
+          "id": "u07l5s05",
+          "nl": "Kom je om acht uur?",
+          "es": "¿Vienes a las ocho?",
+          "alt_nl": [
+            "Kom jij om acht uur?"
+          ],
+          "alt_es": [
+            "¿Tú vienes a las ocho?"
+          ]
+        },
+        {
+          "id": "u07l5s06",
+          "nl": "Ik kom om half negen.",
+          "es": "Vengo a las ocho y media.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo vengo a las ocho y media."
+          ]
+        },
+        {
+          "id": "u07l5s07",
+          "nl": "Is dat niet te vroeg?",
+          "es": "¿No es muy temprano?",
+          "alt_nl": [],
+          "alt_es": [
+            "¿No es demasiado temprano?",
+            "¿Eso no es muy temprano?",
+            "¿Eso no es demasiado temprano?"
+          ]
+        },
+        {
+          "id": "u07l5s08",
+          "nl": "Nee, dat is goed.",
+          "es": "No, está bien.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, eso está bien.",
+            "No, eso es bueno."
+          ]
+        },
+        {
+          "id": "u07l5s09",
+          "nl": "Tot straks!",
+          "es": "¡Hasta ahorita!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Hasta luego!",
+            "¡Nos vemos ahorita!",
+            "¡Hasta más tarde!",
+            "¡Nos vemos más tarde!",
+            "¡Nos vemos en un rato!"
+          ]
+        },
+        {
+          "id": "u07l5s10",
+          "nl": "Het is te laat.",
+          "es": "Es muy tarde.",
+          "alt_nl": [],
+          "alt_es": [
+            "Es demasiado tarde.",
+            "Ya es muy tarde."
+          ]
+        },
+        {
+          "id": "u07l5s11",
+          "nl": "Tot morgen, om tien uur!",
+          "es": "¡Hasta mañana, a las diez!",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l5s12",
+          "nl": "De les is vroeg, om acht uur.",
+          "es": "La clase es temprano, a las ocho.",
+          "alt_nl": [],
+          "alt_es": []
+        },
+        {
+          "id": "u07l5s13",
+          "nl": "Ik bel je straks.",
+          "es": "Te llamo más tarde.",
+          "alt_nl": [
+            "Ik bel jou straks."
+          ],
+          "alt_es": [
+            "Te llamo ahorita.",
+            "Te llamo luego.",
+            "Te llamo en un rato.",
+            "Yo te llamo más tarde."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07l6",
+      "title_es": "Mi semana",
+      "sentences": [
+        {
+          "id": "u07l6s01",
+          "nl": "Ik werk maandag en dinsdag.",
+          "es": "Trabajo el lunes y el martes.",
+          "alt_nl": [],
+          "alt_es": [
+            "Trabajo lunes y martes.",
+            "Yo trabajo el lunes y el martes.",
+            "Trabajo los lunes y los martes."
+          ]
+        },
+        {
+          "id": "u07l6s02",
+          "nl": "Werk jij zaterdag?",
+          "es": "¿Trabajas el sábado?",
+          "alt_nl": [
+            "Werk je zaterdag?"
+          ],
+          "alt_es": [
+            "¿Tú trabajas el sábado?"
+          ]
+        },
+        {
+          "id": "u07l6s03",
+          "nl": "Nee, ik werk niet in het weekend.",
+          "es": "No, no trabajo el fin de semana.",
+          "alt_nl": [],
+          "alt_es": [
+            "No, yo no trabajo el fin de semana.",
+            "No, no trabajo los fines de semana."
+          ]
+        },
+        {
+          "id": "u07l6s04",
+          "nl": "Ik ben zondag vrij.",
+          "es": "El domingo estoy libre.",
+          "alt_nl": [],
+          "alt_es": [
+            "Estoy libre el domingo.",
+            "Tengo libre el domingo.",
+            "El domingo tengo libre."
+          ]
+        },
+        {
+          "id": "u07l6s05",
+          "nl": "Ben jij morgen vrij?",
+          "es": "¿Estás libre mañana?",
+          "alt_nl": [
+            "Ben je morgen vrij?"
+          ],
+          "alt_es": [
+            "¿Tú estás libre mañana?",
+            "¿Mañana estás libre?",
+            "¿Tienes libre mañana?"
+          ]
+        },
+        {
+          "id": "u07l6s06",
+          "nl": "Ik heb het vandaag druk.",
+          "es": "Hoy estoy ocupado.",
+          "alt_nl": [
+            "Ik heb het druk vandaag."
+          ],
+          "alt_es": [
+            "Hoy estoy ocupada.",
+            "Estoy ocupado hoy.",
+            "Estoy ocupada hoy.",
+            "Hoy tengo mucho que hacer."
+          ]
+        },
+        {
+          "id": "u07l6s07",
+          "nl": "Hij werkt elke dag.",
+          "es": "Él trabaja todos los días.",
+          "alt_nl": [],
+          "alt_es": [
+            "Trabaja todos los días.",
+            "Él trabaja cada día."
+          ]
+        },
+        {
+          "id": "u07l6s08",
+          "nl": "Zij werkt vrijdag niet.",
+          "es": "Ella no trabaja el viernes.",
+          "alt_nl": [
+            "Ze werkt vrijdag niet."
+          ],
+          "alt_es": [
+            "No trabaja el viernes.",
+            "El viernes ella no trabaja."
+          ]
+        },
+        {
+          "id": "u07l6s09",
+          "nl": "Heb je het druk?",
+          "es": "¿Estás ocupado?",
+          "alt_nl": [
+            "Heb jij het druk?"
+          ],
+          "alt_es": [
+            "¿Estás ocupada?",
+            "¿Tienes mucho que hacer?"
+          ]
+        },
+        {
+          "id": "u07l6s10",
+          "nl": "Wij werken samen.",
+          "es": "Trabajamos juntos.",
+          "alt_nl": [
+            "We werken samen."
+          ],
+          "alt_es": [
+            "Trabajamos juntas.",
+            "Nosotros trabajamos juntos."
+          ]
+        },
+        {
+          "id": "u07l6s11",
+          "nl": "Waar werk je?",
+          "es": "¿Dónde trabajas?",
+          "alt_nl": [
+            "Waar werk jij?"
+          ],
+          "alt_es": [
+            "¿Tú dónde trabajas?",
+            "¿Dónde trabajas tú?"
+          ]
+        },
+        {
+          "id": "u07l6s12",
+          "nl": "Ik werk in Amsterdam.",
+          "es": "Trabajo en Amsterdam.",
+          "alt_nl": [],
+          "alt_es": [
+            "Yo trabajo en Amsterdam."
+          ]
+        },
+        {
+          "id": "u07l6s13",
+          "nl": "Fijn weekend!",
+          "es": "¡Buen fin de semana!",
+          "alt_nl": [],
+          "alt_es": [
+            "¡Feliz fin de semana!",
+            "¡Que tengas un buen fin de semana!"
+          ]
+        },
+        {
+          "id": "u07l6s14",
+          "nl": "Dank je, fijn weekend, Anna!",
+          "es": "Gracias, ¡buen fin de semana, Anna!",
+          "alt_nl": [
+            "Dank je wel, fijn weekend, Anna!"
+          ],
+          "alt_es": [
+            "Gracias, ¡feliz fin de semana, Anna!"
+          ]
+        },
+        {
+          "id": "u07l6s15",
+          "nl": "Heb je zondag tijd?",
+          "es": "¿Tienes tiempo el domingo?",
+          "alt_nl": [
+            "Heb jij zondag tijd?"
+          ],
+          "alt_es": [
+            "¿El domingo tienes tiempo?",
+            "¿Tú tienes tiempo el domingo?"
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "title_es": "¿Tienes tiempo el sábado?",
+    "lines": [
+      {
+        "speaker": "Tom",
+        "nl": "Hallo Anna! Heb je zaterdag tijd?",
+        "es": "¡Hola Anna! ¿Tienes tiempo el sábado?"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Nee, sorry. Ik werk zaterdag.",
+        "es": "No, lo siento. El sábado trabajo."
+      },
+      {
+        "speaker": "Tom",
+        "nl": "En zondag?",
+        "es": "¿Y el domingo?"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Ja, ik ben zondag vrij. Hoe laat?",
+        "es": "Sí, el domingo estoy libre. ¿A qué hora?"
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Om half drie?",
+        "es": "¿A las dos y media?"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Half drie is goed.",
+        "es": "Las dos y media está bien."
+      },
+      {
+        "speaker": "Tom",
+        "nl": "Leuk! Tot zondag!",
+        "es": "¡Chévere! ¡Hasta el domingo!"
+      },
+      {
+        "speaker": "Anna",
+        "nl": "Tot zondag! Fijn weekend!",
+        "es": "¡Hasta el domingo! ¡Buen fin de semana!"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Por qué Anna no puede el sábado?",
+        "options_es": [
+          "Trabaja",
+          "Tiene clase",
+          "Está en Utrecht"
+        ],
+        "answer": 0
+      },
+      {
+        "q_es": "¿Qué día se ven?",
+        "options_es": [
+          "El sábado",
+          "El domingo",
+          "El lunes"
+        ],
+        "answer": 1
+      },
+      {
+        "q_es": "¿A qué hora se ven?",
+        "options_es": [
+          "A las tres y media",
+          "A las dos y media",
+          "A las tres"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}
