@@ -1,0 +1,130 @@
+{
+ "schema": 1,
+ "createdAt": "2026-11-10T18:30:00.000Z",
+ "xp": 120,
+ "lessons": {
+  "u01l1": {
+   "done": true,
+   "attempts": 1,
+   "best": 0.8461538461538461,
+   "completedAt": "2026-11-10T18:30:00.000Z",
+   "via": "lesson"
+  },
+  "u01l2": {
+   "done": true,
+   "attempts": 1,
+   "best": 0.8461538461538461,
+   "completedAt": "2026-11-10T18:30:00.000Z",
+   "via": "lesson"
+  },
+  "u01l3": {
+   "done": true,
+   "attempts": 1,
+   "best": 0.8461538461538461,
+   "completedAt": "2026-11-10T18:30:00.000Z",
+   "via": "lesson"
+  },
+  "u01l4": {
+   "done": true,
+   "attempts": 2,
+   "best": 1,
+   "completedAt": "2026-11-11T19:05:00.000Z",
+   "via": "lesson"
+  },
+  "u01l5": {
+   "done": true,
+   "attempts": 1,
+   "best": 1,
+   "completedAt": "2026-11-11T19:05:00.000Z",
+   "via": "lesson"
+  },
+  "u01l6": {
+   "done": true,
+   "attempts": 1,
+   "best": 1,
+   "completedAt": "2026-11-11T19:05:00.000Z",
+   "via": "lesson"
+  },
+  "u01d": {
+   "done": true,
+   "attempts": 1,
+   "best": 1,
+   "completedAt": "2026-11-11T19:05:00.000Z",
+   "via": "dialogue"
+  },
+  "u02l1": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  },
+  "u02l2": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  },
+  "u02l3": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  },
+  "u02l4": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  },
+  "u02l5": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  },
+  "u02l6": {
+   "done": true,
+   "attempts": 0,
+   "best": 0,
+   "completedAt": "2026-11-12T07:15:00.000Z",
+   "via": "test"
+  }
+ },
+ "days": {
+  "2026-11-10": {
+   "xp": 30,
+   "lessons": 3
+  },
+  "2026-11-11": {
+   "xp": 60,
+   "lessons": 4
+  },
+  "2026-11-12": {
+   "xp": 30,
+   "lessons": 1
+  }
+ },
+ "streak": {
+  "current": 3,
+  "best": 3,
+  "lastDay": "2026-11-12"
+ },
+ "reports": [
+  {
+   "sid": "u01l2s04",
+   "type": "type",
+   "mode": "es2nl",
+   "given": "Hoe gaat het met je",
+   "expected": "Hoe gaat het?",
+   "at": "2026-11-12T07:15:00.000Z"
+  }
+ ],
+ "settings": {
+  "slow": true
+ }
+}
